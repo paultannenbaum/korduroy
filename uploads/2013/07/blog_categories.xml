@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog-categories type="array">
+  <blog-category>
+    <id type="integer">1</id>
+    <name>Interviews</name>
+    <slug>interviews</slug>
+    <created-at type="datetime">2012-01-11T22:30:17Z</created-at>
+    <updated-at type="datetime">2012-01-14T16:50:22Z</updated-at>
+    <display-order type="integer">2</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">3</id>
+    <name>Articles</name>
+    <slug>articles</slug>
+    <created-at type="datetime">2012-01-11T22:33:47Z</created-at>
+    <updated-at type="datetime">2012-01-14T16:50:57Z</updated-at>
+    <display-order type="integer">3</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">4</id>
+    <name>News</name>
+    <slug>news</slug>
+    <created-at type="datetime">2012-01-11T22:34:04Z</created-at>
+    <updated-at type="datetime">2012-01-15T21:15:57Z</updated-at>
+    <display-order type="integer">4</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">2</id>
+    <name>Videos</name>
+    <slug>videos</slug>
+    <created-at type="datetime">2012-01-11T22:33:28Z</created-at>
+    <updated-at type="datetime">2012-01-14T16:51:13Z</updated-at>
+    <display-order type="integer">5</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">6</id>
+    <name>Projects</name>
+    <slug>projects</slug>
+    <created-at type="datetime">2012-01-14T16:44:02Z</created-at>
+    <updated-at type="datetime">2012-01-14T16:44:02Z</updated-at>
+    <display-order type="integer">7</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">7</id>
+    <name>Galleries</name>
+    <slug>galleries</slug>
+    <created-at type="datetime">2012-01-14T16:47:04Z</created-at>
+    <updated-at type="datetime">2012-01-14T16:47:04Z</updated-at>
+    <display-order type="integer">8</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">13</id>
+    <name>How To's</name>
+    <slug>how-tos</slug>
+    <created-at type="datetime">2013-04-23T20:49:59Z</created-at>
+    <updated-at type="datetime">2013-04-23T20:50:47Z</updated-at>
+    <display-order type="integer">9</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">5</id>
+    <name>Reviews</name>
+    <slug>reviews</slug>
+    <created-at type="datetime">2012-01-11T22:36:34Z</created-at>
+    <updated-at type="datetime">2013-04-23T20:50:39Z</updated-at>
+    <display-order type="integer">10</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">10</id>
+    <name>The List</name>
+    <slug>the-list</slug>
+    <created-at type="datetime">2012-02-18T21:29:53Z</created-at>
+    <updated-at type="datetime">2013-04-23T20:50:30Z</updated-at>
+    <display-order type="integer">11</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">11</id>
+    <name>Contests</name>
+    <slug>contests</slug>
+    <created-at type="datetime">2012-04-25T12:55:12Z</created-at>
+    <updated-at type="datetime">2013-04-23T20:50:19Z</updated-at>
+    <display-order type="integer">12</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">14</id>
+    <name>Local Legendz</name>
+    <slug>local-legendz</slug>
+    <created-at type="datetime">2013-06-24T18:57:42Z</created-at>
+    <updated-at type="datetime">2013-06-24T18:58:07Z</updated-at>
+    <display-order type="integer">13</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">15</id>
+    <name>Film Festivals</name>
+    <slug>film-festivals</slug>
+    <created-at type="datetime">2013-06-26T16:08:30Z</created-at>
+    <updated-at type="datetime">2013-06-26T16:08:48Z</updated-at>
+    <display-order type="integer">14</display-order>
+  </blog-category>
+  <blog-category>
+    <id type="integer">12</id>
+    <name>Weekly Round Up</name>
+    <slug>weekly-round-up</slug>
+    <created-at type="datetime">2012-05-20T15:56:37Z</created-at>
+    <updated-at type="datetime">2013-06-26T16:08:39Z</updated-at>
+    <display-order type="integer">15</display-order>
+  </blog-category>
+</blog-categories>

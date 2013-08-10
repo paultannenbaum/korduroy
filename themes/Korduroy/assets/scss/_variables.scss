@@ -1,0 +1,22 @@
+$ktv-gray: #e8e8e5;
+$ktv-blue: #2084ea;
+$ktv-dark-blue: #4a6180;
+$ktv-text: #444;
+$ktv-dark-text: #000;
+
+$fonts: "proxima-nova", "Lucida Grande", lucida, serif;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// Placeholders
+%stitch {
+  width: 100%;
+  height: 5px;
+  background: transparent url(assets/images/backgrounds/stitch_horizontal.png) repeat-x;
+}
+
+%pressed-text {
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+}
