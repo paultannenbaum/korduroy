@@ -6,14 +6,15 @@ Template Name: Supporters Page
 
 <?php get_header(); ?>
 
+<nav id="ktv-sub-nav">
+  <h1 class="sub-nav-heading extend-full">Our Supporters</h1>
+  <span class="separator-container">
+    <hr class="horizontal-stitch" />
+  </span>
+</nav>
+
 <div id="body" class="supporters-page">
   <section class="main" role="main">
-
-    <nav class="ktv-sub-nav">
-      <h1 class="sub-nav-heading extend-full">Our Supporters</h1>
-    </nav>
-
-    <hr class="horizontal-stitch">
 
     <?php if(get_field('add_supporter')): ?>
       <?php while(has_sub_field('add_supporter')): ?>

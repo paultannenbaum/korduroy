@@ -1,4 +1,4 @@
-<nav class="ktv-sub-nav">
+<nav id="ktv-sub-nav">
   <h1 class="sub-nav-heading">About Us</h1>
   <ul class="sub-nav-list">
     <li class="sub-nav-list-item about-us <?php if (is_page('the-site')) { echo "current"; }?>">
@@ -11,5 +11,7 @@
       <a class="sub-nav-link" href="<?php echo site_url(); ?>/about/big-shaka-club">The Big Shaka Club</a>
     </li>
   </ul>
+  <span class="separator-container">
+    <hr class="horizontal-stitch" />
+  </span>
 </nav>
-<hr class="horizontal-stitch">

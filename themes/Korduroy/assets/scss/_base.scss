@@ -1,11 +1,11 @@
 html {
   height: 100%;
   body: 100%;
-  background: $ktv-gray;
+  background: $ktv-bg-grey;
 }
 
 body	{
-  background: $ktv-gray;
+  background: $ktv-bg-grey;
   color: $ktv-text;
   font-family: $fonts;
 }
@@ -42,11 +42,23 @@ h3	{
   text-transform: uppercase;
 }
 
-h4	{}
+h4	{
+  font-family: $fonts;
+  font-weight: $semi-bold;
+  letter-spacing: 1px;
+}
 
-h5	{}
+h5	{
+  font-family: $fonts;
+  font-weight: $semi-bold;
+  letter-spacing: 1px;
+}
 
-h6	{}
+h6	{
+  font-family: $fonts;
+  font-weight: $semi-bold;
+  letter-spacing: 1px;
+}
 
 /*	Links
 ---------------------------------------------------	*/

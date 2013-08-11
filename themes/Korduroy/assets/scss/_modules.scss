@@ -1,4 +1,39 @@
 /***** Modules *****/
+#ktv-sub-nav {
+  position: relative;
+
+  .sub-nav-heading {
+    margin: 0;
+    height: 25px;
+    line-height: 25px;
+  }
+  .sub-nav-list {
+    height: 25px;
+  }
+  .sub-nav-list-item {
+    @extend %pressed-text;
+    text-transform: uppercase;
+    display: inline;
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: 600;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+    &.current a {
+      color: $ktv-blue;
+      border: 1px solid $ktv-blue;
+    }
+    a {
+      padding: 3px;
+      border: 1px solid transparent;
+
+    }
+
+  }
+}
+
 .horizontal-stitch {
   @extend %stitch;
   border: none;
@@ -8,7 +43,7 @@
 }
 
 .horizontal-separator-light {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $ktv-light-grey;
   height: 1px;
   width: 100%;
   margin: 30px 0;
@@ -28,12 +63,12 @@
   background-color: #dcdcdc; // Old browsers
   @include filter-gradient(#dcdcdc, #dcdcdc, vertical); // IE6-9
   @include background-image(linear-gradient(top, #dcdcdc 0%,#dcdcdc 1%,#ffffff 2%,#ffffff 4%,#f9f9f9 5%,#f8f8f8 7%,#eaeaea 96%,#e9e9e9 98%,#dcdcdc 99%,#dcdcdc 100%));
-  color: #777;
+  color: $ktv-grey;
   text-shadow: 1px 1px 0 #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 5px 10px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid $ktv-light-grey;
   font-size: 12px;
 
   &:hover {
@@ -61,6 +96,7 @@
     height: 16px;
     margin-left: 10px;
     background: transparent top center no-repeat;
+
     &.vimeo {
       background-image: url(assets/images/icons/vimeo.png);
     }
@@ -92,10 +128,12 @@
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
   text-transform: uppercase;
+
   .site-navigation-list {
     .site-navigation-item {
       display: inline;
       margin-left: 25px;
+
       &:first-child {
         margin-left: 0px;
       }
@@ -115,6 +153,7 @@
   font-size: 10px;
   float: right;
   margin-top: 38px;
+
   .site-search-input {
     @include border-radius(12px);
     width: 100%;
@@ -131,7 +170,7 @@
     line-height: 13px;
     background: transparent;
     border: none;
-    border-left: 1px dotted #ccc;
+    border-left: 1px dotted $ktv-light-grey;
     font-weight: $semi-bold;
   }
 }
@@ -151,6 +190,7 @@
   }
   .sponsor-list-item {
     text-align: center;
+
     &.go-pro {
       padding-top: 5px;
     }
@@ -161,13 +201,14 @@
   }
   .information, .network {
     text-transform: uppercase;
+
     li {
       font-size: 14px;
     }
   }
   .stay-updated {
-
     text-transform: uppercase;
+
     label {
       margin-bottom: 5px;
       text-transform: none;
@@ -203,41 +244,6 @@
   margin: 40px 0;
 }
 
-.ktv-sub-nav {
-  position: relative;
-
-  .sub-nav-heading {
-    margin: 0;
-    height: 25px;
-    line-height: 25px;
-  }
-  .sub-nav-list {
-    height: 25px;
-  }
-  .sub-nav-list-item {
-    @extend %pressed-text;
-    text-transform: uppercase;
-    display: inline;
-    margin-right: 20px;
-    font-size: 12px;
-    font-weight: 600;
-
-    &:last-child {
-      margin-right: 0px;
-    }
-    &.current a {
-      color: $ktv-blue;
-      border: 1px solid $ktv-blue;
-    }
-    a {
-      padding: 3px;
-      border: 1px solid transparent;
-
-    }
-
-  }
-}
-
 .video-wrapper {
   position: relative;
   // padding-bottom: 56.24%; /* 16:9 */
@@ -260,6 +266,21 @@
 
 
 /***** Page Modules *****/
+.blog-page {
+  .blog-post {
+    .blog-post-thumbnail img {
+      @extend %image-border;
+      width: 100%;
+    }
+    .blog-post-footer {
+      font-size: 10px;
+      color: $ktv-grey;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
 .supporters-page {
   .info-items {
     .name {

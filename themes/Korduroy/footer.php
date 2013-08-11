@@ -51,7 +51,7 @@
         <form id="newsletter-signup">
           <!-- TODO: Come back and hook this puppy up -->
           <?php # the_widget('mailchimpSF_Widget'); ?>
-          <label>Sign up to receive the korduroy newslettter</label>
+          <label>Receive our newsletter</label>
           <input class="email" name="newsletter" placeholder="YOUR EMAIL ADDRESS" type="email">
           <input class="submit button" type="submit" value="SIGN UP">
         </form>
