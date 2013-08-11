@@ -127,6 +127,16 @@
         }
       }
     }
+    &.about-big-shaka-club-page {
+      .big-shaka-club-wrapper {
+        @include grid-row(nest);
+
+        .big-shaka-group {
+          @include grid-column(6);
+          margin-top: 30px;
+        }
+      }
+    }
   }
 }
 
