@@ -1,10 +1,5 @@
 <?php get_header(); ?>
-<nav id="ktv-sub-nav">
-  <h1 class="sub-nav-heading extend-full">The Korduroy Blog</h1>
-  <span class="separator-container">
-    <hr class="horizontal-stitch" />
-  </span>
-</nav>
+<?php load_template(TEMPLATEPATH . '/partials/blog-sub-nav.php'); ?>
 
 <div id="body" class="blog-page blog-index-page">
   <section class="main" role="main">
