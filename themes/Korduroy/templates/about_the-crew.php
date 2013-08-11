@@ -15,7 +15,7 @@ Template Name: About-The Crew
         <?php while(has_sub_field('crew_member')): ?>
           <div class="crew-member">
             <div class="crew-member-photo">
-              <img class="image-border" src="<?php the_sub_field('photo'); ?>" title="<?php the_sub_field('name'); ?>" alt="<?php the_sub_field('name'); ?>" />
+              <img src="<?php the_sub_field('photo'); ?>" title="<?php the_sub_field('name'); ?>" class="image-border" alt="<?php the_sub_field('name'); ?>" />
             </div>
             <div class="crew-member-info">
               <div class="member-name"><?php the_sub_field('name'); ?></div>
@@ -23,7 +23,7 @@ Template Name: About-The Crew
               <div class="member-desc"><?php the_sub_field('description'); ?></div>
             </div>
           </div>
-          <hr class="crew-separator" />
+          <hr class="horizontal-separator-light" />
         <?php endwhile; ?>
       <?php endif; ?>
     </div>

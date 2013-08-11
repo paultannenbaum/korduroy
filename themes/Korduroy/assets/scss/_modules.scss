@@ -11,7 +11,7 @@
   border-top: 1px solid #ccc;
   height: 1px;
   width: 100%;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .horizontal-separator-dark {
@@ -261,7 +261,13 @@
 
 /***** Page Modules *****/
 .supporters-page {
-
+  .info-items {
+    .name {
+      @extend h1;
+    }
+  }
+  .description-container {}
+  @extend p;
 }
 
 .about-page {
@@ -277,10 +283,6 @@
       @extend p;
 
     }
-  }
-  .crew-separator {
-    @extend .horizontal-separator-light;
-    margin: 30px 0;
   }
 }
 

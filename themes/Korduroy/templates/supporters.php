@@ -9,11 +9,17 @@ Template Name: Supporters Page
 <div id="body" class="supporters-page">
   <section class="main" role="main">
 
+    <nav class="ktv-sub-nav">
+      <h1 class="sub-nav-heading extend-full">Our Supporters</h1>
+    </nav>
+
+    <hr class="horizontal-stitch">
+
     <?php if(get_field('add_supporter')): ?>
       <?php while(has_sub_field('add_supporter')): ?>
         <div class="supporter-row">
           <div class="logo-container">
-            <img src="<?php the_sub_field('logo'); ?>" />
+            <img src="<?php the_sub_field('logo'); ?>" class="image-border" />
           </div>
           <div class="info-container">
             <ul class="info-items">
@@ -27,9 +33,10 @@ Template Name: Supporters Page
             <?php the_sub_field('blurb'); ?>
           </div>
           <div class="banner-container">
-            <img src="<?php the_sub_field('banner_image'); ?>" />
+            <img src="<?php the_sub_field('banner_image'); ?>" class="image-border" />
           </div>
         </div>
+        <hr class="horizontal-separator-light" />
       <?php endwhile; ?>
     <?php endif; ?>
 

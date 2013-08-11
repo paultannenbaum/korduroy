@@ -84,17 +84,18 @@
 
     .sub-nav-heading {
       @include grid-column(2);
+      &.extend-full {
+        @include grid-column(12);
+      }
     }
     .sub-nav-list {
       @include grid-column(10);
     }
   }
   .supporters-page {
+
     .supporter-row {
       @include grid-row(nest);
-      padding: 20px 0;
-      border-bottom: 1px solid #cccccc;
-      margin: 20px 0;
     }
     .logo-container {
       @include grid-column(6);
@@ -232,11 +233,10 @@
     }
   }
   .supporters-page {
+
+
     .supporter-row {
       @include grid-row(nest);
-      padding: 20px 0;
-      border-bottom: 1px solid #DDD;
-      margin: 20px 0;
     }
     .logo-container {
       @include grid-column(2);
