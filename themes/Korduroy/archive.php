@@ -9,9 +9,8 @@
       <aside class="aside-container">
         <nav class="aside-navigation">
           <h2>Categories</h2>
-          <ul>
-            <li class="current">All</li>
-            <?php wp_list_categories(array('hide_empty' => 0,'title_li' => __(''))); ?>
+          <ul class="aside-navigation-list">
+            <?php wp_list_categories(array('hide_empty' => 0,'show_option_all' => 'All','title_li' => __(''))); ?>
           </ul>
         </nav>
       </aside>

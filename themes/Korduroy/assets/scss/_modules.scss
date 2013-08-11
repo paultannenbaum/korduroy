@@ -34,6 +34,30 @@
   }
 }
 
+.aside-navigation {
+  .aside-navigation-list {
+    margin-top: 20px;
+
+    li {
+      @extend %pressed-text;
+      text-transform: uppercase;
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      margin-bottom: 10px;
+
+      &.current-cat a {
+        color: $ktv-blue;
+        border: 1px solid $ktv-blue;
+      }
+      a {
+        padding: 3px;
+        border: 1px solid transparent;
+      }
+    }
+  }
+}
+
 .horizontal-stitch {
   @extend %stitch;
   border: none;
@@ -276,6 +300,9 @@
       font-size: 10px;
       color: $ktv-grey;
       text-transform: uppercase;
+    }
+    .more-link {
+      display: block;
     }
   }
 }

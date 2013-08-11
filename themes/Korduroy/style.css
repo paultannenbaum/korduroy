@@ -5674,7 +5674,7 @@ a.th {
   background: transparent url(assets/images/backgrounds/stitch_horizontal.png) repeat-x;
 }
 
-h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item {
+h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, .aside-navigation .aside-navigation-list li {
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px white;
 }
@@ -6586,6 +6586,25 @@ td {
   border: 1px solid transparent;
 }
 
+.aside-navigation .aside-navigation-list {
+  margin-top: 20px;
+}
+.aside-navigation .aside-navigation-list li {
+  text-transform: uppercase;
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.aside-navigation .aside-navigation-list li.current-cat a {
+  color: #2084ea;
+  border: 1px solid #2084ea;
+}
+.aside-navigation .aside-navigation-list li a {
+  padding: 3px;
+  border: 1px solid transparent;
+}
+
 .horizontal-stitch {
   border: none;
   color: transparent;
@@ -6848,6 +6867,9 @@ td {
   font-size: 10px;
   color: #999999;
   text-transform: uppercase;
+}
+.blog-page .blog-post .more-link {
+  display: block;
 }
 
 .about-page .crew-member .member-name {
