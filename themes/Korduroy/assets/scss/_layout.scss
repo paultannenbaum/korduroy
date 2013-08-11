@@ -117,7 +117,7 @@
         margin-top: 30px;
       }
       .crew-member {
-        @include grid-row(nested);
+        @include grid-row(nest);
 
         .crew-member-photo {
           @include grid-column(3);
@@ -249,16 +249,6 @@
     &.about-the-crew-page {
       .the-crew {
         margin-top: 30px;
-      }
-      .crew-member {
-        @include grid-row(nest);
-
-        .crew-member-photo {
-          @include grid-column(3);
-        }
-        .crew-member-info {
-          @include grid-column(9);
-        }
       }
     }
   }

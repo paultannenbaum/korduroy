@@ -21,7 +21,6 @@
   margin: 20px 0;
 }
 
-
 .button {
   @include inline-block;
   @include border-radius(4px);
@@ -255,9 +254,34 @@
   }
 }
 
+.image-border {
+  @extend %image-border;
+}
+
+
 /***** Page Modules *****/
 .supporters-page {
 
+}
+
+.about-page {
+  .crew-member {
+    .member-name {
+      @extend h1;
+      font-size: 18px;
+    }
+    .member-position {
+      @extend h2;
+    }
+    .member-desc {
+      @extend p;
+
+    }
+  }
+  .crew-separator {
+    @extend .horizontal-separator-light;
+    margin: 30px 0;
+  }
 }
 
 // Media Queries

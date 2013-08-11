@@ -15,14 +15,15 @@ Template Name: About-The Crew
         <?php while(has_sub_field('crew_member')): ?>
           <div class="crew-member">
             <div class="crew-member-photo">
-              <img src="<?php the_sub_field('photo'); ?>" title="<?php the_sub_field('name'); ?>" alt="<?php the_sub_field('name'); ?>" />
+              <img class="image-border" src="<?php the_sub_field('photo'); ?>" title="<?php the_sub_field('name'); ?>" alt="<?php the_sub_field('name'); ?>" />
             </div>
             <div class="crew-member-info">
-              <div><?php the_sub_field('name'); ?></div>
-              <div><?php the_sub_field('position'); ?></div>
-              <div><?php the_sub_field('description'); ?></div>
+              <div class="member-name"><?php the_sub_field('name'); ?></div>
+              <div class="member-position"><?php the_sub_field('position'); ?></div>
+              <div class="member-desc"><?php the_sub_field('description'); ?></div>
             </div>
           </div>
+          <hr class="crew-separator" />
         <?php endwhile; ?>
       <?php endif; ?>
     </div>
