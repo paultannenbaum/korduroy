@@ -5690,11 +5690,11 @@ h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h
 
 html {
   height: 100%;
-  body: 100%;
   background: #e8e8e5;
 }
 
 body {
+  height: 100%;
   background: #e8e8e5;
   color: #444444;
   font-family: "proxima-nova", "Lucida Grande", lucida, serif;
@@ -5922,6 +5922,7 @@ td {
     margin-bottom: 0;
     max-width: 62.5em;
     *zoom: 1;
+    padding-bottom: 40px;
   }
   #body:before, #body:after {
     content: " ";
@@ -5956,7 +5957,6 @@ td {
 
   #footer {
     padding-bottom: 30px;
-    margin-top: 30px;
   }
   #footer .footer-row {
     width: 100%;
@@ -6296,6 +6296,16 @@ td {
   }
 }
 @media only screen and (min-width: 768px) {
+  #page-wrap {
+    min-height: 100%;
+    margin-bottom: -472px;
+  }
+  #page-wrap:after {
+    content: "";
+    display: block;
+    height: 472px;
+  }
+
   #header {
     width: 100%;
     margin-left: auto;
@@ -6397,8 +6407,8 @@ td {
   }
 
   #footer {
+    height: 472px;
     padding-bottom: 30px;
-    margin-top: 30px;
   }
   #footer .footer-row {
     width: 100%;

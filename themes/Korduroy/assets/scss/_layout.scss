@@ -1,5 +1,4 @@
 /***** layout ******/
-
 // Default Layout - Mobile First Approach
 @media #{$screen} {
   #header {
@@ -34,6 +33,7 @@
   }
   #body {
     @include grid-row;
+    padding-bottom: 40px;
 
     .main {
       @include grid-column(12);
@@ -44,7 +44,6 @@
   }
   #footer {
     padding-bottom: 30px;
-    margin-top: 30px;
 
     .footer-row {
       @include grid-row;
@@ -192,6 +191,18 @@
 
 // Tablets and Up
 @media #{$small} {
+  $footer-height: 472px;
+
+  #page-wrap {
+    min-height: 100%;
+    margin-bottom: -$footer-height;
+
+    &:after {
+      content: "";
+      display: block;
+      height: $footer-height ;
+    }
+  }
   #header {
     @include grid-row;
     margin-top: 10px;
@@ -231,8 +242,8 @@
     }
   }
   #footer {
+    height: $footer-height;
     padding-bottom: 30px;
-    margin-top: 30px;
 
     .footer-row {
       @include grid-row;

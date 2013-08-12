@@ -1,3 +1,5 @@
+</div> <!-- End of .page-wrap -->
+
 <footer id="footer" class="site-footer">
 
   <section class="footer-row">
