@@ -27,7 +27,7 @@
               <hr class="horizontal-stitch" />
 
               <h2>Related Items</h2>
-              <!-- YARP goes here -->
+              <!-- Related Posts Goes Here -->
 
 
             </footer>
