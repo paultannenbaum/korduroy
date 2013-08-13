@@ -289,10 +289,14 @@
 }
 
 .tag-list {
+  margin-bottom: 30px;
+
   .tag-list-title {
     padding: 5px 0;
     margin-right: 5px;
     margin-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
   .tag-list-item {
     display: inline;
@@ -315,7 +319,6 @@
     }
     .blog-post-footer {
       font-size: 10px;
-      color: $ktv-grey;
       text-transform: uppercase;
     }
     .more-link {

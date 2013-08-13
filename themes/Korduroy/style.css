@@ -6858,10 +6858,15 @@ td {
   height: 100%;
 }
 
+.tag-list {
+  margin-bottom: 30px;
+}
 .tag-list .tag-list-title {
   padding: 5px 0;
   margin-right: 5px;
   margin-bottom: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .tag-list .tag-list-item {
   display: inline;
@@ -6875,7 +6880,6 @@ td {
 }
 .blog-page .blog-post .blog-post-footer {
   font-size: 10px;
-  color: #999999;
   text-transform: uppercase;
 }
 .blog-page .blog-post .more-link {

@@ -23,6 +23,13 @@
             <?php the_content();?>
             <footer class="blog-post-footer">
               <?php load_template(TEMPLATEPATH . '/partials/tag-list.php'); ?>
+
+              <hr class="horizontal-stitch" />
+
+              <h2>Related Items</h2>
+              <!-- YARP goes here -->
+
+
             </footer>
           </div>
         </div>
