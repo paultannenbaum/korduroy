@@ -5679,6 +5679,23 @@ h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h
   text-shadow: 1px 1px 1px white;
 }
 
+.tag-list .tag-list-item a {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: rgba(153, 153, 153, 0.1);
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(255, 255, 255, 0.8);
+  color: #2084ea;
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.tag-list .tag-list-item a:hover {
+  background: rgba(153, 153, 153, 0.2);
+}
+
 .image-border, .blog-page .blog-post .blog-post-thumbnail img {
   -webkit-box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
   -moz-box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
@@ -6156,35 +6173,7 @@ td {
     float: left;
   }
   .blog-page .blog-post .blog-post-footer {
-    width: auto;
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: none;
-    *zoom: 1;
-    margin-top: 15px;
-  }
-  .blog-page .blog-post .blog-post-footer:before, .blog-page .blog-post .blog-post-footer:after {
-    content: " ";
-    display: table;
-  }
-  .blog-page .blog-post .blog-post-footer:after {
-    clear: both;
-  }
-  .blog-page .blog-post .blog-post-footer .blog-post-date {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 41.66667%;
-    float: left;
-  }
-  .blog-page .blog-post .blog-post-footer .blog-post-socail {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 58.33333%;
-    float: left;
+    margin-top: 20px;
   }
   .blog-page.blog-show-page .blog-post .blog-post-content {
     position: relative;
@@ -6867,6 +6856,17 @@ td {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.tag-list .tag-list-title {
+  padding: 5px 0;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.tag-list .tag-list-item {
+  display: inline;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 /***** Page Modules *****/

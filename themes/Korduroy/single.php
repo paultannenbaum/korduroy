@@ -18,11 +18,11 @@
         <?php while ( have_posts() ) : the_post(); ?>
         <div class="blog-post">
           <h1 class="blog-post-title"><?php the_title(); ?></h1>
+          <span class="blog-post-date">Posted on <?php the_time('F jS, Y') ?></span>
           <div class="blog-post-content">
             <?php the_content();?>
             <footer class="blog-post-footer">
-              <span class="blog-post-date">Posted on <?php the_time('F jS, Y') ?></span>
-              <?php the_tags(); ?>
+              <?php load_template(TEMPLATEPATH . '/partials/tag-list.php'); ?>
             </footer>
           </div>
         </div>
@@ -30,9 +30,9 @@
       </div>
     </div>
 
-    <div class="comments-wrapper">
-      <?php comments_template(); ?>
-    </div>
+    <!--<div class="comments-wrapper">-->
+      <!--<?php comments_template(); ?>-->
+    <!--</div>-->
 
   </section>
 </div>

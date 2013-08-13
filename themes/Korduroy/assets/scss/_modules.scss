@@ -288,6 +288,23 @@
   @extend %image-border;
 }
 
+.tag-list {
+  .tag-list-title {
+    padding: 5px 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .tag-list-item {
+    display: inline;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    a {
+      @extend %pressed-button;
+    }
+  }
+}
+
 
 /***** Page Modules *****/
 .blog-page {
