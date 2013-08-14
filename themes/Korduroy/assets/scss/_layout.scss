@@ -96,6 +96,10 @@
     }
     .separator-container {
       @include grid-column(12);
+
+      .horizontal-stitch {
+        margin-top: 0px;
+      }
     }
   }
   .aside-container {

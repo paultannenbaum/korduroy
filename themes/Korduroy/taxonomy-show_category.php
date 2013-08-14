@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php load_template(TEMPLATEPATH . '/partials/shows-sub-nav.php'); ?>
 
 <div id="body" class="supporters-page">
   <section id="main" role="main">

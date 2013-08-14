@@ -7,30 +7,29 @@
     height: 25px;
     line-height: 25px;
   }
-  .sub-nav-list {
-    height: 25px;
-  }
-  .sub-nav-list-item {
+  .sub-nav-list-item, .cat-item {
     @extend %pressed-text;
     text-transform: uppercase;
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 10px;
     font-size: 12px;
     font-weight: 600;
 
     &:last-child {
       margin-right: 0px;
     }
-    &.current a {
-      color: $ktv-blue;
-      border: 1px solid $ktv-blue;
+    &.current, &.current-cat {
+
+      a {
+        border: 1px solid $ktv-blue;
+        color: $ktv-blue;
+      }
     }
     a {
-      padding: 3px;
       border: 1px solid transparent;
-
+      padding: 3px;
     }
-
   }
 }
 

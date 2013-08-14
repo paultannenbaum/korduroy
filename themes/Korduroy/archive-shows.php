@@ -1,7 +1,9 @@
 <?php get_header(); ?>
+<?php load_template(TEMPLATEPATH . '/partials/shows-sub-nav.php'); ?>
 
 <div id="body" class="supporters-page">
   <section id="main" role="main">
+    <h1>Old</h1>
 
     <?php $categories = get_terms('show_category', array(
       'hide_empty' => 0
