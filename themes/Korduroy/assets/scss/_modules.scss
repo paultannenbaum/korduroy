@@ -313,6 +313,11 @@
 /***** Page Modules *****/
 .blog-page {
   .blog-post {
+    .blog-post-date {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: $ktv-grey;
+    }
     .blog-post-thumbnail img {
       @extend %image-border;
       width: 100%;

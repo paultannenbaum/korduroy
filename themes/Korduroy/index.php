@@ -18,17 +18,22 @@
       <div class="blog-posts-container">
         <?php while ( have_posts() ) : the_post(); ?>
           <div class="blog-post">
-            <h1 class="blog-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-            <div class="blog-post-thumbnail">
-              <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-            </div>
-            <div class="blog-post-content">
-              <?php the_content('READ MORE...');?>
-              <footer class="blog-post-footer">
-                <span class="blog-post-date">Posted on <?php the_time('F jS, Y') ?></span>
-              </footer>
+            <header class="blog-post-header">
+              <h1 class="blog-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+            </header>
+            <div class="blog-post-body">
+              <div class="blog-post-thumbnail">
+                <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+              </div>
+              <div class="blog-post-content">
+                <?php the_content('READ MORE...');?>
+                <footer class="blog-post-footer">
+                  <span class="blog-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
+                </footer>
+              </div>
             </div>
           </div>
+          <hr class="horizontal-separator-light" />
         <?php endwhile; ?>
       </div>
 

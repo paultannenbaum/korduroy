@@ -103,31 +103,48 @@
   }
 
   .blog-page {
-    .blog-posts-container {
-      @include grid-column(10);
-    }
-    .blog-post {
-      @include grid-row(nest);
-      margin-bottom: 30px;
 
-      .blog-post-title {
-        @include grid-column(12);
-        margin-bottom: 15px;
+    &.blog-index-page, &.blog-archives-page {
+      .blog-posts-container {
+        @include grid-column(10);
       }
-      .blog-post-thumbnail {
-        @include grid-column(3);
-      }
-      .blog-post-content {
-        @include grid-column(9);
-      }
-      .blog-post-footer {
-        margin-top: 20px;
+      .blog-post {
+        @include grid-row(nest);
+        margin-bottom: 30px;
+
+        .blog-post-header {
+          @include grid-column(12);
+          margin-bottom: 5px;
+        }
+        .blog-post-thumbnail {
+          @include grid-column(3);
+        }
+        .blog-post-content {
+          @include grid-column(9);
+        }
+        .blog-post-footer {
+          margin-top: 20px;
+        }
       }
     }
+
     &.blog-show-page {
+      .blog-post-container {
+        @include grid-column(10);
+      }
       .blog-post {
-        .blog-post-content {
+        @include grid-row(nest);
+        margin-bottom: 30px;
+
+        .blog-post-header {
           @include grid-column(12);
+          margin-bottom: 15px;
+        }
+        .blog-post-body {
+          @include grid-column(12);
+        }
+        .blog-post-footer {
+          margin-top: 20px;
         }
       }
     }

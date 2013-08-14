@@ -14,23 +14,22 @@
         </nav>
       </aside>
 
-      <div class="blog-posts-container">
+      <div class="blog-post-container">
         <?php while ( have_posts() ) : the_post(); ?>
         <div class="blog-post">
-          <h1 class="blog-post-title"><?php the_title(); ?></h1>
-          <span class="blog-post-date">Posted on <?php the_time('F jS, Y') ?></span>
-          <div class="blog-post-content">
+          <header class="blog-post-header">
+            <h1 class="blog-post-title"><?php the_title(); ?></h1>
+            <span class="blog-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
+          </header>
+          <div class="blog-post-body">
             <?php the_content();?>
             <footer class="blog-post-footer">
               <?php load_template(TEMPLATEPATH . '/partials/tag-list.php'); ?>
-
               <hr class="horizontal-stitch" />
-
               <h2>Related Items</h2>
               <!-- Related Posts Goes Here -->
-
-
             </footer>
+          </div>
           </div>
         </div>
         <?php endwhile; ?>
