@@ -21,11 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
-  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
+  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png">
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 
   <!--[if IE]>
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+
   <![endif]-->
 
   <meta name="msapplication-TileColor" content="#f01d4f">
@@ -34,6 +35,9 @@
 
   <script type="text/javascript" src="//use.typekit.net/jiy2hqu.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <link href="<?php echo get_template_directory_uri(); ?>/assets/css/royalslider.css" rel="stylesheet">
+  <link href="<?php echo get_template_directory_uri(); ?>/assets/css/skins/default/rs-default.css" rel="stylesheet">
 
   <!-- wordpress head functions -->
   <?php wp_head(); ?>
