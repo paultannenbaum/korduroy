@@ -1,5 +1,4 @@
 //var KTV = KTV || {}; // Application Namespace
-//
 //KTV.about = (function($) {
 //  var self = {};
 //

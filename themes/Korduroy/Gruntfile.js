@@ -52,6 +52,7 @@ module.exports = function(grunt) {
               },
               files: {
                 'assets/js/app.js': [
+                  'assets/js/vendor/libs/*.js',
                   'assets/js/vendor/plugins/*.js',
                   'assets/js/source/*.js'
                 ]
