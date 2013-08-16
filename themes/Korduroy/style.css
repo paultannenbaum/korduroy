@@ -5674,7 +5674,7 @@ a.th {
   background: transparent url(assets/images/backgrounds/stitch_horizontal.png) repeat-x;
 }
 
-h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, .aside-navigation .aside-navigation-list li {
+h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .shows-page .channel-list .episode .episode-title {
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px white;
 }
@@ -6127,6 +6127,44 @@ td {
     padding-right: 0.9375em;
     width: 16.66667%;
     float: left;
+  }
+
+  .shows-page .show-channel {
+    margin-top: 20px;
+  }
+  .shows-page .show-channel .channel-header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .shows-page .show-channel .channel-list {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625em;
+    *zoom: 1;
+  }
+  .shows-page .show-channel .channel-list:before, .shows-page .show-channel .channel-list:after {
+    content: " ";
+    display: table;
+  }
+  .shows-page .show-channel .channel-list:after {
+    clear: both;
+  }
+  .shows-page .show-channel .channel-list > li {
+    display: inline;
+    height: auto;
+    float: left;
+    padding: 0 0.625em 1.25em;
+  }
+  .shows-page .show-channel .channel-list > li {
+    width: 16.66667%;
+    padding: 0 0.625em 1.25em;
+  }
+  .shows-page .show-channel .channel-list > li:nth-of-type(n) {
+    clear: none;
+  }
+  .shows-page .show-channel .channel-list > li:nth-of-type(6n+1) {
+    clear: both;
   }
 
   .blog-page.blog-index-page .blog-posts-container, .blog-page.blog-archives-page .blog-posts-container {
@@ -6647,7 +6685,7 @@ td {
   margin: 20px 0;
 }
 
-.horizontal-separator-light {
+.horizontal-separator-light, .shows-page .channel-separator {
   border-top: 1px solid #cccccc;
   height: 1px;
   width: 100%;
@@ -6911,6 +6949,68 @@ td {
 }
 
 /***** Page Modules *****/
+.shows-page .channel-header {
+  min-height: 70px;
+}
+.shows-page .channel-header .channel-icon {
+  width: 192px;
+  height: 70px;
+  display: inline-block;
+  background: transparent no-repeat 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.shows-page .channel-header .channel-icon.all-yew {
+  background-image: url(assets/images/channel-icons/all_yew.png);
+}
+.shows-page .channel-header .channel-icon.d-i-why-not {
+  background-image: url(assets/images/channel-icons/d_i_why_not.png);
+}
+.shows-page .channel-header .channel-icon.happy-beach {
+  background-image: url(assets/images/channel-icons/happy_beach.png);
+}
+.shows-page .channel-header .channel-icon.health-nuts {
+  background-image: url(assets/images/channel-icons/health_nuts.png);
+}
+.shows-page .channel-header .channel-icon.inner-views {
+  background-image: url(assets/images/channel-icons/inner_views.png);
+}
+.shows-page .channel-header .channel-icon.sea-movies {
+  background-image: url(assets/images/channel-icons/sea_movies.png);
+}
+.shows-page .channel-header .channel-icon.specials {
+  background-image: url(assets/images/channel-icons/specials.png);
+}
+.shows-page .channel-header .channel-icon.surf-sufficient {
+  background-image: url(assets/images/channel-icons/surf_sufficient.png);
+}
+.shows-page .channel-header .channel-info {
+  padding-left: 207px;
+}
+.shows-page .channel-separator {
+  margin-top: 0px;
+}
+.shows-page .channel-list .episode .episode-thumb {
+  background: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+.shows-page .channel-list .episode .episode-title {
+  height: 50px;
+  overflow: hidden;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .blog-page .blog-post .blog-post-date {
   font-size: 10px;
   text-transform: uppercase;
