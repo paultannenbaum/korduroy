@@ -11,6 +11,7 @@
     foreach( $categories as $category ):
     ?>
       <section class="show-channel">
+
         <header class="channel-header">
           <a class="channel-link" href="<?php echo get_term_link($category, $category -> taxonomy); ?>">
             <span class="channel-icon <?php echo $category -> slug ?>"></span>

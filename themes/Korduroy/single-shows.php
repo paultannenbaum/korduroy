@@ -7,18 +7,19 @@
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-      <?php if(get_field('vimeo_id')): ?>
-        <p><?php the_field('vimeo_id'); ?></p>
-        <p>Vimeo</p>
-      <?php elseif(get_field('youtube_id')): ?>
-        <p><?php the_field('youtube_id'); ?></p>
-        <p>Youtube</p>
-      <?php endif; ?>
-
-
       <div class="video-wrapper">
-        <iframe src="http://player.vimeo.com/video/<?php echo $vimeo_id; ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=cfff66" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <?php if(get_field('vimeo_id')): ?>
+          <iframe src="http://player.vimeo.com/video/<?php the_field('vimeo_id'); ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=cfff66" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <?php elseif(get_field('youtube_id')): ?>
+          <iframe src="//www.youtube.com/embed/<?php the_field('youtube_id'); ?>" frameborder="0" allowfullscreen></iframe>
+        <?php endif; ?>
       </div>
+      <h1>
+        <?php
+          $category = array_values(get_the_terms($post -> ID , 'show_category'))[0];
+          echo $category -> name;
+        ?>
+      </h1>
 
       <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
       <p><?php the_field('description'); ?></p>
