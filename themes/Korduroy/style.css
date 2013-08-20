@@ -6166,6 +6166,20 @@ td {
   .shows-page .show-channel .channel-list > li:nth-of-type(6n+1) {
     clear: both;
   }
+  .shows-page .episode-info .episode-aside {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 25%;
+    float: left;
+  }
+  .shows-page .episode-info .episode-main {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 75%;
+    float: left;
+  }
 
   .blog-page.blog-index-page .blog-posts-container, .blog-page.blog-archives-page .blog-posts-container {
     position: relative;
@@ -7009,6 +7023,41 @@ td {
   font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.shows-page .episode-info {
+  min-height: 70px;
+  position: relative;
+  margin-top: 20px;
+}
+.shows-page .episode-info .channel-icon {
+  width: 192px;
+  height: 70px;
+  display: inline-block;
+  background: transparent no-repeat 0 0;
+}
+.shows-page .episode-info .channel-icon.all-yew {
+  background-image: url(assets/images/channel-icons/all_yew.png);
+}
+.shows-page .episode-info .channel-icon.d-i-why-not {
+  background-image: url(assets/images/channel-icons/d_i_why_not.png);
+}
+.shows-page .episode-info .channel-icon.happy-beach {
+  background-image: url(assets/images/channel-icons/happy_beach.png);
+}
+.shows-page .episode-info .channel-icon.health-nuts {
+  background-image: url(assets/images/channel-icons/health_nuts.png);
+}
+.shows-page .episode-info .channel-icon.inner-views {
+  background-image: url(assets/images/channel-icons/inner_views.png);
+}
+.shows-page .episode-info .channel-icon.sea-movies {
+  background-image: url(assets/images/channel-icons/sea_movies.png);
+}
+.shows-page .episode-info .channel-icon.specials {
+  background-image: url(assets/images/channel-icons/specials.png);
+}
+.shows-page .episode-info .channel-icon.surf-sufficient {
+  background-image: url(assets/images/channel-icons/surf_sufficient.png);
 }
 
 .blog-page .blog-post .blog-post-date {
