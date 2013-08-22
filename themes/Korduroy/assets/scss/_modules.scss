@@ -6,6 +6,7 @@
     margin: 0;
     height: 25px;
     line-height: 25px;
+    margin-bottom: 10px;
   }
   .sub-nav-list-item, .cat-item {
     @extend %pressed-text;
@@ -289,6 +290,8 @@
 
 .tag-list {
   margin-bottom: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
 
   .tag-list-title {
     padding: 5px 0;
@@ -308,8 +311,18 @@
   }
 }
 
+.credits {
+  margin-top: 20px;
+  padding: 10px;
+  background: #EBEBEB;
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
 /***** Page Modules *****/
+// TODO: Move some of this into layout
 .shows-page {
   $icon-width: 192px;
   $icon-height: 70px;
@@ -355,7 +368,7 @@
       }
     }
     .channel-info {
-      padding-left: $icon-width + 15px;
+      padding-left: $icon-width + 20px;
     }
   }
   .channel-separator {
@@ -384,10 +397,22 @@
   }
 
   .episode-info {
+    @include clearfix;
     min-height: $icon-height;
     position: relative;
     margin-top: 20px;
 
+    .episode-aside {
+      width: $icon-width;
+      min-height: $icon-height;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .episode-main {
+      padding-left: $icon-width + 20px;
+
+    }
     .channel-icon {
       width: $icon-width;
       height: $icon-height;

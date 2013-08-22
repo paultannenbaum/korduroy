@@ -33,12 +33,20 @@
             <?php if(get_field('credits')): ?>
               <?php while(has_sub_field('credits')): ?>
                 <div class="credit">
-                  <p><?php the_sub_field('credit_type'); ?></p>
-                  <p><?php the_sub_field('name'); ?></p>
-                  <p><?php the_sub_field('url'); ?></p>
+                  <span class="credit-type"><?php the_sub_field('credit_type'); ?></span>
+                  <span class="credit-name">
+                    <?php if(get_sub_field('url')): ?>
+                      <a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('name'); ?></a>
+                    <?php else: ?>
+                      <?php the_sub_field('name'); ?>
+                    <?php endif; ?>
+                  </span>
                 </div>
               <?php endwhile; ?>
             <?php endif; ?>
+          </div>
+          <div class="tags">
+            <?php load_template(TEMPLATEPATH . '/partials/tag-list.php'); ?>
           </div>
         </div>
       </div>
