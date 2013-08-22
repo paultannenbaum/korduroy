@@ -39,9 +39,7 @@
   <link href="<?php echo get_template_directory_uri(); ?>/assets/css/royalslider.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri(); ?>/assets/css/skins/default/rs-default.css" rel="stylesheet">
 
-  <!-- wordpress head functions -->
   <?php wp_head(); ?>
-  <!-- end of wordpress head -->
 </head>
 
 <body <?php body_class(); ?>>
