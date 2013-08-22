@@ -5674,7 +5674,7 @@ a.th {
   background: transparent url(assets/images/backgrounds/stitch_horizontal.png) repeat-x;
 }
 
-h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .shows-page .channel-list .episode .episode-title {
+h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .credits .credit .credit-type, .shows-page .channel-list .episode .episode-title {
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px white;
 }
@@ -6952,13 +6952,27 @@ td {
 }
 
 .credits {
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 10px;
   background: #EBEBEB;
   border-top: 1px solid #D3D3D3;
   border-bottom: 1px solid #D3D3D3;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-size: 12px;
+}
+.credits .credit {
+  margin-bottom: 10px;
+}
+.credits .credit:last-child {
+  margin-bottom: 0px;
+}
+.credits .credit .credit-type {
+  color: #999999;
+  font-weight: 600;
+  min-width: 150px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 /***** Page Modules *****/
