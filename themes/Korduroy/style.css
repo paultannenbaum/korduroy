@@ -6952,7 +6952,7 @@ td {
 }
 
 .credits {
-  margin: 20px 0;
+  margin-bottom: 22px;
   padding: 10px;
   background: #EBEBEB;
   border-top: 1px solid #D3D3D3;
@@ -7089,6 +7089,9 @@ td {
 }
 .shows-page .episode-info .channel-icon.surf-sufficient {
   background-image: url(assets/images/channel-icons/surf_sufficient.png);
+}
+.shows-page .episode-info .episode-desc {
+  margin-bottom: 20px;
 }
 
 .blog-page .blog-post .blog-post-date {

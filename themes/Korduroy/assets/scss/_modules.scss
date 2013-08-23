@@ -312,7 +312,7 @@
 }
 
 .credits {
-  margin: 20px 0;
+  margin-bottom: 22px;
   padding: 10px;
   background: #EBEBEB;
   border-top: 1px solid #D3D3D3;
@@ -463,6 +463,9 @@
       &.surf-sufficient {
         background-image: url(assets/images/channel-icons/surf_sufficient.png);
       }
+    }
+    .episode-desc {
+      margin-bottom: 20px;
     }
   }
 }

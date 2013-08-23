@@ -23,17 +23,17 @@
           <a class="channel-link" href="<?php echo get_term_link($category, 'show_category'); ?>">
             <span class="channel-icon <?php echo $category -> slug ?>"></span>
           </a>
-          <div class="stars">
-            <?php if (function_exists('ec_stars_rating')) { ec_stars_rating(); } ?>
-          </div>
+          <!--<div class="stars">-->
+            <!--<?php if (function_exists('ec_stars_rating')) { ec_stars_rating(); } ?>-->
+          <!--</div>-->
         </aside>
         <div class="episode-main">
           <h1 class="episode-title"><?php the_title(); ?></h1>
           <div class="episode-desc">
             <?php the_field('description'); ?>
           </div>
-          <div class="credits">
-            <?php if(get_field('credits')): ?>
+          <?php if(get_field('credits')): ?>
+            <div class="credits">
               <?php while(has_sub_field('credits')): ?>
                 <div class="credit">
                   <span class="credit-type"><?php the_sub_field('credit_type'); ?></span>
@@ -46,8 +46,8 @@
                   </span>
                 </div>
               <?php endwhile; ?>
-            <?php endif; ?>
-          </div>
+            </div>
+          <?php endif; ?>
           <div class="tags">
             <?php load_template(TEMPLATEPATH . '/partials/tag-list.php'); ?>
           </div>
