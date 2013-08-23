@@ -24,8 +24,8 @@
       <ul class="channel-list">
         <?php $posts = get_posts(array(
             'post_type' => 'shows',
-            'taxonomy' => $category->taxonomy,
-            'term' => $category->slug,
+            'taxonomy' => $category -> taxonomy,
+            'term' => $category -> slug,
             'nopaging' => true, // to show all posts in this category, could also use 'numberposts' => -1 instead
         ));
         foreach($posts as $post): // begin cycle through posts of this category
