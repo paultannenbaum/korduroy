@@ -67,11 +67,11 @@
       <div class="navigation-row">
         <nav role="site-navigation" class="site-navigation">
           <ul class="site-navigation-list">
-            <li class="site-navigation-item <?php if (get_post_type(get_the_ID()) === 'shows') { echo "current"; } ?>"><a href="<?php echo site_url(); ?>/shows">Shows</a></li>
-            <li class="site-navigation-item <?php if (get_post_type(get_the_ID()) === 'post') { echo "current"; } ?>"><a href="<?php echo site_url(); ?>/blog">Blog</a></li>
-            <li class="site-navigation-item <?php if ( is_page('store') ) { echo "current"; }?>"><a href="<?php echo site_url(); ?>/store">Store</a></li>
-            <li class="site-navigation-item <?php if ( is_page('supporters') ) { echo "current"; }?>"><a href="<?php echo site_url(); ?>/supporters">Supporters</a></li>
-            <li class="site-navigation-item <?php if ( is_page(array('the-site', 'the-crew', 'big-shaka-club')) ) { echo "current"; }?>"><a href="<?php echo site_url(); ?>/about">About</a></li>
+            <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/shows">Shows</a></li>
+            <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/blog">Blog</a></li>
+            <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/store">Store</a></li>
+            <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/supporters">Supporters</a></li>
+            <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/about">About</a></li>
           </ul>
         </nav>
         <div class="search-container">
