@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php load_template(TEMPLATEPATH . '/partials/shows-sub-nav.php'); ?>
+<?php get_template_part('partials/shows-sub-nav'); ?>
 
 <div id="body" class="shows-page shows-index">
   <section class="main" role="main">

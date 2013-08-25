@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php load_template(TEMPLATEPATH . '/partials/blog-sub-nav.php'); ?>
+<?php get_template_part('partials/blog-sub-nav'); ?>
 
 <div id="body" class="blog-page blog-show-page">
   <section class="main" role="main">
@@ -24,7 +24,9 @@
           <div class="blog-post-body">
             <?php the_content();?>
             <footer class="blog-post-footer">
-              <?php load_template(TEMPLATEPATH . '/partials/tag-list.php'); ?>
+              <hr class="horizontal-stitch" />
+
+              <?php get_template_part('partials/tag-list'); ?>
               <hr class="horizontal-stitch" />
               <h2>Related Items</h2>
               <!-- Related Posts Goes Here -->

@@ -494,11 +494,24 @@
 
 .blog-page {
   .blog-post {
-    .blog-post-date {
-      font-size: 10px;
-      text-transform: uppercase;
+    .date-container {
       color: $ktv-grey;
+      height: 24px;
+      line-height: 22px;
     }
+    .sharing-container {
+      color: $ktv-grey;
+      height: 24px;
+      line-height: 22px;
+    }
+    .addthis_toolbox {
+      position: absolute;
+      left: 45px;
+      top: 0px;
+      height: 24px;
+      width: 85%;
+    }
+
     .blog-post-thumbnail img {
       @extend %image-border;
       width: 100%;

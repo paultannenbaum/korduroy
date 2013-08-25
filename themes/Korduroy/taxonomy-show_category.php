@@ -1,10 +1,10 @@
 <?php get_header(); ?>
-<?php load_template(TEMPLATEPATH . '/partials/shows-sub-nav.php'); ?>
+<?php get_template_part('partials/shows-sub-nav'); ?>
 
 <div id="body" class="shows-page shows-index">
   <section class="main" role="main">
 
-    <?php $category = get_term_by('slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?>
+    <?php $category = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); ?>
 
     <section class="show-channel">
       <header class="channel-header">
@@ -18,8 +18,6 @@
         <!--<img class="rsImg rsMainSlideImage" src="http://dimsemenov.com/plugins/royal-slider/img/admin-video.png">-->
         <!--<img class="rsImg rsMainSlideImage" src="http://dimsemenov.com/plugins/royal-slider/img/admin-video.png">-->
       <!--</div>-->
-
-
 
       <ul class="channel-list">
         <?php $posts = get_posts(array(

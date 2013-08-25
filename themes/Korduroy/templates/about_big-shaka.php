@@ -5,7 +5,7 @@ Template Name: About-Big Shaka
 ?>
 
 <?php get_header(); ?>
-<?php load_template(TEMPLATEPATH . '/partials/about-sub-nav.php'); ?>
+<?php get_template_part('partials/about-sub-nav'); ?>
 
 <div id="body" class="about-page about-big-shaka-club-page">
   <section class="main" role="main">

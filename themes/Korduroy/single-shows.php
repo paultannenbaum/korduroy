@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php load_template(TEMPLATEPATH . '/partials/shows-sub-nav.php'); ?>
+<?php get_template_part('partials/shows-sub-nav'); ?>
 
 <div id="body" class="shows-page show-page-show">
 
@@ -48,8 +48,11 @@
               <?php endwhile; ?>
             </div>
           <?php endif; ?>
+          <div class="sharing">
+            <?php get_template_part('partials/share-buttons'); ?>
+          </div>
           <div class="tags">
-            <?php load_template(TEMPLATEPATH . '/partials/tag-list.php'); ?>
+            <?php get_template_part('partials/tag-list'); ?>
           </div>
         </div>
       </div>

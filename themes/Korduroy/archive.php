@@ -1,11 +1,10 @@
 <?php get_header(); ?>
-<?php load_template(TEMPLATEPATH . '/partials/blog-sub-nav.php'); ?>
+<?php get_template_part('partials/blog-sub-nav'); ?>
 
 <div id="body" class="blog-page blog-archives-page">
   <section class="main" role="main">
 
     <div class="content-container">
-
       <aside class="aside-container">
         <nav class="aside-navigation">
           <h2>Categories</h2>
@@ -34,7 +33,12 @@
                 <div class="blog-post-content">
                   <?php the_content('READ MORE...');?>
                   <footer class="blog-post-footer">
-                    <span class="blog-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
+                    <div class="date-container">
+                      <span class="blog-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
+                    </div>
+                    <div class="sharing-container">
+                      <?php get_template_part('partials/share-buttons'); ?>
+                    </div>
                   </footer>
                 </div>
               </div>
@@ -46,7 +50,7 @@
         <?php endif; ?>
       </div>
 
-      <?php load_template(TEMPLATEPATH . '/partials/pagination.php'); ?>
+      <?php get_template_part('partials/pagination'); ?>
 
     </div>
   </section>

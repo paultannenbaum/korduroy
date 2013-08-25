@@ -20,3 +20,23 @@
 <a href="<?php the_permalink() ?>" class="twitter-share-button" data-lang="en">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 -->
+
+
+<!-- AddThis -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521959e3746a007e"></script>
+
+<!--<script type="text/javascript">-->
+  <!--addthis.layers({-->
+    <!--'theme' : 'transparent',-->
+    <!--'follow' : {-->
+      <!--'services' : [-->
+        <!--{'service': 'facebook',  'id': 'KorduroyTV'},-->
+        <!--{'service': 'twitter',   'id': 'Korduroytv'},-->
+        <!--{'service': 'vimeo',     'id': 'korduroy'},-->
+        <!--{'service': 'pinterest', 'id': 'korduroytv'},-->
+        <!--{'service': 'instagram', 'id': 'korduroytv'},-->
+        <!--{'service': 'tumblr',    'id': 'korduroytv'}-->
+      <!--]-->
+    <!--}-->
+  <!--});-->
+<!--</script>-->
