@@ -35,7 +35,7 @@
 }
 
 .aside-navigation {
-  .aside-navigation-list {
+  .aside-navigation-list, .wp-tag-cloud {
     margin-top: 20px;
 
     li {
@@ -338,6 +338,21 @@
   }
 }
 
+.badge-small {
+  position: absolute;
+  top: 0px;
+  left: 0.9375em; // Same as foundations grid
+  width: 46px;
+  height: 44px;
+
+  &.blog {
+    background-image: url(assets/images/badge_blog_small.png);
+  }
+  &.show {
+    background-image: url(assets/images/badge_show_small.png);
+  }
+}
+
 /***** Page Modules *****/
 // TODO: Move some of this into layout
 .shows-page {
@@ -487,6 +502,36 @@
     }
     .more-link {
       display: block;
+    }
+  }
+}
+
+.tag-page {
+  .tag-post {
+    .tag-post-show-desc {
+      max-height: 122px;
+      overflow: hidden;
+    }
+    .tag-post-date {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: $ktv-grey;
+    }
+    .tag-thumbnail {
+      position: relative;
+
+      img {
+        @extend %image-border;
+        width: 100%;
+      }
+    }
+    .tag-post-footer {
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+    .more-link {
+      display: block;
+      text-transform: uppercase;
     }
   }
 }
