@@ -6129,6 +6129,37 @@ td {
     float: left;
   }
 
+  .home-page .featured-content {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1;
+  }
+  .home-page .featured-content:before, .home-page .featured-content:after {
+    content: " ";
+    display: table;
+  }
+  .home-page .featured-content:after {
+    clear: both;
+  }
+  .home-page .featured-content .featured-slider-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 75%;
+    float: left;
+  }
+  .home-page .featured-content .campaigns-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 25%;
+    float: left;
+  }
+
   .shows-page .show-channel {
     margin-top: 20px;
   }
@@ -7040,6 +7071,12 @@ td {
 }
 
 /***** Page Modules *****/
+.home-page .featured-slider, .home-page .campaigns, .home-page .shows, .home-page .blogs {
+  height: 200px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.1);
+}
+
 .shows-page .channel-header {
   min-height: 70px;
 }

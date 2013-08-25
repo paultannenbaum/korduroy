@@ -106,6 +106,18 @@
     @include grid-column(2);
   }
 
+  .home-page {
+    .featured-content {
+      @include grid-row(nest);
+
+      .featured-slider-container {
+        @include grid-column(9);
+      }
+      .campaigns-container {
+        @include grid-column(3);
+      }
+    }
+  }
   .shows-page {
     .show-channel {
       margin-top: 20px;

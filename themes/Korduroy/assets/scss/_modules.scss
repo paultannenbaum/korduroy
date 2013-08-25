@@ -354,7 +354,14 @@
 }
 
 /***** Page Modules *****/
-// TODO: Move some of this into layout
+.home-page {
+  .featured-slider, .campaigns, .shows, .blogs {
+    height: 200px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .1);
+  }
+}
+
 .shows-page {
   $icon-width: 192px;
   $icon-height: 70px;

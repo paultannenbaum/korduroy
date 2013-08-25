@@ -1,25 +1,34 @@
 <?php get_header(); ?>
 
-<div id="body">
-  <div class="row">
-    <div class="small-12 large-12 columns">
-      <section id="main" role="main">
+<div id="body" class="home-page">
+  <section class="main" role="main">
 
-        <h1>This is front-page.php</h1>
+      <div class="featured-content">
+        <div class="featured-slider-container">
+          <div class="featured-slider"></div>
+        </div>
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <article class="post" id="post-<?php the_ID(); ?>">
-            <h1><?php the_title(); ?></h1>
-            <div class="entry">
-              <?php the_content(); ?>
-              <?php wp_link_pages( array( 'before' => 'Pages: ', 'next_or_number' => 'number' ) ); ?>
-            </div>
-          </article>
-        <?php endwhile; endif; ?>
+        <div class="campaigns-container">
+          <div class="campaigns"></div>
+        </div>
+      </div>
 
-      </section>
-    </div>
-  </div>
+      <hr class="horizontal-stitch">
+
+      <div class="shows-container">
+        <div class="shows">
+          <h1>Shows</h1>
+        </div>
+      </div>
+
+      <hr class="horizontal-stitch">
+
+      <div class="blog-container">
+        <div class="blogs">
+          <h1>Blog</h1>
+        </div>
+      </div>
+  </section>
 </div>
 
 <?php get_footer(); ?>

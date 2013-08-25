@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<div id="body" class="supporters-page">
+<div id="body" class="default-page">
   <section class="main" role="main">
     <?php while ( have_posts() ) : the_post(); ?>
-      <?php get_template_part( 'templates/partials/content', 'page' ); ?>
+      <?php the_content(); ?>
     <?php endwhile; ?>
   </section>
 </div>
