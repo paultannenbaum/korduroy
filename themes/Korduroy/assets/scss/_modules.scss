@@ -523,12 +523,8 @@
         }
       }
     }
-
     .blog-post-title {
       display: inline-block;
-    }
-    .post-date {
-
     }
     .blog-post-thumbnail img {
       @extend %image-border;
@@ -550,11 +546,6 @@
       max-height: 122px;
       overflow: hidden;
     }
-    .tag-post-date {
-      font-size: 10px;
-      text-transform: uppercase;
-      color: $ktv-grey;
-    }
     .tag-thumbnail {
       position: relative;
 
@@ -563,9 +554,32 @@
         width: 100%;
       }
     }
-    .tag-post-footer {
+    .date-container {
+      color: $ktv-grey;
+      height: 24px;
+      line-height: 22px;
       font-size: 10px;
-      text-transform: uppercase;
+    }
+    .sharing-container {
+      color: $ktv-grey;
+      height: 22px;
+      line-height: 22px;
+      position: relative;
+      font-size: 10px;
+      color: $ktv-grey;
+      text-align: right;
+
+      .addthis_toolbox {
+        height: 22px;
+        float: right;
+
+        .at300b {
+          float: right;
+        }
+        .addthis_counter.addthis_pill_style {
+          float: right;
+        }
+      }
     }
     .more-link {
       display: block;

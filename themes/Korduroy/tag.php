@@ -35,9 +35,6 @@
         <?php foreach($posts as $post): setup_postdata($post); ?>
           <?php if ('post' == get_post_type()  ): ?>
             <div class="tag-post blog-post">
-              <header class="tag-post-header">
-                <h1 class="tag-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-              </header>
               <div class="tag-post-body">
                 <div class="post-thumbnail tag-thumbnail">
                   <a href="<?php the_permalink() ?>">
@@ -49,19 +46,26 @@
                   </a>
                 </div>
                 <div class="tag-post-content">
+                  <header class="tag-post-header">
+                    <h1 class="tag-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+                  </header>
                   <?php the_content('READ MORE...');?>
                   <footer class="tag-post-footer">
-                    <span class="tag-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
+                    <div class="date-container">
+                      <span class="tag-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
+                    </div>
+                    <div class="sharing-container">
+                      <?php get_template_part('partials/share-buttons'); ?>
+                    </div>
                   </footer>
                 </div>
               </div>
             </div>
             <hr class="horizontal-separator-light" />
+
+
           <?php elseif ( 'shows' == get_post_type()  ) : ?>
             <div class="tag-post show-post">
-              <header class="tag-post-header">
-                <h1 class="tag-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-              </header>
               <div class="tag-post-body">
                 <div class="post-thumbnail tag-thumbnail">
                   <a href="<?php the_permalink() ?>">
@@ -73,12 +77,20 @@
                   </a>
                 </div>
                 <div class="tag-post-content">
+                  <header class="tag-post-header">
+                    <h1 class="tag-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+                  </header>
                   <div class="tag-post-show-desc">
                     <?php the_field('description'); ?>
                   </div>
                   <a href="<?php the_permalink() ?>" class="more-link">Watch Show...</a>
                   <footer class="tag-post-footer">
-                    <span class="tag-post-date"><?php the_time('F jS, Y') ?></span>
+                    <div class="date-container">
+                      <span class="tag-post-date"><?php the_time('F jS, Y') ?></span>
+                    </div>
+                    <div class="sharing-container">
+                      <?php get_template_part('partials/share-buttons'); ?>
+                    </div>
                   </footer>
                 </div>
               </div>

@@ -18,9 +18,6 @@
       <div class="blog-posts-container">
         <?php while ( have_posts() ) : the_post(); ?>
           <div class="blog-post">
-            <header class="blog-post-header">
-              <h1 class="blog-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-            </header>
             <div class="blog-post-body">
               <div class="blog-post-thumbnail">
                 <a href="<?php the_permalink() ?>">
@@ -31,6 +28,9 @@
                 </a>
               </div>
               <div class="blog-post-content">
+                <header class="blog-post-header">
+                  <h1 class="blog-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+                </header>
                 <?php the_content('READ MORE...');?>
                 <footer class="blog-post-footer">
                   <div class="date-container">
