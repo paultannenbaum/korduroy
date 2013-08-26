@@ -31,8 +31,7 @@
         ?>
         <li class="episode">
           <a class="episode-link" href="<?php the_permalink(); ?>">
-
-            <img class="episode-thumb" src="http://b.vimeocdn.com/ts/440/907/440907059_200.jpg" />
+            <?php the_post_thumbnail('show-thumb', array('class' => 'episode-thumb')); ?>
             <span class="episode-title"><?php the_title(); ?></span>
           </a>
         </li>

@@ -39,7 +39,7 @@
                 <div class="post-thumbnail tag-thumbnail">
                   <a href="<?php the_permalink() ?>">
                     <span class="badge-small blog"></span>
-                    <?php if (has_post_thumbnail()): the_post_thumbnail(); ?>
+                    <?php if (has_post_thumbnail()): the_post_thumbnail('thumbnail'); ?>
                     <?php else: ?>
                       <img src="<?php bloginfo('template_directory'); ?>/assets/images/default-featured-image.jpg" alt="<?php the_title(); ?>" />
                     <?php endif; ?>
@@ -70,7 +70,7 @@
                 <div class="post-thumbnail tag-thumbnail">
                   <a href="<?php the_permalink() ?>">
                     <span class="badge-small show"></span>
-                    <?php if (has_post_thumbnail()): the_post_thumbnail(); ?>
+                    <?php if (has_post_thumbnail()): the_post_thumbnail('thumbnail'); ?>
                     <?php else: ?>
                       <img src="<?php bloginfo('template_directory'); ?>/assets/images/default-featured-image.jpg" alt="<?php the_title(); ?>" />
                     <?php endif; ?>

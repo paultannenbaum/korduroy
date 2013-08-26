@@ -21,7 +21,7 @@
               <div class="blog-post-body">
                 <div class="blog-post-thumbnail">
                   <a href="<?php the_permalink() ?>">
-                    <?php if (has_post_thumbnail()): the_post_thumbnail(); ?>
+                    <?php if (has_post_thumbnail()): the_post_thumbnail('thumbnail'); ?>
                     <?php else: ?>
                       <img src="<?php bloginfo('template_directory'); ?>/assets/images/default-featured-image.jpg" alt="<?php the_title(); ?>" />
                     <?php endif; ?>
