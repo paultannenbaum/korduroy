@@ -177,6 +177,19 @@
         .blog-post-header {
           @include grid-column(12);
           margin-bottom: 15px;
+
+          .blog-post-meta {
+            @include clearfix;
+
+            .date-container {
+              width: 45%;
+              float: left;
+            }
+            .sharing-container {
+              width: 45%;
+              float: right;
+            }
+          }
         }
         .blog-post-body {
           @include grid-column(12);

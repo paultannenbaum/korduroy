@@ -494,24 +494,42 @@
 
 .blog-page {
   .blog-post {
+
     .date-container {
       color: $ktv-grey;
       height: 24px;
       line-height: 22px;
+      font-size: 10px;
+
     }
     .sharing-container {
       color: $ktv-grey;
-      height: 24px;
+      height: 22px;
       line-height: 22px;
-    }
-    .addthis_toolbox {
-      position: absolute;
-      left: 45px;
-      top: 0px;
-      height: 24px;
-      width: 85%;
+      position: relative;
+      font-size: 10px;
+      color: $ktv-grey;
+      text-align: right;
+
+      .addthis_toolbox {
+        height: 22px;
+        float: right;
+
+        .at300b {
+          float: right;
+        }
+        .addthis_counter.addthis_pill_style {
+          float: right;
+        }
+      }
     }
 
+    .blog-post-title {
+      display: inline-block;
+    }
+    .post-date {
+
+    }
     .blog-post-thumbnail img {
       @extend %image-border;
       width: 100%;

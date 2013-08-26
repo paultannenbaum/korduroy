@@ -19,13 +19,14 @@
         <div class="blog-post">
           <header class="blog-post-header">
             <h1 class="blog-post-title"><?php the_title(); ?></h1>
-            <span class="blog-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
+            <div class="blog-post-meta">
+              <div class="date-container"><?php the_time('F jS, Y') ?> by <?php the_author() ?></div>
+              <div class="sharing-container"><?php get_template_part('partials/share-buttons'); ?></div>
+            </div>
           </header>
           <div class="blog-post-body">
             <?php the_content();?>
             <footer class="blog-post-footer">
-              <hr class="horizontal-stitch" />
-
               <?php get_template_part('partials/tag-list'); ?>
               <hr class="horizontal-stitch" />
               <h2>Related Items</h2>
