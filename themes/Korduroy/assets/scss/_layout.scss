@@ -131,6 +131,17 @@
         @include block-grid(6);
       }
     }
+
+    .episode-header {
+      @include grid-row(nest);
+
+      .title-container {
+        @include grid-column(7);
+      }
+      .sharing-wrapper {
+        @include grid-column(5);
+      }
+    }
   }
   .blog-page {
 

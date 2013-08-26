@@ -450,7 +450,6 @@
     }
     .episode-main {
       padding-left: $icon-width + 20px;
-
     }
     .channel-icon {
       width: $icon-width;
@@ -487,7 +486,29 @@
       }
     }
     .episode-desc {
+      margin-top: 10px;
       margin-bottom: 20px;
+    }
+    .sharing-container {
+      color: $ktv-grey;
+      height: 22px;
+      line-height: 22px;
+      position: relative;
+      font-size: 10px;
+      color: $ktv-grey;
+      text-align: right;
+
+      .addthis_toolbox {
+        height: 22px;
+        float: right;
+
+        .at300b {
+          float: right;
+        }
+        .addthis_counter.addthis_pill_style {
+          float: right;
+        }
+      }
     }
   }
 }

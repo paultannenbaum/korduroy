@@ -28,7 +28,16 @@
           <!--</div>-->
         </aside>
         <div class="episode-main">
-          <h1 class="episode-title"><?php the_title(); ?></h1>
+          <header class="episode-header">
+            <div class="title-container">
+              <h1 class="episode-title"><?php the_title(); ?></h1>
+            </div>
+            <div class="sharing-wrapper">
+              <div class="sharing-container">
+                <?php get_template_part('partials/share-buttons'); ?>
+              </div>
+            </div>
+          </header>
           <div class="episode-desc">
             <?php the_field('description'); ?>
           </div>
@@ -48,9 +57,6 @@
               <?php endwhile; ?>
             </div>
           <?php endif; ?>
-          <div class="sharing">
-            <?php get_template_part('partials/share-buttons'); ?>
-          </div>
           <div class="tags">
             <?php get_template_part('partials/tag-list'); ?>
           </div>
