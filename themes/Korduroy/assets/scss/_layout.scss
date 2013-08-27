@@ -117,7 +117,6 @@
         @include grid-column(3);
       }
     }
-
     .section-header {
       @include grid-row(nest);
 
@@ -128,11 +127,7 @@
         @include grid-column(6);
       }
     }
-
     .shows {
-      .shows-header {
-        margin-bottom: 10px;
-      }
       .channel-list {
         @include block-grid(6);
 
@@ -141,8 +136,33 @@
         }
       }
     }
+    .blog {
+      .blog-post {
+        @include grid-row(nest);
+        margin-bottom: 30px;
 
+        .blog-post-thumbnail {
+          @include grid-column(2);
+        }
+        .blog-post-content {
+          @include grid-column(10);
+        }
+        .blog-post-header {
+          margin-bottom: 5px;
+        }
+        .blog-post-footer {
+          @include grid-row(nest);
+          margin-top: 20px;
 
+          .date-container {
+            @include grid-column(4);
+          }
+          .sharing-container {
+            @include grid-column(8);
+          }
+        }
+      }
+    }
   }
   .shows-page {
     .show-channel {

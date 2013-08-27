@@ -392,22 +392,84 @@
   }
   .section-header {
     height: 30px;
+    margin-bottom: 15px;
 
     .title-container {
       height: 30px;
+
       .section-title {
         margin: 0;
         padding: 0;
+        font-size: 24px;
         line-height: 30px;
+      }
+      a {
+        color: $ktv-grey-link;
+
+        &:hover {
+          color: $ktv-blue;
+        }
       }
     }
     .all-container {
+      @extend %pressed-text;
       height: 30px;
       line-height: 30px;
       text-align: right;
-      color: $ktv-grey;
       text-transform: uppercase;
       font-size: 12px;
+      font-weight: 600;
+      a {
+        color: $ktv-grey;
+
+        &:hover {
+          color: $ktv-blue;
+        }
+      }
+    }
+  }
+  .blog-post {
+    .date-container {
+      color: $ktv-grey;
+      height: 24px;
+      line-height: 22px;
+      font-size: 10px;
+
+      .blog-post-date {
+        margin-left: 3px;
+      }
+    }
+    .sharing-container {
+      color: $ktv-grey;
+      height: 22px;
+      line-height: 22px;
+      position: relative;
+      font-size: 10px;
+      color: $ktv-grey;
+      text-align: right;
+
+      .addthis_toolbox {
+        height: 22px;
+        float: right;
+
+        .at300b {
+          float: right;
+        }
+        .addthis_counter.addthis_pill_style {
+          float: right;
+        }
+      }
+    }
+    .blog-post-title {
+      display: inline-block;
+    }
+    .blog-post-thumbnail img {
+      @extend %image-border;
+      width: 100%;
+    }
+    .blog-post-footer {
+      font-size: 10px;
+      text-transform: uppercase;
     }
   }
 }
@@ -544,13 +606,15 @@
 
 .blog-page {
   .blog-post {
-
     .date-container {
       color: $ktv-grey;
       height: 24px;
       line-height: 22px;
       font-size: 10px;
 
+      .blog-post-date {
+        margin-left: 3px;
+      }
     }
     .sharing-container {
       color: $ktv-grey;
@@ -606,6 +670,10 @@
       height: 24px;
       line-height: 22px;
       font-size: 10px;
+
+      .blog-post-date {
+        margin-left: 3px;
+      }
     }
     .sharing-container {
       color: $ktv-grey;

@@ -16,14 +16,8 @@
   ));
 ?>
 
-<!-- How to use them in a loop
-  foreach($posts as $post): // begin cycle through posts of this category
-  setup_postdata($post); //set up post data for use in the loop (enables the_title(), etc without specifying a post ID)
--->
-
 <div id="body" class="home-page">
   <section class="main" role="main">
-
       <div class="featured-content">
         <div class="featured-slider-container">
           <div class="featured-slider">
@@ -59,18 +53,18 @@
         <div class="shows">
           <header class="shows-header section-header">
             <div class="title-container">
-              <a href="<?php echo site_url(); ?>/shows"><h1 class="section-title">Shows</h1></a>
+              <h1 class="section-title"><a href="<?php echo site_url(); ?>/shows">Shows</a></h1>
             </div>
             <div class="all-container">
               <a href="<?php echo site_url(); ?>/shows" class="all-link">View All Shows</a>
             </div>
           </header>
           <ul class="channel-list">
-            <?php foreach($shows as $show): ?>
+            <?php foreach($shows as $post): setup_postdata($post); ?>
               <li class="episode">
-                <a class="episode-link" href="<?php echo get_permalink($show->ID); ?>">
-                  <?php echo get_the_post_thumbnail($show->ID, 'show-thumb'); ?>
-                  <span class="episode-title"><?php echo $show->post_title ?></span>
+                <a class="episode-link" href="<?php the_permalink(); ?>">
+                  <?php the_post_thumbnail('show-thumb', array('class' => 'episode-thumb')); ?>
+                  <span class="episode-title"><?php the_title(); ?></span>
                 </a>
               </li>
             <?php endforeach; ?>
@@ -84,38 +78,42 @@
         <div class="blog">
           <header class="blog-header section-header">
             <div class="title-container">
-              <a href="<?php echo site_url(); ?>/blog"><h1 class="section-title">Blog</h1></a>
+              <h1 class="section-title"><a href="<?php echo site_url(); ?>/blog">Blog</a></h1>
             </div>
             <div class="all-container">
               <a href="<?php echo site_url(); ?>/blog" class="all-link">View All Articles</a>
             </div>
           </header>
           <div class="blog-posts">
-            <?php foreach($blogs as $blog): setup_postdata($blog); ?>
+            <?php foreach($blogs as $post): setup_postdata($post); ?>
               <div class="blog-post">
                 <div class="blog-post-body">
                   <div class="blog-post-thumbnail">
-                    <a href="<?php the_permalink($blog->ID) ?>">
-                      <?php if (has_post_thumbnail($blog->ID)): ?>
-                        <?php echo get_the_post_thumbnail($blog->ID, 'thumbnail'); ?>
+                    <a href="<?php the_permalink() ?>">
+                      <?php if (has_post_thumbnail()): the_post_thumbnail('thumbnail'); ?>
                       <?php else: ?>
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/default-featured-image.jpg" alt="<?php echo $blog->post_title ?>" />
+                      <img src="<?php bloginfo('template_directory'); ?>/assets/images/default-featured-image.jpg" alt="<?php the_title(); ?>" />
                       <?php endif; ?>
                     </a>
                   </div>
                   <div class="blog-post-content">
                     <header class="blog-post-header">
-                      <h1 class="blog-post-title"><a href="<?php echo get_permalink($blog->ID); ?>"><?php echo $blog->post_title ?></a></h1>
+                      <h1 class="blog-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
                     </header>
-                    <div class="post-content">
-                      <?php the_excerpt() ?>
-                    </div>
+                    <?php the_excerpt(); ?>
+                    <footer class="blog-post-footer">
+                      <div class="date-container">
+                        <span class="blog-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
+                      </div>
+                      <div class="sharing-container">
+                        <?php get_template_part('partials/share-buttons'); ?>
+                      </div>
+                    </footer>
                   </div>
                 </div>
               </div>
               <hr class="horizontal-separator-light" />
             <?php endforeach; ?>
-            <?php wp_reset_postdata(); ?>
           </div>
         </div>
       </div>

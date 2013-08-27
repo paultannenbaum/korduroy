@@ -3,12 +3,13 @@
 
 <div id="body" class="shows-page shows-index">
   <section class="main" role="main">
-    <?php $categories = get_terms('show_category', array(
-      'hide_empty' => 0,
-      'orderby' => 'count',
-      'order' => 'DESC'
+    <?php
+      $categories = get_terms('show_category', array(
+        'hide_empty' => 0,
+        'orderby' => 'count',
+        'order' => 'DESC'
       ));
-    foreach( $categories as $category ):
+      foreach( $categories as $category ):
     ?>
       <section class="show-channel">
 
@@ -21,22 +22,18 @@
 
         <div class="channel-list-container">
           <ul class="channel-list">
-            <?php $posts = get_posts(array(
-              'post_type' => 'shows',
-              'taxonomy' => $category->taxonomy,
-              'term' => $category->slug,
-              'nopaging' => true, // to show all posts in this category, could also use 'numberposts' => -1 instead
-            ));
-            foreach($posts as $post): // begin cycle through posts of this category
-            setup_postdata($post); //set up post data for use in the loop (enables the_title(), etc without specifying a post ID)
+            <?php
+              $posts = get_posts(array(
+                'post_type' => 'shows',
+                'taxonomy' => $category->taxonomy,
+                'term' => $category->slug,
+                'nopaging' => true
+              ));
+              foreach($posts as $post): setup_postdata($post);
             ?>
               <li class="episode">
                 <a class="episode-link" href="<?php the_permalink(); ?>">
-
-                  <!-- Sample of correctly size image -->
-                  <!--<img class="episode-thumb" src="http://b.vimeocdn.com/ts/440/907/440907059_200.jpg" />-->
                   <?php the_post_thumbnail('show-thumb', array('class' => 'episode-thumb')); ?>
-
                   <span class="episode-title"><?php the_title(); ?></span>
                 </a>
               </li>
