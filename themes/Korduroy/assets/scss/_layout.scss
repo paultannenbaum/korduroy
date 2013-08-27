@@ -117,6 +117,32 @@
         @include grid-column(3);
       }
     }
+
+    .section-header {
+      @include grid-row(nest);
+
+      .title-container {
+        @include grid-column(6);
+      }
+      .all-container {
+        @include grid-column(6);
+      }
+    }
+
+    .shows {
+      .shows-header {
+        margin-bottom: 10px;
+      }
+      .channel-list {
+        @include block-grid(6);
+
+        li {
+          padding-bottom: 0px;
+        }
+      }
+    }
+
+
   }
   .shows-page {
     .show-channel {

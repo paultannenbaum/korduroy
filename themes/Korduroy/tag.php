@@ -49,7 +49,7 @@
                   <header class="tag-post-header">
                     <h1 class="tag-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
                   </header>
-                  <?php the_content('READ MORE...');?>
+                  <?php the_excerpt(); ?>
                   <footer class="tag-post-footer">
                     <div class="date-container">
                       <span class="tag-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
@@ -83,7 +83,7 @@
                   <div class="tag-post-show-desc">
                     <?php the_field('description'); ?>
                   </div>
-                  <a href="<?php the_permalink() ?>" class="more-link">Watch Show...</a>
+                  <a href="<?php the_permalink() ?>" class="more-link">Watch show</a>
                   <footer class="tag-post-footer">
                     <div class="date-container">
                       <span class="tag-post-date"><?php the_time('F jS, Y') ?></span>

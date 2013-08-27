@@ -5674,7 +5674,7 @@ a.th {
   background: transparent url(assets/images/backgrounds/stitch_horizontal.png) repeat-x;
 }
 
-h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .aside-navigation .wp-tag-cloud li, .credits .credit .credit-type, .shows-page .channel-list .episode .episode-title {
+h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .aside-navigation .wp-tag-cloud li, .credits .credit .credit-type, .channel-list .episode .episode-title, .more-link {
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px white;
 }
@@ -6158,6 +6158,71 @@ td {
     padding-right: 0.9375em;
     width: 25%;
     float: left;
+  }
+  .home-page .section-header {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1;
+  }
+  .home-page .section-header:before, .home-page .section-header:after {
+    content: " ";
+    display: table;
+  }
+  .home-page .section-header:after {
+    clear: both;
+  }
+  .home-page .section-header .title-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 50%;
+    float: left;
+  }
+  .home-page .section-header .all-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 50%;
+    float: left;
+  }
+  .home-page .shows .shows-header {
+    margin-bottom: 10px;
+  }
+  .home-page .shows .channel-list {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625em;
+    *zoom: 1;
+  }
+  .home-page .shows .channel-list:before, .home-page .shows .channel-list:after {
+    content: " ";
+    display: table;
+  }
+  .home-page .shows .channel-list:after {
+    clear: both;
+  }
+  .home-page .shows .channel-list > li {
+    display: inline;
+    height: auto;
+    float: left;
+    padding: 0 0.625em 1.25em;
+  }
+  .home-page .shows .channel-list > li {
+    width: 16.66667%;
+    padding: 0 0.625em 1.25em;
+  }
+  .home-page .shows .channel-list > li:nth-of-type(n) {
+    clear: none;
+  }
+  .home-page .shows .channel-list > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+  .home-page .shows .channel-list li {
+    padding-bottom: 0px;
   }
 
   .shows-page .show-channel {
@@ -7152,11 +7217,58 @@ td {
   background-image: url(assets/images/badge_show_small.png);
 }
 
+.channel-list .episode img, .channel-list .episode .episode-thumb {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.channel-list .episode .episode-title {
+  height: 50px;
+  overflow: hidden;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.more-link {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
 /***** Page Modules *****/
-.home-page .featured-slider, .home-page .campaigns, .home-page .shows, .home-page .blogs {
-  height: 200px;
+.home-page .featured-slider, .home-page .campaigns {
+  height: 400px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.1);
+}
+.home-page .section-header {
+  height: 30px;
+}
+.home-page .section-header .title-container {
+  height: 30px;
+}
+.home-page .section-header .title-container .section-title {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+.home-page .section-header .all-container {
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .shows-page .channel-header {
@@ -7200,25 +7312,6 @@ td {
 }
 .shows-page .channel-separator {
   margin-top: 0px;
-}
-.shows-page .channel-list .episode .episode-thumb {
-  background: #f5f5f5;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
-}
-.shows-page .channel-list .episode .episode-title {
-  height: 50px;
-  overflow: hidden;
-  display: block;
-  margin-top: 5px;
-  text-align: center;
-  font-size: 11px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 .shows-page .episode-info {
   *zoom: 1;
@@ -7332,9 +7425,6 @@ td {
   font-size: 10px;
   text-transform: uppercase;
 }
-.blog-page .blog-post .more-link {
-  display: block;
-}
 
 .tag-page .tag-post .tag-post-show-desc {
   max-height: 122px;
@@ -7370,10 +7460,6 @@ td {
 }
 .tag-page .tag-post .sharing-container .addthis_toolbox .addthis_counter.addthis_pill_style {
   float: right;
-}
-.tag-page .tag-post .more-link {
-  display: block;
-  text-transform: uppercase;
 }
 
 .about-page .crew-member .member-name {

@@ -31,7 +31,7 @@
                   <header class="blog-post-header">
                     <h1 class="blog-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
                   </header>
-                  <?php the_content('READ MORE...');?>
+                  <?php the_excerpt();?>
                   <footer class="blog-post-footer">
                     <div class="date-container">
                       <span class="blog-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
