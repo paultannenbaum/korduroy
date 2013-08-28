@@ -396,20 +396,20 @@
 
       .navigation-row {
         @include grid-row(nest);
-      }
-      .social-navigation {
-        @include grid-column(12);
-        margin-top: 10px;
-        text-align: right;
+        height: 28px;
+        margin-top: 72px;
       }
       .site-navigation {
         @include grid-column(8);
-        margin-top: 35px;
+        height: 28px;
         text-align: left;
+        margin-top: 0px;
       }
       .search-container {
-        display: block;
         @include grid-column(4);
+        height: 28px;
+        text-align: right;
+        display: block;
       }
     }
   }
