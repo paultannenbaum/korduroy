@@ -33,7 +33,7 @@
 
       <div class="tagged-posts-container">
         <?php foreach($posts as $post): setup_postdata($post); ?>
-          <?php if ('post' == get_post_type()  ): ?>
+          <?php if (get_post_type() === 'post'): ?>
             <div class="tag-post blog-post">
               <div class="tag-post-body">
                 <div class="post-thumbnail tag-thumbnail">
@@ -64,7 +64,7 @@
             <hr class="horizontal-separator-light" />
 
 
-          <?php elseif ( 'shows' == get_post_type()  ) : ?>
+          <?php elseif (get_post_type() === 'shows'): ?>
             <div class="tag-post show-post">
               <div class="tag-post-body">
                 <div class="post-thumbnail tag-thumbnail">

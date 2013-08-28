@@ -5696,7 +5696,7 @@ h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h
   background: rgba(153, 153, 153, 0.2);
 }
 
-.image-border, .home-page .blog-post .blog-post-thumbnail img, .blog-page .blog-post .blog-post-thumbnail img, .tag-page .tag-post .tag-thumbnail img {
+.image-border, .home-page .blog-post .blog-post-thumbnail img, .blog-page .blog-post .blog-post-thumbnail img, .tag-page .tag-post .tag-thumbnail img, .search-page .search-post .search-thumbnail img {
   -webkit-box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
   -moz-box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
   box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
@@ -6649,6 +6649,58 @@ td {
     float: right;
     width: 70%;
   }
+
+  .search-page .search-thumbnail {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 16.66667%;
+    float: left;
+  }
+  .search-page .search-post-content {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 83.33333%;
+    float: left;
+  }
+  .search-page .search-post-header {
+    margin-bottom: 5px;
+  }
+  .search-page .search-post-footer {
+    *zoom: 1;
+    margin-top: 20px;
+  }
+  .search-page .search-post-footer:before, .search-page .search-post-footer:after {
+    content: " ";
+    display: table;
+  }
+  .search-page .search-post-footer:after {
+    clear: both;
+  }
+  .search-page .search-post-footer .date-container {
+    float: left;
+    width: 25%;
+  }
+  .search-page .search-post-footer .sharing-container {
+    float: right;
+    width: 70%;
+  }
+  .search-page .separator-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+  }
+  .search-page .no-results-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+    margin: 30px 0;
+  }
 }
 @media only screen and (min-width: 768px) {
   #page-wrap {
@@ -7543,6 +7595,10 @@ td {
   text-transform: uppercase;
 }
 
+.about-page .crew-member .member-name {
+  font-size: 18px;
+}
+
 .tag-page .tag-post .tag-post-show-desc {
   max-height: 122px;
   overflow: hidden;
@@ -7582,8 +7638,43 @@ td {
   float: right;
 }
 
-.about-page .crew-member .member-name {
-  font-size: 18px;
+.search-page .search-post .search-post-show-desc {
+  max-height: 96px;
+  overflow: hidden;
+}
+.search-page .search-post .search-thumbnail {
+  position: relative;
+}
+.search-page .search-post .search-thumbnail img {
+  width: 100%;
+}
+.search-page .search-post .date-container {
+  color: #999999;
+  height: 24px;
+  line-height: 22px;
+  font-size: 10px;
+}
+.search-page .search-post .date-container .search-post-date {
+  margin-left: 3px;
+}
+.search-page .search-post .sharing-container {
+  color: #999999;
+  height: 22px;
+  line-height: 22px;
+  position: relative;
+  font-size: 10px;
+  color: #999999;
+  text-align: right;
+}
+.search-page .search-post .sharing-container .addthis_toolbox {
+  height: 22px;
+  float: right;
+}
+.search-page .search-post .sharing-container .addthis_toolbox .at300b {
+  float: right;
+}
+.search-page .search-post .sharing-container .addthis_toolbox .addthis_counter.addthis_pill_style {
+  float: right;
 }
 
 @media only screen and (min-width: 768px) {

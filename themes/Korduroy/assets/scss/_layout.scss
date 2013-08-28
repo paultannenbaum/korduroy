@@ -335,6 +335,37 @@
       }
     }
   }
+  .search-page {
+    .search-thumbnail {
+      @include grid-column(2);
+    }
+    .search-post-content {
+      @include grid-column(10);
+    }
+    .search-post-header {
+      margin-bottom: 5px;
+    }
+    .search-post-footer {
+      @include clearfix;
+      margin-top: 20px;
+
+      .date-container {
+        float: left;
+        width: 25%;
+      }
+      .sharing-container {
+        float: right;
+        width: 70%;
+      }
+    }
+    .separator-container {
+      @include grid-column(12);
+    }
+    .no-results-container {
+      @include grid-column(12);
+      margin: 30px 0;
+    }
+  }
 }
 
 // Tablets and Up
