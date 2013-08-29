@@ -27,11 +27,11 @@
       <nav class="information">
         <h4 class="section-title">Information</h4>
         <ul class="info-nav">
-          <li><a href="#">links</a></li>
-          <li><a href="#">submissions</a></li>
-          <li><a href="#">returns</a></li>
-          <li><a href="#">production company</a></li>
-          <li><a href="#">help</a></li>
+          <li><a href="<?php echo site_url(); ?>/links">links</a></li>
+          <li><a href="<?php echo site_url(); ?>/submissions">submissions</a></li>
+          <li><a href="<?php echo site_url(); ?>/returns">returns</a></li>
+          <!--<li><a href="#">production company</a></li>-->
+          <li><a href="<?php echo site_url(); ?>/help">help</a></li>
           <li><a href="#">contact us</a></li>
         </ul>
       </nav>
@@ -68,8 +68,8 @@
       <span class="copyright">&copy; <?php echo date( "Y" ); echo " "; bloginfo( 'name' ); ?></span>
     </div>
     <div class="legal-links-container">
-      <a href="#" class="privacy-policy">Privacy Policy</a>
-      <a href="#" class="terms-of-service">Terms of service</a>
+      <a href="<?php echo site_url(); ?>/privacy-policy" class="privacy-policy">Privacy Policy</a>
+      <a href="<?php echo site_url(); ?>/terms-of-use" class="terms-of-use">Terms of use</a>
     </div>
   </section>
 </footer>

@@ -5730,19 +5730,19 @@ p + p, .supporters-page + p, .about-page .crew-member .member-desc + p, p + .sup
 ---------------------------------------------------	*/
 h1, .supporters-page .info-items .name, .about-page .crew-member .member-name {
   color: #000;
-  font: normal 700 16px/1 "proxima-nova", "Lucida Grande", lucida, serif;
+  font: normal 700 16px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
   text-transform: uppercase;
 }
 
 h2, .about-page .crew-member .member-position {
   color: #000;
-  font: normal 600 14px/1 "proxima-nova", "Lucida Grande", lucida, serif;
+  font: normal 600 14px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
   text-transform: uppercase;
 }
 
 h3 {
   color: #888;
-  font: normal 600 12px/1 "proxima-nova", "Lucida Grande", lucida, serif;
+  font: normal 600 12px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
   text-transform: uppercase;
 }
 
@@ -7239,7 +7239,7 @@ td {
   margin: 0;
   line-height: 28px;
 }
-.site-footer .privacy-policy, .site-footer .terms-of-service {
+.site-footer .privacy-policy, .site-footer .terms-of-use {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
