@@ -1,10 +1,20 @@
 (function() {
-  var foo;
+  var KTV;
 
-  foo = function(test) {
-    return console.log(test);
+  KTV = KTV || {};
+
+  KTV.moduleName = function(args) {
+    var privateFun, _self;
+    _self = {};
+    privateFun = function() {};
+    _self.init = function() {
+      return console.log('hello Paul!');
+    };
+    return _self;
   };
 
-  foo("Hello Paul!!!");
+  jQuery(function() {
+    return KTV.moduleName.init;
+  });
 
 }).call(this);

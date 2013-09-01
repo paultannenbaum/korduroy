@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         coffee: {
           compile: {
             files: {
-              'assets/scripts/source/korduroy.js': 'assets/scripts/coffee/*.coffee' // 1:1 compile
+              'assets/scripts/source/korduroy.js': ['assets/scripts/coffee/*.coffee']
             }
           }
         },
@@ -60,15 +60,11 @@ module.exports = function(grunt) {
         // uglify to concat, minify, and make source maps
         uglify: {
             app: {
-              options: {
-                sourceMap: 'assets/scripts/map/source-map-app.js'
-              },
+              // options: {
+              //   sourceMap: 'assets/scripts/map/source-map-app.js'
+              // },
               files: {
-                'assets/scripts/app.js': [
-                  'assets/scripts/vendor/libs/*.js',
-                  'assets/scripts/vendor/plugins/*.js',
-                  'assets/scripts/source/*.js'
-                ]
+                'assets/scripts/app.js': ['assets/scripts/vendor/libs/*.js', 'assets/scripts/vendor/plugins/*.js', 'assets/scripts/source/*.js']
               }
             }
 
