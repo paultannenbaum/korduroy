@@ -31,7 +31,7 @@ function ktv_scripts() {
 		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, NULL);
 		wp_enqueue_script('jquery');
 
-		wp_enqueue_script('app', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), false, NULL );
+		wp_enqueue_script('app', get_template_directory_uri() . '/assets/scripts/app.js', array('jquery'), false, NULL );
 	}
 }
 

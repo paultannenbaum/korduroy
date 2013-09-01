@@ -3,10 +3,9 @@
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "/"
-sass_dir = "assets/scss"
+sass_dir = "assets/styles/scss"
 images_dir = "assets/images"
-javascripts_dir = "assets/js"
-fonts_dir = "assets/fonts"
+javascripts_dir = "assets/scripts/js"
 
 output_style = :expanded
 

@@ -1,0 +1,26 @@
+/******************************************************************
+Site Name: Korduroy.tv
+Author: Baumer
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+******************************************************************/
+
+/** Reset**/
+@import "normalize";
+
+/** Third-Party Libraries **/
+@import "compass";
+@import "vendor/vendor/foundation";
+@import "vendor/vendor/_magnific_popup";
+
+/** Stylesheets **/
+@import "variables";
+@import "base";
+@import "layout";
+@import "modules";
+

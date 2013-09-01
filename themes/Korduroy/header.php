@@ -36,8 +36,8 @@
   <script type="text/javascript" src="//use.typekit.net/jiy2hqu.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-  <link href="<?php echo get_template_directory_uri(); ?>/assets/css/royalslider.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri(); ?>/assets/css/skins/default/rs-default.css" rel="stylesheet">
+  <!--<link href="<?php echo get_template_directory_uri(); ?>/assets/styles/css/royalslider.css" rel="stylesheet">-->
+  <!--<link href="<?php echo get_template_directory_uri(); ?>/assets/styles/css/skins/default/rs-default.css" rel="stylesheet">-->
 
   <?php wp_head(); ?>
 </head>

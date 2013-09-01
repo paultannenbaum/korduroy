@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function(grunt) {
 
     // load all grunt tasks
@@ -12,13 +13,17 @@ module.exports = function(grunt) {
                 files: ['assets/scss/**/*.{scss,sass}'],
                 tasks: ['compass']
             },
+            coffee: {
+              files: ['assets/scripts/coffee/*.coffee'],
+              tasks: ['coffee']
+            },
             js: {
                 files: '<%= jshint.all %>',
                 tasks: ['jshint', 'uglify']
             },
             livereload: {
                 options: { livereload: true },
-                files: ['style.css', 'assets/js/*.js', '*.html', '*.php', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
+                files: ['style.css', 'assets/scripts/*.js', '*.html', '*.php', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
             }
         },
 
@@ -32,6 +37,14 @@ module.exports = function(grunt) {
             }
         },
 
+        coffee: {
+          compile: {
+            files: {
+              'assets/scripts/source/korduroy.js': 'assets/scripts/coffee/*.coffee' // 1:1 compile
+            }
+          }
+        },
+
         // javascript linting with jshint
         jshint: {
             options: {
@@ -40,7 +53,7 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                'assets/js/source/**/*.js'
+                'assets/scripts/source/*.js'
             ]
         },
 
@@ -48,37 +61,20 @@ module.exports = function(grunt) {
         uglify: {
             app: {
               options: {
-                sourceMap: 'assets/js/map/source-map-app.js'
+                sourceMap: 'assets/scripts/map/source-map-app.js'
               },
               files: {
-                'assets/js/app.js': [
-                  'assets/js/vendor/libs/*.js',
-                  'assets/js/vendor/plugins/*.js',
-                  'assets/js/source/*.js'
+                'assets/scripts/app.js': [
+                  'assets/scripts/vendor/libs/*.js',
+                  'assets/scripts/vendor/plugins/*.js',
+                  'assets/scripts/source/*.js'
                 ]
               }
             }
 
-        },
-
-        // image optimization
-        imagemin: {
-            dist: {
-                options: {
-                    optimizationLevel: 7,
-                    progressive: true
-                },
-                files: [{
-                    expand: true,
-                    cwd: 'assets/images/',
-                    src: '**/*',
-                    dest: 'assets/images/'
-                }]
-            }
         }
     });
 
     // register task
     grunt.registerTask('default', ['watch']);
-
 };
