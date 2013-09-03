@@ -50,31 +50,19 @@
     <div class="stay-updated-container">
       <div class="stay-updated">
         <h4 class="section-title">Stay Updated</h4>
-        <form id="newsletter-signup" method="post" action="#mc_signup">
+        <form id="newsletter-signup" method="post">
+          <!-- TODO: Switch this value from js to html, and gracefully degrade -->
+          <!--<?php # the_widget('mailchimpSF_Widget'); ?>-->
           <input type="hidden" id="mc_submit_type" name="mc_submit_type" value="js">
           <input type="hidden" name="mcsf_action" value="mc_submit_signup_form">
-          <input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="10abf018fe">
+          <?php wp_nonce_field('mc_submit_signup_form', '_mc_submit_signup_form_nonce', false); ?>
 
           <label>Receive our newsletter</label>
           <input class="email" name="mc_mv_EMAIL" id="mc_mv_EMAIL" placeholder="YOUR EMAIL ADDRESS" type="email">
           <input class="submit button" type="submit" value="SIGN UP">
         </form>
 
-        <!--var mcData = {-->
-        <!--mc_submit_type: 'js',-->
-        <!--mcsf_action: 'mc_submit_signup_form',-->
-        <!--_mc_submit_signup_form_nonce: '10abf018fe',-->
-        <!--mc_mv_EMAIL: 'foo@bar.com',-->
-        <!--mc_signup_submit: 'Sign Up'-->
-        <!--};-->
 
-        <!--$.ajax({-->
-        <!--type: 'POST',-->
-        <!--url: 'http://localhost:8888/wordpress/',-->
-        <!--data: mcData-->
-        <!--})-->
-
-        <?php # the_widget('mailchimpSF_Widget'); ?>
       </div>
     </div>
   </section>

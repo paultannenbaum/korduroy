@@ -15,8 +15,9 @@ of the styles inside media queries.
 
 /** Third-Party Libraries **/
 @import "compass";
-@import "vendor/vendor/foundation";
-@import "vendor/vendor/_magnific_popup";
+@import "vendor/foundation";
+@import "vendor/magnific_popup";
+@import "vendor/alertify";
 
 /** Stylesheets **/
 @import "variables";
