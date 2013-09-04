@@ -6435,12 +6435,12 @@ h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
   background: #e8e8e5;
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   background: #e8e8e5;
   color: #444444;
   font-family: "proxima-nova", "Lucida Grande", lucida, serif;
