@@ -57,25 +57,16 @@
     var KTV;
     KTV = KTV || {};
     KTV.stickySidebar = (function() {
-      var asideNav, offsetTop, stickyNav, window;
-      asideNav = $('.aside-navigation');
-      window = $('#page-wrap');
-      offsetTop = asideNav.offset().top;
-      stickyNav = function() {
-        if (window.scrollTop() > offsetTop) {
-          return asideNav.stop().css({
-            marginTop: window.scrollTop() - offsetTop + 15
-          });
-        } else {
-          return asideNav.stop().css({
-            marginTop: 0
-          });
-        }
-      };
+      var contentContainer, el, elContainer, paddingBottom;
+      el = $('.aside-navigation');
+      elContainer = $('.aside-container');
+      contentContainer = $('.content-container');
+      paddingBottom = 30;
       return {
         init: function() {
-          if (asideNav.length) {
-            return window.on('scroll', stickyNav);
+          if (el.length) {
+            elContainer.height(contentContainer.height() - paddingBottom);
+            return el.stick_in_parent();
           }
         }
       };

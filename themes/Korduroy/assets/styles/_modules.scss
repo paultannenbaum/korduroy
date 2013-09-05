@@ -394,16 +394,18 @@
   height: 10px;
 }
 
-.spinner:before {
-  @include border-radius(5px);
-  content: "";
-  position: absolute;
-  display: inline-block;
-  background: rgba(54, 54, 54, 0.6);
-  width: 80px;
-  height: 80px;
-  top: -40px;
-  left: -40px;
+.spinner {
+  &:before {
+    @include border-radius(5px);
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: rgba(54, 54, 54, 0.6);
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: -40px;
+  }
 }
 
 

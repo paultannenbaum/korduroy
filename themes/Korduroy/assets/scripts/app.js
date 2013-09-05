@@ -5576,6 +5576,158 @@ window.Modernizr = function(a, b, c) {
 console.log("royal-slider-loaded!");
 
 (function() {
+    var $, win;
+    $ = this.jQuery;
+    win = $(window);
+    $.fn.stick_in_parent = function(opts) {
+        var elm, inner_scrolling, parent_selector, sticky_class, _fn, _i, _len;
+        if (opts == null) {
+            opts = {};
+        }
+        sticky_class = opts.sticky_class, inner_scrolling = opts.inner_scrolling, parent_selector = opts.parent;
+        if (parent_selector == null) {
+            parent_selector = void 0;
+        }
+        if (inner_scrolling == null) {
+            inner_scrolling = true;
+        }
+        if (sticky_class == null) {
+            sticky_class = "is_stuck";
+        }
+        _fn = function(elm, padding_bottom, parent_top, parent_height, top, height) {
+            var bottomed, fixed, float, last_pos, offset, parent, recalc, reset_width, spacer, tick;
+            parent = elm.parent();
+            if (parent_selector != null) {
+                parent = parent.closest(parent_selector);
+            }
+            if (!parent.length) {
+                throw "failed to find stick parent";
+            }
+            recalc = function() {
+                var border_top, padding_top;
+                border_top = parseInt(parent.css("border-top-width"), 10);
+                padding_top = parseInt(parent.css("padding-top"), 10);
+                padding_bottom = parseInt(parent.css("padding-bottom"), 10);
+                parent_top = parent.offset().top + border_top + padding_top;
+                parent_height = parent.height();
+                top = elm.offset().top - parseInt(elm.css("margin-top"), 10);
+                return height = elm.outerHeight(true);
+            };
+            recalc();
+            if (height === parent_height) {
+                return;
+            }
+            float = elm.css("float");
+            spacer = $("<div />").css({
+                width: elm.outerWidth(true),
+                height: height,
+                display: elm.css("display"),
+                "float": float
+            });
+            fixed = false;
+            bottomed = false;
+            last_pos = void 0;
+            offset = 0;
+            reset_width = false;
+            tick = function() {
+                var before, css, delta, scroll, will_bottom, win_height;
+                scroll = win.scrollTop();
+                if (last_pos != null) {
+                    delta = scroll - last_pos;
+                }
+                last_pos = scroll;
+                if (fixed) {
+                    will_bottom = scroll + height + offset > parent_height + parent_top;
+                    if (bottomed && !will_bottom) {
+                        bottomed = false;
+                        elm.css({
+                            position: "fixed",
+                            bottom: "",
+                            top: 0
+                        }).trigger("sticky_kit:unbottom");
+                    }
+                    if (scroll < top) {
+                        fixed = false;
+                        offset = 0;
+                        if (float === "left" || float === "right") {
+                            elm.insertAfter(spacer);
+                        }
+                        spacer.detach();
+                        css = {
+                            position: ""
+                        };
+                        if (reset_width) {
+                            css.width = "";
+                        }
+                        elm.css(css).removeClass(sticky_class).trigger("sticky_kit:unstick");
+                    }
+                    if (inner_scrolling) {
+                        win_height = win.height();
+                        if (height > win_height) {
+                            if (!bottomed) {
+                                offset -= delta;
+                                before = offset;
+                                offset = Math.max(win_height - height, offset);
+                                offset = Math.min(0, offset);
+                                elm.css({
+                                    top: offset + "px"
+                                });
+                            }
+                        }
+                    }
+                } else {
+                    if (scroll > top) {
+                        fixed = true;
+                        css = {
+                            position: "fixed",
+                            top: offset
+                        };
+                        if (float === "none" && elm.css("display") === "block") {
+                            css.width = elm.width() + "px";
+                            reset_width = true;
+                        }
+                        elm.css(css).addClass(sticky_class).after(spacer);
+                        if (float === "left" || float === "right") {
+                            spacer.append(elm);
+                        }
+                        elm.trigger("sticky_kit:stick");
+                    }
+                }
+                if (fixed) {
+                    if (will_bottom == null) {
+                        will_bottom = scroll + height + offset > parent_height + parent_top;
+                    }
+                    if (!bottomed && will_bottom) {
+                        bottomed = true;
+                        if (parent.css("position") === "static") {
+                            parent.css({
+                                position: "relative"
+                            });
+                        }
+                        return elm.css({
+                            position: "absolute",
+                            bottom: padding_bottom,
+                            top: ""
+                        }).trigger("sticky_kit:bottom");
+                    }
+                }
+            };
+            win.on("scroll", tick);
+            setTimeout(tick, 0);
+            return $(document.body).on("sticky_kit:recalc", function() {
+                recalc();
+                return tick();
+            });
+        };
+        for (_i = 0, _len = this.length; _i < _len; _i++) {
+            elm = this[_i];
+            _fn($(elm));
+        }
+        return this;
+    };
+}).call(this);
+
+(function() {
     var method;
     var noop = function noop() {};
     var methods = [ "assert", "clear", "count", "debug", "dir", "dirxml", "error", "exception", "group", "groupCollapsed", "groupEnd", "info", "log", "markTimeline", "profile", "profileEnd", "table", "time", "timeEnd", "timeStamp", "trace", "warn" ];
@@ -6838,25 +6990,16 @@ console.log("royal-slider-loaded!");
         var KTV;
         KTV = KTV || {};
         KTV.stickySidebar = function() {
-            var asideNav, offsetTop, stickyNav, window;
-            asideNav = $(".aside-navigation");
-            window = $("#page-wrap");
-            offsetTop = asideNav.offset().top;
-            stickyNav = function() {
-                if (window.scrollTop() > offsetTop) {
-                    return asideNav.stop().css({
-                        marginTop: window.scrollTop() - offsetTop + 15
-                    });
-                } else {
-                    return asideNav.stop().css({
-                        marginTop: 0
-                    });
-                }
-            };
+            var contentContainer, el, elContainer, paddingBottom;
+            el = $(".aside-navigation");
+            elContainer = $(".aside-container");
+            contentContainer = $(".content-container");
+            paddingBottom = 30;
             return {
                 init: function() {
-                    if (asideNav.length) {
-                        return window.on("scroll", stickyNav);
+                    if (el.length) {
+                        elContainer.height(contentContainer.height() - paddingBottom);
+                        return el.stick_in_parent();
                     }
                 }
             };
