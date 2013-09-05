@@ -1,5 +1,7 @@
 </div> <!-- End of .page-wrap -->
 
+<?php if (function_exists('simple_contact_form')) simple_contact_form(); ?>
+
 <footer id="footer" class="site-footer">
 
   <section class="footer-row">
