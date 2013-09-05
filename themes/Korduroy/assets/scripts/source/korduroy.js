@@ -53,25 +53,6 @@
 }).call(this);
 
 (function() {
-  jQuery(function() {
-    var KTV;
-    KTV = KTV || {};
-    KTV.stickySidebar = (function() {
-      var contentContainer, el, elContainer, paddingBottom;
-      el = $('.aside-navigation');
-      elContainer = $('.aside-container');
-      contentContainer = $('.content-container');
-      paddingBottom = 30;
-      return {
-        init: function() {
-          if (el.length) {
-            elContainer.height(contentContainer.height() - paddingBottom);
-            return el.stick_in_parent();
-          }
-        }
-      };
-    })();
-    return KTV.stickySidebar.init();
-  });
+
 
 }).call(this);

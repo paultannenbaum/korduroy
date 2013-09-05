@@ -8104,6 +8104,11 @@ td {
   left: -40px;
 }
 
+.space-filler {
+  width: 100%;
+  height: 1px;
+}
+
 /***** Page Modules *****/
 .home-page .featured-slider, .home-page .campaigns {
   height: 400px;
