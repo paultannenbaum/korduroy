@@ -8109,6 +8109,31 @@ td {
   height: 1px;
 }
 
+#contact-form {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px 20px 0px 20px;
+  background: #e8e8e5;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contact-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+#contact-form label {
+  margin-bottom: 5px;
+}
+#contact-form input {
+  margin-bottom: 20px;
+}
+#contact-form input[type=submit] {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
 /***** Page Modules *****/
 .home-page .featured-slider, .home-page .campaigns {
   height: 400px;

@@ -2,6 +2,33 @@
   jQuery(function() {
     var KTV;
     KTV = KTV || {};
+    KTV.contactForm = (function() {
+      var el, form;
+      el = $('.contact-form-link');
+      form = $('#simple-contact-form');
+      return {
+        init: function() {
+          form.attr('action', '');
+          return el.magnificPopup({
+            items: {
+              src: '#contact-form',
+              type: 'inline',
+              focus: '#scf_name',
+              closeBtnInside: true
+            }
+          });
+        }
+      };
+    })();
+    return KTV.contactForm.init();
+  });
+
+}).call(this);
+
+(function() {
+  jQuery(function() {
+    var KTV;
+    KTV = KTV || {};
     KTV.newsletterSignup = (function() {
       var form, handleSubmit, spinner;
       form = $('#newsletter-signup');
