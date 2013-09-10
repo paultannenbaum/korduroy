@@ -5573,8 +5573,6 @@ window.Modernizr = function(a, b, c) {
     d.rsModules.visibleNearby = d.rsProto._f7;
 })(jQuery);
 
-console.log("royal-slider-loaded!");
-
 (function() {
     var $, win;
     $ = this.jQuery;
@@ -6955,6 +6953,24 @@ console.log("royal-slider-loaded!");
             };
         }();
         return KTV.contactForm.init();
+    });
+}).call(this);
+
+(function() {
+    jQuery(function() {
+        return $("#featured-slider").royalSlider({
+            arrowsNav: true,
+            arrowsNavAutoHide: false,
+            fadeinLoadedSlide: false,
+            controlNavigationSpacing: 0,
+            controlNavigation: "bullets",
+            imageScaleMode: "none",
+            imageAlignCenter: false,
+            autoHeight: true,
+            transitionType: "fade",
+            usePreloader: false,
+            loop: false
+        });
     });
 }).call(this);
 

@@ -12,3 +12,4 @@ require_once( get_template_directory() . '/lib/shows-post-type.php' );
 require_once( get_template_directory() . '/lib/shows-permalinks-filter.php' );
 require_once( get_template_directory() . '/lib/html5-search-form.php' );
 require_once( get_template_directory() . '/lib/custom-thumbnail-sizes.php' );
+require_once( get_template_directory() . '/lib/get-excerpt-by-id.php' );

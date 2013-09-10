@@ -20,30 +20,142 @@
   <section class="main" role="main">
       <div class="featured-content">
         <div class="featured-slider-container">
-          <div class="featured-slider">
-            <div class="slide slide-1">
-              <?php echo $shows[0]->post_title ?>
+          <div id="featured-slider" class="royalSlider rsDefault">
+
+            <div class="slide slide-1 show">
+              <div class="slide-image">
+                <a href="<?php echo get_permalink($shows[0]->ID); ?>">
+                  <?php echo get_the_post_thumbnail($shows[0]->ID, 'home-featured'); ?>
+                </a>
+              </div>
+              <div class="slide-info">
+                <header>
+                  <a href="<?php echo get_permalink($shows[0]->ID); ?>">
+                    <span class="pre-title">New Show:</span>
+                    <span class="slide-title"><?php echo $shows[0]->post_title ?></span>
+                  </a>
+                  <span class="go-to-link"><a href="<?php echo get_permalink($shows[0]->ID); ?>">Watch it &#8594;</a></span>
+                </header>
+                <div class="slide-desc"><?php echo get_excerpt_by_id($shows[0]->ID); ?></div>
+              </div>
             </div>
-            <div class="slide slide-2">
-              <?php echo $blogs[0]->post_title ?>
+
+            <div class="slide slide-2 blog">
+              <div class="slide-image">
+                <a href="<?php echo get_permalink($blogs[0]->ID); ?>">
+                  <?php echo get_the_post_thumbnail($blogs[0]->ID, 'home-featured'); ?>
+                </a>
+              </div>
+              <div class="slide-info">
+                <header>
+                  <a href="<?php echo get_permalink($blogs[0]->ID); ?>">
+                    <span class="pre-title">Article:</span>
+                    <span class="slide-title"><?php echo $blogs[0]->post_title ?></span>
+                  </a>
+                  <span class="go-to-link"><a href="<?php echo get_permalink($blogs[0]->ID); ?>">Watch it &#8594;</a></span>
+                </header>
+                <div class="slide-desc"><?php echo get_excerpt_by_id($blogs[0]->ID); ?></div>
+              </div>
             </div>
-            <div class="slide slide-3">
-              <?php echo $blogs[1]->post_title ?>
+
+            <div class="slide slide-3 blog">
+              <div class="slide-image">
+                <a href="<?php echo get_permalink($blogs[1]->ID); ?>">
+                  <?php echo get_the_post_thumbnail($blogs[1]->ID, 'home-featured'); ?>
+                </a>
+              </div>
+              <div class="slide-info">
+                <header>
+                  <a href="<?php echo get_permalink($blogs[1]->ID); ?>">
+                    <span class="pre-title">Article:</span>
+                    <span class="slide-title"><?php echo $blogs[1]->post_title ?></span>
+                  </a>
+                  <span class="go-to-link"><a href="<?php echo get_permalink($blogs[1]->ID); ?>">Watch it &#8594;</a></span>
+                </header>
+                <div class="slide-desc"><?php echo get_excerpt_by_id($blogs[1]->ID); ?></div>
+              </div>
             </div>
-            <div class="slide slide-4">
-              <?php echo $shows[1]->post_title ?>
+
+            <div class="slide slide-4 show">
+              <div class="slide-image">
+                <a href="<?php echo get_permalink($shows[1]->ID); ?>">
+                  <?php echo get_the_post_thumbnail($shows[1]->ID, 'home-featured'); ?>
+                </a>
+              </div>
+              <div class="slide-info">
+                <header>
+                  <a href="<?php echo get_permalink($shows[1]->ID); ?>">
+                    <span class="pre-title">Show:</span>
+                    <span class="slide-title"><?php echo $shows[1]->post_title ?></span>
+                  </a>
+                  <span class="go-to-link"><a href="<?php echo get_permalink($shows[1]->ID); ?>">Watch it &#8594;</a></span>
+                </header>
+                <div class="slide-desc"><?php echo get_excerpt_by_id($shows[1]->ID); ?></div>
+              </div>
             </div>
-            <div class="slide slide-5">
-              <?php echo $blogs[2]->post_title ?>
+
+            <div class="slide slide-5 blog">
+              <div class="slide-image">
+                <a href="<?php echo get_permalink($blogs[2]->ID); ?>">
+                  <?php echo get_the_post_thumbnail($blogs[2]->ID, 'home-featured'); ?>
+                </a>
+              </div>
+              <div class="slide-info">
+                <header>
+                  <a href="<?php echo get_permalink($blogs[2]->ID); ?>">
+                    <span class="pre-title">Article:</span>
+                    <span class="slide-title"><?php echo $blogs[2]->post_title ?></span>
+                  </a>
+                  <span class="go-to-link"><a href="<?php echo get_permalink($blogs[2]->ID); ?>">Watch it &#8594;</a></span>
+                </header>
+                <div class="slide-desc"><?php echo get_excerpt_by_id($blogs[2]->ID); ?></div>
+              </div>
             </div>
-            <div class="slide slide-6">
-              <?php echo $blogs[3]->post_title ?>
+
+            <div class="slide slide-6 blog">
+              <div class="slide-image">
+                <a href="<?php echo get_permalink($blogs[3]->ID); ?>">
+                  <?php echo get_the_post_thumbnail($blogs[3]->ID, 'home-featured'); ?>
+                </a>
+              </div>
+              <div class="slide-info">
+                <header>
+                  <a href="<?php echo get_permalink($blogs[3]->ID); ?>">
+                    <span class="pre-title">Article:</span>
+                    <span class="slide-title"><?php echo $blogs[3]->post_title ?></span>
+                  </a>
+                  <span class="go-to-link"><a href="<?php echo get_permalink($blogs[3]->ID); ?>">Watch it &#8594;</a></span>
+                </header>
+                <div class="slide-desc"><?php echo get_excerpt_by_id($blogs[3]->ID); ?></div>
+              </div>
             </div>
+
+            <!--<div>-->
+              <!--<h3>Slide HTML Text</h3>-->
+              <!--<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.  These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. </p>-->
+              <!--<blockquote>This is dummy copy. It's Greek to you. Unless, of course, you're Greek, in which case, it really makes no sense. Why, you can't even read it!  It is strictly for mock-ups. You may mock it up as strictly as you wish.</blockquote>-->
+              <!--<p>After all, you have many other things you should be doing. Who's paying you to waste this time, anyway?</p>-->
+              <!--<span class="rsTmb">HTML text</span>-->
+            <!--</div>-->
+            <!--<div>-->
+              <!--<img class="rsImg" src="http://dimsemenov.com/plugins/royal-slider/img/home.jpg">-->
+              <!--<h3>Slide with Image and Text</h3>-->
+              <!--<p>This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. If this were real copy, it would have ended long ago. But then, this is dummy copy. It is not meant to be read. Period.</p>-->
+              <!--<span class="rsTmb">Image</span>-->
+            <!--</div>-->
+            <!--<div>-->
+              <!--<img class="rsImg" src="http://dimsemenov.com/plugins/royal-slider/img/boat.jpg" data-rsvideo="http://www.youtube.com/watch?v=HFbHRWwyihE">-->
+              <!--<h3>Slide with Video and Text</h3>-->
+              <!--<p>This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. But then, this is dummy copy. It is not meant to be read. Period.</p>-->
+              <!--<span class="rsTmb">Video</span>-->
+            <!--</div>-->
           </div>
         </div>
-
         <div class="campaigns-container">
-          <div class="campaigns"></div>
+          <div class="featured-campaigns">
+            <div class="campaign">foo</div>
+            <div class="campaign">foo</div>
+          </div>
         </div>
       </div>
 

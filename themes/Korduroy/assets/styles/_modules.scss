@@ -441,14 +441,109 @@
   }
 }
 
+#featured-slider {
+  @extend %image-border;
+  background: #fff;
+  width: 100%;
+  max-width: 720px;
+  max-height: 460px;
+  overflow: hidden;
+
+  .slide {
+    .slide-image {}
+    header {
+      line-height: 20px;
+      height: 20px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 75%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .pre-title {
+        font-size: 20px;
+        color: #CCC;
+        margin-right: 5px;
+      }
+      .slide-title {
+        font-size: 20px;
+
+      }
+      .go-to-link {
+        display: none;
+        font-size: 12px;
+      }
+    }
+    .slide-desc {
+      display: none;
+      font-size: 13px;
+    }
+  }
+  .rsOverflow, .rsSlide {
+    background: #FFF;
+    color: $ktv-text;
+  }
+  .rsArrowLeft {
+    top: auto;
+    right: 35px;
+    bottom: 0px;
+    left: auto;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+  }
+  .rsArrowRight {
+    top: auto;
+    right: 0px;
+    bottom: 0px;
+    left: auto;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+  }
+  .rsBullets {
+    top: auto;
+    right: 78px;
+    bottom: 9px;
+    left: auto;
+    overflow: visible;
+    background: none;
+    display: inline-block;
+    height: 17px;
+    width: 80px;
+
+    .rsBullet {
+      span {
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      &.rsNavSelected span {
+        background: rgba(0, 0, 0, 0.9);
+      }
+    }
+  }
+}
+
+.featured-campaigns {
+  .campaign {
+    @extend %image-border;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 20px;
+    display: inline-block;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+
 
 /***** Page Modules *****/
 .home-page {
-  .featured-slider, .campaigns {
-    height: 400px;
-    overflow: hidden;
-    background: rgba(0, 0, 0, .1);
-  }
   .section-header {
     height: 30px;
     margin-bottom: 15px;
@@ -731,7 +826,6 @@
     }
     .member-desc {
       @extend p;
-
     }
   }
 }
@@ -832,6 +926,8 @@
   }
 }
 
+
+
 // Media Queries
 @media #{$small} {
   .site-footer {
@@ -849,7 +945,3 @@
     }
   }
 }
-
-
-
-
