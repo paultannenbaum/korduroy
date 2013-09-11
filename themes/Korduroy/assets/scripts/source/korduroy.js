@@ -27,19 +27,61 @@
 
 (function() {
   jQuery(function() {
-    return $('#featured-slider').royalSlider({
-      arrowsNav: true,
-      arrowsNavAutoHide: false,
-      fadeinLoadedSlide: false,
-      controlNavigationSpacing: 0,
-      controlNavigation: 'bullets',
-      imageScaleMode: 'none',
-      imageAlignCenter: false,
-      autoHeight: true,
-      transitionType: 'fade',
-      usePreloader: false,
-      loop: false
-    });
+    var KTV;
+    KTV = KTV || {};
+    KTV.homePageSlider = (function() {
+      var el, rsAfterInit, setSlider, setSliderEvents, sliderOptions;
+      el = $('#featured-slider');
+      sliderOptions = {
+        arrowsNav: true,
+        arrowsNavAutoHide: false,
+        fadeinLoadedSlide: false,
+        controlNavigationSpacing: 0,
+        controlNavigation: 'bullets',
+        imageScaleMode: 'none',
+        imageAlignCenter: false,
+        autoHeight: true,
+        transitionType: 'fade',
+        usePreloader: false,
+        loop: false,
+        autoPlay: {
+          enabled: true,
+          delay: 4000
+        },
+        ev: rsAfterInit = function() {
+          return console.log("FOO");
+        }
+      };
+      setSlider = function() {
+        $('.slide-1').find('.slide-desc').delay(1500).animate({
+          'bottom': 0
+        });
+        return el.royalSlider(sliderOptions);
+      };
+      setSliderEvents = function() {
+        var apiEl, bottom, currentSlide, currentSlideDesc;
+        currentSlide = null;
+        currentSlideDesc = null;
+        bottom = $('.slide-desc').eq(0).css('bottom');
+        apiEl = el.data('royalSlider');
+        return apiEl.ev.on('rsAfterSlideChange', function() {
+          currentSlide = apiEl.currSlide.content;
+          currentSlideDesc = currentSlide.find('.slide-desc');
+          return currentSlideDesc.delay(1500).animate({
+            'bottom': 0
+          });
+        });
+      };
+      return {
+        init: function() {
+          setSlider();
+          return setSliderEvents();
+        }
+      };
+    })();
+    if ($('.home-page').length) {
+      return KTV.homePageSlider.init();
+    }
   });
 
 }).call(this);

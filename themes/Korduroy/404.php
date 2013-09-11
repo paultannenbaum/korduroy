@@ -1,23 +1,18 @@
 <?php get_header(); ?>
 
-	<section id="main" role="main">
+<nav id="ktv-sub-nav">
+  <h1 class="sub-nav-heading extend-full">Oops! That page can&rsquo;t be found</h1>
+  <span class="separator-container">
+    <hr class="horizontal-stitch" />
+  </span>
+</nav>
 
-		<article id="post-0" class="post error404 not-found">
-
-			<h1>Oops! That page can&rsquo;t be found.</h1>
-
-			<div class="entry">
-
-				<p>It looks like nothing was found at this location. Maybe try heading back to the <a href="<?php echo home_url('/'); ?>">home page</a> or a search?</p>
-
-				<?php get_search_form(); ?>
-
-			</div>
-
-		</article>
-
-	</section> <!-- /#main -->
-
-<?php get_sidebar(); ?>
+<div id="body" class="default-page">
+  <section class="main" role="main">
+    <div class="page-content">
+      <h2>It looks like nothing was found at this location. Maybe try heading back to the <a href="<?php echo home_url('/'); ?>">home page</a> or a try searching for what your looking for?</h2>
+    </div>
+  </section>
+</div>
 
 <?php get_footer(); ?>

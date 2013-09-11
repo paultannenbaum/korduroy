@@ -28,9 +28,9 @@ function ktv_scripts() {
 	// JavaScript
 	if ( !is_admin() ) {
 	  wp_deregister_script('jquery');
-		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, NULL);
+		# wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, NULL);
+		wp_register_script('jquery', get_template_directory_uri() . '/assets/scripts/vendor/libs/jquery-1.9.1.min.js', false, NULL);
 		wp_enqueue_script('jquery');
-
 		wp_enqueue_script('app', get_template_directory_uri() . '/assets/scripts/app.js', array('jquery'), false, NULL );
 	}
 }
