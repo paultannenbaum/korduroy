@@ -31,18 +31,16 @@
                 'post_type' => 'shows',
                 'taxonomy' => $category->taxonomy,
                 'term' => $category->slug,
-                'nopaging' => true
+                'numberposts' => '6'
               ));
               foreach($posts as $post): setup_postdata($post);
             ?>
-              <?php if ($i < 6): ?>
-                <li class="episode">
-                  <a class="episode-link" href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail('show-thumb', array('class' => 'episode-thumb')); ?>
-                    <span class="episode-title"><?php the_title(); ?></span>
-                  </a>
-                </li>
-              <?php $i++; endif; ?>
+              <li class="episode">
+                <a class="episode-link" href="<?php the_permalink(); ?>">
+                  <?php the_post_thumbnail('show-thumb', array('class' => 'episode-thumb')); ?>
+                  <span class="episode-title"><?php the_title(); ?></span>
+                </a>
+              </li>
             <?php endforeach; ?>
           </ul>
         </div>

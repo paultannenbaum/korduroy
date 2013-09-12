@@ -4,7 +4,7 @@
   $shows = get_posts(array(
     'post_type'   => 'shows',
     'orderby'     => 'post_date',
-    'numberposts' => '10'
+    'numberposts' => '6'
   ));
 ?>
 
@@ -12,7 +12,7 @@
   $blogs = get_posts(array(
     'post_type'   => 'post',
     'orderby'     => 'post_date',
-    'numberposts' => '15'
+    'numberposts' => '5'
   ));
 ?>
 
@@ -21,7 +21,6 @@
       <div class="featured-content">
         <div class="featured-slider-container">
           <div id="featured-slider" class="royalSlider rsDefault">
-
             <div class="slide slide-1 show">
               <div class="slide-image">
                 <a href="<?php echo get_permalink($shows[0]->ID); ?>">
@@ -41,7 +40,6 @@
                 </header>
               </div>
             </div>
-
             <div class="slide slide-2 blog">
               <div class="slide-image">
                 <a href="<?php echo get_permalink($blogs[0]->ID); ?>">
@@ -58,7 +56,6 @@
                 </header>
               </div>
             </div>
-
             <div class="slide slide-3 blog">
               <div class="slide-image">
                 <a href="<?php echo get_permalink($blogs[1]->ID); ?>">
@@ -75,7 +72,6 @@
                 </header>
               </div>
             </div>
-
             <div class="slide slide-4 show">
               <div class="slide-image">
                 <a href="<?php echo get_permalink($shows[1]->ID); ?>">
@@ -92,7 +88,6 @@
                 </header>
               </div>
             </div>
-
             <div class="slide slide-5 blog">
               <div class="slide-image">
                 <a href="<?php echo get_permalink($blogs[2]->ID); ?>">
@@ -109,7 +104,6 @@
                 </header>
               </div>
             </div>
-
             <div class="slide slide-6 blog">
               <div class="slide-image">
                 <a href="<?php echo get_permalink($blogs[3]->ID); ?>">
