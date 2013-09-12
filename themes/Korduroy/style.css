@@ -7686,7 +7686,7 @@ h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h
   background: rgba(153, 153, 153, 0.2);
 }
 
-.image-border, #featured-slider, .featured-campaigns .campaign, .home-page .blog-post .blog-post-thumbnail img, .blog-page .blog-post .blog-post-thumbnail img, .tag-page .tag-post .tag-thumbnail img, .search-page .search-post .search-thumbnail img {
+#featured-slider, .image-border, .featured-campaigns .campaign, .home-page .blog-post .blog-post-thumbnail img, .blog-page .blog-post .blog-post-thumbnail img, .tag-page .tag-post .tag-thumbnail img, .search-page .search-post .search-thumbnail img {
   -webkit-box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
   -moz-box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
   box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
@@ -8988,6 +8988,135 @@ td {
   padding: 3px;
 }
 
+#contact-form {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px 20px 0px 20px;
+  background: #e8e8e5;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contact-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+#contact-form label {
+  margin-bottom: 5px;
+}
+#contact-form input {
+  margin-bottom: 20px;
+}
+#contact-form input[type=submit] {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#featured-slider {
+  background: #fff;
+  width: 100%;
+  max-width: 720px;
+  max-height: 460px;
+  overflow: hidden;
+}
+#featured-slider .slide:before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: -1px;
+  left: -1px;
+  width: 74px;
+  height: 70px;
+  display: inline-block;
+}
+#featured-slider .slide.blog:before {
+  background-image: url(assets/images/badge_blog_large.png);
+}
+#featured-slider .slide.show:before {
+  background-image: url(assets/images/badge_show_large.png);
+}
+#featured-slider .slide .slide-image {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+#featured-slider .slide .slide-desc {
+  position: absolute;
+  width: 100%;
+  max-height: 77px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px 20px;
+  bottom: -77px;
+  left: 0;
+  font-size: 13px;
+}
+#featured-slider .slide header {
+  line-height: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#featured-slider .slide header .pre-title {
+  font-size: 20px;
+  color: #CCC;
+  margin-right: 5px;
+}
+#featured-slider .slide header .slide-title {
+  font-size: 20px;
+}
+#featured-slider .rsOverflow, #featured-slider .rsSlide {
+  background: #FFF;
+  color: #444444;
+}
+#featured-slider .rsArrowLeft {
+  top: auto;
+  right: 35px;
+  bottom: 0px;
+  left: auto;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+#featured-slider .rsArrowRight {
+  top: auto;
+  right: 0px;
+  bottom: 0px;
+  left: auto;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+#featured-slider .rsBullets {
+  top: auto;
+  right: 78px;
+  bottom: 9px;
+  left: auto;
+  overflow: visible;
+  background: none;
+  display: inline-block;
+  height: 17px;
+  width: 80px;
+}
+#featured-slider .rsBullets .rsBullet span {
+  background: rgba(0, 0, 0, 0.2);
+}
+#featured-slider .rsBullets .rsBullet.rsNavSelected span {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#mc_signup {
+  height: 10px;
+}
+
 .aside-navigation .aside-navigation-list, .aside-navigation .wp-tag-cloud {
   margin-top: 20px;
 }
@@ -9345,10 +9474,6 @@ td {
   font-size: 12px;
 }
 
-#mc_signup {
-  height: 10px;
-}
-
 .spinner:before {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -9368,131 +9493,6 @@ td {
 .space-filler {
   width: 100%;
   height: 1px;
-}
-
-#contact-form {
-  position: relative;
-  width: 90%;
-  max-width: 500px;
-  padding: 40px 20px 0px 20px;
-  background: #e8e8e5;
-  margin-left: auto;
-  margin-right: auto;
-}
-#contact-form fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-#contact-form label {
-  margin-bottom: 5px;
-}
-#contact-form input {
-  margin-bottom: 20px;
-}
-#contact-form input[type=submit] {
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
-
-#featured-slider {
-  background: #fff;
-  width: 100%;
-  max-width: 720px;
-  max-height: 460px;
-  overflow: hidden;
-}
-#featured-slider .slide:before {
-  content: "";
-  position: absolute;
-  z-index: 100;
-  top: -1px;
-  left: -1px;
-  width: 74px;
-  height: 70px;
-  display: inline-block;
-}
-#featured-slider .slide.blog:before {
-  background-image: url(assets/images/badge_blog_large.png);
-}
-#featured-slider .slide.show:before {
-  background-image: url(assets/images/badge_show_large.png);
-}
-#featured-slider .slide .slide-image {
-  position: relative;
-  overflow: hidden;
-  width: auto;
-  height: auto;
-}
-#featured-slider .slide .slide-desc {
-  position: absolute;
-  width: 100%;
-  max-height: 77px;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 10px 20px;
-  bottom: -77px;
-  left: 0;
-  font-size: 13px;
-}
-#featured-slider .slide header {
-  line-height: 20px;
-  height: 20px;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 75%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-#featured-slider .slide header .pre-title {
-  font-size: 20px;
-  color: #CCC;
-  margin-right: 5px;
-}
-#featured-slider .slide header .slide-title {
-  font-size: 20px;
-}
-#featured-slider .rsOverflow, #featured-slider .rsSlide {
-  background: #FFF;
-  color: #444444;
-}
-#featured-slider .rsArrowLeft {
-  top: auto;
-  right: 35px;
-  bottom: 0px;
-  left: auto;
-  display: inline-block;
-  height: 32px;
-  width: 32px;
-}
-#featured-slider .rsArrowRight {
-  top: auto;
-  right: 0px;
-  bottom: 0px;
-  left: auto;
-  display: inline-block;
-  height: 32px;
-  width: 32px;
-}
-#featured-slider .rsBullets {
-  top: auto;
-  right: 78px;
-  bottom: 9px;
-  left: auto;
-  overflow: visible;
-  background: none;
-  display: inline-block;
-  height: 17px;
-  width: 80px;
-}
-#featured-slider .rsBullets .rsBullet span {
-  background: rgba(0, 0, 0, 0.2);
-}
-#featured-slider .rsBullets .rsBullet.rsNavSelected span {
-  background: rgba(0, 0, 0, 0.9);
 }
 
 .featured-campaigns .campaign {
@@ -9614,7 +9614,23 @@ td {
   background-image: url(assets/images/channel-icons/surf_sufficient.png);
 }
 .shows-page .channel-header .channel-info {
+  position: relative;
   padding-left: 212px;
+  font-size: 14px;
+}
+.shows-page .channel-header .channel-info .channel-desc a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.shows-page .channel-header .channel-info .all-episodes {
+  margin-top: 10px;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: block;
+}
+.shows-page .channel-header .channel-info .all-episodes:hover {
+  color: inherit;
 }
 .shows-page .channel-separator {
   margin-top: 0px;

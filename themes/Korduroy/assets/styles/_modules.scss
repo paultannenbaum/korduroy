@@ -34,6 +34,156 @@
   }
 }
 
+#contact-form {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px 20px 0px 20px;
+  background: $ktv-bg-grey;
+  margin-left: auto;
+  margin-right: auto;
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input {
+    margin-bottom: 20px;
+    &[type=submit] {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+#featured-slider {
+  @extend %image-border;
+  background: #fff;
+  width: 100%;
+  max-width: 720px;
+  max-height: 460px;
+  overflow: hidden;
+
+  .slide {
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      top: -1px;
+      left: -1px;
+      width: 74px;
+      height: 70px;
+      display: inline-block;
+    }
+    &.blog:before {
+      background-image: url(assets/images/badge_blog_large.png);
+    }
+    &.show:before {
+      background-image: url(assets/images/badge_show_large.png);
+    }
+    .slide-image {
+      position: relative;
+      overflow: hidden;
+      width: auto;
+      height: auto;
+    }
+    .slide-desc {
+      position: absolute;
+      width: 100%;
+      max-height: 77px;
+      background: rgba(0,0,0,.7);
+      color: #fff;
+      padding: 10px 20px;
+      bottom: -77px;
+      left: 0;
+      font-size: 13px;
+    }
+    header {
+      line-height: 20px;
+      height: 20px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 75%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .pre-title {
+        font-size: 20px;
+        color: #CCC;
+        margin-right: 5px;
+      }
+      .slide-title {
+        font-size: 20px;
+
+      }
+    }
+  }
+  .rsOverflow, .rsSlide {
+    background: #FFF;
+    color: $ktv-text;
+  }
+  .rsArrowLeft {
+    top: auto;
+    right: 35px;
+    bottom: 0px;
+    left: auto;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+  }
+  .rsArrowRight {
+    top: auto;
+    right: 0px;
+    bottom: 0px;
+    left: auto;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+  }
+  .rsBullets {
+    top: auto;
+    right: 78px;
+    bottom: 9px;
+    left: auto;
+    overflow: visible;
+    background: none;
+    display: inline-block;
+    height: 17px;
+    width: 80px;
+
+    .rsBullet {
+      span {
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      &.rsNavSelected span {
+        background: rgba(0, 0, 0, 0.9);
+      }
+    }
+  }
+}
+
+#mc_signup {
+  //#mc_message {
+  //  display: none;
+  //  @include alert;
+  //  position: absolute;
+  //  top: 0px;
+  //  min-height: 85px;
+  //}
+  height: 10px;
+}
+
 .aside-navigation {
   .aside-navigation-list, .wp-tag-cloud {
     margin-top: 20px;
@@ -383,17 +533,6 @@
   font-size: 12px;
 }
 
-#mc_signup {
-  //#mc_message {
-  //  display: none;
-  //  @include alert;
-  //  position: absolute;
-  //  top: 0px;
-  //  min-height: 85px;
-  //}
-  height: 10px;
-}
-
 .spinner {
   &:before {
     @include border-radius(5px);
@@ -413,145 +552,6 @@
   height: 1px;
 }
 
-#contact-form {
-  position: relative;
-  width: 90%;
-  max-width: 500px;
-  padding: 40px 20px 0px 20px;
-  background: $ktv-bg-grey;
-  margin-left: auto;
-  margin-right: auto;
-
-  fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  label {
-    margin-bottom: 5px;
-  }
-
-  input {
-    margin-bottom: 20px;
-    &[type=submit] {
-      margin-top: 10px;
-      margin-bottom: 0px;
-    }
-  }
-}
-
-#featured-slider {
-  @extend %image-border;
-  background: #fff;
-  width: 100%;
-  max-width: 720px;
-  max-height: 460px;
-  overflow: hidden;
-
-  .slide {
-
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: 100;
-      top: -1px;
-      left: -1px;
-      width: 74px;
-      height: 70px;
-      display: inline-block;
-    }
-    &.blog:before {
-      background-image: url(assets/images/badge_blog_large.png);
-    }
-    &.show:before {
-      background-image: url(assets/images/badge_show_large.png);
-    }
-    .slide-image {
-      position: relative;
-      overflow: hidden;
-      width: auto;
-      height: auto;
-    }
-    .slide-desc {
-      position: absolute;
-      width: 100%;
-      max-height: 77px;
-      background: rgba(0,0,0,.7);
-      color: #fff;
-      padding: 10px 20px;
-      bottom: -77px;
-      left: 0;
-      font-size: 13px;
-    }
-    header {
-      line-height: 20px;
-      height: 20px;
-      margin-top: 20px;
-      margin-bottom: 0px;
-      font-weight: bold;
-      text-transform: uppercase;
-      width: 75%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-
-      .pre-title {
-        font-size: 20px;
-        color: #CCC;
-        margin-right: 5px;
-      }
-      .slide-title {
-        font-size: 20px;
-
-      }
-    }
-  }
-  .rsOverflow, .rsSlide {
-    background: #FFF;
-    color: $ktv-text;
-  }
-  .rsArrowLeft {
-    top: auto;
-    right: 35px;
-    bottom: 0px;
-    left: auto;
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-  }
-  .rsArrowRight {
-    top: auto;
-    right: 0px;
-    bottom: 0px;
-    left: auto;
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-  }
-  .rsBullets {
-    top: auto;
-    right: 78px;
-    bottom: 9px;
-    left: auto;
-    overflow: visible;
-    background: none;
-    display: inline-block;
-    height: 17px;
-    width: 80px;
-
-    .rsBullet {
-      span {
-        background: rgba(0, 0, 0, 0.2);
-      }
-
-      &.rsNavSelected span {
-        background: rgba(0, 0, 0, 0.9);
-      }
-    }
-  }
-}
-
 .featured-campaigns {
   .campaign {
     @extend %image-border;
@@ -563,7 +563,6 @@
     }
   }
 }
-
 
 
 /***** Page Modules *****/
@@ -697,7 +696,25 @@
       }
     }
     .channel-info {
+      position: relative;
       padding-left: $icon-width + 20px;
+      font-size: 14px;
+
+      .channel-desc a {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .all-episodes {
+        margin-top: 10px;
+        color: $ktv-grey;
+        text-transform: uppercase;
+        font-size: 10px;
+        display: block;
+
+        &:hover {
+          color: inherit;
+        }
+      }
     }
   }
   .channel-separator {

@@ -21,8 +21,6 @@ jQuery ->
         enabled: true
         delay: 4000
       }
-      ev: rsAfterInit = ->
-        console.log("FOO")
     }
 
     setSlider = ->
@@ -40,6 +38,7 @@ jQuery ->
         # currentSlideDesc.css('bottom', bottom) if currentSlideDesc
         currentSlide = apiEl.currSlide.content
         currentSlideDesc = currentSlide.find('.slide-desc')
+
         currentSlideDesc.delay(1500).animate({ 'bottom': 0 })
 
     # public:

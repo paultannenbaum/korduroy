@@ -16,13 +16,17 @@
         <header class="channel-header">
           <a class="channel-link" href="<?php echo get_term_link($category, $category -> taxonomy); ?>">
             <span class="channel-icon <?php echo $category -> slug ?>"></span>
-            <p class="channel-info"><?php echo $category -> description ?></p>
           </a>
+          <div class="channel-info">
+            <p class="channel-desc"><?php echo $category -> description ?></p>
+            <a class="all-episodes" href="<?php the_permalink(); ?>">view all episodes</a>
+          </div>
         </header>
 
         <div class="channel-list-container">
           <ul class="channel-list">
             <?php
+              $i = 0;
               $posts = get_posts(array(
                 'post_type' => 'shows',
                 'taxonomy' => $category->taxonomy,
@@ -31,12 +35,14 @@
               ));
               foreach($posts as $post): setup_postdata($post);
             ?>
-              <li class="episode">
-                <a class="episode-link" href="<?php the_permalink(); ?>">
-                  <?php the_post_thumbnail('show-thumb', array('class' => 'episode-thumb')); ?>
-                  <span class="episode-title"><?php the_title(); ?></span>
-                </a>
-              </li>
+              <?php if ($i < 6): ?>
+                <li class="episode">
+                  <a class="episode-link" href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail('show-thumb', array('class' => 'episode-thumb')); ?>
+                    <span class="episode-title"><?php the_title(); ?></span>
+                  </a>
+                </li>
+              <?php $i++; endif; ?>
             <?php endforeach; ?>
           </ul>
         </div>

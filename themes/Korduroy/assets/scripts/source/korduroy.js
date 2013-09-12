@@ -30,7 +30,7 @@
     var KTV;
     KTV = KTV || {};
     KTV.homePageSlider = (function() {
-      var el, rsAfterInit, setSlider, setSliderEvents, sliderOptions;
+      var el, setSlider, setSliderEvents, sliderOptions;
       el = $('#featured-slider');
       sliderOptions = {
         arrowsNav: true,
@@ -47,9 +47,6 @@
         autoPlay: {
           enabled: true,
           delay: 4000
-        },
-        ev: rsAfterInit = function() {
-          return console.log("FOO");
         }
       };
       setSlider = function() {
@@ -137,6 +134,11 @@
     })();
     return KTV.newsletterSignup.init();
   });
+
+}).call(this);
+
+(function() {
+
 
 }).call(this);
 

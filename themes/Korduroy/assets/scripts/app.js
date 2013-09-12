@@ -6961,7 +6961,7 @@ window.Modernizr = function(a, b, c) {
         var KTV;
         KTV = KTV || {};
         KTV.homePageSlider = function() {
-            var el, rsAfterInit, setSlider, setSliderEvents, sliderOptions;
+            var el, setSlider, setSliderEvents, sliderOptions;
             el = $("#featured-slider");
             sliderOptions = {
                 arrowsNav: true,
@@ -6978,9 +6978,6 @@ window.Modernizr = function(a, b, c) {
                 autoPlay: {
                     enabled: true,
                     delay: 4e3
-                },
-                ev: rsAfterInit = function() {
-                    return console.log("FOO");
                 }
             };
             setSlider = function() {
@@ -7068,5 +7065,7 @@ window.Modernizr = function(a, b, c) {
         return KTV.newsletterSignup.init();
     });
 }).call(this);
+
+(function() {}).call(this);
 
 (function() {}).call(this);
