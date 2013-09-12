@@ -153,3 +153,15 @@ tfoot td	{}
 .show {
   display: block;
 }
+
+/* Foundation Overrides */
+button:active, .button:active, #contact-form input[type=submit]:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hover, .button:focus, #contact-form input[type=submit]:focus {
+  outline: none;
+  color: $ktv-blue;
+  border: 1px solid $ktv-grey;
+}

@@ -19,20 +19,24 @@ jQuery ->
           mc_signup_submit: 'Sign Up'
         }
         beforeSend: ->
+          form.find('input[type="submit"]').attr('disabled','disabled');
           spinner = new Spinner().spin(form[0])
           return
         error: ->
+          form.find('input[type="submit"]').removeAttr('disabled');
           spinner.stop()
           alertify.error("Bummer, our servers are having issues right now. Try again later.")
         success: (data) ->
+          form.find('input[type="submit"]').removeAttr('disabled');
           spinner.stop()
           result = $(data)
   
           if result.hasClass('mc_success_msg')
             form.find('.email').val("")
+            alertify.set({ delay: 3000 })
             alertify.success("Your all signed up. Yeeeew!");
           else
-            errorText = result.html()
+            errorText = result.html().replace("» ","")
             alertify.set({ delay: 10000 })
             alertify.error(errorText)
       })

@@ -41,7 +41,7 @@
       <!-- This is hidden until user clicks -->
       <div id="contact-form" class="mfp-hide">
         <header class="message">
-          <h2>Drop us a line</h2>
+          <h1>Drop us a line</h1>
         </header>
         <?php if (function_exists('simple_contact_form')) simple_contact_form(); ?>
       </div>

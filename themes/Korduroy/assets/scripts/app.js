@@ -7033,21 +7033,27 @@ window.Modernizr = function(a, b, c) {
                         mc_signup_submit: "Sign Up"
                     },
                     beforeSend: function() {
+                        form.find('input[type="submit"]').attr("disabled", "disabled");
                         spinner = new Spinner().spin(form[0]);
                     },
                     error: function() {
+                        form.find('input[type="submit"]').removeAttr("disabled");
                         spinner.stop();
                         return alertify.error("Bummer, our servers are having issues right now. Try again later.");
                     },
                     success: function(data) {
                         var errorText, result;
+                        form.find('input[type="submit"]').removeAttr("disabled");
                         spinner.stop();
                         result = $(data);
                         if (result.hasClass("mc_success_msg")) {
                             form.find(".email").val("");
+                            alertify.set({
+                                delay: 3e3
+                            });
                             return alertify.success("Your all signed up. Yeeeew!");
                         } else {
-                            errorText = result.html();
+                            errorText = result.html().replace("» ", "");
                             alertify.set({
                                 delay: 1e4
                             });

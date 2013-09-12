@@ -2048,7 +2048,7 @@ blockquote .about-page .crew-member .member-desc,
     display: inherit !important;
   }
 }
-button, .button {
+button, .button, #contact-form input[type=submit] {
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -2069,80 +2069,80 @@ button, .button {
   border-color: #2284a1;
   color: white;
 }
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hover, .button:focus, #contact-form input[type=submit]:focus {
   background-color: #2284a1;
 }
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hover, .button:focus, #contact-form input[type=submit]:focus {
   color: white;
 }
-button.secondary, .button.secondary {
+button.secondary, .button.secondary, #contact-form input.secondary[type=submit] {
   background-color: #e9e9e9;
   border-color: #d0d0d0;
   color: #333333;
 }
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+button.secondary:hover, button.secondary:focus, .button.secondary:hover, #contact-form input.secondary[type=submit]:hover, .button.secondary:focus, #contact-form input.secondary[type=submit]:focus {
   background-color: #d0d0d0;
 }
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+button.secondary:hover, button.secondary:focus, .button.secondary:hover, #contact-form input.secondary[type=submit]:hover, .button.secondary:focus, #contact-form input.secondary[type=submit]:focus {
   color: #333333;
 }
-button.success, .button.success {
+button.success, .button.success, #contact-form input.success[type=submit] {
   background-color: #5da423;
   border-color: #457a1a;
   color: white;
 }
-button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+button.success:hover, button.success:focus, .button.success:hover, #contact-form input.success[type=submit]:hover, .button.success:focus, #contact-form input.success[type=submit]:focus {
   background-color: #457a1a;
 }
-button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+button.success:hover, button.success:focus, .button.success:hover, #contact-form input.success[type=submit]:hover, .button.success:focus, #contact-form input.success[type=submit]:focus {
   color: white;
 }
-button.alert, .button.alert {
+button.alert, .button.alert, #contact-form input.alert[type=submit] {
   background-color: #c60f13;
   border-color: #970b0e;
   color: white;
 }
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+button.alert:hover, button.alert:focus, .button.alert:hover, #contact-form input.alert[type=submit]:hover, .button.alert:focus, #contact-form input.alert[type=submit]:focus {
   background-color: #970b0e;
 }
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+button.alert:hover, button.alert:focus, .button.alert:hover, #contact-form input.alert[type=submit]:hover, .button.alert:focus, #contact-form input.alert[type=submit]:focus {
   color: white;
 }
-button.large, .button.large {
+button.large, .button.large, #contact-form input.large[type=submit] {
   padding-top: 1em;
   padding-right: 2em;
   padding-bottom: 1.0625em;
   padding-left: 2em;
   font-size: 1.25em;
 }
-button.small, .button.small {
+button.small, .button.small, #contact-form input.small[type=submit] {
   padding-top: 0.5625em;
   padding-right: 1.125em;
   padding-bottom: 0.625em;
   padding-left: 1.125em;
   font-size: 0.8125em;
 }
-button.tiny, .button.tiny {
+button.tiny, .button.tiny, #contact-form input.tiny[type=submit] {
   padding-top: 0.4375em;
   padding-right: 0.875em;
   padding-bottom: 0.5em;
   padding-left: 0.875em;
   font-size: 0.6875em;
 }
-button.expand, .button.expand {
+button.expand, .button.expand, #contact-form input.expand[type=submit] {
   padding-right: 0px;
   padding-left: 0px;
   width: 100%;
 }
-button.left-align, .button.left-align {
+button.left-align, .button.left-align, #contact-form input.left-align[type=submit] {
   text-align: left;
   text-indent: 0.75em;
 }
-button.right-align, .button.right-align {
+button.right-align, .button.right-align, #contact-form input.right-align[type=submit] {
   text-align: right;
   padding-right: 0.75em;
 }
-button.disabled, button[disabled], .button.disabled, .button[disabled] {
+button.disabled, button[disabled], .button.disabled, #contact-form input.disabled[type=submit], .button[disabled], #contact-form input[disabled][type=submit] {
   background-color: #2ba6cb;
   border-color: #2284a1;
   color: white;
@@ -2151,16 +2151,16 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, #contact-form input.disabled[type=submit]:hover, .button.disabled:focus, #contact-form input.disabled[type=submit]:focus, .button[disabled]:hover, #contact-form input[disabled][type=submit]:hover, .button[disabled]:focus, #contact-form input[disabled][type=submit]:focus {
   background-color: #2284a1;
 }
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, #contact-form input.disabled[type=submit]:hover, .button.disabled:focus, #contact-form input.disabled[type=submit]:focus, .button[disabled]:hover, #contact-form input[disabled][type=submit]:hover, .button[disabled]:focus, #contact-form input[disabled][type=submit]:focus {
   color: white;
 }
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, #contact-form input.disabled[type=submit]:hover, .button.disabled:focus, #contact-form input.disabled[type=submit]:focus, .button[disabled]:hover, #contact-form input[disabled][type=submit]:hover, .button[disabled]:focus, #contact-form input[disabled][type=submit]:focus {
   background-color: #2ba6cb;
 }
-button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
+button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, #contact-form input.disabled.secondary[type=submit], .button[disabled].secondary, #contact-form input[disabled].secondary[type=submit] {
   background-color: #e9e9e9;
   border-color: #d0d0d0;
   color: #333333;
@@ -2169,16 +2169,16 @@ button.disabled.secondary, button[disabled].secondary, .button.disabled.secondar
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, #contact-form input.disabled.secondary[type=submit]:hover, .button.disabled.secondary:focus, #contact-form input.disabled.secondary[type=submit]:focus, .button[disabled].secondary:hover, #contact-form input[disabled].secondary[type=submit]:hover, .button[disabled].secondary:focus, #contact-form input[disabled].secondary[type=submit]:focus {
   background-color: #d0d0d0;
 }
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, #contact-form input.disabled.secondary[type=submit]:hover, .button.disabled.secondary:focus, #contact-form input.disabled.secondary[type=submit]:focus, .button[disabled].secondary:hover, #contact-form input[disabled].secondary[type=submit]:hover, .button[disabled].secondary:focus, #contact-form input[disabled].secondary[type=submit]:focus {
   color: #333333;
 }
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, #contact-form input.disabled.secondary[type=submit]:hover, .button.disabled.secondary:focus, #contact-form input.disabled.secondary[type=submit]:focus, .button[disabled].secondary:hover, #contact-form input[disabled].secondary[type=submit]:hover, .button[disabled].secondary:focus, #contact-form input[disabled].secondary[type=submit]:focus {
   background-color: #e9e9e9;
 }
-button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
+button.disabled.success, button[disabled].success, .button.disabled.success, #contact-form input.disabled.success[type=submit], .button[disabled].success, #contact-form input[disabled].success[type=submit] {
   background-color: #5da423;
   border-color: #457a1a;
   color: white;
@@ -2187,16 +2187,16 @@ button.disabled.success, button[disabled].success, .button.disabled.success, .bu
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, #contact-form input.disabled.success[type=submit]:hover, .button.disabled.success:focus, #contact-form input.disabled.success[type=submit]:focus, .button[disabled].success:hover, #contact-form input[disabled].success[type=submit]:hover, .button[disabled].success:focus, #contact-form input[disabled].success[type=submit]:focus {
   background-color: #457a1a;
 }
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, #contact-form input.disabled.success[type=submit]:hover, .button.disabled.success:focus, #contact-form input.disabled.success[type=submit]:focus, .button[disabled].success:hover, #contact-form input[disabled].success[type=submit]:hover, .button[disabled].success:focus, #contact-form input[disabled].success[type=submit]:focus {
   color: white;
 }
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, #contact-form input.disabled.success[type=submit]:hover, .button.disabled.success:focus, #contact-form input.disabled.success[type=submit]:focus, .button[disabled].success:hover, #contact-form input[disabled].success[type=submit]:hover, .button[disabled].success:focus, #contact-form input[disabled].success[type=submit]:focus {
   background-color: #5da423;
 }
-button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
+button.disabled.alert, button[disabled].alert, .button.disabled.alert, #contact-form input.disabled.alert[type=submit], .button[disabled].alert, #contact-form input[disabled].alert[type=submit] {
   background-color: #c60f13;
   border-color: #970b0e;
   color: white;
@@ -2205,60 +2205,60 @@ button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[d
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, #contact-form input.disabled.alert[type=submit]:hover, .button.disabled.alert:focus, #contact-form input.disabled.alert[type=submit]:focus, .button[disabled].alert:hover, #contact-form input[disabled].alert[type=submit]:hover, .button[disabled].alert:focus, #contact-form input[disabled].alert[type=submit]:focus {
   background-color: #970b0e;
 }
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, #contact-form input.disabled.alert[type=submit]:hover, .button.disabled.alert:focus, #contact-form input.disabled.alert[type=submit]:focus, .button[disabled].alert:hover, #contact-form input[disabled].alert[type=submit]:hover, .button[disabled].alert:focus, #contact-form input[disabled].alert[type=submit]:focus {
   color: white;
 }
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, #contact-form input.disabled.alert[type=submit]:hover, .button.disabled.alert:focus, #contact-form input.disabled.alert[type=submit]:focus, .button[disabled].alert:hover, #contact-form input[disabled].alert[type=submit]:hover, .button[disabled].alert:focus, #contact-form input[disabled].alert[type=submit]:focus {
   background-color: #c60f13;
 }
 
-button, .button {
+button, .button, #contact-form input[type=submit] {
   padding-top: 0.8125em;
   padding-bottom: 0.75em;
   -webkit-appearance: none;
 }
-button.tiny, .button.tiny {
+button.tiny, .button.tiny, #contact-form input.tiny[type=submit] {
   padding-top: 0.5em;
   padding-bottom: 0.4375em;
   -webkit-appearance: none;
 }
-button.small, .button.small {
+button.small, .button.small, #contact-form input.small[type=submit] {
   padding-top: 0.625em;
   padding-bottom: 0.5625em;
   -webkit-appearance: none;
 }
-button.large, .button.large {
+button.large, .button.large, #contact-form input.large[type=submit] {
   padding-top: 1.03125em;
   padding-bottom: 1.03125em;
   -webkit-appearance: none;
 }
 
 @media only screen {
-  button, .button {
+  button, .button, #contact-form input[type=submit] {
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -webkit-transition: background-color 300ms ease-out;
     -moz-transition: background-color 300ms ease-out;
     transition: background-color 300ms ease-out;
   }
-  button:active, .button:active {
+  button:active, .button:active, #contact-form input[type=submit]:active {
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
   }
-  button.radius, .button.radius {
+  button.radius, .button.radius, #contact-form input.radius[type=submit] {
     -webkit-border-radius: 3px;
     border-radius: 3px;
   }
-  button.round, .button.round {
+  button.round, .button.round, #contact-form input.round[type=submit] {
     -webkit-border-radius: 1000px;
     border-radius: 1000px;
   }
 }
 @media only screen and (min-width: 768px) {
-  button, .button {
+  button, .button, #contact-form input[type=submit] {
     display: inline-block;
   }
 }
@@ -2326,7 +2326,7 @@ label.inline {
 }
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
-.postfix.button {
+.postfix.button, #contact-form input.postfix[type=submit] {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -2335,7 +2335,7 @@ label.inline {
   line-height: 2.125em;
 }
 
-.prefix.button {
+.prefix.button, #contact-form input.prefix[type=submit] {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -2344,7 +2344,7 @@ label.inline {
   line-height: 2.125em;
 }
 
-.prefix.button.radius {
+.prefix.button.radius, #contact-form input.prefix.radius[type=submit] {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 3px;
@@ -2355,7 +2355,7 @@ label.inline {
   border-top-left-radius: 3px;
 }
 
-.postfix.button.radius {
+.postfix.button.radius, #contact-form input.postfix.radius[type=submit] {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 3px;
@@ -2366,7 +2366,7 @@ label.inline {
   border-bottom-right-radius: 3px;
 }
 
-.prefix.button.round {
+.prefix.button.round, #contact-form input.prefix.round[type=submit] {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 1000px;
@@ -2377,7 +2377,7 @@ label.inline {
   border-top-left-radius: 1000px;
 }
 
-.postfix.button.round {
+.postfix.button.round, #contact-form input.postfix.round[type=submit] {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 1000px;
@@ -2843,7 +2843,7 @@ form.custom .custom.disabled {
 .button-group > *:first-child {
   margin-left: 0;
 }
-.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button {
+.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, #contact-form .button-group.radius > *:first-child > input[type=submit] {
   -moz-border-radius-bottomleft: 3px;
   -moz-border-radius-topleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -2851,7 +2851,7 @@ form.custom .custom.disabled {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
-.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button {
+.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, #contact-form .button-group.radius > *:last-child > input[type=submit] {
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -2859,7 +2859,7 @@ form.custom .custom.disabled {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button {
+.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, #contact-form .button-group.round > *:first-child > input[type=submit] {
   -moz-border-radius-bottomleft: 1000px;
   -moz-border-radius-topleft: 1000px;
   -webkit-border-bottom-left-radius: 1000px;
@@ -2867,7 +2867,7 @@ form.custom .custom.disabled {
   border-bottom-left-radius: 1000px;
   border-top-left-radius: 1000px;
 }
-.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button {
+.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, #contact-form .button-group.round > *:last-child > input[type=submit] {
   -moz-border-radius-topright: 1000px;
   -moz-border-radius-bottomright: 1000px;
   -webkit-border-top-right-radius: 1000px;
@@ -2878,43 +2878,43 @@ form.custom .custom.disabled {
 .button-group.even-2 li {
   width: 50%;
 }
-.button-group.even-2 li button, .button-group.even-2 li .button {
+.button-group.even-2 li button, .button-group.even-2 li .button, .button-group.even-2 li #contact-form input[type=submit], #contact-form .button-group.even-2 li input[type=submit] {
   width: 100%;
 }
 .button-group.even-3 li {
   width: 33.33333%;
 }
-.button-group.even-3 li button, .button-group.even-3 li .button {
+.button-group.even-3 li button, .button-group.even-3 li .button, .button-group.even-3 li #contact-form input[type=submit], #contact-form .button-group.even-3 li input[type=submit] {
   width: 100%;
 }
 .button-group.even-4 li {
   width: 25%;
 }
-.button-group.even-4 li button, .button-group.even-4 li .button {
+.button-group.even-4 li button, .button-group.even-4 li .button, .button-group.even-4 li #contact-form input[type=submit], #contact-form .button-group.even-4 li input[type=submit] {
   width: 100%;
 }
 .button-group.even-5 li {
   width: 20%;
 }
-.button-group.even-5 li button, .button-group.even-5 li .button {
+.button-group.even-5 li button, .button-group.even-5 li .button, .button-group.even-5 li #contact-form input[type=submit], #contact-form .button-group.even-5 li input[type=submit] {
   width: 100%;
 }
 .button-group.even-6 li {
   width: 16.66667%;
 }
-.button-group.even-6 li button, .button-group.even-6 li .button {
+.button-group.even-6 li button, .button-group.even-6 li .button, .button-group.even-6 li #contact-form input[type=submit], #contact-form .button-group.even-6 li input[type=submit] {
   width: 100%;
 }
 .button-group.even-7 li {
   width: 14.28571%;
 }
-.button-group.even-7 li button, .button-group.even-7 li .button {
+.button-group.even-7 li button, .button-group.even-7 li .button, .button-group.even-7 li #contact-form input[type=submit], #contact-form .button-group.even-7 li input[type=submit] {
   width: 100%;
 }
 .button-group.even-8 li {
   width: 12.5%;
 }
-.button-group.even-8 li button, .button-group.even-8 li .button {
+.button-group.even-8 li button, .button-group.even-8 li .button, .button-group.even-8 li #contact-form input[type=submit], #contact-form .button-group.even-8 li input[type=submit] {
   width: 100%;
 }
 
@@ -2937,11 +2937,11 @@ form.custom .custom.disabled {
 }
 
 /* Dropdown Button */
-.dropdown.button {
+.dropdown.button, #contact-form input.dropdown[type=submit] {
   position: relative;
   padding-right: 3.1875em;
 }
-.dropdown.button:before {
+.dropdown.button:before, #contact-form input.dropdown[type=submit]:before {
   position: absolute;
   content: "";
   width: 0;
@@ -2951,57 +2951,57 @@ form.custom .custom.disabled {
   border-color: white transparent transparent transparent;
   top: 50%;
 }
-.dropdown.button:before {
+.dropdown.button:before, #contact-form input.dropdown[type=submit]:before {
   border-width: 0.5625em;
   right: 1.5em;
   margin-top: -0.25em;
 }
-.dropdown.button:before {
+.dropdown.button:before, #contact-form input.dropdown[type=submit]:before {
   border-color: white transparent transparent transparent;
 }
-.dropdown.button.tiny {
+.dropdown.button.tiny, #contact-form input.dropdown.tiny[type=submit] {
   padding-right: 2.1875em;
 }
-.dropdown.button.tiny:before {
+.dropdown.button.tiny:before, #contact-form input.dropdown.tiny[type=submit]:before {
   border-width: 0.4375em;
   right: 0.875em;
   margin-top: -0.15625em;
 }
-.dropdown.button.tiny:before {
+.dropdown.button.tiny:before, #contact-form input.dropdown.tiny[type=submit]:before {
   border-color: white transparent transparent transparent;
 }
-.dropdown.button.small {
+.dropdown.button.small, #contact-form input.dropdown.small[type=submit] {
   padding-right: 2.8125em;
 }
-.dropdown.button.small:before {
+.dropdown.button.small:before, #contact-form input.dropdown.small[type=submit]:before {
   border-width: 0.5625em;
   right: 1.125em;
   margin-top: -0.21875em;
 }
-.dropdown.button.small:before {
+.dropdown.button.small:before, #contact-form input.dropdown.small[type=submit]:before {
   border-color: white transparent transparent transparent;
 }
-.dropdown.button.large {
+.dropdown.button.large, #contact-form input.dropdown.large[type=submit] {
   padding-right: 4em;
 }
-.dropdown.button.large:before {
+.dropdown.button.large:before, #contact-form input.dropdown.large[type=submit]:before {
   border-width: 0.625em;
   right: 1.75em;
   margin-top: -0.3125em;
 }
-.dropdown.button.large:before {
+.dropdown.button.large:before, #contact-form input.dropdown.large[type=submit]:before {
   border-color: white transparent transparent transparent;
 }
-.dropdown.button.secondary:before {
+.dropdown.button.secondary:before, #contact-form input.dropdown.secondary[type=submit]:before {
   border-color: #333333 transparent transparent transparent;
 }
 
 /* Split Buttons */
-.split.button {
+.split.button, #contact-form input.split[type=submit] {
   position: relative;
   padding-right: 4.8em;
 }
-.split.button span {
+.split.button span, #contact-form input.split[type=submit] span {
   display: block;
   height: 100%;
   position: absolute;
@@ -3009,7 +3009,7 @@ form.custom .custom.disabled {
   top: 0;
   border-left: solid 1px;
 }
-.split.button span:before {
+.split.button span:before, #contact-form input.split[type=submit] span:before {
   position: absolute;
   content: "";
   width: 0;
@@ -3018,79 +3018,79 @@ form.custom .custom.disabled {
   border-style: inset;
   left: 50%;
 }
-.split.button span:active {
+.split.button span:active, #contact-form input.split[type=submit] span:active {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.split.button span {
+.split.button span, #contact-form input.split[type=submit] span {
   border-left-color: #1e728c;
 }
-.split.button span {
+.split.button span, #contact-form input.split[type=submit] span {
   width: 3em;
 }
-.split.button span:before {
+.split.button span:before, #contact-form input.split[type=submit] span:before {
   border-top-style: solid;
   border-width: 0.5625em;
   top: 1.125em;
   margin-left: -0.5625em;
 }
-.split.button span:before {
+.split.button span:before, #contact-form input.split[type=submit] span:before {
   border-color: white transparent transparent transparent;
 }
-.split.button.secondary span {
+.split.button.secondary span, #contact-form input.split.secondary[type=submit] span {
   border-left-color: #c3c3c3;
 }
-.split.button.secondary span:before {
+.split.button.secondary span:before, #contact-form input.split.secondary[type=submit] span:before {
   border-color: white transparent transparent transparent;
 }
-.split.button.alert span {
+.split.button.alert span, #contact-form input.split.alert[type=submit] span {
   border-left-color: #7f0a0c;
 }
-.split.button.success span {
+.split.button.success span, #contact-form input.split.success[type=submit] span {
   border-left-color: #396516;
 }
-.split.button.tiny {
+.split.button.tiny, #contact-form input.split.tiny[type=submit] {
   padding-right: 3.9375em;
 }
-.split.button.tiny span {
+.split.button.tiny span, #contact-form input.split.tiny[type=submit] span {
   width: 2.84375em;
 }
-.split.button.tiny span:before {
+.split.button.tiny span:before, #contact-form input.split.tiny[type=submit] span:before {
   border-top-style: solid;
   border-width: 0.4375em;
   top: 0.875em;
   margin-left: -0.3125em;
 }
-.split.button.small {
+.split.button.small, #contact-form input.split.small[type=submit] {
   padding-right: 3.9375em;
 }
-.split.button.small span {
+.split.button.small span, #contact-form input.split.small[type=submit] span {
   width: 2.8125em;
 }
-.split.button.small span:before {
+.split.button.small span:before, #contact-form input.split.small[type=submit] span:before {
   border-top-style: solid;
   border-width: 0.5625em;
   top: 0.84375em;
   margin-left: -0.5625em;
 }
-.split.button.large {
+.split.button.large, #contact-form input.split.large[type=submit] {
   padding-right: 6em;
 }
-.split.button.large span {
+.split.button.large span, #contact-form input.split.large[type=submit] span {
   width: 3.75em;
 }
-.split.button.large span:before {
+.split.button.large span:before, #contact-form input.split.large[type=submit] span:before {
   border-top-style: solid;
   border-width: 0.625em;
   top: 1.3125em;
   margin-left: -0.5625em;
 }
-.split.button.expand {
+.split.button.expand, #contact-form input.split.expand[type=submit] {
   padding-left: 2em;
 }
-.split.button.secondary span:before {
+.split.button.secondary span:before, #contact-form input.split.secondary[type=submit] span:before {
   border-color: #333333 transparent transparent transparent;
 }
-.split.button.radius span {
+.split.button.radius span, #contact-form input.split.radius[type=submit] span {
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -3098,7 +3098,7 @@ form.custom .custom.disabled {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-.split.button.round span {
+.split.button.round span, #contact-form input.split.round[type=submit] span {
   -moz-border-radius-topright: 1000px;
   -moz-border-radius-bottomright: 1000px;
   -webkit-border-top-right-radius: 1000px;
@@ -3692,7 +3692,7 @@ form.custom .custom.disabled {
 .top-bar input {
   height: 2.45em;
 }
-.top-bar .button {
+.top-bar .button, .top-bar #contact-form input[type=submit], #contact-form .top-bar input[type=submit] {
   padding-top: .5em;
   padding-bottom: .5em;
   margin-bottom: 0;
@@ -3929,7 +3929,9 @@ form.custom .custom.disabled {
     width: auto;
   }
   .top-bar input,
-  .top-bar .button {
+  .top-bar .button,
+  .top-bar #contact-form input[type=submit],
+  #contact-form .top-bar input[type=submit] {
     line-height: 2em;
     font-size: 0.875em;
     height: 2em;
@@ -4416,7 +4418,7 @@ form.custom .custom.disabled {
   width: 100%;
   padding: 1.125em 1.25em 1.5em;
 }
-.joyride-content-wrapper .button {
+.joyride-content-wrapper .button, .joyride-content-wrapper #contact-form input[type=submit], #contact-form .joyride-content-wrapper input[type=submit] {
   margin-bottom: 0 !important;
 }
 
@@ -6382,13 +6384,14 @@ img.mfp-img {
   background: rgba(0, 0, 0, 0.9);
   padding: 15px;
   border-radius: 4px;
-  color: #FFF;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid #1F1F1F;
+  color: #1F1F1F;
 }
 
 .alertify-log-error {
   background: #FE1A00;
   background: rgba(254, 26, 0, 0.9);
+  color: #FFF;
 }
 
 .alertify-log-success {
@@ -7848,6 +7851,18 @@ td {
   display: block;
 }
 
+/* Foundation Overrides */
+button:active, .button:active, #contact-form input[type=submit]:active, #contact-form input[type=submit]:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hover, #contact-form input[type=submit]:hover, .button:focus, #contact-form input[type=submit]:focus, #contact-form input[type=submit]:focus {
+  outline: none;
+  color: #2084ea;
+  border: 1px solid #999999;
+}
+
 /***** layout ******/
 @media only screen {
   #header {
@@ -8997,6 +9012,9 @@ td {
   margin-left: auto;
   margin-right: auto;
 }
+#contact-form header {
+  margin-bottom: 10px;
+}
 #contact-form fieldset {
   border: none;
   padding: 0;
@@ -9008,9 +9026,16 @@ td {
 #contact-form input {
   margin-bottom: 20px;
 }
-#contact-form input[type=submit] {
+#contact-form input#scf_contact {
   margin-top: 10px;
   margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 28px;
+  font-size: 12px;
+}
+#contact-form .mfp-close {
+  border: none;
 }
 
 #featured-slider {
@@ -9113,10 +9138,6 @@ td {
   background: rgba(0, 0, 0, 0.9);
 }
 
-#mc_signup {
-  height: 10px;
-}
-
 .aside-navigation .aside-navigation-list, .aside-navigation .wp-tag-cloud {
   margin-top: 20px;
 }
@@ -9157,7 +9178,7 @@ td {
   margin: 20px 0;
 }
 
-.button {
+.button, #contact-form input[type=submit] {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
@@ -9188,10 +9209,10 @@ td {
   border: 1px solid #cccccc;
   font-size: 12px;
 }
-.button:hover {
+.button:hover, #contact-form input[type=submit]:hover {
   color: #2084ea;
 }
-.button:active {
+.button:active, #contact-form input[type=submit]:active {
   position: relative;
   top: 1px;
 }

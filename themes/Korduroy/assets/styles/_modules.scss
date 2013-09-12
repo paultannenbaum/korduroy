@@ -43,6 +43,10 @@
   margin-left: auto;
   margin-right: auto;
 
+  header {
+    margin-bottom: 10px;
+  }
+
   fieldset {
     border: none;
     padding: 0;
@@ -56,9 +60,20 @@
   input {
     margin-bottom: 20px;
     &[type=submit] {
+      @extend .button;
+    }
+    &#scf_contact {
       margin-top: 10px;
       margin-bottom: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      line-height: 28px;
+      font-size: 12px;
     }
+  }
+
+  .mfp-close {
+    border: none;
   }
 }
 
@@ -171,17 +186,6 @@
       }
     }
   }
-}
-
-#mc_signup {
-  //#mc_message {
-  //  display: none;
-  //  @include alert;
-  //  position: absolute;
-  //  top: 0px;
-  //  min-height: 85px;
-  //}
-  height: 10px;
 }
 
 .aside-navigation {

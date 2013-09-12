@@ -209,12 +209,13 @@
   background: rgba(0,0,0,.9);
   padding: 15px;
   border-radius: 4px;
-  color: #FFF;
-  text-shadow: -1px -1px 0 rgba(0,0,0,.5);
+  border: 1px solid #1F1F1F;
+  color: #1F1F1F;
 }
 .alertify-log-error {
   background: #FE1A00;
   background: rgba(254,26,0,.9);
+  color: #FFF;
 }
 .alertify-log-success {
   background: #5CB811;
