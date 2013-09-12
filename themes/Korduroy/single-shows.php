@@ -39,7 +39,7 @@
             </div>
           </header>
           <div class="episode-desc">
-            <?php the_field('description'); ?>
+            <?php the_content() ?>
           </div>
           <?php if(get_field('credits')): ?>
             <div class="credits">
