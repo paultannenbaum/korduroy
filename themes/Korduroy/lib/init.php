@@ -19,15 +19,8 @@ function ktv_setup() {
 	// Prevent File Modifications
 	define ( 'DISALLOW_FILE_EDIT', true );
 
-	// Enable Post Thumbnails
-	add_theme_support( 'post-thumbnails' );
-
-	// Add Image Sizes
-	// add_image_size( $name, $width = 0, $height = 0, $crop = false );
-
 	// Show Kitchen Sink in WYSIWYG Editor
 	add_filter( 'tiny_mce_before_init', 'ktv_unhide_kitchensink' );
-
 
 	/****************************************
 	Frontend
@@ -45,7 +38,6 @@ function ktv_setup() {
 
 	// Remove Read More Jump
 	add_filter('the_content_more_link', 'ktv_remove_more_jump_link');
-
 }
 endif;
 add_action('after_setup_theme', 'ktv_setup');

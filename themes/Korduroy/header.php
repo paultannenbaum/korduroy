@@ -36,9 +36,7 @@
   <script type="text/javascript" src="//use.typekit.net/jiy2hqu.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-  <!-- WP HEAD START -->
   <?php wp_head(); ?>
-  <!-- WP HEAD END -->
 </head>
 
 <body <?php body_class(); ?>>
