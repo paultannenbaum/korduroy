@@ -7699,12 +7699,12 @@ h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h
 }
 
 html {
-  min-height: 100%;
+  height: 100%;
   background: #e8e8e5;
 }
 
 body {
-  min-height: 100%;
+  height: 100%;
   background: #e8e8e5;
   color: #444444;
   font-family: "proxima-nova", "Lucida Grande", lucida, serif;
