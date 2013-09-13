@@ -570,7 +570,7 @@
 
 .shaka-ratings {
   margin-top: 20px;
-  
+
   .ratings {
     $shaka-width: 30px;
     $shaka-height: 25px;
@@ -664,11 +664,6 @@
     }
   }
 }
-
-
-
-
-
 
 /***** Page Modules *****/
 .home-page {
@@ -1071,8 +1066,6 @@
     }
   }
 }
-
-
 
 // Media Queries
 @media #{$small} {

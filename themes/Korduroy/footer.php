@@ -92,7 +92,7 @@
 </footer>
 
 <?php wp_footer(); ?>
-<?php get_template_part('partials/javascripts'); ?>
+<!--<?php # get_template_part('partials/javascripts'); ?>-->
 <?php get_template_part('partials/third-party-embeds'); ?>
 
 </body>
