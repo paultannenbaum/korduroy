@@ -57,7 +57,9 @@ module.exports = function (grunt) {
           beautify: true
         },
         files:{
-          'assets/scripts/app.js':['assets/scripts/vendor/libs/*.js', 'assets/scripts/vendor/plugins/*.js', 'assets/scripts/source/*.js']
+          'assets/scripts/app.js':[
+            'assets/scripts/vendor/plugins/*.js',
+            'assets/scripts/source/*.js']
         }
       }
 

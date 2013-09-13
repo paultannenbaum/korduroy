@@ -36,10 +36,9 @@
   <script type="text/javascript" src="//use.typekit.net/jiy2hqu.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-  <!--<link href="<?php echo get_template_directory_uri(); ?>/assets/styles/css/royalslider.css" rel="stylesheet">-->
-  <!--<link href="<?php echo get_template_directory_uri(); ?>/assets/styles/css/skins/default/rs-default.css" rel="stylesheet">-->
-
+  <!-- WP HEAD START -->
   <?php wp_head(); ?>
+  <!-- WP HEAD END -->
 </head>
 
 <body <?php body_class(); ?>>

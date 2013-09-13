@@ -22,17 +22,14 @@ Frontend
 
 function ktv_scripts() {
 	// CSS first
-	wp_register_style('ktv_style', get_stylesheet_directory_uri().'/style.css', null, '1.0', 'all' );
-	wp_enqueue_style( 'ktv_style' );
+	wp_deregister_style('mailchimpSF_main_css');
+	wp_deregister_style('mailchimpSF_ie_css');
+
+	wp_register_style('ktv', get_stylesheet_directory_uri().'/style.css', null, '1.0', 'all' );
+	wp_enqueue_style( 'ktv' );
 
 	// JavaScript
-	if ( !is_admin() ) {
-	  wp_deregister_script('jquery');
-		# wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, NULL);
-		wp_register_script('jquery', get_template_directory_uri() . '/assets/scripts/vendor/libs/jquery-1.9.1.min.js', false, NULL);
-		wp_enqueue_script('jquery');
-		wp_enqueue_script('app', get_template_directory_uri() . '/assets/scripts/app.js', array('jquery'), false, NULL );
-	}
+	wp_deregister_script('jquery');
 }
 
 /**
