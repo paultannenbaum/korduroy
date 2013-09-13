@@ -31,15 +31,14 @@ function ktv_scripts() {
 
 	// JavaScript
 	if (!is_admin() ) {
-	  # wp_deregister_script('jquery');
-		# wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, NULL);
-		# wp_enqueue_script('jquery');
+    // Basically psuedo register jQuery. We want to load it via the html5 boilerplate method (cdn with local fallback),
+    // But wordpress makes this hard to do. So do it manually above wp_footer call, and then load dependencies accordingly
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', '', false, false, true);
+    wp_enqueue_script('jquery');
 
-		wp_deregister_script('jquery');
-		wp_register_script('jquery', get_template_directory_uri() . '/assets/scripts/vendor/libs/jquery-1.10.2.min.js', NULL, false, true);
-		wp_enqueue_script('jquery');
-
-		wp_enqueue_script('app', get_template_directory_uri() . '/assets/scripts/app.js', array('jquery'), false, true );
+		wp_register_script('app', get_template_directory_uri() . '/assets/scripts/app.js', array('jquery'), false, true );
+	  wp_enqueue_script('app');
 	}
 }
 
