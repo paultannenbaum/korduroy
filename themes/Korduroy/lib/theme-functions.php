@@ -24,12 +24,13 @@ function ktv_scripts() {
 	// CSS first
 	wp_deregister_style('mailchimpSF_main_css');
 	wp_deregister_style('mailchimpSF_ie_css');
+	wp_deregister_style('post_ratings');
 
 	wp_register_style('ktv', get_stylesheet_directory_uri().'/style.css', null, '1.0', 'all' );
 	wp_enqueue_style( 'ktv' );
 
 	// JavaScript
-	wp_deregister_script('jquery');
+	# wp_deregister_script('jquery');
 }
 
 /**

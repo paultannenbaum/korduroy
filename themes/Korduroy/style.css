@@ -9525,6 +9525,97 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   margin-bottom: 0px;
 }
 
+.shaka-ratings {
+  margin-top: 20px;
+}
+.shaka-ratings .ratings:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.shaka-ratings .ratings .item {
+  display: none;
+}
+.shaka-ratings .ratings ul, .shaka-ratings .ratings a:hover, .shaka-ratings .ratings .rating {
+  background: transparent url(assets/images/icon_shaka.png) repeat-x;
+}
+.shaka-ratings .ratings ul, .shaka-ratings .ratings li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.shaka-ratings .ratings ul {
+  height: 25px;
+  margin: 0 auto;
+}
+.shaka-ratings .ratings li {
+  position: relative;
+  display: block;
+}
+.shaka-ratings .ratings a {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 25px;
+  text-decoration: none;
+  text-indent: -9999em;
+  z-index: 10;
+}
+.shaka-ratings .ratings ul li a:hover {
+  background-position: left bottom;
+  z-index: 5;
+  left: 0;
+}
+.shaka-ratings .ratings .s2 a {
+  left: 30px;
+}
+.shaka-ratings .ratings .s2 a:hover {
+  width: 60px;
+}
+.shaka-ratings .ratings .s3 a {
+  left: 60px;
+}
+.shaka-ratings .ratings .s3 a:hover {
+  width: 90px;
+}
+.shaka-ratings .ratings .s4 a {
+  left: 90px;
+}
+.shaka-ratings .ratings .s4 a:hover {
+  width: 120px;
+}
+.shaka-ratings .ratings .s5 a {
+  left: 120px;
+}
+.shaka-ratings .ratings .s5 a:hover {
+  width: 150px;
+}
+.shaka-ratings .ratings .rating {
+  background-position: left center;
+  position: absolute;
+  height: 25px;
+  display: block;
+  text-indent: -9999px;
+  z-index: 1;
+}
+.shaka-ratings .ratings .meta {
+  font-size: 10px;
+  color: #999999;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.shaka-ratings .ratings.error .meta {
+  color: #ff0000;
+}
+
 /***** Page Modules *****/
 .home-page .section-header {
   height: 30px;

@@ -23,9 +23,9 @@
           <a class="channel-link" href="<?php echo get_term_link($category, 'show_category'); ?>">
             <span class="channel-icon <?php echo $category -> slug ?>"></span>
           </a>
-          <!--<div class="stars">-->
-            <!--<?php if (function_exists('ec_stars_rating')) { ec_stars_rating(); } ?>-->
-          <!--</div>-->
+          <div class="shaka-ratings">
+            <?php echo PostRatings()->getControl(); ?>
+          </div>
         </aside>
         <div class="episode-main">
           <header class="episode-header">

@@ -568,6 +568,107 @@
   }
 }
 
+.shaka-ratings {
+  margin-top: 20px;
+  
+  .ratings {
+    $shaka-width: 30px;
+    $shaka-height: 25px;
+
+    &:after {
+      content: '.';
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0;
+    }
+    .item {
+      display: none;
+    }
+    ul, a:hover, .rating {
+      background: transparent url(assets/images/icon_shaka.png) repeat-x;
+    }
+    ul, li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      height: $shaka-height;
+      margin: 0 auto;
+    }
+    li {
+      position: relative;
+      display: block;
+    }
+    a {
+      position: absolute;
+      cursor: pointer;
+      left: 0;
+      top: 0;
+      display: block;
+      width: $shaka-width;
+      height: $shaka-height;
+      text-decoration: none;
+      text-indent: -9999em;
+      z-index: 10;
+    }
+    ul li a:hover {
+      background-position: left bottom;
+      z-index: 5;
+      left: 0 ;
+    }
+    .s2 a {
+      left: $shaka-width;
+      &:hover {
+        width: $shaka-width * 2;
+      }
+    }
+    .s3 a {
+      left: $shaka-width * 2;
+      &:hover {
+        width: $shaka-width * 3;
+      }
+    }
+    .s4 a {
+      left: $shaka-width * 3;
+      &:hover {
+        width: $shaka-width * 4;
+      }
+    }
+    .s5 a {
+      left: $shaka-width * 4;
+      &:hover {
+        width: $shaka-width * 5;
+      }
+    }
+    .rating {
+      background-position: left center;
+      position: absolute;
+      height: $shaka-height;
+      display: block;
+      text-indent: -9999px;
+      z-index: 1;
+    }
+    .meta {
+      font-size: 10px;
+      color: $ktv-grey;
+      line-height: 18px;
+      text-align: center;
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+    &.error .meta {
+      color: #ff0000;
+    }
+  }
+}
+
+
+
+
+
 
 /***** Page Modules *****/
 .home-page {
