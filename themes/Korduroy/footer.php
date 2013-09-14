@@ -32,13 +32,11 @@
           <li><a href="<?php echo site_url(); ?>/links">links</a></li>
           <li><a href="<?php echo site_url(); ?>/submissions">submissions</a></li>
           <li><a href="<?php echo site_url(); ?>/returns">returns</a></li>
-          <!--<li><a href="#">production company</a></li>-->
           <li><a href="<?php echo site_url(); ?>/help">help</a></li>
           <li><a href="#contact-form" class="contact-form-link">contact us</a></li>
         </ul>
       </nav>
 
-      <!-- This is hidden until user clicks -->
       <div id="contact-form" class="mfp-hide">
         <header class="message">
           <h1>Drop us a line</h1>
@@ -63,7 +61,6 @@
         <h4 class="section-title">Stay Updated</h4>
         <form id="newsletter-signup" method="post">
           <!-- TODO: Switch this value from js to html, and gracefully degrade -->
-          <!--<?php # the_widget('mailchimpSF_Widget'); ?>-->
           <input type="hidden" id="mc_submit_type" name="mc_submit_type" value="js">
           <input type="hidden" name="mcsf_action" value="mc_submit_signup_form">
           <?php wp_nonce_field('mc_submit_signup_form', '_mc_submit_signup_form_nonce', false); ?>

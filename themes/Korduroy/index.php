@@ -14,7 +14,6 @@
           </ul>
         </nav>
       </aside>
-
       <div class="blog-posts-container">
         <?php while ( have_posts() ) : the_post(); ?>
           <div class="blog-post">
@@ -45,7 +44,6 @@
           </div>
           <hr class="horizontal-separator-light" />
         <?php endwhile; ?>
-
         <div class="pagination-container">
           <?php get_template_part('partials/pagination'); ?>
         </div>

@@ -2,9 +2,9 @@
 
 <nav id="ktv-sub-nav">
   <h1 class="sub-nav-heading extend-full">Korduroy.TV <?php wp_title("", true); ?></h1>
-  <span class="separator-container">
+  <div class="separator-container">
     <hr class="horizontal-stitch" />
-  </span>
+  </div>
 </nav>
 
 <div id="body" class="default-page">

@@ -30,18 +30,17 @@
               <?php get_template_part('partials/tag-list'); ?>
               <hr class="horizontal-stitch" />
               <h2>Related Items</h2>
-              <!-- Related Posts Goes Here -->
+              <!-- TODO: Related Posts Goes Here -->
             </footer>
-          </div>
           </div>
         </div>
         <?php endwhile; ?>
       </div>
-    </div>
 
-    <!--<div class="comments-wrapper">-->
-      <!--<?php comments_template(); ?>-->
-    <!--</div>-->
+      <div class="comments-wrapper">
+        <?php comments_template(); ?>
+      </div>
+    </div>
 
   </section>
 </div>

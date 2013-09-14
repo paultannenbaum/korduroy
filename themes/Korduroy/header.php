@@ -11,35 +11,26 @@
 
 <head>
   <meta charset="utf-8">
-
-  <!-- Google Chrome Frame for IE -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title><?php wp_title(''); ?></title>
-
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
-  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png">
-  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-
-  <!--[if IE]>
-  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-
-  <![endif]-->
-
+  <!-- TODO: Implement -->
   <meta name="msapplication-TileColor" content="#f01d4f">
   <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
+
+  <!-- TODO: Implement icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
+  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png">
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+  <!--[if IE]><link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico"><![endif]-->
 
   <script type="text/javascript" src="//use.typekit.net/jiy2hqu.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-
   <?php # get_template_part('partials/cdn-javascripts'); // Uncomment when you need to use wp debug bar ?>
   <?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>

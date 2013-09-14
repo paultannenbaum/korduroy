@@ -3,9 +3,9 @@
 <?php if (have_posts()) : ?>
   <nav id="ktv-sub-nav">
     <h1 class="sub-nav-heading extend-full">Search Results for "<?php echo get_search_query(); ?>"</h1>
-    <span class="separator-container">
+    <div class="separator-container">
       <hr class="horizontal-stitch" />
-    </span>
+    </div>
   </nav>
 <?php endif; ?>
 

@@ -8,9 +8,9 @@
 
 <nav id="ktv-sub-nav">
   <h1 class="sub-nav-heading extend-full">All things "<?php echo $tag->name ?>"</h1>
-  <span class="separator-container">
+  <div class="separator-container">
     <hr class="horizontal-stitch" />
-  </span>
+  </div>
 </nav>
 
 <div id="body" class="tag-page">

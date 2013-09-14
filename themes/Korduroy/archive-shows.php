@@ -12,7 +12,6 @@
       foreach( $categories as $category ):
     ?>
       <section class="show-channel">
-
         <header class="channel-header">
           <a class="channel-link" href="<?php echo get_term_link($category, $category -> taxonomy); ?>">
             <span class="channel-icon <?php echo $category -> slug ?>"></span>
@@ -22,7 +21,6 @@
             <a class="all-episodes" href="<?php the_permalink(); ?>">view all episodes</a>
           </div>
         </header>
-
         <div class="channel-list-container">
           <ul class="channel-list">
             <?php
@@ -49,7 +47,6 @@
     <?php endforeach; ?>
   </section>
 </div>
-
 <?php get_footer(); ?>
 
 

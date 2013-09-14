@@ -12,13 +12,6 @@
         <p class="channel-info"><?php echo $category -> description ?></p>
       </header>
 
-      <!--<div class="royalSlider rsDefault">-->
-        <!--<img class="rsImg rsMainSlideImage" src="http://dimsemenov.com/plugins/royal-slider/img/admin-video.png">-->
-        <!--<img class="rsImg rsMainSlideImage" src="http://dimsemenov.com/plugins/royal-slider/img/admin-video.png">-->
-        <!--<img class="rsImg rsMainSlideImage" src="http://dimsemenov.com/plugins/royal-slider/img/admin-video.png">-->
-        <!--<img class="rsImg rsMainSlideImage" src="http://dimsemenov.com/plugins/royal-slider/img/admin-video.png">-->
-      <!--</div>-->
-
       <ul class="channel-list">
         <?php $posts = get_posts(array(
             'post_type' => 'shows',

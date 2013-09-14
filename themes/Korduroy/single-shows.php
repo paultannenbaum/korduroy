@@ -7,7 +7,6 @@
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-
       <div class="video-wrapper">
         <?php if(get_field('vimeo_id')): ?>
           <iframe src="http://player.vimeo.com/video/<?php the_field('vimeo_id'); ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=cfff66" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -64,9 +63,9 @@
       </div>
     <?php endwhile; ?>
 
-    <!--<div class="comments-wrapper">-->
-      <!--<?php comments_template(); ?>-->
-    <!--</div>-->
+    <div class="comments-wrapper">
+      <?php comments_template(); ?>
+    </div>
 
   </section>
 </div>
