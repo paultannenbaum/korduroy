@@ -10,19 +10,18 @@
 <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 
 <head>
+  <title><?php wp_title(''); ?></title>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title><?php wp_title(''); ?></title>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- TODO: Implement -->
-  <meta name="msapplication-TileColor" content="#f01d4f">
-  <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
+  <meta name="msapplication-TileColor" content="#e8e8e5">
+  <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/images/win8-tile-icon.png">
 
-  <!-- TODO: Implement icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
   <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png">
-  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <!--[if IE]><link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico"><![endif]-->
 
