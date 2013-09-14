@@ -794,6 +794,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 5;
 
       &.all-yew {
         background-image: url(assets/images/channel-icons/all_yew.png);

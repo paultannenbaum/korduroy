@@ -84,6 +84,9 @@
             </div>
           <?php endif; ?>
         <?php endwhile; ?>
+        <div class="pagination-container">
+          <?php get_template_part('partials/pagination'); ?>
+        </div>
       <?php else : ?>
         <div class="no-results-container">
           <h1>Shoots brah, no can find DaKine for "<?php echo get_search_query(); ?>".</h1>

@@ -98,6 +98,10 @@
             <hr class="horizontal-separator-light" />
           <?php endif; ?>
         <?php endforeach; ?>
+
+        <div class="pagination-container">
+          <?php get_template_part('partials/pagination'); ?>
+        </div>
       </div>
     </div>
 

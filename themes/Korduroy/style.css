@@ -8699,6 +8699,13 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     width: 100%;
     float: left;
   }
+  .search-page .pagination-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+  }
   .search-page .no-results-container {
     position: relative;
     padding-left: 0.9375em;
@@ -9731,6 +9738,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 .shows-page .channel-header .channel-icon.all-yew {
   background-image: url(assets/images/channel-icons/all_yew.png);
