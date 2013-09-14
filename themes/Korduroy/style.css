@@ -9049,9 +9049,13 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 #featured-slider {
   background: #fff;
   width: 100%;
-  max-width: 720px;
-  max-height: 460px;
   overflow: hidden;
+}
+#featured-slider .slide {
+  display: none;
+}
+#featured-slider .slide:first-child {
+  display: block;
 }
 #featured-slider .slide:before {
   content: "";
@@ -9073,6 +9077,10 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   position: relative;
   overflow: hidden;
   width: auto;
+  height: auto;
+}
+#featured-slider .slide .slide-image img {
+  width: 100%;
   height: auto;
 }
 #featured-slider .slide .slide-desc {

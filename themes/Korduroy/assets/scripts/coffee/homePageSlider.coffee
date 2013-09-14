@@ -25,6 +25,7 @@ jQuery ->
 
     setSlider = ->
       $('.slide-1').find('.slide-desc').delay(1500).animate({ 'bottom': 0 })
+      el.find('.slide').css('display', 'block')
       el.royalSlider(sliderOptions)
 
     setSliderEvents = ->

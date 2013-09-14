@@ -23,22 +23,22 @@
 
 
 <!-- AddThis -->
-<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521959e3746a007e"></script>-->
-<!--<script type="text/javascript">-->
-  <!--addthis.layers({-->
-    <!--'theme' : 'transparent',-->
-    <!--'follow' : {-->
-      <!--'services' : [-->
-        <!--{'service': 'facebook',  'id': 'KorduroyTV'},-->
-        <!--{'service': 'twitter',   'id': 'Korduroytv'},-->
-        <!--{'service': 'vimeo',     'id': 'korduroy'},-->
-        <!--{'service': 'pinterest', 'id': 'korduroytv'},-->
-        <!--{'service': 'instagram', 'id': 'korduroytv'},-->
-        <!--{'service': 'tumblr',    'id': 'korduroytv'}-->
-      <!--]-->
-    <!--}-->
-  <!--});-->
-<!--</script>-->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521959e3746a007e"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'follow' : {
+      'services' : [
+        {'service': 'facebook',  'id': 'KorduroyTV'},
+        {'service': 'twitter',   'id': 'Korduroytv'},
+        {'service': 'vimeo',     'id': 'korduroy'},
+        {'service': 'pinterest', 'id': 'korduroytv'},
+        {'service': 'instagram', 'id': 'korduroytv'},
+        {'service': 'tumblr',    'id': 'korduroytv'}
+      ]
+    }
+  });
+</script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <!--<script>-->
