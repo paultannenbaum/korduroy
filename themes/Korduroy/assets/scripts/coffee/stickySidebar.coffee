@@ -61,21 +61,21 @@
 #  KTV.stickySidebar.init()
 
 # Option 3, Plugin version
-#jQuery ->
-#
-#  KTV = KTV or {}
-#
-#  KTV.stickySidebar = do ->
-#    #private
-#    el = $('.aside-navigation')
-#    elContainer = $('.aside-container')
-#    contentContainer = $('.content-container')
-#    paddingBottom = 50
-#
-#    # public:
-#    init: ->
-#      if (el.length)
-#        elContainer.height(contentContainer.height() - paddingBottom)
-#        el.stick_in_parent()
-#
-#  KTV.stickySidebar.init()
+jQuery ->
+
+  KTV = KTV or {}
+
+  KTV.stickySidebar = do ->
+    #private
+    el = $('.aside-navigation')
+    elContainer = $('.aside-container')
+    contentContainer = $('.content-container')
+    paddingBottom = 50
+
+    # public:
+    init: ->
+      if (el.length)
+        elContainer.height(contentContainer.height() - paddingBottom)
+        el.stick_in_parent()
+
+  KTV.stickySidebar.init()

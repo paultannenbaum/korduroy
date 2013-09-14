@@ -3,7 +3,6 @@
 
 <div id="body" class="blog-page blog-index-page">
   <section class="main" role="main">
-
     <div class="content-container">
       <aside class="aside-container">
         <div class="space-filler"></div>
@@ -46,11 +45,12 @@
           </div>
           <hr class="horizontal-separator-light" />
         <?php endwhile; ?>
+
+        <div class="pagination-container">
+          <?php get_template_part('partials/pagination'); ?>
+        </div>
       </div>
-
-      <?php get_template_part('partials/pagination'); ?>
     </div>
-
   </section>
 </div>
 

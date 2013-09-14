@@ -45,13 +45,13 @@
             </div>
             <hr class="horizontal-separator-light" />
           <?php endwhile; ?>
+          <div class="pagination-container">
+            <?php get_template_part('partials/pagination'); ?>
+          </div>
         <?php else : ?>
           <h1>Nothing found</h1>
         <?php endif; ?>
       </div>
-
-      <?php get_template_part('partials/pagination'); ?>
-
     </div>
   </section>
 </div>

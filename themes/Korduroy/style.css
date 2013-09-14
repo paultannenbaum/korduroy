@@ -7968,6 +7968,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     margin-bottom: 0;
     max-width: none;
     *zoom: 1;
+    margin-bottom: 30px;
   }
   #body .content-container:before, #body .content-container:after {
     content: " ";
@@ -9614,6 +9615,36 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 }
 .shaka-ratings .ratings.error .meta {
   color: #ff0000;
+}
+
+.pagination-links {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.pagination-links .page-numbers {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: rgba(153, 153, 153, 0.1);
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 2px 5px;
+  margin-right: 5px;
+}
+.pagination-links .page-numbers.current {
+  background: none;
+  box-shadow: none;
+  color: #2084ea;
+}
+.pagination-links .page-numbers.next, .pagination-links .page-numbers.prev {
+  background: none;
+  box-shadow: none;
+}
+.pagination-links .page-numbers:last-child {
+  margin-right: 0px;
 }
 
 /***** Page Modules *****/

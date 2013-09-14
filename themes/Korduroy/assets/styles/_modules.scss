@@ -665,6 +665,34 @@
   }
 }
 
+.pagination-links {
+  font-size: 12px;
+  text-transform: uppercase;
+
+  .page-numbers {
+    @include border-radius(3px);
+    background: rgba(153,153,153,0.1);
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,0.1), 1px 1px 0 rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 2px 5px;
+    margin-right: 5px;
+
+    &.current {
+      background: none;
+      box-shadow: none;
+      color: $ktv-blue;
+    }
+    &.next, &.prev {
+      background: none;
+      box-shadow: none;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
 /***** Page Modules *****/
 .home-page {
   .section-header {

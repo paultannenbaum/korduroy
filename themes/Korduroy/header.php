@@ -36,10 +36,9 @@
   <script type="text/javascript" src="//use.typekit.net/jiy2hqu.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-  <!-- WP HEAD START -->
-  <?php wp_head(); ?>
-  <!-- WP HEAD END -->
 
+  <?php get_template_part('partials/cdn-javascripts'); // Uncomment when you need to use wp debug bar ?>
+  <?php wp_head(); ?>
 
 </head>
 
