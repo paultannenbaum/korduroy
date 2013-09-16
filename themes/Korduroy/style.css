@@ -8714,6 +8714,44 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     float: left;
     margin: 30px 0;
   }
+
+  .links-page .linked-pages-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 83.33333%;
+    float: left;
+  }
+  .links-page .linked-pages-container .links-list {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625em;
+    *zoom: 1;
+    margin-top: 10px;
+  }
+  .links-page .linked-pages-container .links-list:before, .links-page .linked-pages-container .links-list:after {
+    content: " ";
+    display: table;
+  }
+  .links-page .linked-pages-container .links-list:after {
+    clear: both;
+  }
+  .links-page .linked-pages-container .links-list > li {
+    display: inline;
+    height: auto;
+    float: left;
+    padding: 0 0.625em 1.25em;
+  }
+  .links-page .linked-pages-container .links-list > li {
+    width: 33.33333%;
+    padding: 0 0.625em 1.25em;
+  }
+  .links-page .linked-pages-container .links-list > li:nth-of-type(n) {
+    clear: none;
+  }
+  .links-page .linked-pages-container .links-list > li:nth-of-type(3n+1) {
+    clear: both;
+  }
 }
 @media only screen and (min-width: 768px) {
   #page-wrap {
@@ -9990,6 +10028,14 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 }
 .search-page .search-post .sharing-container .addthis_toolbox .addthis_counter.addthis_pill_style {
   float: right;
+}
+
+.links-page .links-page-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.links-page .link-group .horizontal-separator-light, .links-page .link-group .shows-page .channel-separator, .shows-page .links-page .link-group .channel-separator {
+  margin-top: 0px;
 }
 
 @media only screen and (min-width: 768px) {

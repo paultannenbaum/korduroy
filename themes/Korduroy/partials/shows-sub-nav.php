@@ -9,7 +9,7 @@
       'order' => 'DESC'
     )); ?>
   </ul>
-  <span class="separator-container">
+  <div class="separator-container">
     <hr class="horizontal-stitch" />
-  </span>
+  </div>
 </nav>

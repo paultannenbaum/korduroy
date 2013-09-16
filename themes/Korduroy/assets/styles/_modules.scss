@@ -1103,6 +1103,19 @@
   }
 }
 
+.links-page {
+  .links-page-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .link-group {
+    .horizontal-separator-light {
+      margin-top: 0px;
+    }
+  }
+}
+
 // Media Queries
 @media #{$small} {
   .site-footer {

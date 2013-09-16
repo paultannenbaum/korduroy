@@ -370,6 +370,16 @@
       margin: 30px 0;
     }
   }
+  .links-page {
+    .linked-pages-container {
+      @include grid-column(10);
+
+      .links-list {
+        @include block-grid(3);
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 // Tablets and Up

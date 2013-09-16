@@ -11,7 +11,7 @@
       <a class="sub-nav-link" href="<?php echo site_url(); ?>/about/big-shaka-club">The Big Shaka Club</a>
     </li>
   </ul>
-  <span class="separator-container">
+  <div class="separator-container">
     <hr class="horizontal-stitch" />
-  </span>
+  </div>
 </nav>
