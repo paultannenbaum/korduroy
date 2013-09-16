@@ -936,6 +936,9 @@
 }
 
 .blog-page {
+  img {
+    @extend %image-border;
+  }
   .blog-post {
     .date-container {
       color: $ktv-grey;
@@ -972,7 +975,6 @@
       display: inline-block;
     }
     .blog-post-thumbnail img {
-      @extend %image-border;
       width: 100%;
     }
     .blog-post-footer {
@@ -1113,6 +1115,12 @@
     .horizontal-separator-light {
       margin-top: 0px;
     }
+  }
+}
+
+.default-page {
+  img {
+    @extend %image-border;
   }
 }
 
