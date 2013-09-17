@@ -9815,7 +9815,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   padding-left: 212px;
   font-size: 14px;
 }
-.shows-page .channel-header .channel-info .channel-desc a {
+.shows-page .channel-header .channel-info .category-name {
   font-weight: bold;
   text-transform: uppercase;
 }

@@ -17,8 +17,11 @@
             <span class="channel-icon <?php echo $category -> slug ?>"></span>
           </a>
           <div class="channel-info">
-            <p class="channel-desc"><?php echo $category -> description ?></p>
-            <a class="all-episodes" href="<?php the_permalink(); ?>">view all episodes</a>
+            <p class="channel-desc">
+              <a href="<?php echo get_term_link($category, $category -> taxonomy); ?>" class="category-name"><?php echo $category -> name ?></a>
+              <?php echo $category -> description ?>
+            </p>
+            <a class="all-episodes" href="<?php echo get_term_link($category, $category -> taxonomy); ?>">view all episodes</a>
           </div>
         </header>
         <div class="channel-list-container">

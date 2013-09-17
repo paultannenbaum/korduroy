@@ -9,7 +9,12 @@
     <section class="show-channel">
       <header class="channel-header">
         <span class="channel-icon <?php echo $category -> slug ?>"></span>
-        <p class="channel-info"><?php echo $category -> description ?></p>
+        <div class="channel-info">
+          <p class="channel-desc">
+            <span class="category-name"><?php echo $category -> name ?></span>
+            <?php echo $category -> description ?>
+          </p>
+        </div>
       </header>
 
       <ul class="channel-list">
