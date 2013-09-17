@@ -35,10 +35,10 @@
           </div>
         </div>
         <?php endwhile; ?>
-      </div>
 
-      <div class="comments-wrapper">
-        <?php comments_template(); ?>
+        <div class="comments-wrapper">
+          <?php comments_template(); ?>
+        </div>
       </div>
     </div>
 
