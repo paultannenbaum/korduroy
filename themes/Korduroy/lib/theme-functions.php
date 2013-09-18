@@ -12,6 +12,18 @@ function ktv_unhide_kitchensink($args) {
 	return $args;
 }
 
+/**
+ * Rewrite Rule for blog index pagination
+ */
+function wpa_fix_blog_pagination(){
+    add_rewrite_rule(
+        'blog/page/([0-9]+)/?$',
+        'index.php?pagename=blog&paged=$matches[1]',
+        'top'
+    );
+}
+
+
 /****************************************
 Frontend
 *****************************************/

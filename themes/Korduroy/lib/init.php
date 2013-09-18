@@ -21,6 +21,7 @@ function ktv_setup() {
 
 	// Show Kitchen Sink in WYSIWYG Editor
 	add_filter( 'tiny_mce_before_init', 'ktv_unhide_kitchensink' );
+	add_action( 'init', 'wpa_fix_blog_pagination' );
 
 	/****************************************
 	Frontend
