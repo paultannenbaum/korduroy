@@ -5,7 +5,6 @@
   <section class="main" role="main">
     <div class="content-container">
       <aside class="aside-container">
-        <div class="space-filler"></div>
         <nav class="aside-navigation">
           <h2>Categories</h2>
           <ul class="aside-navigation-list">
