@@ -23,6 +23,51 @@ function wpa_fix_blog_pagination(){
     );
 }
 
+/**
+* Rewrite rule for show permalinks
+*/
+function ktv_show_permalinks( $post_link, $id = 0 ) {
+  $post = get_post($id);
+
+  if ( is_object( $post ) && $post->post_type == 'shows' ) {
+    $terms = wp_get_object_terms( $post->ID, 'show_category' );
+    if( $terms ) {
+      return str_replace( '%show_category%' , $terms[0]->slug , $post_link );
+    }
+  }
+
+return $post_link;
+}
+
+/**
+ * Set dedault values for excerpt
+ */
+function new_excerpt_more( $more ) {
+  return '... <a class="more-link" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
+}
+
+/**
+* Helper function to fetch excerpt by post id
+*/
+function get_excerpt_by_id($post_id){
+  $the_post = get_post($post_id); //Gets post ID
+  $the_excerpt = $the_post->post_content; //Gets post_content to be used as a basis for the excerpt
+  $excerpt_length = 45; //Sets excerpt length by word count
+  $the_excerpt = strip_tags(strip_shortcodes($the_excerpt)); //Strips tags and images
+  $words = explode(' ', $the_excerpt, $excerpt_length + 1);
+
+  if(count($words) > $excerpt_length) :
+    array_pop($words);
+    array_push($words, '…(continued)');
+    $the_excerpt = implode(' ', $words);
+  endif;
+
+  $the_excerpt = '<p>' . $the_excerpt . '</p>';
+  return $the_excerpt;
+}
+
+
+
 
 /****************************************
 Frontend
@@ -74,4 +119,18 @@ function ktv_remove_more_jump_link($link) {
 		$link = substr_replace($link, '', $offset, $end-$offset);
 	}
 	return $link;
+}
+
+/**
+* Replacing the default WordPress search form with an HTML5 version
+*/
+function html5_search_form( $form ) {
+  $form =
+
+  '<form role="search" method="get" class="site-search" action="' . home_url( '/' ) . '" >
+    <input type="search" placeholder="Search..." class="site-search-input" value="' . get_search_query() . '" name="s" />
+    <input type="submit" class="site-search-submit" value="GO" />
+  </form>';
+
+  return $form;
 }
