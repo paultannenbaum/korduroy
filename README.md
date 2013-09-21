@@ -8,9 +8,17 @@ We are currently migrating our rails site back over to wordpress (backwards as a
 Maintainers
 -----------
 
-The theme we are using is the Korduroy Theme. Should be the only theme available.
+The theme being used is "Korduroy". It is the only theme available in this repo.
 
 Tools:
-- We are using sass for css compiling (found in assets => scss)
-- Grunt for live-reloading, js uglification and linting, image compression, and other automation candy.
-- Deployment is still TBD.
+- SCSS for CSS compiling (http://sass-lang.com/), along with compass(http://compass-style.org/)
+- Coffeescript for JS compiling (http://coffeescript.org/)
+- Grunt for live-reloading, js uglification and linting, image compression, deployments, and other automation candy (http://gruntjs.com/)
+- Foundation as a CSS framework. We are using their SCSS version, and mainly just using their grid system (http://foundation.zurb.com/)
+
+JS Libraries:
+- jQuery
+- Modernizr
+
+** More documentaion to come **
+
