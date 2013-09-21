@@ -197,6 +197,18 @@
   }
 }
 
+.featured-campaigns {
+  .campaign {
+    @extend %image-border;
+    width: 100%;
+    margin-bottom: 20px;
+    display: inline-block;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
 .aside-navigation {
   .aside-navigation-list, .wp-tag-cloud {
     margin-top: 20px;
@@ -557,18 +569,6 @@
     height: 80px;
     top: -40px;
     left: -40px;
-  }
-}
-
-.featured-campaigns {
-  .campaign {
-    @extend %image-border;
-    width: 100%;
-    margin-bottom: 20px;
-    display: inline-block;
-    &:last-child {
-      margin-bottom: 0px;
-    }
   }
 }
 
@@ -1121,7 +1121,10 @@
 }
 
 // Media Queries
-@media #{$small} {
+@media #{$phone-up} {
+}
+
+@media #{$tablet-up} {
   .site-footer {
     .stay-updated {
       .email {
