@@ -8476,11 +8476,13 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     clear: both;
   }
   .blog-page.blog-show-page .blog-post .blog-post-header .blog-post-meta .date-container {
-    width: 45%;
+    width: 50%;
+    padding-right: 10px;
     float: left;
   }
   .blog-page.blog-show-page .blog-post .blog-post-header .blog-post-meta .sharing-container {
-    width: 45%;
+    width: 50%;
+    padding-left: 10px;
     float: right;
   }
   .blog-page.blog-show-page .blog-post .blog-post-body {
@@ -9565,11 +9567,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   height: 80px;
   top: -40px;
   left: -40px;
-}
-
-.space-filler {
-  width: 100%;
-  height: 1px;
 }
 
 .featured-campaigns .campaign {

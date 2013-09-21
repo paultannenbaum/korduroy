@@ -222,7 +222,6 @@
         }
       }
     }
-
     &.blog-show-page {
       .blog-post-container {
         @include grid-column(10);
@@ -239,11 +238,13 @@
             @include clearfix;
 
             .date-container {
-              width: 45%;
+              width: 50%;
+              padding-right: 10px;
               float: left;
             }
             .sharing-container {
-              width: 45%;
+              width: 50%;
+              padding-left: 10px;
               float: right;
             }
           }
