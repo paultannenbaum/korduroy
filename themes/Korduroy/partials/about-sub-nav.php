@@ -1,4 +1,4 @@
-<nav id="ktv-sub-nav">
+<nav id="about-sub-nav">
   <h1 class="sub-nav-heading">About Us</h1>
   <ul class="sub-nav-list">
     <li class="sub-nav-list-item about-us <?php if (is_page('the-site')) { echo "current"; }?>">

@@ -95,6 +95,32 @@
     }
     .sub-nav-list {
       @include grid-column(10);
+      @include block-grid(4);
+      li {
+        padding-bottom: 7px;
+      }
+    }
+    .separator-container {
+      @include grid-column(12);
+
+      .horizontal-stitch {
+        margin-top: 0px;
+      }
+    }
+  }
+  #about-sub-nav {
+    @include grid-row();
+
+    .sub-nav-heading {
+      @include grid-column(2);
+      margin-bottom: 0px;
+
+      &.extend-full {
+        @include grid-column(12);
+      }
+    }
+    .sub-nav-list {
+      @include grid-column(10);
     }
     .separator-container {
       @include grid-column(12);
@@ -476,6 +502,14 @@
     .legal-links-container {
       @include grid-column(6);
       text-align: right;
+    }
+  }
+  #ktv-sub-nav {
+    .sub-nav-list {
+      @include block-grid(5);
+      li {
+        padding-bottom: 7px;
+      }
     }
   }
 
