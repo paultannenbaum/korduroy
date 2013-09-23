@@ -1,5 +1,7 @@
 <nav id="ktv-sub-nav">
-  <h1 class="sub-nav-heading extend-full">The Korduroy Blog</h1>
+  <div class="heading-container extend-full">
+    <h1 class="sub-nav-heading">Korduroy Blog</h1>
+  </div>
   <div class="separator-container">
     <hr class="horizontal-stitch" />
   </div>

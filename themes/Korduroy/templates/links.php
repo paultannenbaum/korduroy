@@ -7,7 +7,9 @@ Template Name: Links
 <?php get_header(); ?>
 
 <nav id="ktv-sub-nav" class="links-page">
-  <h1 class="sub-nav-heading extend-full">Meet some of our digital friends</h1>
+  <div class="heading-container extend-full">
+    <h1 class="sub-nav-heading">Meet some of our digital friends</h1>
+  </div>
   <div class="separator-container">
     <hr class="horizontal-stitch">
     <img class="links-page-image" src="<?php the_field('banner_image'); ?>">

@@ -7,7 +7,9 @@ Template Name: Supporters Page
 <?php get_header(); ?>
 
 <nav id="ktv-sub-nav">
-  <h1 class="sub-nav-heading extend-full">Our Supporters</h1>
+  <div class="heading-container extend-full">
+    <h1 class="sub-nav-heading">Our Supporters</h1>
+  </div>
   <span class="separator-container">
     <hr class="horizontal-stitch" />
   </span>

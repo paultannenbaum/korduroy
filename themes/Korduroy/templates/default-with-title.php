@@ -7,7 +7,9 @@ Template Name: Default-with-title
 <?php get_header(); ?>
 
 <nav id="ktv-sub-nav">
-  <h1 class="sub-nav-heading extend-full">Korduroy.TV <?php wp_title("", true); ?></h1>
+  <div class="heading-container extend-full">
+    <h1 class="sub-nav-heading">Korduroy.TV <?php wp_title("", true); ?></h1>
+  </div>
   <div class="separator-container">
     <hr class="horizontal-stitch" />
   </div>

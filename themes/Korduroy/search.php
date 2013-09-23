@@ -2,7 +2,9 @@
 
 <?php if (have_posts()) : ?>
   <nav id="ktv-sub-nav">
-    <h1 class="sub-nav-heading extend-full">Search Results for "<?php echo get_search_query(); ?>"</h1>
+    <div class="heading-container extend-full">
+      <h1 class="sub-nav-heading">Search Results for "<?php echo get_search_query(); ?>"</h1>
+    </div>
     <div class="separator-container">
       <hr class="horizontal-stitch" />
     </div>

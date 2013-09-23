@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <nav id="ktv-sub-nav">
-  <h1 class="sub-nav-heading extend-full">Bummer. Should have been here yesterday!</h1>
+  <div class="heading-container extend-full">
+    <h1 class="sub-nav-heading">Bummer. Should have been here yesterday!</h1>
+  </div>
   <div class="separator-container">
     <hr class="horizontal-stitch" />
   </div>
