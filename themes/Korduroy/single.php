@@ -21,7 +21,7 @@
             <h1 class="blog-post-title"><?php the_title(); ?></h1>
 
             <div class="blog-post-meta">
-              <div class="date-container"><?php the_time('F jS, Y') ?> by <?php the_author() ?></div>
+              <div class="date-container"><?php the_time('F jS, Y') ?></div>
               <div class="sharing-container"><?php get_template_part('partials/share-buttons'); ?></div>
             </div>
 

@@ -36,7 +36,7 @@
                   <?php the_excerpt(); ?>
                   <footer class="search-post-footer">
                     <div class="date-container">
-                      <span class="search-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
+                      <span class="search-post-date"><?php the_time('F jS, Y') ?></span>
                     </div>
                     <div class="sharing-container">
                       <?php get_template_part('partials/share-buttons'); ?>
