@@ -8,4 +8,5 @@ if ( function_exists( 'add_theme_support' ) ) {
 if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'show-thumb', 145, 110, true );
 	add_image_size( 'home-featured', 700, 400, true );
+	add_image_size( 'home-blog-thumb', 367, 200, true );
 }

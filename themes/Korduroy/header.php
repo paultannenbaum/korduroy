@@ -21,7 +21,7 @@
   <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/images/win8-tile-icon.png">
 
   <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png">
-  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png">
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <!--[if IE]><link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico"><![endif]-->
 

@@ -7875,7 +7875,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     *zoom: 1;
     margin-top: 5px;
     margin-bottom: 30px;
-    background: green;
   }
   #header:before, #header:after {
     content: " ";
@@ -8773,7 +8772,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     *zoom: 1;
     margin-top: 10px;
     margin-bottom: 30px;
-    background: yellow;
   }
   #header:before, #header:after {
     content: " ";
@@ -9080,14 +9078,14 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 16.66667%;
+    width: 41.66667%;
     float: left;
   }
   .home-page .blog .blog-post .blog-post-content {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 83.33333%;
+    width: 58.33333%;
     float: left;
   }
   .home-page .blog .blog-post .blog-post-header {
@@ -9176,11 +9174,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 
   .about-page.about-the-crew-page .the-crew {
     margin-top: 30px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  #header {
-    background: blue;
   }
 }
 /***** Modules *****/
@@ -9536,6 +9529,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   width: 100%;
   height: 20px;
   padding: 3px 40px 3px 13px;
+  font-size: 12px;
 }
 .site-search .site-search-submit {
   position: absolute;

@@ -5,7 +5,7 @@
     @include grid-row;
     margin-top: 5px;
     margin-bottom: 30px;
-    background: green;
+    // background: green;
 
     .logo-container {
       @include grid-column(12);
@@ -403,7 +403,7 @@
     @include grid-row;
     margin-top: 10px;
     margin-bottom: 30px;
-    background: yellow;
+    // background: yellow;
 
     .logo-container {
       @include grid-column(2);
@@ -516,10 +516,10 @@
         margin-bottom: 30px;
 
         .blog-post-thumbnail {
-          @include grid-column(2);
+          @include grid-column(5);
         }
         .blog-post-content {
-          @include grid-column(10);
+          @include grid-column(7);
         }
         .blog-post-header {
           margin-bottom: 5px;
@@ -573,6 +573,6 @@
 
 @media #{$desktop-up} {
   #header {
-    background: blue;
+    // background: blue;
   }
 }

@@ -34,7 +34,6 @@
               <div class="slide-info">
                 <header>
                   <a href="<?php echo get_permalink($shows[0]->ID); ?>">
-                    <span class="pre-title">New Show:</span>
                     <span class="slide-title"><?php echo $shows[0]->post_title ?></span>
                   </a>
                 </header>
@@ -50,7 +49,6 @@
               <div class="slide-info">
                 <header>
                   <a href="<?php echo get_permalink($blogs[0]->ID); ?>">
-                    <span class="pre-title">Article:</span>
                     <span class="slide-title"><?php echo $blogs[0]->post_title ?></span>
                   </a>
                 </header>
@@ -66,7 +64,6 @@
               <div class="slide-info">
                 <header>
                   <a href="<?php echo get_permalink($blogs[1]->ID); ?>">
-                    <span class="pre-title">Article:</span>
                     <span class="slide-title"><?php echo $blogs[1]->post_title ?></span>
                   </a>
                 </header>
@@ -82,7 +79,6 @@
               <div class="slide-info">
                 <header>
                   <a href="<?php echo get_permalink($shows[1]->ID); ?>">
-                    <span class="pre-title">Show:</span>
                     <span class="slide-title"><?php echo $shows[1]->post_title ?></span>
                   </a>
                 </header>
@@ -98,7 +94,6 @@
               <div class="slide-info">
                 <header>
                   <a href="<?php echo get_permalink($blogs[2]->ID); ?>">
-                    <span class="pre-title">Article:</span>
                     <span class="slide-title"><?php echo $blogs[2]->post_title ?></span>
                   </a>
                 </header>
@@ -114,7 +109,6 @@
               <div class="slide-info">
                 <header>
                   <a href="<?php echo get_permalink($blogs[3]->ID); ?>">
-                    <span class="pre-title">Article:</span>
                     <span class="slide-title"><?php echo $blogs[3]->post_title ?></span>
                   </a>
                 </header>
@@ -172,7 +166,7 @@
               <h1 class="section-title"><a href="<?php echo site_url(); ?>/blog">Blog</a></h1>
             </div>
             <div class="all-container">
-              <a href="<?php echo site_url(); ?>/blog" class="all-link">View All Articles</a>
+              <a href="<?php echo site_url(); ?>/blog" class="all-link">View All Posts</a>
             </div>
           </header>
           <div class="blog-posts">
@@ -181,7 +175,7 @@
                 <div class="blog-post-body">
                   <div class="blog-post-thumbnail">
                     <a href="<?php the_permalink() ?>">
-                      <?php if (has_post_thumbnail()): the_post_thumbnail('thumbnail'); ?>
+                      <?php if (has_post_thumbnail()): the_post_thumbnail('home-blog-thumb'); ?>
                       <?php else: ?>
                       <img src="<?php bloginfo('template_directory'); ?>/assets/images/default-featured-image.jpg" alt="<?php the_title(); ?>" />
                       <?php endif; ?>
@@ -194,10 +188,7 @@
                     <?php the_excerpt(); ?>
                     <footer class="blog-post-footer">
                       <div class="date-container">
-                        <span class="blog-post-date"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
-                      </div>
-                      <div class="sharing-container">
-                        <?php get_template_part('partials/share-buttons'); ?>
+                        <span class="blog-post-date"><?php the_time('F jS, Y') ?></span>
                       </div>
                     </footer>
                   </div>
