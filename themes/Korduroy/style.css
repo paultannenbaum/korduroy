@@ -7875,6 +7875,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     *zoom: 1;
     margin-top: 5px;
     margin-bottom: 30px;
+    background: green;
   }
   #header:before, #header:after {
     content: " ";
@@ -8155,15 +8156,11 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 75%;
+    width: 100%;
     float: left;
   }
   .home-page .featured-content .campaigns-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 25%;
-    float: left;
+    display: none;
   }
   .home-page .section-header {
     width: auto;
@@ -8776,6 +8773,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     *zoom: 1;
     margin-top: 10px;
     margin-bottom: 30px;
+    background: yellow;
   }
   #header:before, #header:after {
     content: " ";
@@ -8997,6 +8995,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-right: 0.9375em;
     width: 25%;
     float: left;
+    display: block;
   }
   .home-page .section-header {
     width: auto;
@@ -9177,6 +9176,11 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 
   .about-page.about-the-crew-page .the-crew {
     margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #header {
+    background: blue;
   }
 }
 /***** Modules *****/

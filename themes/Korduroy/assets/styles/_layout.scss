@@ -5,6 +5,7 @@
     @include grid-row;
     margin-top: 5px;
     margin-bottom: 30px;
+    background: green;
 
     .logo-container {
       @include grid-column(12);
@@ -112,10 +113,10 @@
       @include grid-row(nest);
 
       .featured-slider-container {
-        @include grid-column(9);
+        @include grid-column(12);
       }
       .campaigns-container {
-        @include grid-column(3);
+        display: none;
       }
     }
     .section-header {
@@ -165,6 +166,7 @@
       }
     }
   }
+
   .shows-page {
     .show-channel {
       margin-top: 20px;
@@ -401,6 +403,7 @@
     @include grid-row;
     margin-top: 10px;
     margin-bottom: 30px;
+    background: yellow;
 
     .logo-container {
       @include grid-column(2);
@@ -485,6 +488,7 @@
       }
       .campaigns-container {
         @include grid-column(3);
+        display: block;
       }
     }
     .section-header {
@@ -567,4 +571,8 @@
   }
 }
 
-@media #{$desktop-up} {}
+@media #{$desktop-up} {
+  #header {
+    background: blue;
+  }
+}
