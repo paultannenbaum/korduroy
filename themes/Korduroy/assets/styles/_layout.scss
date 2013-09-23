@@ -85,7 +85,7 @@
   #ktv-sub-nav {
     @include grid-row();
 
-    .sub-nav-heading {
+    .heading-container {
       @include grid-column(2);
       margin-bottom: 0px;
 
@@ -93,11 +93,14 @@
         @include grid-column(12);
       }
     }
-    .sub-nav-list {
+    .list-container {
       @include grid-column(10);
-      @include block-grid(4);
-      li {
-        padding-bottom: 7px;
+
+      .sub-nav-list {
+        @include block-grid(5);
+        li {
+          padding-bottom: 7px;
+        }
       }
     }
     .separator-container {
@@ -502,14 +505,6 @@
     .legal-links-container {
       @include grid-column(6);
       text-align: right;
-    }
-  }
-  #ktv-sub-nav {
-    .sub-nav-list {
-      @include block-grid(5);
-      li {
-        padding-bottom: 7px;
-      }
     }
   }
 
