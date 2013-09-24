@@ -582,11 +582,16 @@
 
 .more-link {
   @extend %pressed-text;
+  color: #000;
   display: block;
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 5px;
   font-size: 12px;
+
+  &:hover {
+    color: $ktv-blue;
+  }
 }
 
 .spinner {
@@ -963,9 +968,7 @@
 }
 
 .blog-page {
-  img {
-    @extend %image-border;
-  }
+
   .blog-post {
     .date-container {
       color: $ktv-grey;
@@ -973,7 +976,7 @@
       line-height: 22px;
       font-size: 10px;
       text-transform: uppercase;
-      
+
       .blog-post-date {
         margin-left: 3px;
         text-transform: uppercase;
@@ -1004,12 +1007,44 @@
     .blog-post-title {
       display: inline-block;
     }
-    .blog-post-thumbnail img {
-      width: 100%;
+    .blog-post-thumbnail {
+      @extend %image-border;
+      img {
+        width: 100%;
+      }
     }
     .blog-post-footer {
       font-size: 10px;
       text-transform: uppercase;
+    }
+    .blog-post-body {
+      .more-link {
+        color: #000;
+
+        &:hover {
+          color: $ktv-blue;
+        }
+      }
+      img {
+        @extend %image-border;
+      }
+      a {
+        color: $ktv-blue;
+        &:hover {
+          color: $ktv-dark-blue
+        }
+      }
+      h1, h2, h3, h4, h5, h6 {
+        margin: 10px 0;
+
+        a {
+          color: #000;
+
+          &:hover {
+            color: $ktv-blue;
+          }
+        }
+      }
     }
   }
 }
@@ -1151,6 +1186,23 @@
 .default-page {
   img {
     @extend %image-border;
+  }
+  a {
+    color: $ktv-blue;
+    &:hover {
+      color: $ktv-dark-blue
+    }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+
+    a {
+      color: #000;
+
+      &:hover {
+        color: $ktv-blue;
+      }
+    }
   }
 }
 

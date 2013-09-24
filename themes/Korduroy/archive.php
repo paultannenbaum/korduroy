@@ -28,7 +28,7 @@
               <?php endif; ?>
             </a>
           </div>
-          <div class="blog-post-excerpt">
+          <div class="blog-post-body">
             <?php the_excerpt(); ?>
           </div>
           <footer class="blog-post-footer">
