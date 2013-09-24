@@ -24,21 +24,21 @@ p + p {
 h1	{
   @extend %pressed-text;
   color: #000;
-  font: normal $bold 16px/1.4 $fonts;
+  font: normal $bold 20px/1.4 $fonts;
   text-transform: uppercase;
 }
 
 h2	{
   @extend %pressed-text;
   color: #000;
-  font: normal $semi-bold 14px/1.4 $fonts;
+  font: normal $semi-bold 16px/1.4 $fonts;
   text-transform: uppercase;
 }
 
 h3	{
   @extend %pressed-text;
   color: #888;
-  font: normal $semi-bold 12px/1.4 $fonts;
+  font: normal $semi-bold 16px/1.4 $fonts;
   text-transform: uppercase;
 }
 

@@ -1,6 +1,6 @@
 <nav id="ktv-sub-nav">
   <div class="heading-container">
-    <h1 class="sub-nav-heading">Shows</h1>
+    <h2 class="sub-nav-heading">Shows</h2>
   </div>
   <div class="list-container">
     <ul class="sub-nav-list">

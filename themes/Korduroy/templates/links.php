@@ -8,7 +8,7 @@ Template Name: Links
 
 <nav id="ktv-sub-nav" class="links-page">
   <div class="heading-container extend-full">
-    <h1 class="sub-nav-heading">Meet some of our digital friends</h1>
+    <h2 class="sub-nav-heading">Meet some of our digital friends</h2>
   </div>
   <div class="separator-container">
     <hr class="horizontal-stitch">

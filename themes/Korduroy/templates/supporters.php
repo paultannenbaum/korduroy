@@ -8,7 +8,7 @@ Template Name: Supporters Page
 
 <nav id="ktv-sub-nav">
   <div class="heading-container extend-full">
-    <h1 class="sub-nav-heading">Our Supporters</h1>
+    <h2 class="sub-nav-heading">Our Supporters</h2>
   </div>
   <span class="separator-container">
     <hr class="horizontal-stitch" />

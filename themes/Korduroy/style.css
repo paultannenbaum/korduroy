@@ -7723,19 +7723,19 @@ p + p, .supporters-page + p, .about-page .crew-member .member-desc + p, p + .sup
 ---------------------------------------------------	*/
 h1, .supporters-page .info-items .name, .about-page .crew-member .member-name {
   color: #000;
-  font: normal 700 16px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
+  font: normal 700 20px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
   text-transform: uppercase;
 }
 
 h2, .about-page .crew-member .member-position {
   color: #000;
-  font: normal 600 14px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
+  font: normal 600 16px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
   text-transform: uppercase;
 }
 
 h3 {
   color: #888;
-  font: normal 600 12px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
+  font: normal 600 16px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
   text-transform: uppercase;
 }
 
@@ -10136,6 +10136,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   font-size: 10px;
   color: #999999;
   text-align: right;
+  margin-top: 4px;
 }
 .shows-page .episode-info .sharing-container .addthis_toolbox {
   height: 22px;

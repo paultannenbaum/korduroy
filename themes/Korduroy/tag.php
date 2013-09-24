@@ -8,7 +8,7 @@
 
 <nav id="ktv-sub-nav">
   <div class="heading-container extend-full">
-    <h1 class="sub-nav-heading">All things "<?php echo $tag->name ?>"</h1>
+    <h2 class="sub-nav-heading">All things "<?php echo $tag->name ?>"</h2>
   </div>
   <div class="separator-container">
     <hr class="horizontal-stitch" />
@@ -109,7 +109,5 @@
 
   </section>
 </div>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

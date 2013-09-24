@@ -1,5 +1,5 @@
 <nav id="about-sub-nav">
-  <h1 class="sub-nav-heading">About Us</h1>
+  <h2 class="sub-nav-heading">About Us</h2>
   <ul class="sub-nav-list">
     <li class="sub-nav-list-item about-us <?php if (is_page('the-site')) { echo "current"; }?>">
       <a class="sub-nav-link" href="<?php echo site_url(); ?>/about/the-site">The Site</a>
