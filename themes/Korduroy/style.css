@@ -114,7 +114,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-h1, .supporters-page .info-items .name, .about-page .crew-member .member-name {
+h1, .about-page .crew-member .member-name {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -1690,9 +1690,9 @@ ul,
 ol,
 li,
 h1,
-.supporters-page .info-items .name,
 .about-page .crew-member .member-name,
 h2,
+.supporters-page .info-items .name,
 .about-page .crew-member .member-position,
 h3,
 h4,
@@ -1740,7 +1740,7 @@ p aside, .supporters-page aside, .about-page .crew-member .member-desc aside {
 }
 
 /* Default header styles */
-h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, h4, h5, h6 {
+h1, .about-page .crew-member .member-name, h2, .supporters-page .info-items .name, .about-page .crew-member .member-position, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -1750,17 +1750,17 @@ h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h
   margin-bottom: 0.5em;
   line-height: 1.2125em;
 }
-h1 small, .supporters-page .info-items .name small, .about-page .crew-member .member-name small, h2 small, .about-page .crew-member .member-position small, h3 small, h4 small, h5 small, h6 small {
+h1 small, .about-page .crew-member .member-name small, h2 small, .supporters-page .info-items .name small, .about-page .crew-member .member-position small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
   color: #6f6f6f;
   line-height: 0;
 }
 
-h1, .supporters-page .info-items .name, .about-page .crew-member .member-name {
+h1, .about-page .crew-member .member-name {
   font-size: 2.125em;
 }
 
-h2, .about-page .crew-member .member-position {
+h2, .supporters-page .info-items .name, .about-page .crew-member .member-position {
   font-size: 1.6875em;
 }
 
@@ -1937,15 +1937,15 @@ blockquote .about-page .crew-member .member-desc,
 }
 
 @media only screen and (min-width: 768px) {
-  h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, h4, h5, h6 {
+  h1, .about-page .crew-member .member-name, h2, .supporters-page .info-items .name, .about-page .crew-member .member-position, h3, h4, h5, h6 {
     line-height: 1.4;
   }
 
-  h1, .supporters-page .info-items .name, .about-page .crew-member .member-name {
+  h1, .about-page .crew-member .member-name {
     font-size: 2.75em;
   }
 
-  h2, .about-page .crew-member .member-position {
+  h2, .supporters-page .info-items .name, .about-page .crew-member .member-position {
     font-size: 2.3125em;
   }
 
@@ -2021,13 +2021,14 @@ blockquote .about-page .crew-member .member-desc,
 
   p, .supporters-page, .about-page .crew-member .member-desc,
   h2,
+  .supporters-page .info-items .name,
   .about-page .crew-member .member-position,
   h3 {
     orphans: 3;
     widows: 3;
   }
 
-  h2, .about-page .crew-member .member-position,
+  h2, .supporters-page .info-items .name, .about-page .crew-member .member-position,
   h3 {
     page-break-after: avoid;
   }
@@ -3706,12 +3707,12 @@ form.custom .custom.disabled {
   margin: 0;
   font-size: 16px;
 }
-.top-bar .name h1, .top-bar .name .supporters-page .info-items .name, .supporters-page .info-items .top-bar .name .name, .top-bar .name .about-page .crew-member .member-name, .about-page .crew-member .top-bar .name .member-name {
+.top-bar .name h1, .top-bar .name .about-page .crew-member .member-name, .about-page .crew-member .top-bar .name .member-name {
   line-height: 45px;
   font-size: 1.0625em;
   margin: 0;
 }
-.top-bar .name h1 a, .top-bar .name .supporters-page .info-items .name a, .supporters-page .info-items .top-bar .name .name a, .top-bar .name .about-page .crew-member .member-name a, .about-page .crew-member .top-bar .name .member-name a {
+.top-bar .name h1 a, .top-bar .name .about-page .crew-member .member-name a, .about-page .crew-member .top-bar .name .member-name a {
   font-weight: bold;
   color: white;
   width: 50%;
@@ -3925,7 +3926,7 @@ form.custom .custom.disabled {
   .top-bar .title-area {
     float: left;
   }
-  .top-bar .name h1 a, .top-bar .name .supporters-page .info-items .name a, .supporters-page .info-items .top-bar .name .name a, .top-bar .name .about-page .crew-member .member-name a, .about-page .crew-member .top-bar .name .member-name a {
+  .top-bar .name h1 a, .top-bar .name .about-page .crew-member .member-name a, .about-page .crew-member .top-bar .name .member-name a {
     width: auto;
   }
   .top-bar input,
@@ -4455,8 +4456,10 @@ form.custom .custom.disabled {
 }
 
 /* Typography */
-.joyride-tip-guide h1, .joyride-tip-guide .supporters-page .info-items .name, .supporters-page .info-items .joyride-tip-guide .name, .joyride-tip-guide .about-page .crew-member .member-name, .about-page .crew-member .joyride-tip-guide .member-name,
+.joyride-tip-guide h1, .joyride-tip-guide .about-page .crew-member .member-name, .about-page .crew-member .joyride-tip-guide .member-name,
 .joyride-tip-guide h2,
+.joyride-tip-guide .supporters-page .info-items .name,
+.supporters-page .info-items .joyride-tip-guide .name,
 .joyride-tip-guide .about-page .crew-member .member-position,
 .about-page .crew-member .joyride-tip-guide .member-position,
 .joyride-tip-guide h3,
@@ -5008,14 +5011,14 @@ kbd {
 .panel > :last-child {
   margin-bottom: 0;
 }
-.panel h1, .panel .supporters-page .info-items .name, .supporters-page .info-items .panel .name, .panel .about-page .crew-member .member-name, .about-page .crew-member .panel .member-name, .panel h2, .panel .about-page .crew-member .member-position, .about-page .crew-member .panel .member-position, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel .supporters-page, .panel .about-page .crew-member .member-desc, .about-page .crew-member .panel .member-desc {
+.panel h1, .panel .about-page .crew-member .member-name, .about-page .crew-member .panel .member-name, .panel h2, .panel .supporters-page .info-items .name, .supporters-page .info-items .panel .name, .panel .about-page .crew-member .member-position, .about-page .crew-member .panel .member-position, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel .supporters-page, .panel .about-page .crew-member .member-desc, .about-page .crew-member .panel .member-desc {
   color: #333333;
 }
-.panel h1, .panel .supporters-page .info-items .name, .supporters-page .info-items .panel .name, .panel .about-page .crew-member .member-name, .about-page .crew-member .panel .member-name, .panel h2, .panel .about-page .crew-member .member-position, .about-page .crew-member .panel .member-position, .panel h3, .panel h4, .panel h5, .panel h6 {
+.panel h1, .panel .about-page .crew-member .member-name, .about-page .crew-member .panel .member-name, .panel h2, .panel .supporters-page .info-items .name, .supporters-page .info-items .panel .name, .panel .about-page .crew-member .member-position, .about-page .crew-member .panel .member-position, .panel h3, .panel h4, .panel h5, .panel h6 {
   line-height: 1;
   margin-bottom: 0.625em;
 }
-.panel h1.subheader, .panel .supporters-page .info-items .subheader.name, .supporters-page .info-items .panel .subheader.name, .panel .about-page .crew-member .subheader.member-name, .about-page .crew-member .panel .subheader.member-name, .panel h2.subheader, .panel .about-page .crew-member .subheader.member-position, .about-page .crew-member .panel .subheader.member-position, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
+.panel h1.subheader, .panel .about-page .crew-member .subheader.member-name, .about-page .crew-member .panel .subheader.member-name, .panel h2.subheader, .panel .supporters-page .info-items .subheader.name, .supporters-page .info-items .panel .subheader.name, .panel .about-page .crew-member .subheader.member-position, .about-page .crew-member .panel .subheader.member-position, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
   line-height: 1.4;
 }
 .panel.callout {
@@ -5034,14 +5037,14 @@ kbd {
 .panel.callout > :last-child {
   margin-bottom: 0;
 }
-.panel.callout h1, .panel.callout .supporters-page .info-items .name, .supporters-page .info-items .panel.callout .name, .panel.callout .about-page .crew-member .member-name, .about-page .crew-member .panel.callout .member-name, .panel.callout h2, .panel.callout .about-page .crew-member .member-position, .about-page .crew-member .panel.callout .member-position, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p, .panel.callout .supporters-page, .panel.callout .about-page .crew-member .member-desc, .about-page .crew-member .panel.callout .member-desc {
+.panel.callout h1, .panel.callout .about-page .crew-member .member-name, .about-page .crew-member .panel.callout .member-name, .panel.callout h2, .panel.callout .supporters-page .info-items .name, .supporters-page .info-items .panel.callout .name, .panel.callout .about-page .crew-member .member-position, .about-page .crew-member .panel.callout .member-position, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p, .panel.callout .supporters-page, .panel.callout .about-page .crew-member .member-desc, .about-page .crew-member .panel.callout .member-desc {
   color: white;
 }
-.panel.callout h1, .panel.callout .supporters-page .info-items .name, .supporters-page .info-items .panel.callout .name, .panel.callout .about-page .crew-member .member-name, .about-page .crew-member .panel.callout .member-name, .panel.callout h2, .panel.callout .about-page .crew-member .member-position, .about-page .crew-member .panel.callout .member-position, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
+.panel.callout h1, .panel.callout .about-page .crew-member .member-name, .about-page .crew-member .panel.callout .member-name, .panel.callout h2, .panel.callout .supporters-page .info-items .name, .supporters-page .info-items .panel.callout .name, .panel.callout .about-page .crew-member .member-position, .about-page .crew-member .panel.callout .member-position, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
   line-height: 1;
   margin-bottom: 0.625em;
 }
-.panel.callout h1.subheader, .panel.callout .supporters-page .info-items .subheader.name, .supporters-page .info-items .panel.callout .subheader.name, .panel.callout .about-page .crew-member .subheader.member-name, .about-page .crew-member .panel.callout .subheader.member-name, .panel.callout h2.subheader, .panel.callout .about-page .crew-member .subheader.member-position, .about-page .crew-member .panel.callout .subheader.member-position, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
+.panel.callout h1.subheader, .panel.callout .about-page .crew-member .subheader.member-name, .about-page .crew-member .panel.callout .subheader.member-name, .panel.callout h2.subheader, .panel.callout .supporters-page .info-items .subheader.name, .supporters-page .info-items .panel.callout .subheader.name, .panel.callout .about-page .crew-member .subheader.member-position, .about-page .crew-member .panel.callout .subheader.member-position, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
   line-height: 1.4;
 }
 .panel.radius {
@@ -7667,7 +7670,7 @@ img.rsImg {
   background: transparent url(assets/images/backgrounds/stitch_horizontal.png) repeat-x;
 }
 
-h1, .supporters-page .info-items .name, .about-page .crew-member .member-name, h2, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, #about-sub-nav .sub-nav-list-item, #about-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .aside-navigation .wp-tag-cloud li, .credits .credit .credit-type, .channel-list .episode .episode-title, .more-link, .home-page .section-header .all-container {
+h1, .about-page .crew-member .member-name, h2, .supporters-page .info-items .name, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, #about-sub-nav .sub-nav-list-item, #about-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .aside-navigation .wp-tag-cloud li, .credits .credit .credit-type, .channel-list .episode .episode-title, .more-link, .home-page .section-header .all-container {
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px white;
 }
@@ -7721,13 +7724,13 @@ p + p, .supporters-page + p, .about-page .crew-member .member-desc + p, p + .sup
 
 /*	Headings
 ---------------------------------------------------	*/
-h1, .supporters-page .info-items .name, .about-page .crew-member .member-name {
+h1, .about-page .crew-member .member-name {
   color: #000;
   font: normal 700 20px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
   text-transform: uppercase;
 }
 
-h2, .about-page .crew-member .member-position {
+h2, .supporters-page .info-items .name, .about-page .crew-member .member-position {
   color: #000;
   font: normal 600 16px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
   text-transform: uppercase;
@@ -8587,9 +8590,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     width: 100%;
     float: left;
   }
-  .supporters-page .banner-container {
-    display: none;
-  }
 
   .about-page.about-the-crew-page .the-crew {
     margin-top: 30px;
@@ -9215,17 +9215,8 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 50%;
+    width: 66.66667%;
     float: left;
-  }
-  .supporters-page .banner-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 16.66667%;
-    float: left;
-    display: block;
-    text-align: right;
   }
 
   .about-page.about-the-crew-page .the-crew {
@@ -10202,14 +10193,18 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 .blog-page .blog-post .blog-post-body a:hover {
   color: #4a6180;
 }
-.blog-page .blog-post .blog-post-body h1, .blog-page .blog-post .blog-post-body .supporters-page .info-items .name, .supporters-page .info-items .blog-page .blog-post .blog-post-body .name, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-name, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-name, .blog-page .blog-post .blog-post-body h2, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-position, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-position, .blog-page .blog-post .blog-post-body h3, .blog-page .blog-post .blog-post-body h4, .blog-page .blog-post .blog-post-body h5, .blog-page .blog-post .blog-post-body h6 {
+.blog-page .blog-post .blog-post-body h1, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-name, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-name, .blog-page .blog-post .blog-post-body h2, .blog-page .blog-post .blog-post-body .supporters-page .info-items .name, .supporters-page .info-items .blog-page .blog-post .blog-post-body .name, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-position, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-position, .blog-page .blog-post .blog-post-body h3, .blog-page .blog-post .blog-post-body h4, .blog-page .blog-post .blog-post-body h5, .blog-page .blog-post .blog-post-body h6 {
   margin: 10px 0;
 }
-.blog-page .blog-post .blog-post-body h1 a, .blog-page .blog-post .blog-post-body .supporters-page .info-items .name a, .supporters-page .info-items .blog-page .blog-post .blog-post-body .name a, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-name a, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-name a, .blog-page .blog-post .blog-post-body h2 a, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-position a, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-position a, .blog-page .blog-post .blog-post-body h3 a, .blog-page .blog-post .blog-post-body h4 a, .blog-page .blog-post .blog-post-body h5 a, .blog-page .blog-post .blog-post-body h6 a {
+.blog-page .blog-post .blog-post-body h1 a, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-name a, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-name a, .blog-page .blog-post .blog-post-body h2 a, .blog-page .blog-post .blog-post-body .supporters-page .info-items .name a, .supporters-page .info-items .blog-page .blog-post .blog-post-body .name a, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-position a, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-position a, .blog-page .blog-post .blog-post-body h3 a, .blog-page .blog-post .blog-post-body h4 a, .blog-page .blog-post .blog-post-body h5 a, .blog-page .blog-post .blog-post-body h6 a {
   color: #000;
 }
-.blog-page .blog-post .blog-post-body h1 a:hover, .blog-page .blog-post .blog-post-body .supporters-page .info-items .name a:hover, .supporters-page .info-items .blog-page .blog-post .blog-post-body .name a:hover, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-name a:hover, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-name a:hover, .blog-page .blog-post .blog-post-body h2 a:hover, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-position a:hover, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-position a:hover, .blog-page .blog-post .blog-post-body h3 a:hover, .blog-page .blog-post .blog-post-body h4 a:hover, .blog-page .blog-post .blog-post-body h5 a:hover, .blog-page .blog-post .blog-post-body h6 a:hover {
+.blog-page .blog-post .blog-post-body h1 a:hover, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-name a:hover, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-name a:hover, .blog-page .blog-post .blog-post-body h2 a:hover, .blog-page .blog-post .blog-post-body .supporters-page .info-items .name a:hover, .supporters-page .info-items .blog-page .blog-post .blog-post-body .name a:hover, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-position a:hover, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-position a:hover, .blog-page .blog-post .blog-post-body h3 a:hover, .blog-page .blog-post .blog-post-body h4 a:hover, .blog-page .blog-post .blog-post-body h5 a:hover, .blog-page .blog-post .blog-post-body h6 a:hover {
   color: #2084ea;
+}
+
+.supporters-page .logo-container img {
+  width: 90%;
 }
 
 .about-page .crew-member .member-name {
@@ -10308,13 +10303,13 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 .default-page a:hover {
   color: #4a6180;
 }
-.default-page h1, .default-page .supporters-page .info-items .name, .supporters-page .info-items .default-page .name, .default-page .about-page .crew-member .member-name, .about-page .crew-member .default-page .member-name, .default-page h2, .default-page .about-page .crew-member .member-position, .about-page .crew-member .default-page .member-position, .default-page h3, .default-page h4, .default-page h5, .default-page h6 {
+.default-page h1, .default-page .about-page .crew-member .member-name, .about-page .crew-member .default-page .member-name, .default-page h2, .default-page .supporters-page .info-items .name, .supporters-page .info-items .default-page .name, .default-page .about-page .crew-member .member-position, .about-page .crew-member .default-page .member-position, .default-page h3, .default-page h4, .default-page h5, .default-page h6 {
   margin: 10px 0;
 }
-.default-page h1 a, .default-page .supporters-page .info-items .name a, .supporters-page .info-items .default-page .name a, .default-page .about-page .crew-member .member-name a, .about-page .crew-member .default-page .member-name a, .default-page h2 a, .default-page .about-page .crew-member .member-position a, .about-page .crew-member .default-page .member-position a, .default-page h3 a, .default-page h4 a, .default-page h5 a, .default-page h6 a {
+.default-page h1 a, .default-page .about-page .crew-member .member-name a, .about-page .crew-member .default-page .member-name a, .default-page h2 a, .default-page .supporters-page .info-items .name a, .supporters-page .info-items .default-page .name a, .default-page .about-page .crew-member .member-position a, .about-page .crew-member .default-page .member-position a, .default-page h3 a, .default-page h4 a, .default-page h5 a, .default-page h6 a {
   color: #000;
 }
-.default-page h1 a:hover, .default-page .supporters-page .info-items .name a:hover, .supporters-page .info-items .default-page .name a:hover, .default-page .about-page .crew-member .member-name a:hover, .about-page .crew-member .default-page .member-name a:hover, .default-page h2 a:hover, .default-page .about-page .crew-member .member-position a:hover, .about-page .crew-member .default-page .member-position a:hover, .default-page h3 a:hover, .default-page h4 a:hover, .default-page h5 a:hover, .default-page h6 a:hover {
+.default-page h1 a:hover, .default-page .about-page .crew-member .member-name a:hover, .about-page .crew-member .default-page .member-name a:hover, .default-page h2 a:hover, .default-page .supporters-page .info-items .name a:hover, .supporters-page .info-items .default-page .name a:hover, .default-page .about-page .crew-member .member-position a:hover, .about-page .crew-member .default-page .member-position a:hover, .default-page h3 a:hover, .default-page h4 a:hover, .default-page h5 a:hover, .default-page h6 a:hover {
   color: #2084ea;
 }
 

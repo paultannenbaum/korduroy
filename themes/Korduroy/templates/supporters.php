@@ -22,7 +22,7 @@ Template Name: Supporters Page
       <?php while(has_sub_field('add_supporter')): ?>
         <div class="supporter-row">
           <div class="logo-container">
-            <img src="<?php the_sub_field('logo'); ?>" class="image-border" />
+            <img src="<?php the_sub_field('logo'); ?>" />
           </div>
           <div class="info-container">
             <ul class="info-items">
@@ -34,9 +34,6 @@ Template Name: Supporters Page
           </div>
           <div class="description-container">
             <?php the_sub_field('blurb'); ?>
-          </div>
-          <div class="banner-container">
-            <img src="<?php the_sub_field('banner_image'); ?>" class="image-border" />
           </div>
         </div>
         <hr class="horizontal-separator-light" />

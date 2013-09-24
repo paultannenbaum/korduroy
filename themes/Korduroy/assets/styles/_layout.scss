@@ -286,7 +286,6 @@
     }
   }
   .supporters-page {
-
     .supporter-row {
       @include grid-row(nest);
     }
@@ -300,9 +299,6 @@
     }
     .description-container {
       @include grid-column(12);
-    }
-    .banner-container {
-      display: none;
     }
   }
   .about-page {
@@ -579,12 +575,7 @@
       text-align: left;
     }
     .description-container {
-      @include grid-column(6);
-    }
-    .banner-container {
-      @include grid-column(2);
-      display: block;
-      text-align: right;
+      @include grid-column(8);
     }
   }
   .about-page {

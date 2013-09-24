@@ -1051,9 +1051,14 @@
 }
 
 .supporters-page {
+  .logo-container {
+    img {
+      width: 90%;
+    }
+  }
   .info-items {
     .name {
-      @extend h1;
+      @extend h2;
     }
   }
   .description-container {}
