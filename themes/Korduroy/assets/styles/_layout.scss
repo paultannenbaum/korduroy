@@ -135,6 +135,15 @@
   }
   .aside-container {
     @include grid-column(2);
+    position: static;
+    min-height: 1px;
+
+    .aside-wrapper {
+      position: absolute;
+      display: block;
+      top: 0px;
+      bottom: 0px;
+    }
   }
 
   .home-page {
@@ -226,6 +235,7 @@
     &.blog-index-page, &.blog-archives-page {
       .blog-posts-container {
         @include grid-column(10);
+        margin-bottom: -30px; // Hack to remove last <hr> margin-bottom
       }
       .blog-post {
         margin-bottom: 30px;
@@ -246,6 +256,13 @@
           .sharing-container {
             @include grid-column(8);
           }
+        }
+      }
+      .pagination-wrapper {
+        @include grid-row(nest);
+
+        .pagination-container {
+          @include grid-column(10, false, false, 2);
         }
       }
     }

@@ -226,6 +226,10 @@
   }
 }
 
+.content-container {
+  position: relative;
+}
+
 .featured-campaigns {
   .campaign {
     @extend %image-border;
@@ -1181,10 +1185,14 @@
     width: 100%;
     margin-bottom: 20px;
   }
-
   .link-group {
     .horizontal-separator-light {
       margin-top: 0px;
+    }
+  }
+  .horizontal-separator-light {
+    &:last-child {
+      margin-bottom: 0px;
     }
   }
 }

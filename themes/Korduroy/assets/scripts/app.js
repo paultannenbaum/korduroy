@@ -3612,6 +3612,24 @@
     });
 }).call(this);
 
-(function() {}).call(this);
+(function() {
+    jQuery(function() {
+        var KTV;
+        KTV = KTV || {};
+        KTV.stickySidebar = function() {
+            var el, partner;
+            el = $(".aside-navigation");
+            partner = $(".main-container");
+            return {
+                init: function() {
+                    if (el.length && el.height() < partner.height()) {
+                        return el.stick_in_parent();
+                    }
+                }
+            };
+        }();
+        return KTV.stickySidebar.init();
+    });
+}).call(this);
 
 (function() {}).call(this);

@@ -6,15 +6,17 @@
 
     <div class="content-container">
       <aside class="aside-container">
-        <nav class="aside-navigation">
-          <h2>Categories</h2>
-          <ul class="aside-navigation-list">
-            <?php wp_list_categories(array('hide_empty' => 0,'show_option_all' => 'All','title_li' => __(''))); ?>
-          </ul>
-        </nav>
+        <div class="aside-wrapper">
+          <nav class="aside-navigation">
+            <h2>Categories</h2>
+            <ul class="aside-navigation-list">
+              <?php wp_list_categories(array('hide_empty' => 0,'show_option_all' => 'All','title_li' => __(''))); ?>
+            </ul>
+          </nav>
+        </div>
       </aside>
 
-      <div class="blog-posts-container">
+      <div class="blog-posts-container main-container">
         <?php while ( have_posts() ) : the_post(); ?>
         <div class="blog-post">
           <header class="blog-post-header">
@@ -42,9 +44,11 @@
         </div>
         <hr class="horizontal-separator-light" />
         <?php endwhile; ?>
-        <div class="pagination-container">
-          <?php get_template_part('partials/pagination'); ?>
-        </div>
+      </div>
+    </div>
+    <div class="pagination-wrapper">
+      <div class="pagination-container">
+        <?php get_template_part('partials/pagination'); ?>
       </div>
     </div>
   </section>

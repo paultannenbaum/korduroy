@@ -44,38 +44,19 @@
 #
 #  KTV.stickySidebar.init()
 
-# Option 2, always fixed
-#jQuery ->
-#
-#  KTV = KTV or {}
-#
-#  KTV.stickySidebar = do ->
-#    #private
-#    el = $('.aside-navigation')
-#
-#    # public:
-#    init: ->
-#      if (el.length)
-#        el.css({ position: 'Fixed', top: el.offset().top, left: el.offset().left })
-#
-#  KTV.stickySidebar.init()
-
 # Option 3, Plugin version
-#jQuery ->
-#
-#  KTV = KTV or {}
-#
-#  KTV.stickySidebar = do ->
-#    #private
-#    el = $('.aside-navigation')
-#    elContainer = $('.aside-container')
-#    contentContainer = $('.content-container')
-#    paddingBottom = 50
-#
-#    # public:
-#    init: ->
-#      if (el.length)
-#        elContainer.height(contentContainer.height() - paddingBottom)
-#        el.stick_in_parent()
-#
-#  KTV.stickySidebar.init()
+jQuery ->
+
+  KTV = KTV or {}
+
+  KTV.stickySidebar = do ->
+    #private
+    el = $('.aside-navigation')
+    partner = $('.main-container')
+
+    # public:
+    init: ->
+      if (el.length && el.height() < partner.height())
+        el.stick_in_parent()
+
+  KTV.stickySidebar.init()

@@ -21,31 +21,33 @@ Template Name: Links
   <section class="main" role="main">
     <div class="content-container">
       <aside class="aside-container">
-        <nav class="aside-navigation">
-          <h2>Categories</h2>
-          <ul class="aside-navigation-list">
-            <li><a href="#blogs-portfolios">Blogs/Portfolio</a></li>
-            <li><a href="#organizations">Organizations</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#business">Business</a></li>
-          </ul>
-        </nav>
+        <div class="aside-wrapper">
+          <nav class="aside-navigation">
+            <h2>Categories</h2>
+            <ul class="aside-navigation-list">
+              <li><a href="#blogs-portfolios">Blogs/Portfolio</a></li>
+              <li><a href="#organizations">Organizations</a></li>
+              <li><a href="#media">Media</a></li>
+              <li><a href="#resources">Resources</a></li>
+              <li><a href="#business">Business</a></li>
+            </ul>
+          </nav>
+        </div>
       </aside>
-      <div class="linked-pages-container">
 
+      <div class="linked-pages-container main-container">
         <?php if(get_field('blogs/portfolio')): ?>
         <div class="blog-portfolio-links link-group">
           <header>
             <a name="blogs-portfolios"></a>
             <h1>Blogs and Portfolios</h1>
-            <ul class="links-list">
-              <?php while(has_sub_field('blogs/portfolio')): ?>
-                <li class="links-list-item"><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('name'); ?></a></li>
-              <?php endwhile; ?>
-            </ul>
-            <hr class="horizontal-separator-light" />
           </header>
+          <ul class="links-list">
+            <?php while(has_sub_field('blogs/portfolio')): ?>
+              <li class="links-list-item"><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('name'); ?></a></li>
+            <?php endwhile; ?>
+          </ul>
+          <hr class="horizontal-separator-light" />
         </div>
         <?php endif; ?>
 

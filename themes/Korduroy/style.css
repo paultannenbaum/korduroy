@@ -8217,6 +8217,14 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-right: 0.9375em;
     width: 16.66667%;
     float: left;
+    position: static;
+    min-height: 1px;
+  }
+  .aside-container .aside-wrapper {
+    position: absolute;
+    display: block;
+    top: 0px;
+    bottom: 0px;
   }
 
   .home-page .featured-content {
@@ -8447,6 +8455,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-right: 0.9375em;
     width: 83.33333%;
     float: left;
+    margin-bottom: -30px;
   }
   .blog-page.blog-index-page .blog-post, .blog-page.blog-archives-page .blog-post {
     margin-bottom: 30px;
@@ -8486,6 +8495,30 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     width: 66.66667%;
+    float: left;
+  }
+  .blog-page.blog-index-page .pagination-wrapper, .blog-page.blog-archives-page .pagination-wrapper {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1;
+  }
+  .blog-page.blog-index-page .pagination-wrapper:before, .blog-page.blog-index-page .pagination-wrapper:after, .blog-page.blog-archives-page .pagination-wrapper:before, .blog-page.blog-archives-page .pagination-wrapper:after {
+    content: " ";
+    display: table;
+  }
+  .blog-page.blog-index-page .pagination-wrapper:after, .blog-page.blog-archives-page .pagination-wrapper:after {
+    clear: both;
+  }
+  .blog-page.blog-index-page .pagination-wrapper .pagination-container, .blog-page.blog-archives-page .pagination-wrapper .pagination-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 83.33333%;
+    margin-left: 16.66667%;
     float: left;
   }
   .blog-page.blog-show-page .blog-post-container {
@@ -9422,6 +9455,10 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   background: rgba(0, 0, 0, 0.9);
 }
 
+.content-container {
+  position: relative;
+}
+
 .featured-campaigns .campaign {
   width: 100%;
   margin-bottom: 20px;
@@ -10295,6 +10332,9 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 }
 .links-page .link-group .horizontal-separator-light, .links-page .link-group .shows-page .channel-separator, .shows-page .links-page .link-group .channel-separator {
   margin-top: 0px;
+}
+.links-page .horizontal-separator-light:last-child, .links-page .shows-page .channel-separator:last-child, .shows-page .links-page .channel-separator:last-child {
+  margin-bottom: 0px;
 }
 
 .default-page a {

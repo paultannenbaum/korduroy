@@ -19,9 +19,10 @@
   <section class="main" role="main">
     <div class="content-container">
       <aside class="aside-container">
-        <nav class="aside-navigation">
-          <h2>Popular Tags</h2>
-          <?php wp_tag_cloud(array(
+        <div class="aside-wrapper">
+          <nav class="aside-navigation">
+            <h2>Popular Tags</h2>
+            <?php wp_tag_cloud(array(
             'smallest' => 11,
             'largest' => 11,
             'unit' => 'px',
@@ -29,11 +30,12 @@
             'orderby' => 'count',
             'number' => 15,
             'order' => 'DESC'
-          )); ?>
-        </nav>
+            )); ?>
+          </nav>
+        </div>
       </aside>
 
-      <div class="tagged-posts-container">
+      <div class="tagged-posts-container main-container">
         <?php foreach($posts as $post): setup_postdata($post); ?>
           <?php if (get_post_type() === 'post'): ?>
             <div class="tag-post blog-post">
