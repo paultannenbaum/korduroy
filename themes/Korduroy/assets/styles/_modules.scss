@@ -1030,7 +1030,7 @@
           color: $ktv-blue;
         }
       }
-      img {
+      img, object {
         @extend %image-border;
       }
       a {
