@@ -5,7 +5,6 @@
     @include grid-row;
     margin-top: 5px;
     margin-bottom: 30px;
-    // background: green;
 
     .logo-container {
       @include grid-column(12);
@@ -442,7 +441,6 @@
     @include grid-row;
     margin-top: 10px;
     margin-bottom: 30px;
-    // background: yellow;
 
     .logo-container {
       @include grid-column(2);
@@ -453,20 +451,19 @@
 
       .navigation-row {
         @include grid-row(nest);
-        height: 28px;
-        margin-top: 72px;
-      }
-      .site-navigation {
-        @include grid-column(8);
-        height: 28px;
-        text-align: left;
-        margin-top: 0px;
       }
       .search-container {
-        @include grid-column(4);
+        @include grid-column(12);
         height: 28px;
+        margin-top: 10px;
         text-align: right;
         display: block;
+      }
+      .site-navigation {
+        @include grid-column(12);
+        height: 28px;
+        margin-top: 34px;
+        text-align: left;
       }
     }
   }
@@ -577,9 +574,7 @@
       }
     }
   }
-
   .supporters-page {
-
 
     .supporter-row {
       @include grid-row(nest);
@@ -607,6 +602,33 @@
 
 @media #{$desktop-up} {
   #header {
-    // background: blue;
+    @include grid-row;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    .logo-container {
+      @include grid-column(2);
+      text-align: left;
+    }
+    .navigation-container {
+      @include grid-column(10);
+
+      .navigation-row {
+        @include grid-row(nest);
+      }
+      .search-container {
+        @include grid-column(4, false, false, false, 8);
+        height: 28px;
+        margin-top: 72px;
+        text-align: right;
+        display: block;
+      }
+      .site-navigation {
+        @include grid-column(8, false, false, false, false, 4);
+        height: 28px;
+        margin-top: 72px;
+        text-align: left;
+      }
+    }
   }
 }

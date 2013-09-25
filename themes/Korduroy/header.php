@@ -42,6 +42,10 @@
 
     <div class="navigation-container">
       <div class="navigation-row">
+        <div class="search-container">
+          <?php the_widget('WP_Widget_Search'); ?>
+        </div>
+
         <nav role="site-navigation" class="site-navigation">
           <ul class="site-navigation-list">
             <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/shows">Shows</a></li>
@@ -51,9 +55,6 @@
             <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/about">About</a></li>
           </ul>
         </nav>
-        <div class="search-container">
-          <?php the_widget('WP_Widget_Search'); ?>
-        </div>
       </div>
     </div>
   </header>

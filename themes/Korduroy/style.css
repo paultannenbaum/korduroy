@@ -8893,8 +8893,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     margin-bottom: 0;
     max-width: none;
     *zoom: 1;
-    height: 28px;
-    margin-top: 72px;
   }
   #header .navigation-container .navigation-row:before, #header .navigation-container .navigation-row:after {
     content: " ";
@@ -8903,25 +8901,26 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   #header .navigation-container .navigation-row:after {
     clear: both;
   }
-  #header .navigation-container .site-navigation {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 66.66667%;
-    float: left;
-    height: 28px;
-    text-align: left;
-    margin-top: 0px;
-  }
   #header .navigation-container .search-container {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 33.33333%;
+    width: 100%;
     float: left;
     height: 28px;
+    margin-top: 10px;
     text-align: right;
     display: block;
+  }
+  #header .navigation-container .site-navigation {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+    height: 28px;
+    margin-top: 34px;
+    text-align: left;
   }
 
   #body {
@@ -9255,6 +9254,82 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 
   .about-page.about-the-crew-page .the-crew {
     margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5em;
+    *zoom: 1;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  #header:before, #header:after {
+    content: " ";
+    display: table;
+  }
+  #header:after {
+    clear: both;
+  }
+  #header .logo-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 16.66667%;
+    float: left;
+    text-align: left;
+  }
+  #header .navigation-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 83.33333%;
+    float: left;
+  }
+  #header .navigation-container .navigation-row {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1;
+  }
+  #header .navigation-container .navigation-row:before, #header .navigation-container .navigation-row:after {
+    content: " ";
+    display: table;
+  }
+  #header .navigation-container .navigation-row:after {
+    clear: both;
+  }
+  #header .navigation-container .search-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 33.33333%;
+    left: 66.66667%;
+    right: auto;
+    float: left;
+    height: 28px;
+    margin-top: 72px;
+    text-align: right;
+    display: block;
+  }
+  #header .navigation-container .site-navigation {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 66.66667%;
+    right: 33.33333%;
+    left: auto;
+    float: left;
+    height: 28px;
+    margin-top: 72px;
+    text-align: left;
   }
 }
 /***** Modules *****/
