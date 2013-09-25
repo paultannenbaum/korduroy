@@ -269,6 +269,7 @@
     &.blog-show-page {
       .blog-post-container {
         @include grid-column(10);
+        min-height: 430px; // Sticky Sidebar is overflowing box
       }
       .blog-post {
         @include grid-row(nest);

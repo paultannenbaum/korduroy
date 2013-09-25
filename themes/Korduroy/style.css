@@ -7726,7 +7726,7 @@ p + p, .supporters-page + p, .about-page .crew-member .member-desc + p, p + .sup
 ---------------------------------------------------	*/
 h1, .about-page .crew-member .member-name {
   color: #000;
-  font: normal 700 20px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
+  font: normal 700 18px/1.4 "proxima-nova", "Lucida Grande", lucida, serif;
   text-transform: uppercase;
 }
 
@@ -8527,6 +8527,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-right: 0.9375em;
     width: 83.33333%;
     float: left;
+    min-height: 430px;
   }
   .blog-page.blog-show-page .blog-post {
     width: auto;
