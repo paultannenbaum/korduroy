@@ -1030,7 +1030,7 @@
           color: $ktv-blue;
         }
       }
-      img, object {
+      img, object, iframe {
         @extend %image-border;
       }
       a {
