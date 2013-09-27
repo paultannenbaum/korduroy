@@ -151,9 +151,18 @@
 
       .featured-slider-container {
         @include grid-column(12);
+        margin-bottom: 20px;
       }
       .campaigns-container {
-        display: none;
+        @include grid-column(12);
+        text-align: center;
+
+        .featured-campaigns {
+          @include grid-row(nest);
+          .campaign {
+            @include grid-column(6);
+          }
+        }
       }
     }
     .section-header {
@@ -521,10 +530,19 @@
 
       .featured-slider-container {
         @include grid-column(9);
+        margin-bottom: 0px;
       }
       .campaigns-container {
         @include grid-column(3);
         display: block;
+
+        .featured-campaigns {
+          @include grid-row(nest);
+
+          .campaign {
+            @include grid-column(12);
+          }
+        }
       }
     }
     .section-header {
@@ -574,6 +592,7 @@
       }
     }
   }
+
   .supporters-page {
 
     .supporter-row {

@@ -170,14 +170,8 @@
       text-overflow: ellipsis;
       white-space: nowrap;
 
-      .pre-title {
-        font-size: 20px;
-        color: #CCC;
-        margin-right: 5px;
-      }
       .slide-title {
         font-size: 20px;
-
       }
     }
   }
@@ -232,12 +226,14 @@
 
 .featured-campaigns {
   .campaign {
-    @extend %image-border;
     width: 100%;
     margin-bottom: 20px;
     display: inline-block;
     &:last-child {
       margin-bottom: 0px;
+    }
+    img {
+      @extend %image-border;
     }
   }
 }
@@ -1222,6 +1218,21 @@
 
 // Media Queries
 @media #{$phone-up} {
+  #featured-slider {
+    .slide {
+      .slide-desc {
+        display: none;
+      }
+      header {
+        .slide-title {
+          font-size: 14px;
+        }
+      }
+    }
+    .rsBullets {
+      display: none;
+    }
+  }
 }
 
 @media #{$tablet-up} {
@@ -1237,6 +1248,21 @@
         float: none;
         padding: 0 15px;
       }
+    }
+  }
+  #featured-slider {
+    .slide {
+      .slide-desc {
+        display: block;
+      }
+      header {
+        .slide-title {
+          font-size: 20px;
+        }
+      }
+    }
+    .rsBullets {
+      display: block;
     }
   }
 }
