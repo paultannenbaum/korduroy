@@ -7982,7 +7982,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   }
 
   #footer {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
   #footer .footer-row {
     width: 100%;
@@ -8317,6 +8317,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding: 0;
     margin: 0 -0.625em;
     *zoom: 1;
+    text-align: center;
   }
   .home-page .shows .channel-list:before, .home-page .shows .channel-list:after {
     content: " ";
@@ -8332,13 +8333,13 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding: 0 0.625em 1.25em;
   }
   .home-page .shows .channel-list > li {
-    width: 16.66667%;
+    width: 33.33333%;
     padding: 0 0.625em 1.25em;
   }
   .home-page .shows .channel-list > li:nth-of-type(n) {
     clear: none;
   }
-  .home-page .shows .channel-list > li:nth-of-type(6n+1) {
+  .home-page .shows .channel-list > li:nth-of-type(3n+1) {
     clear: both;
   }
   .home-page .shows .channel-list li {
@@ -8365,14 +8366,15 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 16.66667%;
+    width: 100%;
     float: left;
+    margin-bottom: 20px;
   }
   .home-page .blog .blog-post .blog-post-content {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 83.33333%;
+    width: 100%;
     float: left;
   }
   .home-page .blog .blog-post .blog-post-header {
@@ -9137,36 +9139,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     width: 100%;
     float: left;
   }
-  .home-page .section-header {
-    width: auto;
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: none;
-    *zoom: 1;
-  }
-  .home-page .section-header:before, .home-page .section-header:after {
-    content: " ";
-    display: table;
-  }
-  .home-page .section-header:after {
-    clear: both;
-  }
-  .home-page .section-header .title-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 50%;
-    float: left;
-  }
-  .home-page .section-header .all-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 50%;
-    float: left;
-  }
   .home-page .shows .channel-list {
     display: block;
     padding: 0;
@@ -9196,9 +9168,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   .home-page .shows .channel-list > li:nth-of-type(6n+1) {
     clear: both;
   }
-  .home-page .shows .channel-list li {
-    padding-bottom: 0px;
-  }
   .home-page .blog .blog-post {
     width: auto;
     margin-left: -0.9375em;
@@ -9207,7 +9176,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     margin-bottom: 0;
     max-width: none;
     *zoom: 1;
-    margin-bottom: 30px;
   }
   .home-page .blog .blog-post:before, .home-page .blog .blog-post:after {
     content: " ";
@@ -9222,46 +9190,13 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-right: 0.9375em;
     width: 41.66667%;
     float: left;
+    margin-bottom: 0px;
   }
   .home-page .blog .blog-post .blog-post-content {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     width: 58.33333%;
-    float: left;
-  }
-  .home-page .blog .blog-post .blog-post-header {
-    margin-bottom: 5px;
-  }
-  .home-page .blog .blog-post .blog-post-footer {
-    width: auto;
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: none;
-    *zoom: 1;
-    margin-top: 20px;
-  }
-  .home-page .blog .blog-post .blog-post-footer:before, .home-page .blog .blog-post .blog-post-footer:after {
-    content: " ";
-    display: table;
-  }
-  .home-page .blog .blog-post .blog-post-footer:after {
-    clear: both;
-  }
-  .home-page .blog .blog-post .blog-post-footer .date-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 33.33333%;
-    float: left;
-  }
-  .home-page .blog .blog-post .blog-post-footer .sharing-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 66.66667%;
     float: left;
   }
 

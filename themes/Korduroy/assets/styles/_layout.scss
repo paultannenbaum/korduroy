@@ -44,7 +44,7 @@
     }
   }
   #footer {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 
     .footer-row {
       @include grid-row;
@@ -177,7 +177,8 @@
     }
     .shows {
       .channel-list {
-        @include block-grid(6);
+        @include block-grid(3);
+        text-align: center;
 
         li {
           padding-bottom: 0px;
@@ -190,10 +191,11 @@
         margin-bottom: 30px;
 
         .blog-post-thumbnail {
-          @include grid-column(2);
+          @include grid-column(12);
+          margin-bottom: 20px;
         }
         .blog-post-content {
-          @include grid-column(10);
+          @include grid-column(12);
         }
         .blog-post-header {
           margin-bottom: 5px;
@@ -545,49 +547,21 @@
         }
       }
     }
-    .section-header {
-      @include grid-row(nest);
-
-      .title-container {
-        @include grid-column(6);
-      }
-      .all-container {
-        @include grid-column(6);
-      }
-    }
     .shows {
       .channel-list {
         @include block-grid(6);
-
-        li {
-          padding-bottom: 0px;
-        }
       }
     }
     .blog {
       .blog-post {
         @include grid-row(nest);
-        margin-bottom: 30px;
 
         .blog-post-thumbnail {
           @include grid-column(5);
+          margin-bottom: 0px;
         }
         .blog-post-content {
           @include grid-column(7);
-        }
-        .blog-post-header {
-          margin-bottom: 5px;
-        }
-        .blog-post-footer {
-          @include grid-row(nest);
-          margin-top: 20px;
-
-          .date-container {
-            @include grid-column(4);
-          }
-          .sharing-container {
-            @include grid-column(8);
-          }
         }
       }
     }
