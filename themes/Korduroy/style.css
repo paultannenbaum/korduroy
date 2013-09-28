@@ -8098,12 +8098,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     clear: both;
   }
   #ktv-sub-nav .heading-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 16.66667%;
-    float: left;
-    margin-bottom: 0px;
+    display: none;
   }
   #ktv-sub-nav .heading-container.extend-full {
     position: relative;
@@ -8111,45 +8106,10 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-right: 0.9375em;
     width: 100%;
     float: left;
+    display: block;
   }
   #ktv-sub-nav .list-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 83.33333%;
-    float: left;
-  }
-  #ktv-sub-nav .list-container .sub-nav-list {
-    display: block;
-    padding: 0;
-    margin: 0 -0.625em;
-    *zoom: 1;
-  }
-  #ktv-sub-nav .list-container .sub-nav-list:before, #ktv-sub-nav .list-container .sub-nav-list:after {
-    content: " ";
-    display: table;
-  }
-  #ktv-sub-nav .list-container .sub-nav-list:after {
-    clear: both;
-  }
-  #ktv-sub-nav .list-container .sub-nav-list > li {
-    display: inline;
-    height: auto;
-    float: left;
-    padding: 0 0.625em 1.25em;
-  }
-  #ktv-sub-nav .list-container .sub-nav-list > li {
-    width: 20%;
-    padding: 0 0.625em 1.25em;
-  }
-  #ktv-sub-nav .list-container .sub-nav-list > li:nth-of-type(n) {
-    clear: none;
-  }
-  #ktv-sub-nav .list-container .sub-nav-list > li:nth-of-type(5n+1) {
-    clear: both;
-  }
-  #ktv-sub-nav .list-container .sub-nav-list li {
-    padding-bottom: 7px;
+    display: none;
   }
   #ktv-sub-nav .separator-container {
     position: relative;
@@ -8440,13 +8400,13 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding: 0 0.625em 1.25em;
   }
   .shows-page .show-channel .channel-list > li {
-    width: 16.66667%;
+    width: 33.33333%;
     padding: 0 0.625em 1.25em;
   }
   .shows-page .show-channel .channel-list > li:nth-of-type(n) {
     clear: none;
   }
-  .shows-page .show-channel .channel-list > li:nth-of-type(6n+1) {
+  .shows-page .show-channel .channel-list > li:nth-of-type(3n+1) {
     clear: both;
   }
   .shows-page .episode-header {
@@ -9084,6 +9044,47 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     text-align: right;
   }
 
+  #ktv-sub-nav .list-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+    display: block;
+  }
+  #ktv-sub-nav .list-container .sub-nav-list {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625em;
+    *zoom: 1;
+  }
+  #ktv-sub-nav .list-container .sub-nav-list:before, #ktv-sub-nav .list-container .sub-nav-list:after {
+    content: " ";
+    display: table;
+  }
+  #ktv-sub-nav .list-container .sub-nav-list:after {
+    clear: both;
+  }
+  #ktv-sub-nav .list-container .sub-nav-list > li {
+    display: inline;
+    height: auto;
+    float: left;
+    padding: 0 0.625em 1.25em;
+  }
+  #ktv-sub-nav .list-container .sub-nav-list > li {
+    width: 20%;
+    padding: 0 0.625em 1.25em;
+  }
+  #ktv-sub-nav .list-container .sub-nav-list > li:nth-of-type(n) {
+    clear: none;
+  }
+  #ktv-sub-nav .list-container .sub-nav-list > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+  #ktv-sub-nav .list-container .sub-nav-list li {
+    padding-bottom: 7px;
+  }
+
   .home-page .featured-content {
     width: auto;
     margin-left: -0.9375em;
@@ -9197,6 +9198,66 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     width: 58.33333%;
+    float: left;
+  }
+
+  .shows-page .show-channel .channel-list {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625em;
+    *zoom: 1;
+  }
+  .shows-page .show-channel .channel-list:before, .shows-page .show-channel .channel-list:after {
+    content: " ";
+    display: table;
+  }
+  .shows-page .show-channel .channel-list:after {
+    clear: both;
+  }
+  .shows-page .show-channel .channel-list > li {
+    display: inline;
+    height: auto;
+    float: left;
+    padding: 0 0.625em 1.25em;
+  }
+  .shows-page .show-channel .channel-list > li {
+    width: 16.66667%;
+    padding: 0 0.625em 1.25em;
+  }
+  .shows-page .show-channel .channel-list > li:nth-of-type(n) {
+    clear: none;
+  }
+  .shows-page .show-channel .channel-list > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+  .shows-page .episode-header {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1;
+  }
+  .shows-page .episode-header:before, .shows-page .episode-header:after {
+    content: " ";
+    display: table;
+  }
+  .shows-page .episode-header:after {
+    clear: both;
+  }
+  .shows-page .episode-header .title-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 58.33333%;
+    float: left;
+  }
+  .shows-page .episode-header .sharing-wrapper {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 41.66667%;
     float: left;
   }
 
@@ -9318,6 +9379,23 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     height: 28px;
     margin-top: 72px;
     text-align: left;
+  }
+
+  #ktv-sub-nav .heading-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 16.66667%;
+    float: left;
+    display: block;
+    margin-bottom: 0px;
+  }
+  #ktv-sub-nav .list-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 83.33333%;
+    float: left;
   }
 }
 /***** Modules *****/
@@ -9666,12 +9744,13 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   text-shadow: 1px 1px 1px white;
   text-transform: uppercase;
 }
+.site-navigation .site-navigation-list {
+  text-align: center;
+}
 .site-navigation .site-navigation-list .site-navigation-item {
   display: inline;
-  margin-left: 25px;
-}
-.site-navigation .site-navigation-list .site-navigation-item:first-child {
-  margin-left: 0px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 .site-navigation .site-navigation-list .site-navigation-item.current a {
   color: #2084ea;
@@ -9857,6 +9936,9 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   background-image: url(assets/images/badge_show_small.png);
 }
 
+.channel-list .episode {
+  text-align: center;
+}
 .channel-list .episode img, .channel-list .episode .episode-thumb {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -10109,7 +10191,8 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   background: transparent no-repeat 0 0;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  margin-left: -96px;
   z-index: 5;
 }
 .shows-page .channel-header .channel-icon.all-yew {
@@ -10137,6 +10220,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   background-image: url(assets/images/channel-icons/surf_sufficient.png);
 }
 .shows-page .channel-header .channel-info {
+  display: none;
   position: relative;
   padding-left: 212px;
   font-size: 14px;
@@ -10424,6 +10508,16 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   }
 }
 @media only screen and (min-width: 768px) {
+  #featured-slider .slide .slide-desc {
+    display: block;
+  }
+  #featured-slider .slide header .slide-title {
+    font-size: 20px;
+  }
+  #featured-slider .rsBullets {
+    display: block;
+  }
+
   .site-footer .stay-updated .email {
     width: 100%;
     float: none;
@@ -10435,13 +10529,103 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding: 0 15px;
   }
 
-  #featured-slider .slide .slide-desc {
+  .site-navigation .site-navigation-list {
+    text-align: left;
+  }
+  .site-navigation .site-navigation-list .site-navigation-item {
+    margin-left: 25px;
+    margin-right: 0px;
+  }
+  .site-navigation .site-navigation-list .site-navigation-item:first-child {
+    margin-left: 0px;
+  }
+
+  .shows-page .channel-header .channel-icon {
+    top: 0;
+    left: 0;
+    margin-left: 0;
+  }
+  .shows-page .channel-header .channel-info {
     display: block;
   }
-  #featured-slider .slide header .slide-title {
-    font-size: 20px;
+  .shows-page .channel-separator {
+    margin-top: 0px;
   }
-  #featured-slider .rsBullets {
-    display: block;
+  .shows-page .episode-info {
+    *zoom: 1;
+    min-height: 70px;
+    position: relative;
+    margin-top: 20px;
+  }
+  .shows-page .episode-info:before, .shows-page .episode-info:after {
+    content: " ";
+    display: table;
+  }
+  .shows-page .episode-info:after {
+    clear: both;
+  }
+  .shows-page .episode-info .episode-aside {
+    width: 192px;
+    min-height: 70px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .shows-page .episode-info .episode-main {
+    padding-left: 212px;
+  }
+  .shows-page .episode-info .channel-icon {
+    width: 192px;
+    height: 70px;
+    display: inline-block;
+    background: transparent no-repeat 0 0;
+  }
+  .shows-page .episode-info .channel-icon.all-yew {
+    background-image: url(assets/images/channel-icons/all_yew.png);
+  }
+  .shows-page .episode-info .channel-icon.d-i-why-not {
+    background-image: url(assets/images/channel-icons/d_i_why_not.png);
+  }
+  .shows-page .episode-info .channel-icon.happy-beach {
+    background-image: url(assets/images/channel-icons/happy_beach.png);
+  }
+  .shows-page .episode-info .channel-icon.health-nuts {
+    background-image: url(assets/images/channel-icons/health_nuts.png);
+  }
+  .shows-page .episode-info .channel-icon.inner-views {
+    background-image: url(assets/images/channel-icons/inner_views.png);
+  }
+  .shows-page .episode-info .channel-icon.sea-movies {
+    background-image: url(assets/images/channel-icons/sea_movies.png);
+  }
+  .shows-page .episode-info .channel-icon.specials {
+    background-image: url(assets/images/channel-icons/specials.png);
+  }
+  .shows-page .episode-info .channel-icon.surf-sufficient {
+    background-image: url(assets/images/channel-icons/surf_sufficient.png);
+  }
+  .shows-page .episode-info .episode-desc {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .shows-page .episode-info .sharing-container {
+    color: #999999;
+    height: 22px;
+    line-height: 22px;
+    position: relative;
+    font-size: 10px;
+    color: #999999;
+    text-align: right;
+    margin-top: 4px;
+  }
+  .shows-page .episode-info .sharing-container .addthis_toolbox {
+    height: 22px;
+    float: right;
+  }
+  .shows-page .episode-info .sharing-container .addthis_toolbox .at300b {
+    float: right;
+  }
+  .shows-page .episode-info .sharing-container .addthis_toolbox .addthis_counter.addthis_pill_style {
+    float: right;
   }
 }

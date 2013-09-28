@@ -358,13 +358,13 @@
   text-transform: uppercase;
 
   .site-navigation-list {
+    text-align: center;
+
     .site-navigation-item {
       display: inline;
-      margin-left: 25px;
+      margin-left: 12px;
+      margin-right: 12px;
 
-      &:first-child {
-        margin-left: 0px;
-      }
       &.current a {
         color: $ktv-blue;
       }
@@ -561,6 +561,8 @@
 
 .channel-list {
   .episode {
+    text-align: center;
+
     img, .episode-thumb {
       @include border-radius(6px);
       background: #f5f5f5;
@@ -833,7 +835,8 @@
       background: transparent no-repeat 0 0;
       position: absolute;
       top: 0;
-      left: 0;
+      left: 50%;
+      margin-left: -$icon-width/2;
       z-index: 5;
 
       &.all-yew {
@@ -865,9 +868,11 @@
       }
     }
     .channel-info {
+      display: none;
       position: relative;
       padding-left: $icon-width + 20px;
       font-size: 14px;
+
       .category-name {
         font-weight: bold;
         text-transform: uppercase;
@@ -1233,9 +1238,25 @@
       display: none;
     }
   }
+
 }
 
 @media #{$tablet-up} {
+  #featured-slider {
+    .slide {
+      .slide-desc {
+        display: block;
+      }
+      header {
+        .slide-title {
+          font-size: 20px;
+        }
+      }
+    }
+    .rsBullets {
+      display: block;
+    }
+  }
   .site-footer {
     .stay-updated {
       .email {
@@ -1250,19 +1271,115 @@
       }
     }
   }
-  #featured-slider {
-    .slide {
-      .slide-desc {
-        display: block;
-      }
-      header {
-        .slide-title {
-          font-size: 20px;
+  .site-navigation {
+    .site-navigation-list {
+      text-align: left;
+
+      .site-navigation-item {
+        margin-left: 25px;
+        margin-right: 0px;
+
+        &:first-child {
+          margin-left: 0px;
         }
       }
     }
-    .rsBullets {
-      display: block;
+  }
+
+  .shows-page {
+    $icon-width: 192px;
+    $icon-height: 70px;
+
+    .channel-header {
+      .channel-icon {
+        top: 0;
+        left: 0;
+        margin-left: 0;
+      }
+      .channel-info {
+        display: block;
+      }
+    }
+    .channel-separator {
+      @extend .horizontal-separator-light;
+      margin-top: 0px;
+    }
+    .episode-info {
+      @include clearfix;
+      min-height: $icon-height;
+      position: relative;
+      margin-top: 20px;
+
+      .episode-aside {
+        width: $icon-width;
+        min-height: $icon-height;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      .episode-main {
+        padding-left: $icon-width + 20px;
+      }
+      .channel-icon {
+        width: $icon-width;
+        height: $icon-height;
+        display: inline-block;
+        background: transparent no-repeat 0 0;
+
+        &.all-yew {
+          background-image: url(assets/images/channel-icons/all_yew.png);
+        }
+        &.d-i-why-not {
+          background-image: url(assets/images/channel-icons/d_i_why_not.png);
+        }
+        &.happy-beach {
+          background-image: url(assets/images/channel-icons/happy_beach.png);
+        }
+        &.health-nuts {
+          background-image: url(assets/images/channel-icons/health_nuts.png);
+        }
+        &.inner-views {
+          background-image: url(assets/images/channel-icons/inner_views.png);
+        }
+        &.local-legendz {
+          // background-image: url(assets/images/channel-icons/inner_views.png);
+        }
+        &.sea-movies {
+          background-image: url(assets/images/channel-icons/sea_movies.png);
+        }
+        &.specials {
+          background-image: url(assets/images/channel-icons/specials.png);
+        }
+        &.surf-sufficient {
+          background-image: url(assets/images/channel-icons/surf_sufficient.png);
+        }
+      }
+      .episode-desc {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .sharing-container {
+        color: $ktv-grey;
+        height: 22px;
+        line-height: 22px;
+        position: relative;
+        font-size: 10px;
+        color: $ktv-grey;
+        text-align: right;
+        margin-top: 4px;
+
+        .addthis_toolbox {
+          height: 22px;
+          float: right;
+
+          .at300b {
+            float: right;
+          }
+          .addthis_counter.addthis_pill_style {
+            float: right;
+          }
+        }
+      }
     }
   }
 }
