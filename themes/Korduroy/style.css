@@ -8429,14 +8429,14 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 58.33333%;
+    width: 100%;
     float: left;
   }
   .shows-page .episode-header .sharing-wrapper {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 41.66667%;
+    width: 100%;
     float: left;
   }
 
@@ -9230,34 +9230,18 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   .shows-page .show-channel .channel-list > li:nth-of-type(6n+1) {
     clear: both;
   }
-  .shows-page .episode-header {
-    width: auto;
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: none;
-    *zoom: 1;
-  }
-  .shows-page .episode-header:before, .shows-page .episode-header:after {
-    content: " ";
-    display: table;
-  }
-  .shows-page .episode-header:after {
-    clear: both;
-  }
   .shows-page .episode-header .title-container {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 58.33333%;
+    width: 50%;
     float: left;
   }
   .shows-page .episode-header .sharing-wrapper {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 41.66667%;
+    width: 50%;
     float: left;
   }
 
@@ -9886,6 +9870,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   text-transform: uppercase;
 }
 .tag-list .tag-list-title {
+  display: inline-block;
   padding: 5px 0;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -9893,7 +9878,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   letter-spacing: 1px;
 }
 .tag-list .tag-list-item {
-  display: inline;
+  display: inline-block;
   margin-right: 5px;
   margin-bottom: 5px;
 }
@@ -10261,9 +10246,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   position: absolute;
   top: 0px;
   left: 0px;
-}
-.shows-page .episode-info .episode-main {
-  padding-left: 212px;
+  display: none;
 }
 .shows-page .episode-info .channel-icon {
   width: 192px;
@@ -10306,18 +10289,21 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   position: relative;
   font-size: 10px;
   color: #999999;
-  text-align: right;
-  margin-top: 4px;
+}
+.shows-page .episode-info .sharing-container .share-title {
+  height: 22px;
+  float: left;
+  margin-right: 5px;
 }
 .shows-page .episode-info .sharing-container .addthis_toolbox {
   height: 22px;
-  float: right;
+  float: left;
 }
 .shows-page .episode-info .sharing-container .addthis_toolbox .at300b {
-  float: right;
+  float: left;
 }
 .shows-page .episode-info .sharing-container .addthis_toolbox .addthis_counter.addthis_pill_style {
-  float: right;
+  float: left;
 }
 
 .blog-page .blog-post .date-container {
@@ -10548,75 +10534,20 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   .shows-page .channel-header .channel-info {
     display: block;
   }
-  .shows-page .channel-separator {
-    margin-top: 0px;
-  }
-  .shows-page .episode-info {
-    *zoom: 1;
-    min-height: 70px;
-    position: relative;
-    margin-top: 20px;
-  }
-  .shows-page .episode-info:before, .shows-page .episode-info:after {
-    content: " ";
-    display: table;
-  }
-  .shows-page .episode-info:after {
-    clear: both;
-  }
   .shows-page .episode-info .episode-aside {
-    width: 192px;
-    min-height: 70px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    display: block;
   }
   .shows-page .episode-info .episode-main {
     padding-left: 212px;
   }
-  .shows-page .episode-info .channel-icon {
-    width: 192px;
-    height: 70px;
-    display: inline-block;
-    background: transparent no-repeat 0 0;
-  }
-  .shows-page .episode-info .channel-icon.all-yew {
-    background-image: url(assets/images/channel-icons/all_yew.png);
-  }
-  .shows-page .episode-info .channel-icon.d-i-why-not {
-    background-image: url(assets/images/channel-icons/d_i_why_not.png);
-  }
-  .shows-page .episode-info .channel-icon.happy-beach {
-    background-image: url(assets/images/channel-icons/happy_beach.png);
-  }
-  .shows-page .episode-info .channel-icon.health-nuts {
-    background-image: url(assets/images/channel-icons/health_nuts.png);
-  }
-  .shows-page .episode-info .channel-icon.inner-views {
-    background-image: url(assets/images/channel-icons/inner_views.png);
-  }
-  .shows-page .episode-info .channel-icon.sea-movies {
-    background-image: url(assets/images/channel-icons/sea_movies.png);
-  }
-  .shows-page .episode-info .channel-icon.specials {
-    background-image: url(assets/images/channel-icons/specials.png);
-  }
-  .shows-page .episode-info .channel-icon.surf-sufficient {
-    background-image: url(assets/images/channel-icons/surf_sufficient.png);
-  }
-  .shows-page .episode-info .episode-desc {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
   .shows-page .episode-info .sharing-container {
-    color: #999999;
-    height: 22px;
-    line-height: 22px;
-    position: relative;
-    font-size: 10px;
-    color: #999999;
     text-align: right;
     margin-top: 4px;
+  }
+  .shows-page .episode-info .sharing-container .share-title {
+    height: 22px;
+    float: none;
+    margin-right: 0px;
   }
   .shows-page .episode-info .sharing-container .addthis_toolbox {
     height: 22px;

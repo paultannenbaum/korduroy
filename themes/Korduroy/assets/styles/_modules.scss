@@ -500,6 +500,7 @@
   text-transform: uppercase;
 
   .tag-list-title {
+    display: inline-block;
     padding: 5px 0;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -507,7 +508,7 @@
     letter-spacing: 1px;
   }
   .tag-list-item {
-    display: inline;
+    display: inline-block;
     margin-right: 5px;
     margin-bottom: 5px;
 
@@ -906,10 +907,9 @@
       position: absolute;
       top: 0px;
       left: 0px;
+      display: none;
     }
-    .episode-main {
-      padding-left: $icon-width + 20px;
-    }
+    .episode-main {}
     .channel-icon {
       width: $icon-width;
       height: $icon-height;
@@ -955,18 +955,21 @@
       position: relative;
       font-size: 10px;
       color: $ktv-grey;
-      text-align: right;
-      margin-top: 4px;
 
+      .share-title {
+        height: 22px;
+        float: left;
+        margin-right: 5px;
+      }
       .addthis_toolbox {
         height: 22px;
-        float: right;
+        float: left;
 
         .at300b {
-          float: right;
+          float: left;
         }
         .addthis_counter.addthis_pill_style {
-          float: right;
+          float: left;
         }
       }
     }
@@ -1300,74 +1303,22 @@
         display: block;
       }
     }
-    .channel-separator {
-      @extend .horizontal-separator-light;
-      margin-top: 0px;
-    }
     .episode-info {
-      @include clearfix;
-      min-height: $icon-height;
-      position: relative;
-      margin-top: 20px;
-
       .episode-aside {
-        width: $icon-width;
-        min-height: $icon-height;
-        position: absolute;
-        top: 0px;
-        left: 0px;
+        display: block;
       }
       .episode-main {
         padding-left: $icon-width + 20px;
       }
-      .channel-icon {
-        width: $icon-width;
-        height: $icon-height;
-        display: inline-block;
-        background: transparent no-repeat 0 0;
-
-        &.all-yew {
-          background-image: url(assets/images/channel-icons/all_yew.png);
-        }
-        &.d-i-why-not {
-          background-image: url(assets/images/channel-icons/d_i_why_not.png);
-        }
-        &.happy-beach {
-          background-image: url(assets/images/channel-icons/happy_beach.png);
-        }
-        &.health-nuts {
-          background-image: url(assets/images/channel-icons/health_nuts.png);
-        }
-        &.inner-views {
-          background-image: url(assets/images/channel-icons/inner_views.png);
-        }
-        &.local-legendz {
-          // background-image: url(assets/images/channel-icons/inner_views.png);
-        }
-        &.sea-movies {
-          background-image: url(assets/images/channel-icons/sea_movies.png);
-        }
-        &.specials {
-          background-image: url(assets/images/channel-icons/specials.png);
-        }
-        &.surf-sufficient {
-          background-image: url(assets/images/channel-icons/surf_sufficient.png);
-        }
-      }
-      .episode-desc {
-        margin-top: 10px;
-        margin-bottom: 20px;
-      }
       .sharing-container {
-        color: $ktv-grey;
-        height: 22px;
-        line-height: 22px;
-        position: relative;
-        font-size: 10px;
-        color: $ktv-grey;
         text-align: right;
         margin-top: 4px;
 
+        .share-title {
+          height: 22px;
+          float: none;
+          margin-right: 0px;
+        }
         .addthis_toolbox {
           height: 22px;
           float: right;

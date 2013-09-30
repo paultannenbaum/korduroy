@@ -224,10 +224,10 @@
       @include grid-row(nest);
 
       .title-container {
-        @include grid-column(7);
+        @include grid-column(12);
       }
       .sharing-wrapper {
-        @include grid-column(5);
+        @include grid-column(12);
       }
     }
   }
@@ -580,13 +580,11 @@
       }
     }
     .episode-header {
-      @include grid-row(nest);
-
       .title-container {
-        @include grid-column(7);
+        @include grid-column(6);
       }
       .sharing-wrapper {
-        @include grid-column(5);
+        @include grid-column(6);
       }
     }
   }
