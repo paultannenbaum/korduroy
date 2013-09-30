@@ -977,7 +977,6 @@
 }
 
 .blog-page {
-
   .blog-post {
     .date-container {
       color: $ktv-grey;
@@ -987,7 +986,7 @@
       text-transform: uppercase;
 
       .blog-post-date {
-        margin-left: 3px;
+        margin-left: 0px;
         text-transform: uppercase;
       }
     }
@@ -998,18 +997,23 @@
       position: relative;
       font-size: 10px;
       color: $ktv-grey;
-      text-align: right;
+      text-align: left;
       text-transform: uppercase;
 
+      .share-title {
+        height: 22px;
+        float: left;
+        margin-right: 5px;
+      }
       .addthis_toolbox {
         height: 22px;
-        float: right;
+        float: left;
 
         .at300b {
-          float: right;
+          float: left;
         }
         .addthis_counter.addthis_pill_style {
-          float: right;
+          float: left;
         }
       }
     }
@@ -1334,3 +1338,34 @@
     }
   }
 }
+
+@media #{$desktop-up} {
+  .blog-page {
+    .blog-post {
+      .date-container {
+        .blog-post-date {
+          margin-left: 3px;
+        }
+      }
+      .sharing-container {
+        text-align: right;
+
+        .share-title {
+          float: none;
+          margin-right: 0px;
+        }
+        .addthis_toolbox {
+          float: right;
+
+          .at300b {
+            float: right;
+          }
+          .addthis_counter.addthis_pill_style {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+
