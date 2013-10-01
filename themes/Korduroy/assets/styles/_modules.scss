@@ -1337,9 +1337,6 @@
       }
     }
   }
-}
-
-@media #{$desktop-up} {
   .blog-page {
     .blog-post {
       .date-container {
@@ -1368,4 +1365,6 @@
     }
   }
 }
+
+@media #{$desktop-up} {}
 

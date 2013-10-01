@@ -237,12 +237,9 @@
     &.blog-index-page, &.blog-archives-page {
       .blog-posts-container {
         @include grid-column(12);
-        // @include grid-column(10);
         margin-bottom: -30px; // Hack to remove last <hr> margin-bottom
       }
       .blog-post {
-        margin-bottom: 30px;
-
         .blog-post-header {
           margin-bottom: 5px;
         }
@@ -255,11 +252,9 @@
 
           .date-container {
             @include grid-column(12);
-            // @include grid-column(4);
           }
           .sharing-container {
             @include grid-column(12);
-            // @include grid-column(8);
           }
         }
       }
@@ -268,18 +263,17 @@
 
         .pagination-container {
           @include grid-column(12);
-          // @include grid-column(10, false, false, 2);
         }
       }
     }
     &.blog-show-page {
       .blog-post-container {
-        @include grid-column(10);
+        @include grid-column(12);
+        margin-bottom: -30px; // Hack to remove last <hr> margin-bottom
         min-height: 430px; // Sticky Sidebar is overflowing box
       }
       .blog-post {
         @include grid-row(nest);
-        margin-bottom: 30px;
 
         .blog-post-header {
           @include grid-column(12);
@@ -289,14 +283,11 @@
             @include clearfix;
 
             .date-container {
-              width: 50%;
-              padding-right: 10px;
-              float: left;
+              width: 100%;
+              margin-bottom: 10px;
             }
             .sharing-container {
-              width: 50%;
-              padding-left: 10px;
-              float: right;
+              width: 100%;
             }
           }
         }
@@ -593,6 +584,44 @@
       }
     }
   }
+  .blog-page {
+    &.blog-index-page, &.blog-archives-page {
+      .blog-post {
+        .blog-post-footer {
+          .date-container {
+            @include grid-column(4);
+          }
+          .sharing-container {
+            @include grid-column(8);
+          }
+        }
+      }
+    }
+    &.blog-show-page {
+      .blog-post {
+        .blog-post-header {
+          @include grid-column(12);
+          margin-bottom: 15px;
+
+          .blog-post-meta {
+            @include clearfix;
+
+            .date-container {
+              width: 50%;
+              padding-right: 10px;
+              float: left;
+              margin-bottom: 0px;
+            }
+            .sharing-container {
+              width: 50%;
+              padding-left: 10px;
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
 
   .supporters-page {
 
@@ -671,16 +700,6 @@
       .blog-posts-container {
         @include grid-column(10);
       }
-      .blog-post {
-        .blog-post-footer {
-          .date-container {
-            @include grid-column(4);
-          }
-          .sharing-container {
-            @include grid-column(8);
-          }
-        }
-      }
       .pagination-wrapper {
         .pagination-container {
           @include grid-column(10, false, false, 2);
@@ -691,36 +710,6 @@
       .blog-post-container {
         @include grid-column(10);
         min-height: 430px; // Sticky Sidebar is overflowing box
-      }
-      .blog-post {
-        @include grid-row(nest);
-        margin-bottom: 30px;
-
-        .blog-post-header {
-          @include grid-column(12);
-          margin-bottom: 15px;
-
-          .blog-post-meta {
-            @include clearfix;
-
-            .date-container {
-              width: 50%;
-              padding-right: 10px;
-              float: left;
-            }
-            .sharing-container {
-              width: 50%;
-              padding-left: 10px;
-              float: right;
-            }
-          }
-        }
-        .blog-post-body {
-          @include grid-column(12);
-        }
-        .blog-post-footer {
-          margin-top: 20px;
-        }
       }
     }
   }
