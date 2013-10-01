@@ -378,26 +378,14 @@
   }
   .search-page {
     .search-thumbnail {
-      @include grid-column(2);
+      @include grid-column(12);
+      margin-bottom: 10px;
     }
     .search-post-content {
-      @include grid-column(10);
+      @include grid-column(12);
     }
     .search-post-header {
       margin-bottom: 5px;
-    }
-    .search-post-footer {
-      @include clearfix;
-      margin-top: 20px;
-
-      .date-container {
-        float: left;
-        width: 25%;
-      }
-      .sharing-container {
-        float: right;
-        width: 70%;
-      }
     }
     .separator-container {
       @include grid-column(12);
@@ -620,6 +608,15 @@
           }
         }
       }
+    }
+  }
+  .search-page {
+    .search-thumbnail {
+      @include grid-column(4);
+      margin-bottom: 0px;
+    }
+    .search-post-content {
+      @include grid-column(8);
     }
   }
 
