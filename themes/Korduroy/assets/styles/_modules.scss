@@ -1110,10 +1110,7 @@
       height: 24px;
       line-height: 22px;
       font-size: 10px;
-
-      .blog-post-date {
-        margin-left: 3px;
-      }
+      margin-top: 10px;
     }
     .sharing-container {
       color: $ktv-grey;
@@ -1122,17 +1119,21 @@
       position: relative;
       font-size: 10px;
       color: $ktv-grey;
-      text-align: right;
+      margin-top: 10px;
 
+      .share-title {
+        float: left;
+        margin-right: 5px;
+      }
       .addthis_toolbox {
         height: 22px;
-        float: right;
+        float: left;
 
         .at300b {
-          float: right;
+          float: left;
         }
         .addthis_counter.addthis_pill_style {
-          float: right;
+          float: left;
         }
       }
     }

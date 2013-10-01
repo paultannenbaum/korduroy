@@ -8672,7 +8672,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 83.33333%;
+    width: 100%;
     float: left;
   }
   .tag-page .tag-post {
@@ -8696,37 +8696,19 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 25%;
+    width: 100%;
     float: left;
+    margin-bottom: 10px;
   }
   .tag-page .tag-post .tag-post-content {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 75%;
+    width: 100%;
     float: left;
   }
   .tag-page .tag-post .tag-post-header {
     margin-bottom: 5px;
-  }
-  .tag-page .tag-post .tag-post-footer {
-    *zoom: 1;
-    margin-top: 20px;
-  }
-  .tag-page .tag-post .tag-post-footer:before, .tag-page .tag-post .tag-post-footer:after {
-    content: " ";
-    display: table;
-  }
-  .tag-page .tag-post .tag-post-footer:after {
-    clear: both;
-  }
-  .tag-page .tag-post .tag-post-footer .date-container {
-    float: left;
-    width: 25%;
-  }
-  .tag-page .tag-post .tag-post-footer .sharing-container {
-    float: right;
-    width: 70%;
   }
 
   .search-page .search-thumbnail {
@@ -9281,6 +9263,22 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     float: left;
   }
 
+  .tag-page .tag-post .tag-thumbnail {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 41.66667%;
+    float: left;
+    margin-bottom: 0px;
+  }
+  .tag-page .tag-post .tag-post-content {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 58.33333%;
+    float: left;
+  }
+
   .supporters-page .supporter-row {
     width: auto;
     margin-left: -0.9375em;
@@ -9443,7 +9441,16 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-right: 0.9375em;
     width: 83.33333%;
     float: left;
-    min-height: 430px;
+    min-height: 440px;
+  }
+
+  .tag-page .tagged-posts-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 83.33333%;
+    float: left;
+    min-height: 440px;
   }
 }
 /***** Modules *****/
@@ -10460,9 +10467,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   height: 24px;
   line-height: 22px;
   font-size: 10px;
-}
-.tag-page .tag-post .date-container .blog-post-date {
-  margin-left: 3px;
+  margin-top: 10px;
 }
 .tag-page .tag-post .sharing-container {
   color: #999999;
@@ -10471,17 +10476,21 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   position: relative;
   font-size: 10px;
   color: #999999;
-  text-align: right;
+  margin-top: 10px;
+}
+.tag-page .tag-post .sharing-container .share-title {
+  float: left;
+  margin-right: 5px;
 }
 .tag-page .tag-post .sharing-container .addthis_toolbox {
   height: 22px;
-  float: right;
+  float: left;
 }
 .tag-page .tag-post .sharing-container .addthis_toolbox .at300b {
-  float: right;
+  float: left;
 }
 .tag-page .tag-post .sharing-container .addthis_toolbox .addthis_counter.addthis_pill_style {
-  float: right;
+  float: left;
 }
 
 .search-page .search-post .search-post-show-desc {
