@@ -8608,6 +8608,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-right: 0.9375em;
     width: 100%;
     float: left;
+    margin-top: 20px;
   }
 
   .about-page.about-the-crew-page .the-crew {
@@ -9247,6 +9248,29 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     float: right;
   }
 
+  .supporters-page .logo-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 16.66667%;
+    float: left;
+  }
+  .supporters-page .info-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 25%;
+    float: left;
+  }
+  .supporters-page .description-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 58.33333%;
+    float: left;
+    margin-top: 0px;
+  }
+
   .search-page .search-thumbnail {
     position: relative;
     padding-left: 0.9375em;
@@ -9276,46 +9300,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     width: 58.33333%;
-    float: left;
-  }
-
-  .supporters-page .supporter-row {
-    width: auto;
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: none;
-    *zoom: 1;
-  }
-  .supporters-page .supporter-row:before, .supporters-page .supporter-row:after {
-    content: " ";
-    display: table;
-  }
-  .supporters-page .supporter-row:after {
-    clear: both;
-  }
-  .supporters-page .logo-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 16.66667%;
-    float: left;
-    text-align: left;
-  }
-  .supporters-page .info-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 16.66667%;
-    float: left;
-    text-align: left;
-  }
-  .supporters-page .description-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 66.66667%;
     float: left;
   }
 
@@ -9442,6 +9426,28 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     width: 83.33333%;
     float: left;
     min-height: 440px;
+  }
+
+  .supporters-page .logo-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 16.66667%;
+    float: left;
+  }
+  .supporters-page .info-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 16.66667%;
+    float: left;
+  }
+  .supporters-page .description-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 66.66667%;
+    float: left;
   }
 
   .tag-page .tagged-posts-container {
@@ -10442,10 +10448,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 }
 .blog-page .blog-post .blog-post-body h1 a:hover, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-name a:hover, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-name a:hover, .blog-page .blog-post .blog-post-body h2 a:hover, .blog-page .blog-post .blog-post-body .supporters-page .info-items .name a:hover, .supporters-page .info-items .blog-page .blog-post .blog-post-body .name a:hover, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-position a:hover, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-position a:hover, .blog-page .blog-post .blog-post-body h3 a:hover, .blog-page .blog-post .blog-post-body h4 a:hover, .blog-page .blog-post .blog-post-body h5 a:hover, .blog-page .blog-post .blog-post-body h6 a:hover {
   color: #2084ea;
-}
-
-.supporters-page .logo-container img {
-  width: 90%;
 }
 
 .about-page .crew-member .member-name {

@@ -300,7 +300,6 @@
       }
     }
   }
-
   .supporters-page {
     .supporter-row {
       @include grid-row(nest);
@@ -315,8 +314,10 @@
     }
     .description-container {
       @include grid-column(12);
+      margin-top: 20px;
     }
   }
+
   .about-page {
     &.about-the-crew-page {
       .the-crew {
@@ -598,6 +599,19 @@
       }
     }
   }
+  .supporters-page {
+    .logo-container {
+      @include grid-column(2);
+    }
+    .info-container {
+      @include grid-column(3);
+    }
+    .description-container {
+      @include grid-column(7);
+      margin-top: 0px;
+    }
+  }
+
   .search-page {
     .search-thumbnail {
       @include grid-column(4);
@@ -619,23 +633,6 @@
     }
   }
 
-  .supporters-page {
-
-    .supporter-row {
-      @include grid-row(nest);
-    }
-    .logo-container {
-      @include grid-column(2);
-      text-align: left;
-    }
-    .info-container {
-      @include grid-column(2);
-      text-align: left;
-    }
-    .description-container {
-      @include grid-column(8);
-    }
-  }
   .about-page {
     &.about-the-crew-page {
       .the-crew {
@@ -707,6 +704,17 @@
         @include grid-column(10);
         min-height: 440px; // Sticky Sidebar overflowing hack
       }
+    }
+  }
+  .supporters-page {
+    .logo-container {
+      @include grid-column(2);
+    }
+    .info-container {
+      @include grid-column(2);
+    }
+    .description-container {
+      @include grid-column(8);
     }
   }
   .tag-page {
