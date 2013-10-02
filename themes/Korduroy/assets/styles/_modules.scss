@@ -812,7 +812,6 @@
     }
     .blog-post-thumbnail img {
       @extend %image-border;
-      width: 100%;
     }
     .blog-post-footer {
       font-size: 10px;
@@ -975,7 +974,7 @@
   }
 }
 
-.blog-page {
+.blog-page  {
   .blog-post {
     .date-container {
       color: $ktv-grey;
@@ -1020,9 +1019,8 @@
       display: inline-block;
     }
     .blog-post-thumbnail {
-      @extend %image-border;
       img {
-        width: 100%;
+        @extend %image-border;
       }
     }
     .blog-post-footer {
@@ -1097,7 +1095,6 @@
 
       img {
         @extend %image-border;
-        width: 100%;
       }
     }
     .date-container {
@@ -1146,7 +1143,6 @@
 
       img {
         @extend %image-border;
-        width: 100%;
       }
     }
     .date-container {
