@@ -8098,7 +8098,11 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     clear: both;
   }
   #ktv-sub-nav .heading-container {
-    display: none;
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
   }
   #ktv-sub-nav .heading-container.extend-full {
     position: relative;
@@ -8142,23 +8146,11 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 16.66667%;
-    float: left;
-    margin-bottom: 0px;
-  }
-  #about-sub-nav .sub-nav-heading.extend-full {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
     width: 100%;
     float: left;
   }
   #about-sub-nav .sub-nav-list {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 83.33333%;
-    float: left;
+    display: none;
   }
   #about-sub-nav .separator-container {
     position: relative;
@@ -8634,14 +8626,15 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 25%;
+    width: 100%;
     float: left;
+    margin-bottom: 10px;
   }
   .about-page.about-the-crew-page .crew-member .crew-member-info {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 75%;
+    width: 100%;
     float: left;
   }
   .about-page.about-big-shaka-club-page .big-shaka-club-wrapper {
@@ -8664,9 +8657,9 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 50%;
+    width: 100%;
     float: left;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .tag-page .tagged-posts-container {
@@ -9003,6 +8996,17 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     text-align: right;
   }
 
+  #ktv-sub-nav .heading-container {
+    display: none;
+  }
+  #ktv-sub-nav .heading-container.extend-full {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+    display: block;
+  }
   #ktv-sub-nav .list-container {
     position: relative;
     padding-left: 0.9375em;
@@ -9042,6 +9046,48 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   }
   #ktv-sub-nav .list-container .sub-nav-list li {
     padding-bottom: 7px;
+  }
+
+  #about-sub-nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5em;
+    *zoom: 1;
+  }
+  #about-sub-nav:before, #about-sub-nav:after {
+    content: " ";
+    display: table;
+  }
+  #about-sub-nav:after {
+    clear: both;
+  }
+  #about-sub-nav .sub-nav-heading {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 16.66667%;
+    float: left;
+  }
+  #about-sub-nav .sub-nav-list {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 83.33333%;
+    float: left;
+    display: block;
+  }
+  #about-sub-nav .separator-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+  }
+  #about-sub-nav .separator-container .horizontal-stitch {
+    margin-top: 0px;
   }
 
   .home-page .featured-content {
@@ -9269,6 +9315,46 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     width: 58.33333%;
     float: left;
     margin-top: 0px;
+  }
+
+  .about-page.about-the-crew-page .crew-member .crew-member-photo {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 33.33333%;
+    float: left;
+    margin-bottom: 0px;
+  }
+  .about-page.about-the-crew-page .crew-member .crew-member-info {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 66.66667%;
+    float: left;
+  }
+  .about-page.about-big-shaka-club-page .big-shaka-club-wrapper {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1;
+  }
+  .about-page.about-big-shaka-club-page .big-shaka-club-wrapper:before, .about-page.about-big-shaka-club-page .big-shaka-club-wrapper:after {
+    content: " ";
+    display: table;
+  }
+  .about-page.about-big-shaka-club-page .big-shaka-club-wrapper:after {
+    clear: both;
+  }
+  .about-page.about-big-shaka-club-page .big-shaka-club-wrapper .big-shaka-group {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 50%;
+    float: left;
+    margin-top: 20px;
   }
 
   .search-page .search-thumbnail {

@@ -85,8 +85,7 @@
     @include grid-row();
 
     .heading-container {
-      display: none;
-
+      @include grid-column(12);
       &.extend-full {
         @include grid-column(12);
         display: block;
@@ -107,15 +106,11 @@
     @include grid-row();
 
     .sub-nav-heading {
-      @include grid-column(2);
-      margin-bottom: 0px;
-
-      &.extend-full {
-        @include grid-column(12);
-      }
+      @include grid-column(12);
     }
     .sub-nav-list {
-      @include grid-column(10);
+      display: none;
+      // @include grid-column(10);
     }
     .separator-container {
       @include grid-column(12);
@@ -317,7 +312,6 @@
       margin-top: 20px;
     }
   }
-
   .about-page {
     &.about-the-crew-page {
       .the-crew {
@@ -327,10 +321,11 @@
         @include grid-row(nest);
 
         .crew-member-photo {
-          @include grid-column(3);
+          @include grid-column(12);
+          margin-bottom: 10px;
         }
         .crew-member-info {
-          @include grid-column(9);
+          @include grid-column(12);
         }
       }
     }
@@ -339,12 +334,13 @@
         @include grid-row(nest);
 
         .big-shaka-group {
-          @include grid-column(6);
-          margin-top: 30px;
+          @include grid-column(12);
+          margin-top: 20px;
         }
       }
     }
   }
+
   .tag-page {
     .tagged-posts-container {
       @include grid-column(12);
@@ -491,6 +487,14 @@
     }
   }
   #ktv-sub-nav {
+    .heading-container {
+      display: none;
+
+      &.extend-full {
+        @include grid-column(12);
+        display: block;
+      }
+    }
     .list-container {
       @include grid-column(12);
       display: block;
@@ -500,6 +504,24 @@
         li {
           padding-bottom: 7px;
         }
+      }
+    }
+  }
+  #about-sub-nav {
+    @include grid-row();
+
+    .sub-nav-heading {
+      @include grid-column(2);
+    }
+    .sub-nav-list {
+      @include grid-column(10);
+      display: block;
+    }
+    .separator-container {
+      @include grid-column(12);
+
+      .horizontal-stitch {
+        margin-top: 0px;
       }
     }
   }
@@ -611,6 +633,29 @@
       margin-top: 0px;
     }
   }
+  .about-page {
+    &.about-the-crew-page {
+      .crew-member {
+        .crew-member-photo {
+          @include grid-column(4);
+          margin-bottom: 0px;
+        }
+        .crew-member-info {
+          @include grid-column(8);
+        }
+      }
+    }
+    &.about-big-shaka-club-page {
+      .big-shaka-club-wrapper {
+        @include grid-row(nest);
+
+        .big-shaka-group {
+          @include grid-column(6);
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 
   .search-page {
     .search-thumbnail {
@@ -674,7 +719,6 @@
     }
   }
   #ktv-sub-nav {
-
     .heading-container {
       @include grid-column(2);
       display: block;
