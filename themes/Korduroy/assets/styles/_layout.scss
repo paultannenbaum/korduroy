@@ -314,9 +314,6 @@
   }
   .about-page {
     &.about-the-crew-page {
-      .the-crew {
-        margin-top: 30px;
-      }
       .crew-member {
         @include grid-row(nest);
 
@@ -340,7 +337,6 @@
       }
     }
   }
-
   .tag-page {
     .tagged-posts-container {
       @include grid-column(12);
@@ -383,13 +379,17 @@
       margin: 30px 0;
     }
   }
+
   .links-page {
     .linked-pages-container {
-      @include grid-column(10);
+      @include grid-column(12);
 
       .links-list {
-        @include block-grid(3);
+        @include block-grid(1);
         margin-top: 10px;
+        li {
+          padding-bottom: 5px;
+        }
       }
     }
   }
@@ -656,16 +656,6 @@
       }
     }
   }
-
-  .search-page {
-    .search-thumbnail {
-      @include grid-column(4);
-      margin-bottom: 0px;
-    }
-    .search-post-content {
-      @include grid-column(8);
-    }
-  }
   .tag-page {
     .tag-post {
       .tag-thumbnail {
@@ -677,11 +667,19 @@
       }
     }
   }
-
-  .about-page {
-    &.about-the-crew-page {
-      .the-crew {
-        margin-top: 30px;
+  .search-page {
+    .search-thumbnail {
+      @include grid-column(4);
+      margin-bottom: 0px;
+    }
+    .search-post-content {
+      @include grid-column(8);
+    }
+  }
+  .links-page {
+    .linked-pages-container {
+      .links-list {
+        @include block-grid(2);
       }
     }
   }
@@ -765,6 +763,15 @@
     .tagged-posts-container {
       @include grid-column(10);
       min-height: 440px; // Sticky Sidebar overflowing hack
+    }
+  }
+  .links-page {
+    .linked-pages-container {
+      @include grid-column(10);
+
+      .links-list {
+        @include block-grid(3);
+      }
     }
   }
 }

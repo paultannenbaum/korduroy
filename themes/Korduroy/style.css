@@ -8603,9 +8603,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     margin-top: 20px;
   }
 
-  .about-page.about-the-crew-page .the-crew {
-    margin-top: 30px;
-  }
   .about-page.about-the-crew-page .crew-member {
     width: auto;
     margin-left: -0.9375em;
@@ -8750,7 +8747,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 83.33333%;
+    width: 100%;
     float: left;
   }
   .links-page .linked-pages-container .links-list {
@@ -8774,14 +8771,17 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding: 0 0.625em 1.25em;
   }
   .links-page .linked-pages-container .links-list > li {
-    width: 33.33333%;
+    width: 100%;
     padding: 0 0.625em 1.25em;
   }
   .links-page .linked-pages-container .links-list > li:nth-of-type(n) {
     clear: none;
   }
-  .links-page .linked-pages-container .links-list > li:nth-of-type(3n+1) {
+  .links-page .linked-pages-container .links-list > li:nth-of-type(1n+1) {
     clear: both;
+  }
+  .links-page .linked-pages-container .links-list li {
+    padding-bottom: 5px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -9357,22 +9357,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     margin-top: 20px;
   }
 
-  .search-page .search-thumbnail {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 33.33333%;
-    float: left;
-    margin-bottom: 0px;
-  }
-  .search-page .search-post-content {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 66.66667%;
-    float: left;
-  }
-
   .tag-page .tag-post .tag-thumbnail {
     position: relative;
     padding-left: 0.9375em;
@@ -9389,8 +9373,50 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     float: left;
   }
 
-  .about-page.about-the-crew-page .the-crew {
-    margin-top: 30px;
+  .search-page .search-thumbnail {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 33.33333%;
+    float: left;
+    margin-bottom: 0px;
+  }
+  .search-page .search-post-content {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 66.66667%;
+    float: left;
+  }
+
+  .links-page .linked-pages-container .links-list {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625em;
+    *zoom: 1;
+  }
+  .links-page .linked-pages-container .links-list:before, .links-page .linked-pages-container .links-list:after {
+    content: " ";
+    display: table;
+  }
+  .links-page .linked-pages-container .links-list:after {
+    clear: both;
+  }
+  .links-page .linked-pages-container .links-list > li {
+    display: inline;
+    height: auto;
+    float: left;
+    padding: 0 0.625em 1.25em;
+  }
+  .links-page .linked-pages-container .links-list > li {
+    width: 50%;
+    padding: 0 0.625em 1.25em;
+  }
+  .links-page .linked-pages-container .links-list > li:nth-of-type(n) {
+    clear: none;
+  }
+  .links-page .linked-pages-container .links-list > li:nth-of-type(2n+1) {
+    clear: both;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -9543,6 +9569,43 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     width: 83.33333%;
     float: left;
     min-height: 440px;
+  }
+
+  .links-page .linked-pages-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 83.33333%;
+    float: left;
+  }
+  .links-page .linked-pages-container .links-list {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625em;
+    *zoom: 1;
+  }
+  .links-page .linked-pages-container .links-list:before, .links-page .linked-pages-container .links-list:after {
+    content: " ";
+    display: table;
+  }
+  .links-page .linked-pages-container .links-list:after {
+    clear: both;
+  }
+  .links-page .linked-pages-container .links-list > li {
+    display: inline;
+    height: auto;
+    float: left;
+    padding: 0 0.625em 1.25em;
+  }
+  .links-page .linked-pages-container .links-list > li {
+    width: 33.33333%;
+    padding: 0 0.625em 1.25em;
+  }
+  .links-page .linked-pages-container .links-list > li:nth-of-type(n) {
+    clear: none;
+  }
+  .links-page .linked-pages-container .links-list > li:nth-of-type(3n+1) {
+    clear: both;
   }
 }
 /***** Modules *****/
