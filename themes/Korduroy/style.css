@@ -8143,15 +8143,24 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   #about-sub-nav:after {
     clear: both;
   }
-  #about-sub-nav .sub-nav-heading {
+  #about-sub-nav .heading-container {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     width: 100%;
     float: left;
-  }
-  #about-sub-nav .sub-nav-list {
     display: none;
+  }
+  #about-sub-nav .heading-container.extend-full {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+    display: block;
+  }
+  #about-sub-nav .list-container {
+    display: block;
   }
   #about-sub-nav .separator-container {
     position: relative;
@@ -9065,30 +9074,21 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   #about-sub-nav:after {
     clear: both;
   }
-  #about-sub-nav .sub-nav-heading {
+  #about-sub-nav .heading-container {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     width: 16.66667%;
     float: left;
+    display: block;
   }
-  #about-sub-nav .sub-nav-list {
+  #about-sub-nav .list-container {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     width: 83.33333%;
     float: left;
     display: block;
-  }
-  #about-sub-nav .separator-container {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 100%;
-    float: left;
-  }
-  #about-sub-nav .separator-container .horizontal-stitch {
-    margin-top: 0px;
   }
 
   .home-page .featured-content {
@@ -9633,7 +9633,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   padding: 3px;
 }
 #ktv-sub-nav select {
-  max-width: 500px;
+  max-width: 250px;
   margin: 0 auto;
   margin-bottom: 15px;
   border: 1px solid #000;
@@ -9644,7 +9644,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 }
 #about-sub-nav .sub-nav-heading {
   margin: 0;
-  height: 25px;
   line-height: 25px;
   margin-bottom: 10px;
 }
@@ -9666,6 +9665,12 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 #about-sub-nav .sub-nav-list-item a, #about-sub-nav .cat-item a {
   border: 1px solid transparent;
   padding: 3px;
+}
+#about-sub-nav select {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border: 1px solid #000;
 }
 
 #contact-form {

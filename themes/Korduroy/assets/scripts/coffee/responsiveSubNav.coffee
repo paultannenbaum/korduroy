@@ -4,12 +4,13 @@ jQuery ->
 
   KTV.responsiveSubNav = do ->
     #private
-    el = $('#ktv-sub-nav').find('nav');
+    el = $('.horizontal-sub-nav').find('.list-container');
     breakpoint = 768
 
     setTitle = ->
       switch true
-        when !!($("#body.shows-page").length) then "Select Show:"
+        when !!($("#body.shows-page").length) then "Select Channel:"
+        when !!($("#body.about-page").length) then "About Us:"
         else 'Main Menu:'
 
     setResponsiveNav = ->

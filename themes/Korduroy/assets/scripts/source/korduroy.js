@@ -150,12 +150,14 @@
     KTV = KTV || {};
     KTV.responsiveSubNav = (function() {
       var breakpoint, el, setResponsiveNav, setTitle;
-      el = $('#ktv-sub-nav').find('nav');
+      el = $('.horizontal-sub-nav').find('.list-container');
       breakpoint = 768;
       setTitle = function() {
         switch (true) {
           case !!($("#body.shows-page").length):
-            return "Select Show:";
+            return "Select Channel:";
+          case !!($("#body.about-page").length):
+            return "About Us:";
           default:
             return 'Main Menu:';
         }
