@@ -86,13 +86,15 @@
 
     .heading-container {
       @include grid-column(12);
+      display: none;
+
       &.extend-full {
         @include grid-column(12);
         display: block;
       }
     }
     .list-container {
-      display: none;
+      display: block;
     }
     .separator-container {
       @include grid-column(12);

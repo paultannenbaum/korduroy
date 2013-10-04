@@ -25,6 +25,12 @@
       padding: 3px;
     }
   }
+  select {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+  }
 }
 
 #about-sub-nav {

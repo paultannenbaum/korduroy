@@ -148,6 +148,41 @@
   jQuery(function() {
     var KTV;
     KTV = KTV || {};
+    KTV.responsiveSubNav = (function() {
+      var breakpoint, el, setResponsiveNav, setTitle;
+      el = $('#ktv-sub-nav').find('nav');
+      breakpoint = 768;
+      setTitle = function() {
+        switch (true) {
+          case !!($("#body.shows-page").length):
+            return "Select Show:";
+          default:
+            return 'Main Menu:';
+        }
+      };
+      setResponsiveNav = function() {
+        return el.menutron({
+          maxScreenWidth: breakpoint,
+          menuTitle: setTitle()
+        });
+      };
+      return {
+        init: function() {
+          if (el.length) {
+            return setResponsiveNav();
+          }
+        }
+      };
+    })();
+    return KTV.responsiveSubNav.init();
+  });
+
+}).call(this);
+
+(function() {
+  jQuery(function() {
+    var KTV;
+    KTV = KTV || {};
     KTV.stickySidebar = (function() {
       var el, partner;
       el = $('.aside-navigation');

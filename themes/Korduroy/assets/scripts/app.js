@@ -356,6 +356,76 @@
     }
 })(this);
 
+(function($) {
+    $.fn.menutron = function(options) {
+        var defaults = {
+            maxScreenWidth: 600,
+            menuTitle: "Choose..."
+        };
+        var options = $.extend(defaults, options);
+        return this.each(function() {
+            var menu = $(this).children();
+            var selectMenu = $("<select>").css("display", "none");
+            var optGroup = $("<optgroup>").css("display", "none");
+            init();
+            function init() {
+                checkWidth();
+                createMenu();
+                transformMenu();
+            }
+            function checkWidth() {
+                if ($(window).width() < options.maxScreenWidth) {
+                    $(selectMenu).css("display", "block");
+                    $(menu).css("display", "none");
+                } else {
+                    $(selectMenu).css("display", "none");
+                    $(menu).css("display", "block");
+                }
+            }
+            function createMenu() {
+                $(menu).children().each(function() {
+                    if ($(this).get(0).tagName !== "DT") {
+                        if ($(this).find("ul,ol,dl").length) {
+                            $(optGroup).attr("label", $(this).children(":first").text());
+                            var option = $("<option>").text($(this).children(":first").text());
+                            var link = $(this).children("a").attr("href");
+                            $(option).attr("value", link);
+                            $(option).appendTo(optGroup);
+                            var nestedList = $(this).children().not(":first");
+                            $(nestedList).children().each(function() {
+                                var option = $("<option>").text($(this).text());
+                                var link = $(this).children("a").attr("href");
+                                $(option).attr("value", link);
+                                $(option).appendTo(optGroup);
+                            });
+                            console.log(optGroup);
+                            $(optGroup).appendTo(selectMenu);
+                        } else {
+                            var option = $("<option>").text($(this).text());
+                            var link = $(this).children("a").attr("href");
+                            $(option).attr("value", link);
+                            $(option).appendTo(selectMenu);
+                        }
+                    }
+                });
+                var menuTitle = '<option selected="selected" value>' + options.menuTitle + "</option>";
+                $(selectMenu).prepend(menuTitle);
+                selectMenu.appendTo($(menu).parent());
+                selectMenu.change(function() {
+                    if ($(this).val() != "") {
+                        window.location.href = $(this).val();
+                    }
+                });
+            }
+            function transformMenu() {
+                $(window).resize(function() {
+                    checkWidth();
+                });
+            }
+        });
+    };
+})(jQuery);
+
 (function(l) {
     function t(b, f) {
         var c, g, a = this, e = navigator.userAgent.toLowerCase();
@@ -3609,6 +3679,41 @@
             };
         }();
         return KTV.newsletterSignup.init();
+    });
+}).call(this);
+
+(function() {
+    jQuery(function() {
+        var KTV;
+        KTV = KTV || {};
+        KTV.responsiveSubNav = function() {
+            var breakpoint, el, setResponsiveNav, setTitle;
+            el = $("#ktv-sub-nav").find("nav");
+            breakpoint = 768;
+            setTitle = function() {
+                switch (true) {
+                  case !!$("#body.shows-page").length:
+                    return "Select Show:";
+
+                  default:
+                    return "Main Menu:";
+                }
+            };
+            setResponsiveNav = function() {
+                return el.menutron({
+                    maxScreenWidth: breakpoint,
+                    menuTitle: setTitle()
+                });
+            };
+            return {
+                init: function() {
+                    if (el.length) {
+                        return setResponsiveNav();
+                    }
+                }
+            };
+        }();
+        return KTV.responsiveSubNav.init();
     });
 }).call(this);
 
