@@ -1,4 +1,4 @@
-<nav id="ktv-sub-nav">
+<nav id="ktv-sub-nav" class="horizontal-sub-nav">
   <div class="heading-container extend-full">
     <h2 class="sub-nav-heading">Korduroy Blog</h2>
   </div>

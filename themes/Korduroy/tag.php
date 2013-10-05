@@ -6,7 +6,7 @@
   'tag__in'   => $tag->term_id
 )); ?>
 
-<nav id="ktv-sub-nav">
+<nav id="ktv-sub-nav" class="horizontal-sub-nav">
   <div class="heading-container extend-full">
     <h2 class="sub-nav-heading">All things "<?php echo $tag->name ?>"</h2>
   </div>
@@ -23,13 +23,13 @@
           <nav class="aside-navigation">
             <h2>Popular Tags</h2>
             <?php wp_tag_cloud(array(
-            'smallest' => 11,
-            'largest' => 11,
-            'unit' => 'px',
-            'format' => 'list',
-            'orderby' => 'count',
-            'number' => 15,
-            'order' => 'DESC'
+              'smallest' => 11,
+              'largest' => 11,
+              'unit' => 'px',
+              'format' => 'list',
+              'orderby' => 'count',
+              'number' => 15,
+              'order' => 'DESC'
             )); ?>
           </nav>
         </div>

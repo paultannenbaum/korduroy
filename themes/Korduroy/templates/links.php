@@ -6,7 +6,7 @@ Template Name: Links
 
 <?php get_header(); ?>
 
-<nav id="ktv-sub-nav" class="links-page">
+<nav id="ktv-sub-nav" class="horizontal-sub-nav links-page">
   <div class="heading-container extend-full">
     <h2 class="sub-nav-heading">Meet some of our digital friends</h2>
   </div>

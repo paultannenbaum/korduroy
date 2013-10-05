@@ -8103,7 +8103,6 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-right: 0.9375em;
     width: 100%;
     float: left;
-    display: none;
   }
   #ktv-sub-nav .heading-container.extend-full {
     position: relative;
@@ -8111,10 +8110,9 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-right: 0.9375em;
     width: 100%;
     float: left;
-    display: block;
   }
   #ktv-sub-nav .list-container {
-    display: block;
+    display: none;
   }
   #ktv-sub-nav .separator-container {
     position: relative;
@@ -8125,6 +8123,9 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   }
   #ktv-sub-nav .separator-container .horizontal-stitch {
     margin-top: 0px;
+  }
+  #ktv-sub-nav .cloned {
+    display: none;
   }
 
   #about-sub-nav {

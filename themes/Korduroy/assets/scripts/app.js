@@ -3687,9 +3687,48 @@
         var KTV;
         KTV = KTV || {};
         KTV.responsiveSubNav = function() {
-            var breakpoint, el, setResponsiveNav, setTitle;
-            el = $(".horizontal-sub-nav").find(".list-container");
+            var breakpoint, cloneLeftIntoTop, hasLeftNav, hasTopNav, leftEl, leftSubNav, navClone, navState, setNavState, setResponsiveNav, setTitle, topEl, topHeader, topSubNav, watchNav;
+            leftEl = $(".aside-container");
+            topEl = $(".horizontal-sub-nav");
+            leftSubNav = null;
+            topSubNav = null;
+            topHeader = null;
+            navState = null;
+            navClone = null;
             breakpoint = 768;
+            hasLeftNav = function() {
+                leftSubNav = leftEl.find(".aside-navigation");
+                return !!leftSubNav.length;
+            };
+            hasTopNav = function() {
+                topSubNav = topEl.find(".list-container");
+                topHeader = topEl.find(".sub-nav-heading");
+                return !!topSubNav.length;
+            };
+            setNavState = function() {
+                if (navClone) {
+                    navClone.hide();
+                }
+                topSubNav.show();
+                if ($(window).width() > breakpoint) {
+                    navState = "normal";
+                    topHeader.show();
+                } else {
+                    navState = "enhanced";
+                    topHeader.hide();
+                }
+                return navState;
+            };
+            watchNav = function() {
+                return $(window).resize(setNavState);
+            };
+            cloneLeftIntoTop = function() {
+                var cloneContainer;
+                navClone = leftSubNav.find("ul").first().clone().addClass("cloned");
+                cloneContainer = $('<div class="list-container"></div>');
+                cloneContainer.insertAfter(topEl.find(".heading-container"));
+                return navClone.appendTo(cloneContainer);
+            };
             setTitle = function() {
                 switch (true) {
                   case !!$("#body.shows-page").length:
@@ -3698,20 +3737,33 @@
                   case !!$("#body.about-page").length:
                     return "About Us:";
 
+                  case !!$("#body.tag-page").length:
+                    return "Popular Tags:";
+
+                  case !!$("#body.links-page").length:
+                    return "Link Categories:";
+
                   default:
-                    return "Main Menu:";
+                    return "Menu:";
                 }
             };
             setResponsiveNav = function() {
-                return el.menutron({
+                topSubNav.menutron({
                     maxScreenWidth: breakpoint,
                     menuTitle: setTitle()
                 });
+                return setNavState();
             };
             return {
                 init: function() {
-                    if (el.length) {
-                        return setResponsiveNav();
+                    if (hasLeftNav()) {
+                        cloneLeftIntoTop();
+                    }
+                    if (hasTopNav()) {
+                        setResponsiveNav();
+                    }
+                    if (hasTopNav()) {
+                        return watchNav();
                     }
                 }
             };

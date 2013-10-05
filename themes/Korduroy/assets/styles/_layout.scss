@@ -86,15 +86,13 @@
 
     .heading-container {
       @include grid-column(12);
-      display: none;
 
       &.extend-full {
         @include grid-column(12);
-        display: block;
       }
     }
     .list-container {
-      display: block;
+      display: none;
     }
     .separator-container {
       @include grid-column(12);
@@ -102,6 +100,9 @@
       .horizontal-stitch {
         margin-top: 0px;
       }
+    }
+    .cloned {
+      display: none;
     }
   }
   #about-sub-nav {
