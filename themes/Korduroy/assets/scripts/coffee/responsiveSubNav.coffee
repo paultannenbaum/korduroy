@@ -27,8 +27,7 @@ jQuery ->
       navClone.hide() if navClone
       topSubNav.show()
 
-      # and navState isnt 'normal'
-      if $(window).width() > breakpoint
+      if $(window).width() > breakpoint and navState isnt 'normal'
         navState = 'normal'
         topHeader.show()
       else
@@ -49,6 +48,7 @@ jQuery ->
     setTitle = ->
       switch true
         when !!($("#body.shows-page").length) then "Select Channel:"
+        when !!($("#body.blog-page").length) then "Blog Categories:"
         when !!($("#body.about-page").length) then "About Us:"
         when !!($("#body.tag-page").length) then "Popular Tags:"
         when !!($("#body.links-page").length) then "Link Categories:"

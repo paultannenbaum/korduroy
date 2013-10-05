@@ -3710,7 +3710,7 @@
                     navClone.hide();
                 }
                 topSubNav.show();
-                if ($(window).width() > breakpoint) {
+                if ($(window).width() > breakpoint && navState !== "normal") {
                     navState = "normal";
                     topHeader.show();
                 } else {
@@ -3733,6 +3733,9 @@
                 switch (true) {
                   case !!$("#body.shows-page").length:
                     return "Select Channel:";
+
+                  case !!$("#body.blog-page").length:
+                    return "Blog Categories:";
 
                   case !!$("#body.about-page").length:
                     return "About Us:";

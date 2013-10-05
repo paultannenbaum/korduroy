@@ -526,6 +526,9 @@
       display: block;
     }
   }
+  .aside-container {
+    display: block;
+  }
 
   .home-page {
     .featured-content {
@@ -586,6 +589,9 @@
   }
   .blog-page {
     &.blog-index-page, &.blog-archives-page {
+      .blog-posts-container {
+        @include grid-column(10);
+      }
       .blog-post {
         .blog-post-footer {
           .date-container {
@@ -658,6 +664,10 @@
     }
   }
   .tag-page {
+    .tagged-posts-container {
+      @include grid-column(10);
+      min-height: 440px; // Sticky Sidebar overflowing hack
+    }
     .tag-post {
       .tag-thumbnail {
         @include grid-column(5);
@@ -678,6 +688,13 @@
     }
   }
   .links-page {
+    .linked-pages-container {
+      @include grid-column(10);
+
+      .links-list {
+        @include block-grid(3);
+      }
+    }
     .linked-pages-container {
       .links-list {
         @include block-grid(2);
@@ -727,15 +744,9 @@
       @include grid-column(10);
     }
   }
-  .aside-container {
-    display: block;
-  }
 
   .blog-page {
     &.blog-index-page, &.blog-archives-page {
-      .blog-posts-container {
-        @include grid-column(10);
-      }
       .pagination-wrapper {
         .pagination-container {
           @include grid-column(10, false, false, 2);
@@ -758,21 +769,6 @@
     }
     .description-container {
       @include grid-column(8);
-    }
-  }
-  .tag-page {
-    .tagged-posts-container {
-      @include grid-column(10);
-      min-height: 440px; // Sticky Sidebar overflowing hack
-    }
-  }
-  .links-page {
-    .linked-pages-container {
-      @include grid-column(10);
-
-      .links-list {
-        @include block-grid(3);
-      }
     }
   }
 }
