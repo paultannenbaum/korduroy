@@ -59,4 +59,5 @@ jQuery ->
       if (el.length && el.height() < partner.height())
         el.stick_in_parent()
 
-  KTV.stickySidebar.init()
+  $(window).load ->
+    KTV.stickySidebar.init()

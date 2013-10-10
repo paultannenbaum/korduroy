@@ -3787,7 +3787,9 @@
                 }
             };
         }();
-        return KTV.stickySidebar.init();
+        return $(window).load(function() {
+            return KTV.stickySidebar.init();
+        });
     });
 }).call(this);
 
