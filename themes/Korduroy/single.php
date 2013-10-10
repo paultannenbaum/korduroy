@@ -16,9 +16,9 @@
         </div>
       </aside>
 
-      <div class="blog-post-container main-container">
+      <div class="blog-post-container">
         <?php while ( have_posts() ) : the_post(); ?>
-        <div class="blog-post">
+        <div class="blog-post main-container">
           <header class="blog-post-header">
             <h1 class="blog-post-title"><?php the_title(); ?></h1>
 

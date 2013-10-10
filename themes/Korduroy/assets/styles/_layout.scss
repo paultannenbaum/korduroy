@@ -276,7 +276,6 @@
       .blog-post-container {
         @include grid-column(12);
         margin-bottom: -30px; // Hack to remove last <hr> margin-bottom
-        min-height: 430px; // Sticky Sidebar is overflowing box
       }
       .blog-post {
         @include grid-row(nest);
@@ -584,14 +583,6 @@
         @include block-grid(6);
       }
     }
-    .episode-header {
-      .title-container {
-        @include grid-column(6);
-      }
-      .sharing-wrapper {
-        @include grid-column(6);
-      }
-    }
   }
   .blog-page {
     &.blog-index-page, &.blog-archives-page {
@@ -610,6 +601,10 @@
       }
     }
     &.blog-show-page {
+      .blog-post-container {
+        @include grid-column(10);
+        min-height: 460px; // Sticky Sidebar overflowing hack
+      }
       .blog-post {
         .blog-post-header {
           @include grid-column(12);
@@ -672,7 +667,7 @@
   .tag-page {
     .tagged-posts-container {
       @include grid-column(10);
-      min-height: 440px; // Sticky Sidebar overflowing hack
+      min-height: 460px; // Sticky Sidebar overflowing hack
     }
     .tag-post {
       .tag-thumbnail {
@@ -760,9 +755,16 @@
       }
     }
     &.blog-show-page {
-      .blog-post-container {
-        @include grid-column(10);
-        min-height: 440px; // Sticky Sidebar overflowing hack
+
+    }
+  }
+  .shows-page {
+    .episode-header {
+      .title-container {
+        @include grid-column(6);
+      }
+      .sharing-wrapper {
+        @include grid-column(6);
       }
     }
   }
