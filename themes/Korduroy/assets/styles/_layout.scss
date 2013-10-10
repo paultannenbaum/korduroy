@@ -215,6 +215,9 @@
     .show-channel {
       margin-top: 20px;
 
+      &:first-child {
+        margin-top: 0px;
+      }
       .channel-header {
         position: relative;
         width: 100%;
@@ -571,9 +574,12 @@
     }
   }
   .shows-page {
+    &.shows-index {
+      .show-channel:first-child {
+        margin-top: 10px;
+      }
+    }
     .show-channel {
-      // margin-top: 20px;
-
       .channel-list {
         @include block-grid(6);
       }

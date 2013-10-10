@@ -9,9 +9,8 @@ jQuery ->
     leftSubNav = null
     topSubNav = null
     topHeader = null
-    navState = null
     navClone = null
-    breakpoint = 768 # TODO: Should be replaced with a global breakpoint
+    breakpoint = 769 # TODO: Should be replaced with a global breakpoint
 
 
     hasLeftNav = ->
@@ -27,13 +26,10 @@ jQuery ->
       navClone.hide() if navClone
       topSubNav.show()
 
-      if $(window).width() > breakpoint and navState isnt 'normal'
-        navState = 'normal'
+      if $(window).width() > breakpoint
         topHeader.show()
       else
-        navState = 'enhanced'
         topHeader.hide()
-      return navState
 
     watchNav = ->
       $(window).resize(setNavState)

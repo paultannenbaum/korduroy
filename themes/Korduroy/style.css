@@ -8379,6 +8379,9 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   .shows-page .show-channel {
     margin-top: 20px;
   }
+  .shows-page .show-channel:first-child {
+    margin-top: 0px;
+  }
   .shows-page .show-channel .channel-header {
     position: relative;
     width: 100%;
@@ -9212,6 +9215,9 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     float: left;
   }
 
+  .shows-page.shows-index .show-channel:first-child {
+    margin-top: 10px;
+  }
   .shows-page .show-channel .channel-list {
     display: block;
     padding: 0;
@@ -10399,10 +10405,10 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   text-transform: uppercase;
 }
 
-.shows-page .channel-header {
+.shows-page.shows-index .channel-header, .shows-page.shows-single .channel-header {
   min-height: 70px;
 }
-.shows-page .channel-header .channel-icon {
+.shows-page.shows-index .channel-header .channel-icon, .shows-page.shows-single .channel-header .channel-icon {
   width: 192px;
   height: 70px;
   display: inline-block;
@@ -10413,49 +10419,55 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   margin-left: -96px;
   z-index: 5;
 }
-.shows-page .channel-header .channel-icon.all-yew {
-  background-image: url(assets/images/channel-icons/all_yew.png);
+.shows-page.shows-index .channel-header .channel-icon.all-yew, .shows-page.shows-single .channel-header .channel-icon.all-yew {
+  background-image: url(assets/images/channel-icons/small/all_yew.png);
 }
-.shows-page .channel-header .channel-icon.d-i-why-not {
-  background-image: url(assets/images/channel-icons/d_i_why_not.png);
+.shows-page.shows-index .channel-header .channel-icon.d-i-why-not, .shows-page.shows-single .channel-header .channel-icon.d-i-why-not {
+  background-image: url(assets/images/channel-icons/small/d_i_why_not.png);
 }
-.shows-page .channel-header .channel-icon.happy-beach {
-  background-image: url(assets/images/channel-icons/happy_beach.png);
+.shows-page.shows-index .channel-header .channel-icon.happy-beach, .shows-page.shows-single .channel-header .channel-icon.happy-beach {
+  background-image: url(assets/images/channel-icons/small/happy_beach.png);
 }
-.shows-page .channel-header .channel-icon.health-nuts {
-  background-image: url(assets/images/channel-icons/health_nuts.png);
+.shows-page.shows-index .channel-header .channel-icon.health-nuts, .shows-page.shows-single .channel-header .channel-icon.health-nuts {
+  background-image: url(assets/images/channel-icons/small/health_nuts.png);
 }
-.shows-page .channel-header .channel-icon.inner-views {
-  background-image: url(assets/images/channel-icons/inner_views.png);
+.shows-page.shows-index .channel-header .channel-icon.inner-views, .shows-page.shows-single .channel-header .channel-icon.inner-views {
+  background-image: url(assets/images/channel-icons/small/inner_views.png);
 }
-.shows-page .channel-header .channel-icon.sea-movies {
-  background-image: url(assets/images/channel-icons/sea_movies.png);
+.shows-page.shows-index .channel-header .channel-icon.local-legendz, .shows-page.shows-single .channel-header .channel-icon.local-legendz {
+  background-image: url(assets/images/channel-icons/small/local_legendz.png);
 }
-.shows-page .channel-header .channel-icon.specials {
-  background-image: url(assets/images/channel-icons/specials.png);
+.shows-page.shows-index .channel-header .channel-icon.sea-movies, .shows-page.shows-single .channel-header .channel-icon.sea-movies {
+  background-image: url(assets/images/channel-icons/small/sea_movies.png);
 }
-.shows-page .channel-header .channel-icon.surf-sufficient {
-  background-image: url(assets/images/channel-icons/surf_sufficient.png);
+.shows-page.shows-index .channel-header .channel-icon.specials, .shows-page.shows-single .channel-header .channel-icon.specials {
+  background-image: url(assets/images/channel-icons/small/specials.png);
 }
-.shows-page .channel-header .channel-info {
+.shows-page.shows-index .channel-header .channel-icon.surf-sufficient, .shows-page.shows-single .channel-header .channel-icon.surf-sufficient {
+  background-image: url(assets/images/channel-icons/small/surf_sufficient.png);
+}
+.shows-page.shows-index .channel-header .channel-info, .shows-page.shows-single .channel-header .channel-info {
   display: none;
   position: relative;
   padding-left: 212px;
   font-size: 14px;
 }
-.shows-page .channel-header .channel-info .category-name {
+.shows-page.shows-index .channel-header .channel-info .category-name, .shows-page.shows-single .channel-header .channel-info .category-name {
   font-weight: bold;
   text-transform: uppercase;
 }
-.shows-page .channel-header .channel-info .all-episodes {
+.shows-page.shows-index .channel-header .channel-info .all-episodes, .shows-page.shows-single .channel-header .channel-info .all-episodes {
   margin-top: 10px;
   color: #999999;
   text-transform: uppercase;
   font-size: 10px;
   display: block;
 }
-.shows-page .channel-header .channel-info .all-episodes:hover {
+.shows-page.shows-index .channel-header .channel-info .all-episodes:hover, .shows-page.shows-single .channel-header .channel-info .all-episodes:hover {
   color: inherit;
+}
+.shows-page.shows-category .channel-header .channel-icon {
+  margin-bottom: 10px;
 }
 .shows-page .channel-separator {
   margin-top: 0px;
@@ -10488,28 +10500,31 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   background: transparent no-repeat 0 0;
 }
 .shows-page .episode-info .channel-icon.all-yew {
-  background-image: url(assets/images/channel-icons/all_yew.png);
+  background-image: url(assets/images/channel-icons/small/all_yew.png);
 }
 .shows-page .episode-info .channel-icon.d-i-why-not {
-  background-image: url(assets/images/channel-icons/d_i_why_not.png);
+  background-image: url(assets/images/channel-icons/small/d_i_why_not.png);
 }
 .shows-page .episode-info .channel-icon.happy-beach {
-  background-image: url(assets/images/channel-icons/happy_beach.png);
+  background-image: url(assets/images/channel-icons/small/happy_beach.png);
 }
 .shows-page .episode-info .channel-icon.health-nuts {
-  background-image: url(assets/images/channel-icons/health_nuts.png);
+  background-image: url(assets/images/channel-icons/small/health_nuts.png);
 }
 .shows-page .episode-info .channel-icon.inner-views {
-  background-image: url(assets/images/channel-icons/inner_views.png);
+  background-image: url(assets/images/channel-icons/small/inner_views.png);
+}
+.shows-page .episode-info .channel-icon.local-legendz {
+  background-image: url(assets/images/channel-icons/small/local_legendz.png);
 }
 .shows-page .episode-info .channel-icon.sea-movies {
-  background-image: url(assets/images/channel-icons/sea_movies.png);
+  background-image: url(assets/images/channel-icons/small/sea_movies.png);
 }
 .shows-page .episode-info .channel-icon.specials {
-  background-image: url(assets/images/channel-icons/specials.png);
+  background-image: url(assets/images/channel-icons/small/specials.png);
 }
 .shows-page .episode-info .channel-icon.surf-sufficient {
-  background-image: url(assets/images/channel-icons/surf_sufficient.png);
+  background-image: url(assets/images/channel-icons/small/surf_sufficient.png);
 }
 .shows-page .episode-info .episode-desc {
   margin-top: 10px;
@@ -10755,37 +10770,37 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     margin-left: 0px;
   }
 
-  .shows-page .channel-header .channel-icon {
+  .shows-page.shows-index .channel-header .channel-icon, .shows-page.shows-single .channel-header .channel-icon {
     top: 0;
     left: 0;
     margin-left: 0;
   }
-  .shows-page .channel-header .channel-info {
+  .shows-page.shows-index .channel-header .channel-info, .shows-page.shows-single .channel-header .channel-info {
     display: block;
   }
-  .shows-page .episode-info .episode-aside {
+  .shows-page.shows-index .episode-info .episode-aside, .shows-page.shows-single .episode-info .episode-aside {
     display: block;
   }
-  .shows-page .episode-info .episode-main {
+  .shows-page.shows-index .episode-info .episode-main, .shows-page.shows-single .episode-info .episode-main {
     padding-left: 212px;
   }
-  .shows-page .episode-info .sharing-container {
+  .shows-page.shows-index .episode-info .sharing-container, .shows-page.shows-single .episode-info .sharing-container {
     text-align: right;
     margin-top: 4px;
   }
-  .shows-page .episode-info .sharing-container .share-title {
+  .shows-page.shows-index .episode-info .sharing-container .share-title, .shows-page.shows-single .episode-info .sharing-container .share-title {
     height: 22px;
     float: none;
     margin-right: 0px;
   }
-  .shows-page .episode-info .sharing-container .addthis_toolbox {
+  .shows-page.shows-index .episode-info .sharing-container .addthis_toolbox, .shows-page.shows-single .episode-info .sharing-container .addthis_toolbox {
     height: 22px;
     float: right;
   }
-  .shows-page .episode-info .sharing-container .addthis_toolbox .at300b {
+  .shows-page.shows-index .episode-info .sharing-container .addthis_toolbox .at300b, .shows-page.shows-single .episode-info .sharing-container .addthis_toolbox .at300b {
     float: right;
   }
-  .shows-page .episode-info .sharing-container .addthis_toolbox .addthis_counter.addthis_pill_style {
+  .shows-page.shows-index .episode-info .sharing-container .addthis_toolbox .addthis_counter.addthis_pill_style, .shows-page.shows-single .episode-info .sharing-container .addthis_toolbox .addthis_counter.addthis_pill_style {
     float: right;
   }
 

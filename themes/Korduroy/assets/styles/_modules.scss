@@ -832,87 +832,97 @@
 }
 
 .shows-page {
-  $icon-width: 192px;
-  $icon-height: 70px;
+  $small-channel-icon-width: 192px;
+  $small-channel-icon-height: 70px;
 
-  .channel-header {
-    min-height: $icon-height;
+  &.shows-index, &.shows-single {
+    .channel-header {
+      min-height: $small-channel-icon-height;
 
-    .channel-icon {
-      width: $icon-width;
-      height: $icon-height;
-      display: inline-block;
-      background: transparent no-repeat 0 0;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -$icon-width/2;
-      z-index: 5;
+      .channel-icon {
+        width: $small-channel-icon-width;
+        height: $small-channel-icon-height;
+        display: inline-block;
+        background: transparent no-repeat 0 0;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -$small-channel-icon-width/2;
+        z-index: 5;
 
-      &.all-yew {
-        background-image: url(assets/images/channel-icons/all_yew.png);
+        &.all-yew {
+          background-image: url(assets/images/channel-icons/small/all_yew.png);
+        }
+        &.d-i-why-not {
+          background-image: url(assets/images/channel-icons/small/d_i_why_not.png);
+        }
+        &.happy-beach {
+          background-image: url(assets/images/channel-icons/small/happy_beach.png);
+        }
+        &.health-nuts {
+          background-image: url(assets/images/channel-icons/small/health_nuts.png);
+        }
+        &.inner-views {
+          background-image: url(assets/images/channel-icons/small/inner_views.png);
+        }
+        &.local-legendz {
+          background-image: url(assets/images/channel-icons/small/local_legendz.png);
+        }
+        &.sea-movies {
+          background-image: url(assets/images/channel-icons/small/sea_movies.png);
+        }
+        &.specials {
+          background-image: url(assets/images/channel-icons/small/specials.png);
+        }
+        &.surf-sufficient {
+          background-image: url(assets/images/channel-icons/small/surf_sufficient.png);
+        }
       }
-      &.d-i-why-not {
-        background-image: url(assets/images/channel-icons/d_i_why_not.png);
-      }
-      &.happy-beach {
-        background-image: url(assets/images/channel-icons/happy_beach.png);
-      }
-      &.health-nuts {
-        background-image: url(assets/images/channel-icons/health_nuts.png);
-      }
-      &.inner-views {
-        background-image: url(assets/images/channel-icons/inner_views.png);
-      }
-      &.local-legendz {
-        // background-image: url(assets/images/channel-icons/inner_views.png);
-      }
-      &.sea-movies {
-        background-image: url(assets/images/channel-icons/sea_movies.png);
-      }
-      &.specials {
-        background-image: url(assets/images/channel-icons/specials.png);
-      }
-      &.surf-sufficient {
-        background-image: url(assets/images/channel-icons/surf_sufficient.png);
-      }
-    }
-    .channel-info {
-      display: none;
-      position: relative;
-      padding-left: $icon-width + 20px;
-      font-size: 14px;
+      .channel-info {
+        display: none;
+        position: relative;
+        padding-left: $small-channel-icon-width + 20px;
+        font-size: 14px;
 
-      .category-name {
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-      .all-episodes {
-        margin-top: 10px;
-        color: $ktv-grey;
-        text-transform: uppercase;
-        font-size: 10px;
-        display: block;
+        .category-name {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        .all-episodes {
+          margin-top: 10px;
+          color: $ktv-grey;
+          text-transform: uppercase;
+          font-size: 10px;
+          display: block;
 
-        &:hover {
-          color: inherit;
+          &:hover {
+            color: inherit;
+          }
         }
       }
     }
   }
+  &.shows-category {
+    .channel-header {
+      .channel-icon {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
   .channel-separator {
     @extend .horizontal-separator-light;
     margin-top: 0px;
   }
   .episode-info {
     @include clearfix;
-    min-height: $icon-height;
+    min-height: $small-channel-icon-height;
     position: relative;
     margin-top: 20px;
 
     .episode-aside {
-      width: $icon-width;
-      min-height: $icon-height;
+      width: $small-channel-icon-width;
+      min-height: $small-channel-icon-height;
       position: absolute;
       top: 0px;
       left: 0px;
@@ -920,37 +930,37 @@
     }
     .episode-main {}
     .channel-icon {
-      width: $icon-width;
-      height: $icon-height;
+      width: $small-channel-icon-width;
+      height: $small-channel-icon-height;
       display: inline-block;
       background: transparent no-repeat 0 0;
 
       &.all-yew {
-        background-image: url(assets/images/channel-icons/all_yew.png);
+        background-image: url(assets/images/channel-icons/small/all_yew.png);
       }
       &.d-i-why-not {
-        background-image: url(assets/images/channel-icons/d_i_why_not.png);
+        background-image: url(assets/images/channel-icons/small/d_i_why_not.png);
       }
       &.happy-beach {
-        background-image: url(assets/images/channel-icons/happy_beach.png);
+        background-image: url(assets/images/channel-icons/small/happy_beach.png);
       }
       &.health-nuts {
-        background-image: url(assets/images/channel-icons/health_nuts.png);
+        background-image: url(assets/images/channel-icons/small/health_nuts.png);
       }
       &.inner-views {
-        background-image: url(assets/images/channel-icons/inner_views.png);
+        background-image: url(assets/images/channel-icons/small/inner_views.png);
       }
       &.local-legendz {
-        // background-image: url(assets/images/channel-icons/inner_views.png);
+        background-image: url(assets/images/channel-icons/small/local_legendz.png);
       }
       &.sea-movies {
-        background-image: url(assets/images/channel-icons/sea_movies.png);
+        background-image: url(assets/images/channel-icons/small/sea_movies.png);
       }
       &.specials {
-        background-image: url(assets/images/channel-icons/specials.png);
+        background-image: url(assets/images/channel-icons/small/specials.png);
       }
       &.surf-sufficient {
-        background-image: url(assets/images/channel-icons/surf_sufficient.png);
+        background-image: url(assets/images/channel-icons/small/surf_sufficient.png);
       }
     }
     .episode-desc {
@@ -1248,7 +1258,6 @@
       display: none;
     }
   }
-
 }
 
 @media #{$tablet-up} {
@@ -1297,44 +1306,46 @@
   }
 
   .shows-page {
-    $icon-width: 192px;
-    $icon-height: 70px;
+    $small-channel-icon-width: 192px;
+    $small-channel-icon-height: 70px;
 
-    .channel-header {
-      .channel-icon {
-        top: 0;
-        left: 0;
-        margin-left: 0;
-      }
-      .channel-info {
-        display: block;
-      }
-    }
-    .episode-info {
-      .episode-aside {
-        display: block;
-      }
-      .episode-main {
-        padding-left: $icon-width + 20px;
-      }
-      .sharing-container {
-        text-align: right;
-        margin-top: 4px;
-
-        .share-title {
-          height: 22px;
-          float: none;
-          margin-right: 0px;
+    &.shows-index, &.shows-single {
+      .channel-header {
+        .channel-icon {
+          top: 0;
+          left: 0;
+          margin-left: 0;
         }
-        .addthis_toolbox {
-          height: 22px;
-          float: right;
+        .channel-info {
+          display: block;
+        }
+      }
+      .episode-info {
+        .episode-aside {
+          display: block;
+        }
+        .episode-main {
+          padding-left: $small-channel-icon-width + 20px;
+        }
+        .sharing-container {
+          text-align: right;
+          margin-top: 4px;
 
-          .at300b {
-            float: right;
+          .share-title {
+            height: 22px;
+            float: none;
+            margin-right: 0px;
           }
-          .addthis_counter.addthis_pill_style {
+          .addthis_toolbox {
+            height: 22px;
             float: right;
+
+            .at300b {
+              float: right;
+            }
+            .addthis_counter.addthis_pill_style {
+              float: right;
+            }
           }
         }
       }

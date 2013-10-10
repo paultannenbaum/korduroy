@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php get_template_part('partials/shows-sub-nav'); ?>
 
-<div id="body" class="shows-page show-page-show">
+<div id="body" class="shows-page shows-single">
 
   <section class="main" role="main">
 

@@ -3687,15 +3687,14 @@
         var KTV;
         KTV = KTV || {};
         KTV.responsiveSubNav = function() {
-            var breakpoint, cloneLeftIntoTop, hasLeftNav, hasTopNav, leftEl, leftSubNav, navClone, navState, setNavState, setResponsiveNav, setTitle, topEl, topHeader, topSubNav, watchNav;
+            var breakpoint, cloneLeftIntoTop, hasLeftNav, hasTopNav, leftEl, leftSubNav, navClone, setNavState, setResponsiveNav, setTitle, topEl, topHeader, topSubNav, watchNav;
             leftEl = $(".aside-container");
             topEl = $(".horizontal-sub-nav");
             leftSubNav = null;
             topSubNav = null;
             topHeader = null;
-            navState = null;
             navClone = null;
-            breakpoint = 768;
+            breakpoint = 769;
             hasLeftNav = function() {
                 leftSubNav = leftEl.find(".aside-navigation");
                 return !!leftSubNav.length;
@@ -3710,14 +3709,11 @@
                     navClone.hide();
                 }
                 topSubNav.show();
-                if ($(window).width() > breakpoint && navState !== "normal") {
-                    navState = "normal";
-                    topHeader.show();
+                if ($(window).width() > breakpoint) {
+                    return topHeader.show();
                 } else {
-                    navState = "enhanced";
-                    topHeader.hide();
+                    return topHeader.hide();
                 }
-                return navState;
             };
             watchNav = function() {
                 return $(window).resize(setNavState);
