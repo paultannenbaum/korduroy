@@ -1,10 +1,7 @@
 <?php
 /**
- * Content wrappers
+ * Over ride of Woocommerce Original Template
  *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     1.6.4
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -22,6 +19,6 @@ switch( $template ) {
 		echo '<div id="primary" class="site-content"><div id="content" role="main" class="entry-content twentythirteen">';
 		break;
 	default :
-		echo '<div id="container"><div id="content" role="main">';
+		echo '<div id="body"><div class="main" role="main">';
 		break;
 }
