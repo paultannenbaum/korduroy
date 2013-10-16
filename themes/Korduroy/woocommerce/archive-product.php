@@ -3,10 +3,12 @@
   if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
   get_header('shop');
 ?>
+<?php get_template_part('partials/store-sub-nav'); ?>
 
-<div id="body" class="store-page store-archives-page">
+
+<div id="body" class="store-page store-archives">
   <section class="main" role="main">
-    <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+    <!--<h1 class="page-title"><?#php woocommerce_page_title(); ?></h1>-->
 
     <!--<? # php do_action( 'woocommerce_archive_description' ); ?>-->
 

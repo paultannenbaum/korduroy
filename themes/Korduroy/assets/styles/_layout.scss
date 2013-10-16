@@ -403,7 +403,7 @@
     }
   }
   .store-page {
-    &.store-archives-page {
+    &.store-archives {
       .products {
         @include block-grid(4);
       }

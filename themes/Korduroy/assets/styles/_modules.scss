@@ -1249,6 +1249,31 @@
   }
 }
 
+.store-page {
+
+  &.store-archives {
+    .product {
+      text-align: center;
+
+      .product-title {
+        @extend %pressed-text;
+        font-size: 12px;
+        margin: 5px 0;
+        min-height: 40px;
+        display: block;
+      }
+      .price {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .button {
+        display: inline-block;
+        width: 140px;
+      }
+    }
+  }
+}
+
 // Media Queries
 @media #{$phone-up} {
   #featured-slider {

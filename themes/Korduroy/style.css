@@ -7670,7 +7670,7 @@ img.rsImg {
   background: transparent url(assets/images/backgrounds/stitch_horizontal.png) repeat-x;
 }
 
-h1, .about-page .crew-member .member-name, h2, .supporters-page .info-items .name, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, #about-sub-nav .sub-nav-list-item, #about-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .aside-navigation .wp-tag-cloud li, .credits .credit .credit-type, .channel-list .episode .episode-title, .more-link, .home-page .section-header .all-container {
+h1, .about-page .crew-member .member-name, h2, .supporters-page .info-items .name, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, #about-sub-nav .sub-nav-list-item, #about-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .aside-navigation .wp-tag-cloud li, .credits .credit .credit-type, .channel-list .episode .episode-title, .more-link, .home-page .section-header .all-container, .store-page.store-archives .product .product-title {
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px white;
 }
@@ -8797,33 +8797,33 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-bottom: 5px;
   }
 
-  .store-page.store-archives-page .products {
+  .store-page.store-archives .products {
     display: block;
     padding: 0;
     margin: 0 -0.625em;
     *zoom: 1;
   }
-  .store-page.store-archives-page .products:before, .store-page.store-archives-page .products:after {
+  .store-page.store-archives .products:before, .store-page.store-archives .products:after {
     content: " ";
     display: table;
   }
-  .store-page.store-archives-page .products:after {
+  .store-page.store-archives .products:after {
     clear: both;
   }
-  .store-page.store-archives-page .products > li {
+  .store-page.store-archives .products > li {
     display: inline;
     height: auto;
     float: left;
     padding: 0 0.625em 1.25em;
   }
-  .store-page.store-archives-page .products > li {
+  .store-page.store-archives .products > li {
     width: 25%;
     padding: 0 0.625em 1.25em;
   }
-  .store-page.store-archives-page .products > li:nth-of-type(n) {
+  .store-page.store-archives .products > li:nth-of-type(n) {
     clear: none;
   }
-  .store-page.store-archives-page .products > li:nth-of-type(4n+1) {
+  .store-page.store-archives .products > li:nth-of-type(4n+1) {
     clear: both;
   }
 }
@@ -10762,6 +10762,24 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 }
 .default-page h1 a:hover, .default-page .about-page .crew-member .member-name a:hover, .about-page .crew-member .default-page .member-name a:hover, .default-page h2 a:hover, .default-page .supporters-page .info-items .name a:hover, .supporters-page .info-items .default-page .name a:hover, .default-page .about-page .crew-member .member-position a:hover, .about-page .crew-member .default-page .member-position a:hover, .default-page h3 a:hover, .default-page h4 a:hover, .default-page h5 a:hover, .default-page h6 a:hover {
   color: #2084ea;
+}
+
+.store-page.store-archives .product {
+  text-align: center;
+}
+.store-page.store-archives .product .product-title {
+  font-size: 12px;
+  margin: 5px 0;
+  min-height: 40px;
+  display: block;
+}
+.store-page.store-archives .product .price {
+  display: block;
+  margin-bottom: 5px;
+}
+.store-page.store-archives .product .button, .store-page.store-archives .product #contact-form input[type=submit], #contact-form .store-page.store-archives .product input[type=submit] {
+  display: inline-block;
+  width: 140px;
 }
 
 @media only screen {
