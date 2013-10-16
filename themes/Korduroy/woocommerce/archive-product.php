@@ -8,11 +8,12 @@
   <section class="main" role="main">
     <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 
-    <?php do_action( 'woocommerce_archive_description' ); ?>
+    <!--<? # php do_action( 'woocommerce_archive_description' ); ?>-->
 
     <?php if ( have_posts() ) : ?>
 
-      <?php
+      <!--
+      <? #php
         /**
          * woocommerce_before_shop_loop hook
          *
@@ -21,17 +22,14 @@
          */
         do_action( 'woocommerce_before_shop_loop' );
       ?>
+      -->
 
       <?php woocommerce_product_loop_start(); ?>
 
-        <?php woocommerce_product_subcategories(); ?>
-
+        <!--<? # php woocommerce_product_subcategories(); ?>-->
         <?php while ( have_posts() ) : the_post(); ?>
-
           <?php woocommerce_get_template_part( 'content', 'product' ); ?>
-
         <?php endwhile; // end of the loop. ?>
-
       <?php woocommerce_product_loop_end(); ?>
 
       <?php

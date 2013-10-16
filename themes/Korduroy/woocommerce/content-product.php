@@ -1,40 +1,31 @@
 <?php
-/**
- * The template for displaying product content within loops.
- *
- * Override this template by copying it to yourtheme/woocommerce/content-product.php
- *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     1.6.4
- */
+  /** Over ride of Woocommerce Original Template **/
+  if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+  global $product, $woocommerce_loop;
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+  // Store loop count we're currently on
+  if ( empty( $woocommerce_loop['loop'] ) )
+	  $woocommerce_loop['loop'] = 0;
 
-global $product, $woocommerce_loop;
+  // Store column count for displaying the grid
+  if ( empty( $woocommerce_loop['columns'] ) )
+	  $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
 
-// Store loop count we're currently on
-if ( empty( $woocommerce_loop['loop'] ) )
-	$woocommerce_loop['loop'] = 0;
+  // Ensure visibility
+  if ( ! $product->is_visible() )
+	  return;
 
-// Store column count for displaying the grid
-if ( empty( $woocommerce_loop['columns'] ) )
-	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
+  // Increase loop count
+  $woocommerce_loop['loop']++;
 
-// Ensure visibility
-if ( ! $product->is_visible() )
-	return;
-
-// Increase loop count
-$woocommerce_loop['loop']++;
-
-// Extra post classes
-$classes = array();
-if ( 0 == ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 == $woocommerce_loop['columns'] )
+  // Extra post classes
+  $classes = array();
+    if ( 0 == ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 == $woocommerce_loop['columns'] )
 	$classes[] = 'first';
-if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
+    if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	$classes[] = 'last';
 ?>
+
 <li <?php post_class( $classes ); ?>>
 
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
@@ -51,7 +42,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 			do_action( 'woocommerce_before_shop_loop_item_title' );
 		?>
 
-		<h3><?php the_title(); ?></h3>
+		<span class="product-title"><?php the_title(); ?></span>
 
 		<?php
 			/**

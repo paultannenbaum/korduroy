@@ -402,6 +402,13 @@
       }
     }
   }
+  .store-page {
+    &.store-archives-page {
+      .products {
+        @include block-grid(4);
+      }
+    }
+  }
 }
 
 // Tablets and Up

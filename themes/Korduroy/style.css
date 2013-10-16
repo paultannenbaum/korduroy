@@ -8796,6 +8796,36 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   .links-page .linked-pages-container .links-list li {
     padding-bottom: 5px;
   }
+
+  .store-page.store-archives-page .products {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625em;
+    *zoom: 1;
+  }
+  .store-page.store-archives-page .products:before, .store-page.store-archives-page .products:after {
+    content: " ";
+    display: table;
+  }
+  .store-page.store-archives-page .products:after {
+    clear: both;
+  }
+  .store-page.store-archives-page .products > li {
+    display: inline;
+    height: auto;
+    float: left;
+    padding: 0 0.625em 1.25em;
+  }
+  .store-page.store-archives-page .products > li {
+    width: 25%;
+    padding: 0 0.625em 1.25em;
+  }
+  .store-page.store-archives-page .products > li:nth-of-type(n) {
+    clear: none;
+  }
+  .store-page.store-archives-page .products > li:nth-of-type(4n+1) {
+    clear: both;
+  }
 }
 @media only screen and (min-width: 768px) {
   #page-wrap {
