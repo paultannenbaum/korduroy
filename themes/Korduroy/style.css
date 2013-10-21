@@ -8826,6 +8826,36 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   .store-page.store-archives .products > li:nth-of-type(4n+1) {
     clear: both;
   }
+  .store-page.store-single .product {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1;
+  }
+  .store-page.store-single .product:before, .store-page.store-single .product:after {
+    content: " ";
+    display: table;
+  }
+  .store-page.store-single .product:after {
+    clear: both;
+  }
+  .store-page.store-single .product-images-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 41.66667%;
+    float: left;
+  }
+  .store-page.store-single .product-desc-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 58.33333%;
+    float: left;
+  }
 }
 @media only screen and (min-width: 768px) {
   #page-wrap {

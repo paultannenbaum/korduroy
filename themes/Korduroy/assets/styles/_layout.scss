@@ -408,6 +408,17 @@
         @include block-grid(4);
       }
     }
+    &.store-single {
+      .product {
+        @include grid-row(nest);
+      }
+      .product-images-container {
+        @include grid-column(5);
+      }
+      .product-desc-container {
+        @include grid-column(7);
+      }
+    }
   }
 }
 

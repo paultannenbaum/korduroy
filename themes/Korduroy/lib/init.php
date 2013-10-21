@@ -12,6 +12,7 @@ function ktv_setup() {
 	remove_action('wp_head', 'wp_generator');
 	remove_action('wp_head', 'wp_shortlink_wp_head');
 
+
 	// Add RSS links to head
 	add_theme_support( 'automatic-feed-links' );
 
@@ -23,6 +24,7 @@ function ktv_setup() {
 	add_filter( 'post_type_link', 'ktv_show_permalinks', 1, 2 );
 	add_action( 'init', 'wpa_fix_blog_pagination' );
 	add_action( 'init', 'get_excerpt_by_id' );
+
 
 	/****************************************
 	Frontend
