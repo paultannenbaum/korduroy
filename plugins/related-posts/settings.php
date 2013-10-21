@@ -26,6 +26,8 @@ function wp_rp_admin_head() {
 * Add settings link to installed plugins list
 **/
 function wp_rp_add_link_to_settings($links) {
+	if (wp_rp_is_classic() && !wp_rp_is_classic_old()) { return $links; }
+
 	return array_merge( array(
 		'<a href="' . admin_url('admin.php?page=wordpress-related-posts') . '">' . __('Settings', 'wp_related_posts') . '</a>',
 	), $links);
@@ -39,6 +41,7 @@ add_filter('plugin_action_links_' . WP_RP_PLUGIN_FILE, 'wp_rp_add_link_to_settin
 add_action('admin_menu', 'wp_rp_settings_admin_menu');
 
 function wp_rp_settings_admin_menu() {
+	if (wp_rp_is_classic() && !wp_rp_is_classic_old()) { return; }
 	if (!current_user_can('delete_users')) {
 		return;
 	}
@@ -133,6 +136,7 @@ function wp_rp_ajax_hide_show_statistics() {
 add_action('wp_ajax_rp_show_hide_statistics', 'wp_rp_ajax_hide_show_statistics');
 
 function wp_rp_settings_page() {
+	if (wp_rp_is_classic() && !wp_rp_is_classic_old()) { return; }
 	if (!current_user_can('delete_users')) {
 		die('Sorry, you don\'t have permissions to access this page.');
 	}

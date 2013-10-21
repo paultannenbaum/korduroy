@@ -37,7 +37,8 @@ class WC_Query {
 	public function __construct() {
 		add_filter( 'pre_get_posts', array( $this, 'pre_get_posts' ) );
 		add_filter( 'the_posts', array( $this, 'the_posts' ), 11, 2 );
-		add_filter( 'wp', array( $this, 'remove_product_query' ) );
+		add_action( 'wp', array( $this, 'remove_product_query' ) );
+		add_action( 'wp', array( $this, 'remove_ordering_args' ) );
 	}
 
 	/**
@@ -264,7 +265,6 @@ class WC_Query {
 		do_action( 'woocommerce_product_query', $q, $this );
 	}
 
-
 	/**
 	 * Remove the query
 	 *
@@ -276,6 +276,17 @@ class WC_Query {
 	}
 
 	/**
+	 * Remove the query
+	 *
+	 * @access public
+	 * @return void
+	 */
+	public function remove_ordering_args() {
+		remove_filter( 'posts_clauses', array( $this, 'order_by_popularity_post_clauses' ) );
+		remove_filter( 'posts_clauses', array( $this, 'order_by_rating_post_clauses' ) );
+	}
+
+	/**
 	 * Remove the posts_where filter
 	 *
 	 * @access public
@@ -284,7 +295,6 @@ class WC_Query {
 	public function remove_posts_where() {
 		remove_filter( 'posts_where', array( $this, 'search_post_excerpt' ) );
 	}
-
 
 	/**
 	 * Get an unpaginated list all product ID's (both filtered and unfiltered). Makes use of transients.

@@ -1,35 +1,34 @@
 ﻿=== Plugin Name ===
 Contributors: zemanta
-Tags: post, widget, sidebar, posts, links, plugin, tags, search, navigation, link, tag, widgets
+Tags: link, links, navigation, plugin, related, Post, posts, widget, widgets
 License: GPLv2
 Requires at least: 3.3
 Tested up to: 3.6
-Stable tag: 2.8
+Stable tag: 2.9
 
-This WordPress plugin provides multiple options to show the via tags related posts of a post (for example via a sidebar widget).
+Link to related content to help your readers. Get attention from other authors. Make great outbound links for SEO. With just a few clicks.
 
 == Description ==
 
-This WordPress plugin provides multiple options to show the via tags related posts of a post. It contains a sidebar widget that is only visible when viewing a single post and displays a list of posts that are related with the current post via the tags. The number of related posts to display can be configured. The posts are sorted by the number of matching tags and then by the post date. It is also possible to insert the list of related post in a post via a placeholder. You can also embedd the list of related post in template files to add it to the bottom of each post page.
+Adding related posts to the bottom of your posts makes your creations feel more authoritative and credible. Related posts help your readers find other interesting content and it gets you the attention from the authors you’ve linked to. Give exposure, get exposure. A line of related posts goes a long way.
 
 == Frequently Asked Questions ==
 
 = What are Related Posts? =
+Related Posts are an easy way to add outbound links to related content from around the web to make life easier for your readers and to attract attention from other authors.
 
-Related Posts are an easy way to keep visitors on your site longer. This plugin is one of the best ones for WordPress as it enables you to exchange traffic with similar sites and bring new, sticky visitors to your site.
-It also provides analytics to keep track of how much traffic it's generating.
+= How does it work? =
+Our plugin reads what you write and suggests Related Content from a large network of sites in real time. With one click you add a link with a thumbnail to the bottom of your post. Your readers will like you more for showing them where to go next. Authors that you’ve linked to will notice it and love you for it. You’ll make friends and influence people.
 
-= Can I customize the widget? =
+= Does it help SEO? =
+Google says that good outbound links help make the web a better place. And they reward you for it. Just don’t go crazy. Use common sense. Everything in moderation.
 
-Yes, you can easily switch between themes that we provided or simply change the CSS.
+= What else is in it for me? =
+If your content is all English, safe for work and of good quality, we will recommend it to other writers. You’ll get links, traffic and love.
 
-= Does this plugin use redirects and hurts SEO? =
+= I see promoted content. What is that? =
+That is how we keep this plugin free. Publishers pay us to show you related content from their sites. You don’t have to use it. However, we believe that promoted content widens the range of good quality content you can link to.
 
-No, we've taken extra measure to not affect SEO or the speed of your site. :)
-
-= Why does Zemanta have 3 similar plugins? What's the difference between them? =
-
-We adopted the principle of having three "release channels". You can try the most experimental (still stable!) features in [Related Posts](http://wordpress.org/extend/plugins/related-posts/ "Related Posts"). The more advanced ones are in [WordPress Related Posts](http://wordpress.org/extend/plugins/wordpress-23-related-posts-plugin/ "WordPress Related Posts"). If you're looking for the Professional version go for [Related Posts by Zemanta](http://wordpress.org/extend/plugins/related-posts-by-zemanta/ "Related Posts by Zemanta").
 
 == Installation ==
 
@@ -37,23 +36,18 @@ We adopted the principle of having three "release channels". You can try the mos
 1. Go to Plugins -> Add New
 2. Search for Related Posts
 3. Install the plugin called "Related Posts" and activate it
-4. After activation click Turn on to get advanced features
-5. If you use any caching plugin please clear the cache
-6. Done!
+4. Start new post and write some text.
 
 = Via upload: =
 1. Download the plugin .zip file
 2. Log in to yourdomain.com/wp-admin
 3. Click Plugins -> Add New -> Upload
-4. After installation activate the plugin and click Turn on to get advanced features
-5. If you use any caching plugin please clear the cache
-6. You're finished!
+4. Install the plugin called "Related Posts" and activate it
+5. Start new post and write some text.
 
 == Screenshots ==
 
-1. Default Theme.
-2. Real time analytics for mobile and desktop devices.
-3. Responsive mobile theme.
+1. Example
 
 == Upgrade Notice ==
 
@@ -62,6 +56,9 @@ Fix for security vulnerability. Upgrade immediately.
 
 == Changelog ==
 
+= 2.9 =
+* Bug fixes and updates
+
 = 2.8 =
 * New thumbnailer
 * Edit Related Posts gets a visual upgrade, search functionality and a dose of awesome
@@ -69,7 +66,7 @@ Fix for security vulnerability. Upgrade immediately.
 * Bugfix in tag generator
 
 = 2.7.4 =
-* Thumbnailer suppors Image Post Form in WordPress 3.6
+* Thumbnailer supports Image Post Form in WordPress 3.6
 * Bugfix
 
 = 2.7.3 =
