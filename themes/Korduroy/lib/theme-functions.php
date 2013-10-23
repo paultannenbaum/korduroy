@@ -96,6 +96,10 @@ function ktv_scripts() {
 
 		wp_register_script('app', get_template_directory_uri() . '/assets/scripts/app.js', array('jquery'), false, true );
 	  wp_enqueue_script('app');
+
+    wp_deregister_script('wc-add-to-cart-variation');
+    wp_register_script('wc-add-to-cart-variation', get_template_directory_uri() . '/assets/scripts/vendor/woocommerce/add-to-cart-variation.js' , array( 'jquery' ), false, true);
+    wp_enqueue_script('wc-add-to-cart-variation');
 	}
 }
 
