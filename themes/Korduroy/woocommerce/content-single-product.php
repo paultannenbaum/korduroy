@@ -28,7 +28,6 @@
         /** @hooked woocommerce_template_single_sharing - 50 **/
         do_action( 'woocommerce_single_product_summary' );
       ?>
-      <p class="cart"><a href="<?php echo esc_url( $product_url ); ?>" rel="nofollow" class="single_add_to_cart_button button alt"><?php echo apply_filters('single_add_to_cart_text', $button_text, 'external'); ?> Test</a></p>
     </div>
   </div>
 

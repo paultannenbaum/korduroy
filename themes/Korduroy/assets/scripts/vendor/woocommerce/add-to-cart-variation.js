@@ -169,22 +169,18 @@
           if (!focus)
             $variation_form.trigger('reset_image');
 
-          if (!exclude) {
-            $variation_form.find('.single_variation_wrap').slideUp('200');
-          }
-
+          // Note: This hides the add to cart area until a selection is made. We want to show this
+          // if (!exclude) {
+          //   $variation_form.find('.single_variation_wrap').slideUp('200');
+          // }
         }
 
-        if (any_set) {
-
-          if ($reset_variations.css('visibility') == 'hidden')
-            $reset_variations.css('visibility', 'visible').hide().fadeIn();
-
-        } else {
-
-          $reset_variations.css('visibility', 'hidden');
-
-        }
+        // if (any_set) {
+        //   if ($reset_variations.css('visibility') == 'hidden')
+        //     $reset_variations.css('visibility', 'visible').hide().fadeIn();
+        // } else {
+        //   $reset_variations.css('visibility', 'hidden');
+        // }
 
       })
 
