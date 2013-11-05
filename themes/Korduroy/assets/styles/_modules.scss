@@ -758,7 +758,7 @@
   padding: 15px;
   margin-bottom: 10px;
 
-  button {
+  button, .button {
     margin: 0 10px 0 0;
   }
 }
@@ -1355,6 +1355,9 @@
     .woocommerce-tabs {
       display: none;
     }
+  }
+  &.cart-page {
+
   }
 }
 

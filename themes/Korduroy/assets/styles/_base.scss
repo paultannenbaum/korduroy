@@ -95,44 +95,6 @@ ul ul ul	{
   list-style: square outside;
 }
 
-/*	Tables
-	Basic table structure:
-		table
-			thead (optional)
-			tfoot (optional)
-			tbody (required)
-
-	**	Tables can contain multiple tbody elements.
----------------------------------------------------	*/
-table	{
-  width: 100%;
-  margin: 15px 0;
-  background: rgba(255, 255, 255, 0.8);
-  border: none;
-  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(255, 255, 255, 0.8);
-  border-collapse: collapse;
-}
-
-th	{
-  padding: 7px 10px;
-  background: rgba(153, 153, 153, 0.2);
-  color: #999;
-  font-size: 11px;
-  font-weight: $semi-bold;
-  text-align: left;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
-  text-transform: uppercase;
-}
-
-
-td	{
-  padding: 10px;
-  border-top: 1px solid rgba(153, 153, 153, 0.2);
-  vertical-align: top;
-}
-
-tfoot td	{}
-
 /* Utility Classes */
 .clearfix {
   display: inline-block;

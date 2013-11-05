@@ -7798,41 +7798,6 @@ ul ul ul {
   list-style: square outside;
 }
 
-/*	Tables
-	Basic table structure:
-		table
-			thead (optional)
-			tfoot (optional)
-			tbody (required)
-
-	**	Tables can contain multiple tbody elements.
----------------------------------------------------	*/
-table {
-  width: 100%;
-  margin: 15px 0;
-  background: rgba(255, 255, 255, 0.8);
-  border: none;
-  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(255, 255, 255, 0.8);
-  border-collapse: collapse;
-}
-
-th {
-  padding: 7px 10px;
-  background: rgba(153, 153, 153, 0.2);
-  color: #999;
-  font-size: 11px;
-  font-weight: 600;
-  text-align: left;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
-  text-transform: uppercase;
-}
-
-td {
-  padding: 10px;
-  border-top: 1px solid rgba(153, 153, 153, 0.2);
-  vertical-align: top;
-}
-
 /* Utility Classes */
 .clearfix {
   display: inline-block;
@@ -8854,6 +8819,20 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     width: 58.33333%;
+    float: left;
+  }
+  .store-page.checkout-page #customer_details {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 58.33333%;
+    float: left;
+  }
+  .store-page.checkout-page #order_review {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 41.66667%;
     float: left;
   }
 }
@@ -10411,7 +10390,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   padding: 15px;
   margin-bottom: 10px;
 }
-.woocommerce-message button {
+.woocommerce-message button, .woocommerce-message .button, .woocommerce-message #contact-form input[type=submit], #contact-form .woocommerce-message input[type=submit] {
   margin: 0 10px 0 0;
 }
 
