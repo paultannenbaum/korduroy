@@ -414,6 +414,10 @@
       }
       .product-images-container {
         @include grid-column(5);
+
+        .thumbnails {
+          @include block-grid(3);
+        }
       }
       .product-desc-container {
         @include grid-column(7);
