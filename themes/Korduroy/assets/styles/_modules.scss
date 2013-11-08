@@ -1307,11 +1307,9 @@
   }
   &.store-single {
     .featured-product-image {
-      img {
-        @extend %image-border;
-        width: 100%;
-        margin-bottom: 10px;
-      }
+      @extend %image-border;
+      width: 100%;
+      margin-bottom: 10px;
     }
     .product-thumb {
       img {

@@ -3686,6 +3686,34 @@
     jQuery(function() {
         var KTV;
         KTV = KTV || {};
+        KTV.productImageSwapper = function() {
+            var container, featuredImage, handleThumbClick, swapFeaturedImage, thumbnails;
+            container = $(".product-images-container");
+            featuredImage = $(".featured-product-image", container);
+            thumbnails = $(".thumbnails", container);
+            handleThumbClick = function() {
+                return thumbnails.on("click", ".product-thumb img", swapFeaturedImage);
+            };
+            swapFeaturedImage = function(e) {
+                e.preventDefault();
+                return featuredImage.attr("src", $(this).closest("a").attr("href"));
+            };
+            return {
+                init: function() {
+                    return handleThumbClick();
+                }
+            };
+        }();
+        if ($(".store-page.store-single").length) {
+            return KTV.productImageSwapper.init();
+        }
+    });
+}).call(this);
+
+(function() {
+    jQuery(function() {
+        var KTV;
+        KTV = KTV || {};
         KTV.responsiveSubNav = function() {
             var breakpoint, cloneLeftIntoTop, hasLeftNav, hasTopNav, leftEl, leftSubNav, navClone, setNavState, setResponsiveNav, setTitle, topEl, topHeader, topSubNav, watchNav;
             leftEl = $(".aside-container");

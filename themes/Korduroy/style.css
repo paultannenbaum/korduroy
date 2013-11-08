@@ -7692,7 +7692,7 @@ h1, .about-page .crew-member .member-name, h2, .supporters-page .info-items .nam
   background: rgba(153, 153, 153, 0.2);
 }
 
-#featured-slider, .featured-campaigns .campaign img, .video-wrapper iframe, .image-border, .home-page .blog-post .blog-post-thumbnail img, .blog-page .blog-post .blog-post-thumbnail img, .blog-page .blog-post .blog-post-body img, .blog-page .blog-post .blog-post-body object, .blog-page .blog-post .blog-post-body iframe, .tag-page .tag-post .tag-thumbnail img, .search-page .search-post .search-thumbnail img, .default-page img, .store-page.store-archives .product img, .store-page.store-single .featured-product-image img, .store-page.store-single .product-thumb img {
+#featured-slider, .featured-campaigns .campaign img, .video-wrapper iframe, .image-border, .home-page .blog-post .blog-post-thumbnail img, .blog-page .blog-post .blog-post-thumbnail img, .blog-page .blog-post .blog-post-body img, .blog-page .blog-post .blog-post-body object, .blog-page .blog-post .blog-post-body iframe, .tag-page .tag-post .tag-thumbnail img, .search-page .search-post .search-thumbnail img, .default-page img, .store-page.store-archives .product img, .store-page.store-single .featured-product-image, .store-page.store-single .product-thumb img {
   -webkit-box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
   -moz-box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
   box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
@@ -10857,7 +10857,7 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   font-size: 14px;
   color: #7c1f32;
 }
-.store-page.store-single .featured-product-image img {
+.store-page.store-single .featured-product-image {
   width: 100%;
   margin-bottom: 10px;
 }
