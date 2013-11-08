@@ -10864,6 +10864,9 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
 .store-page.store-single .product-thumb img {
   width: 100%;
 }
+.store-page.store-single .product-thumb img:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
 .store-page.store-single .product_title {
   margin: 0;
 }
