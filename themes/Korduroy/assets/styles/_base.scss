@@ -138,3 +138,19 @@ button:hover, button:focus, .button:hover, #contact-form input[type=submit]:hove
   color: $ktv-blue;
   border: 1px solid $ktv-grey;
 }
+
+table {
+  border: 1px solid #CCC;
+
+  tr th, tr td {
+    padding: 10px;
+  }
+
+  tr {
+    border-bottom: 1px solid #CCC;
+  }
+}
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+  background: #FFF;
+}
