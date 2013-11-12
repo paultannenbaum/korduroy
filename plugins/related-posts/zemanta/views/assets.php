@@ -27,4 +27,4 @@ endfor;
 //]]>
 </script>
 
-<script type="text/javascript" id="zemanta-loader" src="http://fstatic.zemanta.com/plugins/wordpress-gp/loader.js<?php if ($is_old) {echo "?v1=";} else {echo "";} ?>"></script>
+<script type="text/javascript" id="zemanta-loader" src="http://fstatic.zemanta.com/plugins/wordpress-gp/loader.js"></script>

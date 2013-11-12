@@ -8,7 +8,6 @@ add_action( 'load-plugins.php', 'wp_rp_prepare_admin_connect_notice' );
 
 function wp_rp_display_admin_notices() {
 	global $wp_rp_admin_notices;
-	if (wp_rp_is_classic() && !wp_rp_is_classic_old()) { return; }
 
 	foreach ((array) $wp_rp_admin_notices as $notice) {
 		echo '<div id="message" class="' . $notice[0] . ' below-h2"><p>' . $notice[1] . '</p></div>';
@@ -16,7 +15,6 @@ function wp_rp_display_admin_notices() {
 }
 
 function wp_rp_prepare_admin_connect_notice() {
-	if (wp_rp_is_classic() && !wp_rp_is_classic_old()) { return; }
 	$meta = wp_rp_get_meta();
 
 	if ($meta['show_turn_on_button'] && !$meta['turn_on_button_pressed'] && !$meta['blog_id'] && $meta['new_user']) {
@@ -39,7 +37,7 @@ function wp_rp_admin_connect_notice() {
 				<a id="wp-rp-login" href="<?php echo admin_url('admin.php?page=wordpress-related-posts&ref=turn-on-rp'); ?>">Turn on</a>
 			</div>
 			<div id="wp-rp-text-container">
-				<h4>WordPress Related Posts are almost ready,</h4>
+				<h4>Related Posts are almost ready,</h4>
 				<h4>now all you need to do is connect to our service.</h4>
 			</div>
 		</div>

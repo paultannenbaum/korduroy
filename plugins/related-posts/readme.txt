@@ -4,7 +4,7 @@ Tags: link, links, navigation, plugin, related, Post, posts, widget, widgets
 License: GPLv2
 Requires at least: 3.3
 Tested up to: 3.6
-Stable tag: 2.9
+Stable tag: 3.0
 
 Link to related content to help your readers. Get attention from other authors. Make great outbound links for SEO. With just a few clicks.
 
@@ -55,6 +55,11 @@ That is how we keep this plugin free. Publishers pay us to show you related cont
 Fix for security vulnerability. Upgrade immediately.
 
 == Changelog ==
+
+= 3.0 =
+* Language detection: new users with non-English interface don't get Related content widget, existing ones get one-time opt-out
+* Opt-out for users with Related Content (articles) on compose screen
+* Improved caching
 
 = 2.9 =
 * Bug fixes and updates

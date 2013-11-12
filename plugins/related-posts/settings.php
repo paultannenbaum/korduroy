@@ -26,8 +26,6 @@ function wp_rp_admin_head() {
 * Add settings link to installed plugins list
 **/
 function wp_rp_add_link_to_settings($links) {
-	if (wp_rp_is_classic() && !wp_rp_is_classic_old()) { return $links; }
-
 	return array_merge( array(
 		'<a href="' . admin_url('admin.php?page=wordpress-related-posts') . '">' . __('Settings', 'wp_related_posts') . '</a>',
 	), $links);
@@ -41,7 +39,6 @@ add_filter('plugin_action_links_' . WP_RP_PLUGIN_FILE, 'wp_rp_add_link_to_settin
 add_action('admin_menu', 'wp_rp_settings_admin_menu');
 
 function wp_rp_settings_admin_menu() {
-	if (wp_rp_is_classic() && !wp_rp_is_classic_old()) { return; }
 	if (!current_user_can('delete_users')) {
 		return;
 	}
@@ -136,7 +133,6 @@ function wp_rp_ajax_hide_show_statistics() {
 add_action('wp_ajax_rp_show_hide_statistics', 'wp_rp_ajax_hide_show_statistics');
 
 function wp_rp_settings_page() {
-	if (wp_rp_is_classic() && !wp_rp_is_classic_old()) { return; }
 	if (!current_user_can('delete_users')) {
 		die('Sorry, you don\'t have permissions to access this page.');
 	}
@@ -210,6 +206,13 @@ function wp_rp_settings_page() {
 				$new_options[$platform]['theme_custom_css'] = $old_options[$platform]['theme_custom_css'];
 			}
 		}
+
+		if (isset($postdata['wp_rp_classic_state'])) {
+			$meta['classic_user'] = true;
+		} else {
+			$meta['classic_user'] = false;
+		}
+		wp_rp_update_meta($meta);
 
 		if (isset($postdata['wp_rp_turn_on_button_pressed'])) {
 			$meta['show_turn_on_button'] = false;
@@ -522,8 +525,12 @@ function wp_rp_settings_page() {
 							</td>
 						</tr>
 						<tr valign="top">
-							<td colspan="2">
-
+							<td colspan="2"><?php if(strpos(get_bloginfo('language'), 'en') === 0 || $meta['classic_user']): ?>
+								<br/>
+								<label>
+									<input name="wp_rp_classic_state" type="checkbox" id="wp_rp_classic_state" value="yes" <?php checked($meta['classic_user']); ?>>
+									<?php _e("Display Related Content (Articles) on Compose Screen",'wp_related_posts');?>
+								</label><?php endif; ?>
 								<br/>
 								<label>
 									<input name="wp_rp_on_single_post" type="checkbox" id="wp_rp_on_single_post" value="yes" <?php checked($options['on_single_post']); ?>>
@@ -552,14 +559,12 @@ function wp_rp_settings_page() {
 										<input name="wp_rp_promoted_content_enabled" type="checkbox" id="wp_rp_promoted_content_enabled" value="yes" <?php checked($options['promoted_content_enabled']); ?> />
 										<?php _e('Promoted Content', 'wp_related_posts');?>*
 									</label>
-								</div>
-					<?php if($meta['show_zemanta_linky_option']): ?>
+								</div><?php if($meta['show_zemanta_linky_option']): ?>
 								<label>
 									<input name="wp_rp_display_zemanta_linky" type="checkbox" id="wp_rp_display_zemanta_linky" value="yes" <?php checked($options['display_zemanta_linky']); ?> />
 									<?php _e("Support us (show our logo)",'wp_related_posts');?>
-								</label>
+								</label><?php endif; ?>
 							</td>
-					<?php endif; ?>
 						</tr>
 					</table>
 					<p class="submit"><input type="submit" value="<?php _e('Save changes', 'wp_related_posts'); ?>" class="button-primary" /></p>

@@ -8,8 +8,8 @@ Author URI: http://monzilla.biz/
 Contributors: specialk
 Donate link: http://m0n.co/donate
 Requires at least: 3.4
-Tested up to: 3.5
-Version: 20130725
+Tested up to: 3.7
+Version: 20131107
 Stable tag: trunk
 License: GPL v2
 Usage: Visit the plugin's settings page for shortcodes, template tags, and more information.
@@ -19,9 +19,7 @@ Simple Basic Contact Form is a clean, secure, plug-n-play contact form for WordP
 
 == Description ==
 
-[Simple Basic Contact Form](http://perishablepress.com/simple-basic-contact-form/) is a clean, secure, plug-n-play contact form for WordPress. Minimal yet flexible, SBCF delivers clean code, solid performance, and ease of use. No frills, no gimmicks, just a straight-up contact form that's easy to set up and style for any theme. Note: for a contact form with more options and features, check out [Contact Coldform](http://perishablepress.com/contact-coldform/).
-
-**[Check out the SBCF Demo](http://bluefeed.net/simple-basic-contact-form/)**
+[Simple Basic Contact Form](http://perishablepress.com/simple-basic-contact-form/) is a clean, secure, plug-n-play contact form for WordPress. Minimal yet flexible, SBCF delivers clean code, solid performance, and ease of use. No frills, no gimmicks, just a straight-up contact form that's easy to set up and customize.
 
 **Overview**
 
@@ -40,6 +38,7 @@ Simple Basic Contact Form is a clean, secure, plug-n-play contact form for WordP
 * Displays customizable confirmation message to the sender
 * Customizable placeholder text for input fields
 * Option to use either PHP's mail() or WP's wp_mail() (default)
+* Option to display message only in the success message
 
 **Anti-spam &amp; Security**
 
@@ -99,6 +98,27 @@ Screenshots available at the [SBCF Homepage](http://perishablepress.com/simple-b
 
 == Changelog ==
 
+**20131107**
+
+* Renamed `add_plugin_links` to `add_scf_links`
+* Revised "Welcome" panel in plugin settings
+
+**20131106**
+
+* Added option to hide extra infos displayed in the success message
+* Fixed logic for using `mail()` vs `wp_mail()`
+* Removed "&Delta;" from `die()` for better security
+* Added i18n/localization support
+* Added "rate this plugin" links
+* Added uninstall.php file
+* Added parameters to `htmlentities` (fixes weird characters issue)
+* Replaced `get_permalink()` with empty value in the form
+* Changed `$date` to use WordPress settings and format
+* Added German translation; thanks to [Benedikt Quirmbach](http://www.LivingDocs.de)
+* Fixed character encoding via `filter_var` and `html_entity_decode` in `scf_process_contact_form()`
+* Tested on latest version of WordPress (3.7)
+* General code cleanup and maintenance
+
 **Version 20130725**
 
 * Tightened form security
@@ -143,6 +163,10 @@ Screenshots available at the [SBCF Homepage](http://perishablepress.com/simple-b
 Initial release.
 
 == Frequently Asked Questions ==
+
+[Check out the SBCF Demo](http://bluefeed.net/simple-basic-contact-form/)
+
+Note: for a contact form with more options and features, check out [Contact Coldform](http://perishablepress.com/contact-coldform/).
 
 To ask a question, visit the [SBCF Homepage](http://perishablepress.com/simple-basic-contact-form/) or [contact me](http://perishablepress.com/contact/).
 
