@@ -8864,6 +8864,22 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     width: 58.33333%;
     float: left;
   }
+  .store-page.checkout-page .store-content {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1;
+  }
+  .store-page.checkout-page .store-content:before, .store-page.checkout-page .store-content:after {
+    content: " ";
+    display: table;
+  }
+  .store-page.checkout-page .store-content:after {
+    clear: both;
+  }
   .store-page.checkout-page #customer_details {
     position: relative;
     padding-left: 0.9375em;
