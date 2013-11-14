@@ -1445,10 +1445,73 @@
     }
   }
   &.checkout-page {
+    input {
+      margin-bottom: 0px;
+    }
+    p + p {
+      margin-top: 0px;
+    }
+    .form-row {
+      margin-bottom: 10px;
+    }
+    #shiptobilling {
+      height: 20px;
+
+      input#shiptobilling-checkbox {
+        font-size: 10px;
+      }
+      label.checkbox {
+        display: inline-block;
+        font-size: 10px;
+      }
+    }
+    #order_comments_field {
+      .input-text {
+        min-height: 100px;
+      }
+    }
     #order_review {
       .shop_table {
+        font-size: 11px;
+        line-height: 13px;
+        width: 100%;
+
         tfoot tr {
           background: #F9F9F9;
+        }
+        .variation {
+          margin-top: 5px;
+          margin-bottom: 5px;
+
+          dt, dd {
+            display: inline-block;
+            margin: 0px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    #payment {
+      label {
+        display: inline-block;
+      }
+      .payment_methods {
+        font-size: 0.875em;
+
+        .payment_box p {
+          font-size: 0.875em;
+        }
+
+        li {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+      .place-order {
+        margin-top: 10px;
+
+        #place_order {
+          font-size: 16px;
         }
       }
     }

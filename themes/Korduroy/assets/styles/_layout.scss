@@ -424,16 +424,6 @@
       }
     }
     &.checkout-page {
-      input {
-        margin-bottom: 0px;
-      }
-      p + p {
-        margin-top: 0px;
-      }
-      .form-row {
-        margin-bottom: 10px;
-      }
-
       .store-content {
         @include grid-row(nest);
       }
@@ -494,22 +484,9 @@
           }
           #shiptobilling {
             @include grid-column(12);
-            height: 20px;
-
-            input#shiptobilling-checkbox {
-              font-size: 10px;
-            }
-            label.checkbox {
-              display: inline-block;
-              font-size: 10px;
-            }
           }
           #order_comments_field {
             @include grid-column(12);
-
-            .input-text {
-              min-height: 100px;
-            }
           }
           #shipping_country_field {
             @include grid-column(12);
@@ -549,7 +526,8 @@
       .your-order {
         @include grid-column(4);
       }
-
+    }
+    &.order-received-page {
 
     }
   }
