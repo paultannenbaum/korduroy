@@ -1516,6 +1516,48 @@
       }
     }
   }
+  &.order-received-page {
+    .shop_table {
+      tfoot tr {
+        background: #F9F9F9;
+      }
+      .variation {
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        dt, dd {
+          display: inline-block;
+          margin: 0px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .customer-details-container {
+      .customer_details {
+        @include clearfix;
+        margin-bottom: 10px;
+
+        dt {
+          float: left;
+          width: 20%;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+        dd {
+          float: right;
+          width: 75%;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+      }
+      .addresses {
+        address {
+          font-style: normal;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
 }
 
 // Media Queries
