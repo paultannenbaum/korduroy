@@ -11253,6 +11253,11 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 .store-page.store-single .single_variation .stock {
   display: none;
 }
+.store-page.store-single .single_variation .price {
+  margin-left: 80px;
+  margin-bottom: 10px;
+  display: block;
+}
 .store-page.store-single .product_meta {
   display: none;
 }
