@@ -1444,6 +1444,15 @@
       }
     }
   }
+  &.checkout-page {
+    #order_review {
+      .shop_table {
+        tfoot tr {
+          background: #F9F9F9;
+        }
+      }
+    }
+  }
 }
 
 // Media Queries

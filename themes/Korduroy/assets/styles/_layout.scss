@@ -424,15 +424,133 @@
       }
     }
     &.checkout-page {
+      input {
+        margin-bottom: 0px;
+      }
+      p + p {
+        margin-top: 0px;
+      }
+      .form-row {
+        margin-bottom: 10px;
+      }
+
       .store-content {
         @include grid-row(nest);
       }
-      #customer_details {
-        @include grid-column(7);
+      .billing {
+        @include grid-column(4);
+
+        .billing-inner {
+          @include grid-row(nest);
+
+          .billing-title {
+            @include grid-column(12);
+            margin-bottom: 30px; // matches up with shipping
+          }
+          #billing_country_field {
+            @include grid-column(12);
+          }
+          #billing_first_name_field {
+            @include grid-column(6);
+          }
+          #billing_last_name_field {
+            @include grid-column(6);
+          }
+          #billing_company_field {
+            @include grid-column(12);
+          }
+          #billing_address_1_field {
+            @include grid-column(12);
+          }
+          #billing_address_2_field {
+            @include grid-column(12);
+          }
+          #billing_city_field {
+            @include grid-column(12);
+          }
+          #billing_state_field {
+            @include grid-column(6);
+          }
+          #billing_postcode_field {
+            @include grid-column(6);
+          }
+          #billing_email_field {
+            @include grid-column(12);
+          }
+          #billing_phone_field {
+            @include grid-column(6);
+          }
+        }
       }
-      #order_review {
-        @include grid-column(5);
+      .shipping {
+        @include grid-column(4);
+
+        .shipping-inner {
+          @include grid-row(nest);
+
+          .shipping-title {
+            @include grid-column(12);
+            margin-bottom: 0px; // matches up with billing
+          }
+          #shiptobilling {
+            @include grid-column(12);
+            height: 20px;
+
+            input#shiptobilling-checkbox {
+              font-size: 10px;
+            }
+            label.checkbox {
+              display: inline-block;
+              font-size: 10px;
+            }
+          }
+          #order_comments_field {
+            @include grid-column(12);
+
+            .input-text {
+              min-height: 100px;
+            }
+          }
+          #shipping_country_field {
+            @include grid-column(12);
+          }
+          #shipping_first_name_field {
+            @include grid-column(6);
+          }
+          #shipping_last_name_field {
+            @include grid-column(6);
+          }
+          #shipping_company_field {
+            @include grid-column(12);
+          }
+          #shipping_address_1_field {
+            @include grid-column(12);
+          }
+          #shipping_address_2_field {
+            @include grid-column(12);
+          }
+          #shipping_city_field {
+            @include grid-column(12);
+          }
+          #shipping_state_field {
+            @include grid-column(6);
+          }
+          #shipping_postcode_field {
+            @include grid-column(6);
+          }
+          #shipping_email_field {
+            @include grid-column(6);
+          }
+          #shipping_phone_field {
+            @include grid-column(6);
+          }
+        }
       }
+      .your-order {
+        @include grid-column(4);
+      }
+
+
     }
   }
 }
