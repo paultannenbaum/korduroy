@@ -11312,6 +11312,11 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 .store-page.checkout-page p + p, .store-page.checkout-page .supporters-page + p, .store-page.checkout-page .about-page .crew-member .member-desc + p, .about-page .crew-member .store-page.checkout-page .member-desc + p, .store-page.checkout-page p + .supporters-page, .store-page.checkout-page .supporters-page + .supporters-page, .store-page.checkout-page .about-page .crew-member .member-desc + .supporters-page, .about-page .crew-member .store-page.checkout-page .member-desc + .supporters-page, .store-page.checkout-page .about-page .crew-member p + .member-desc, .about-page .crew-member .store-page.checkout-page p + .member-desc, .store-page.checkout-page .about-page .crew-member .supporters-page + .member-desc, .about-page .crew-member .store-page.checkout-page .supporters-page + .member-desc, .store-page.checkout-page .about-page .crew-member .member-desc + .member-desc, .about-page .crew-member .store-page.checkout-page .member-desc + .member-desc {
   margin-top: 0px;
 }
+.store-page.checkout-page .required {
+  border: none;
+  cursor: pointer;
+  color: #ff0000;
+}
 .store-page.checkout-page .form-row {
   margin-bottom: 10px;
 }

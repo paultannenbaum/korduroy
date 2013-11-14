@@ -1451,6 +1451,11 @@
     p + p {
       margin-top: 0px;
     }
+    .required {
+      border: none;
+      cursor: pointer;
+      color: #ff0000;
+    }
     .form-row {
       margin-bottom: 10px;
     }
