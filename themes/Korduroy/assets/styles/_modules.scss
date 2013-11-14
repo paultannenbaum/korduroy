@@ -773,6 +773,25 @@
   margin-bottom: 10px;
 }
 
+.cart-container {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 15px;
+
+  a:hover {
+    color: $ktv-text;
+  }
+  .cart-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(assets/images/shopping_cart.png);
+    background-size: 16px 16px;
+    margin-bottom: -3px;
+  }
+}
+
 /***** Page Modules *****/
 .home-page {
   .section-header {
@@ -1273,7 +1292,6 @@
 }
 
 .store-page {
-
   button, .button {
     color: $ktv-blue;
     &:hover {
@@ -1628,6 +1646,15 @@
       }
     }
   }
+  .cart-container {
+    text-align: left;
+    font-size: 10px;
+    line-height: 16px;
+    margin-top: 0px;
+    position: absolute;
+    top: 14px;
+    right: 240px;
+  }
 
   .shows-page {
     $small-channel-icon-width: 192px;
@@ -1683,6 +1710,10 @@
 }
 
 @media #{$desktop-up} {
+  .cart-container {
+    right: 20px;
+  }
+
   .shows-page {
     .episode-info {
       .sharing-container {

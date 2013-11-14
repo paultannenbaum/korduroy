@@ -10759,6 +10759,24 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   margin-bottom: 10px;
 }
 
+.cart-container {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 15px;
+}
+.cart-container a:hover {
+  color: #444444;
+}
+.cart-container .cart-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-image: url(assets/images/shopping_cart.png);
+  background-size: 16px 16px;
+  margin-bottom: -3px;
+}
+
 /***** Page Modules *****/
 .home-page .section-header {
   height: 30px;
@@ -11453,6 +11471,16 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     margin-left: 0px;
   }
 
+  .cart-container {
+    text-align: left;
+    font-size: 10px;
+    line-height: 16px;
+    margin-top: 0px;
+    position: absolute;
+    top: 14px;
+    right: 240px;
+  }
+
   .shows-page.shows-index .channel-header .channel-icon, .shows-page.shows-single .channel-header .channel-icon {
     top: 0;
     left: 0;
@@ -11488,6 +11516,10 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   }
 }
 @media only screen and (min-width: 1000px) {
+  .cart-container {
+    right: 20px;
+  }
+
   .shows-page .episode-info .sharing-container {
     text-align: right;
     margin-top: 4px;
