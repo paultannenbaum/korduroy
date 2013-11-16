@@ -8825,7 +8825,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 41.66667%;
+    width: 100%;
     float: left;
   }
   .store-page.store-single .product-images-container .thumbnails {
@@ -8861,7 +8861,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 58.33333%;
+    width: 100%;
     float: left;
   }
   .store-page.checkout-page .store-content {
@@ -11147,13 +11147,20 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   -o-border-radius: 4px;
   border-radius: 4px;
   color: #3a87ad;
+  position: relative;
   background-color: #d9edf7;
   border: 1px solid #bce8f1;
   padding: 15px;
+  padding-right: 150px;
   margin-bottom: 10px;
+  line-height: 1.2em;
+  min-height: 55px;
 }
 .woocommerce-message button, .woocommerce-message .button, .woocommerce-message #contact-form input[type=submit], #contact-form .woocommerce-message input[type=submit] {
-  margin: 0 10px 0 0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  margin: 0;
 }
 
 .woocommerce-error {

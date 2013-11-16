@@ -753,13 +753,20 @@
 .woocommerce-message {
   @include border-radius(4px);
   color: #3a87ad;
+  position: relative;
   background-color: #d9edf7;
   border: 1px solid #bce8f1;
   padding: 15px;
+  padding-right: 150px;
   margin-bottom: 10px;
+  line-height: 1.2em;
+  min-height: 55px;
 
   button, .button {
-    margin: 0 10px 0 0;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    margin: 0;
   }
 }
 

@@ -413,14 +413,14 @@
         @include grid-row(nest);
       }
       .product-images-container {
-        @include grid-column(5);
+        @include grid-column(12);
 
         .thumbnails {
           @include block-grid(3);
         }
       }
       .product-desc-container {
-        @include grid-column(7);
+        @include grid-column(12);
       }
     }
     &.checkout-page {
