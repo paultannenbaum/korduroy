@@ -547,16 +547,17 @@
       }
       .order-review {
         @include grid-column(12);
-        margin-top: 20px;
+        margin-top: 30px;
 
         .order-details-inner {
           @include grid-row(nest);
         }
         .order-details-container {
-          @include grid-column(6);
+          @include grid-column(12);
+          margin-bottom: 30px;
         }
         .customer-details-container {
-          @include grid-column(6);
+          @include grid-column(12);
         }
       }
     }
@@ -916,25 +917,12 @@
       }
     }
     &.order-received-page {
-      .store-content {
-        @include grid-row(nest);
-      }
-      .thanks-and-review {
-        @include grid-column(12);
-      }
-      .payment-instructions {
-        @include grid-column(12);
-        margin-top: 20px;
-      }
       .order-review {
-        @include grid-column(12);
         margin-top: 20px;
 
-        .order-details-inner {
-          @include grid-row(nest);
-        }
         .order-details-container {
           @include grid-column(6);
+          margin-bottom: 0px;
         }
         .customer-details-container {
           @include grid-column(6);

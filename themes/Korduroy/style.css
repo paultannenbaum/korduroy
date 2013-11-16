@@ -9159,7 +9159,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     padding-right: 0.9375em;
     width: 100%;
     float: left;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .store-page.order-received-page .order-review .order-details-inner {
     width: auto;
@@ -9181,14 +9181,15 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 50%;
+    width: 100%;
     float: left;
+    margin-bottom: 30px;
   }
   .store-page.order-received-page .order-review .customer-details-container {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 50%;
+    width: 100%;
     float: left;
   }
 }
@@ -10006,60 +10007,8 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     width: 33.33333%;
     float: left;
   }
-  .store-page.order-received-page .store-content {
-    width: auto;
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: none;
-    *zoom: 1;
-  }
-  .store-page.order-received-page .store-content:before, .store-page.order-received-page .store-content:after {
-    content: " ";
-    display: table;
-  }
-  .store-page.order-received-page .store-content:after {
-    clear: both;
-  }
-  .store-page.order-received-page .thanks-and-review {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 100%;
-    float: left;
-  }
-  .store-page.order-received-page .payment-instructions {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 100%;
-    float: left;
-    margin-top: 20px;
-  }
   .store-page.order-received-page .order-review {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 100%;
-    float: left;
     margin-top: 20px;
-  }
-  .store-page.order-received-page .order-review .order-details-inner {
-    width: auto;
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: none;
-    *zoom: 1;
-  }
-  .store-page.order-received-page .order-review .order-details-inner:before, .store-page.order-received-page .order-review .order-details-inner:after {
-    content: " ";
-    display: table;
-  }
-  .store-page.order-received-page .order-review .order-details-inner:after {
-    clear: both;
   }
   .store-page.order-received-page .order-review .order-details-container {
     position: relative;
@@ -10067,6 +10016,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     padding-right: 0.9375em;
     width: 50%;
     float: left;
+    margin-bottom: 0px;
   }
   .store-page.order-received-page .order-review .customer-details-container {
     position: relative;
