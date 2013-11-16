@@ -11522,6 +11522,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 }
 @media only screen and (min-width: 1000px) {
   .cart-container {
+    top: 40px;
     right: 20px;
   }
 

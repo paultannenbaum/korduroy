@@ -48,8 +48,8 @@
 
         <?php global $woocommerce; if (sizeof($woocommerce->cart->cart_contents)>0) :?>
           <div class="cart-container">
-            <a href="<?php echo $woocommerce->cart->get_cart_url()?>" title="<?php _e('Checkout','woothemes') ?>">
-              <?php _e('Go To Cart','woothemes') ?>
+            <a href="<?php echo $woocommerce->cart->get_cart_url()?>" title="<?php _e('Go To Cart','woothemes') ?>">
+              <?php _e('CART','woothemes') ?>
               <span class="cart-icon"></span>
             </a>
           </div>
