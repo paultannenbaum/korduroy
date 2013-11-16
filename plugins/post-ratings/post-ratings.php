@@ -1149,8 +1149,8 @@ function post_ratings_has_cap($allcaps, $caps, $args){
 
 // Prevents wordpress from trying to update this plugin
 // Admin, if you reuse this snippet in another plugin, name the function differently(make it unique)!!!
-add_filter( 'http_request_args', 'prevent_wp_update_check', 10, 2 );
-function prevent_wp_update_check( $r, $url ) {
+add_filter( 'http_request_args', 'prevent_wp_update_check_on_post_ratings', 10, 2 );
+function prevent_wp_update_check_on_post_ratings( $r, $url ) {
   if ( 0 === strpos( $url, 'http://api.wordpress.org/plugins/update-check/' ) ) {
     $my_plugin = plugin_basename( __FILE__ );
     $plugins = unserialize( $r['body']['plugins'] );
