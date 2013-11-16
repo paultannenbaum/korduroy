@@ -8864,6 +8864,9 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     width: 100%;
     float: left;
   }
+  .store-page.cart-page .product-remove {
+    display: none;
+  }
   .store-page.checkout-page .store-content {
     width: auto;
     margin-left: -0.9375em;
@@ -9952,6 +9955,9 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     padding-right: 0.9375em;
     width: 58.33333%;
     float: left;
+  }
+  .store-page.cart-page .product-remove {
+    display: table-cell;
   }
   .store-page.checkout-page .store-content {
     width: auto;

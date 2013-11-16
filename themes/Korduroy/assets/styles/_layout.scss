@@ -423,6 +423,11 @@
         @include grid-column(12);
       }
     }
+    &.cart-page {
+      .product-remove {
+        display: none;
+      }
+    }
     &.checkout-page {
       .store-content {
         @include grid-row(nest);
@@ -873,6 +878,11 @@
       }
       .product-desc-container {
         @include grid-column(7);
+      }
+    }
+    &.cart-page {
+      .product-remove {
+        display: table-cell;
       }
     }
     &.checkout-page {
