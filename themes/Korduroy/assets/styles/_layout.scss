@@ -405,7 +405,7 @@
   .store-page {
     &.store-archives {
       .products {
-        @include block-grid(4);
+        @include block-grid(2);
       }
     }
     &.store-single {
@@ -851,6 +851,158 @@
     .linked-pages-container {
       .links-list {
         @include block-grid(2);
+      }
+    }
+  }
+  .store-page {
+    &.store-archives {
+      .products {
+        @include block-grid(4);
+      }
+    }
+    &.store-single {
+      .product {
+        @include grid-row(nest);
+      }
+      .product-images-container {
+        @include grid-column(5);
+
+        .thumbnails {
+          @include block-grid(3);
+        }
+      }
+      .product-desc-container {
+        @include grid-column(7);
+      }
+    }
+    &.checkout-page {
+      .store-content {
+        @include grid-row(nest);
+      }
+      .billing {
+        @include grid-column(4);
+
+        .billing-inner {
+          @include grid-row(nest);
+
+          .billing-title {
+            @include grid-column(12);
+            margin-bottom: 30px; // matches up with shipping
+          }
+          #billing_country_field {
+            @include grid-column(12);
+          }
+          #billing_first_name_field {
+            @include grid-column(6);
+          }
+          #billing_last_name_field {
+            @include grid-column(6);
+          }
+          #billing_company_field {
+            @include grid-column(12);
+          }
+          #billing_address_1_field {
+            @include grid-column(12);
+          }
+          #billing_address_2_field {
+            @include grid-column(12);
+          }
+          #billing_city_field {
+            @include grid-column(12);
+          }
+          #billing_state_field {
+            @include grid-column(6);
+          }
+          #billing_postcode_field {
+            @include grid-column(6);
+          }
+          #billing_email_field {
+            @include grid-column(12);
+          }
+          #billing_phone_field {
+            @include grid-column(6);
+          }
+        }
+      }
+      .shipping {
+        @include grid-column(4);
+
+        .shipping-inner {
+          @include grid-row(nest);
+
+          .shipping-title {
+            @include grid-column(12);
+            margin-bottom: 0px; // matches up with billing
+          }
+          #shiptobilling {
+            @include grid-column(12);
+          }
+          #order_comments_field {
+            @include grid-column(12);
+          }
+          #shipping_country_field {
+            @include grid-column(12);
+          }
+          #shipping_first_name_field {
+            @include grid-column(6);
+          }
+          #shipping_last_name_field {
+            @include grid-column(6);
+          }
+          #shipping_company_field {
+            @include grid-column(12);
+          }
+          #shipping_address_1_field {
+            @include grid-column(12);
+          }
+          #shipping_address_2_field {
+            @include grid-column(12);
+          }
+          #shipping_city_field {
+            @include grid-column(12);
+          }
+          #shipping_state_field {
+            @include grid-column(6);
+          }
+          #shipping_postcode_field {
+            @include grid-column(6);
+          }
+          #shipping_email_field {
+            @include grid-column(6);
+          }
+          #shipping_phone_field {
+            @include grid-column(6);
+          }
+        }
+      }
+      .your-order {
+        @include grid-column(4);
+      }
+    }
+    &.order-received-page {
+      .store-content {
+        @include grid-row(nest);
+      }
+      .thanks-and-review {
+        @include grid-column(12);
+      }
+      .payment-instructions {
+        @include grid-column(12);
+        margin-top: 20px;
+      }
+      .order-review {
+        @include grid-column(12);
+        margin-top: 20px;
+
+        .order-details-inner {
+          @include grid-row(nest);
+        }
+        .order-details-container {
+          @include grid-column(6);
+        }
+        .customer-details-container {
+          @include grid-column(6);
+        }
       }
     }
   }
