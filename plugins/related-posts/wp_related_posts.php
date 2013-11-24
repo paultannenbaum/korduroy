@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Related Posts
-Version: 3.0
+Version: 3.1
 Plugin URI: http://wordpress.org/extend/plugins/related-posts/
 Description: Link to related content to help your readers. Get attention from other authors. Make great outbound links for SEO. With just a few clicks.
 Author: Zemanta
 Author URI: http://www.zemanta.com
 */
 
-define('WP_RP_VERSION', '3.0');
+define('WP_RP_VERSION', '3.1');
 
 define('WP_RP_PLUGIN_FILE', plugin_basename(__FILE__));
 
@@ -86,11 +86,18 @@ function wp_rp_is_phone() {
 
 function wp_rp_get_platform_options() {
 	$options = wp_rp_get_options();
+	$thumb_options = array('custom_size_thumbnail_enabled' => false);
+
+	if (!empty($options['custom_size_thumbnail_enabled'])) {
+		$thumb_options['custom_size_thumbnail_enabled'] = $options['custom_size_thumbnail_enabled'];
+		$thumb_options['custom_thumbnail_width'] = $options['custom_thumbnail_width'];
+		$thumb_options['custom_thumbnail_height'] = $options['custom_thumbnail_height'];
+	}
 
 	if (wp_rp_is_phone()) {
-		return $options['mobile'];
+		return $options['mobile'] + $thumb_options;
 	}
-	return $options['desktop'];
+	return $options['desktop'] + $thumb_options;
 }
 
 function wp_rp_ajax_load_articles_callback() {
@@ -380,7 +387,6 @@ function wp_rp_head_resources() {
 	$meta = wp_rp_get_meta();
 	$options = wp_rp_get_options();
 	$platform_options = wp_rp_get_platform_options();
-	//error_log('theme name 1: ' . $platform_options['theme_name']);
 	$statistics_enabled = false;
 	$remote_recommendations = false;
 	$output = '';

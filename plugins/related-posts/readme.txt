@@ -3,14 +3,19 @@ Contributors: zemanta
 Tags: link, links, navigation, plugin, related, Post, posts, widget, widgets
 License: GPLv2
 Requires at least: 3.3
-Tested up to: 3.6
-Stable tag: 3.0
+Tested up to: 3.7
+Stable tag: 3.1
 
 Link to related content to help your readers. Get attention from other authors. Make great outbound links for SEO. With just a few clicks.
 
 == Description ==
 
-Adding related posts to the bottom of your posts makes your creations feel more authoritative and credible. Related posts help your readers find other interesting content and it gets you the attention from the authors you’ve linked to. Give exposure, get exposure. A line of related posts goes a long way.
+
+**Related posts, related articles and in-text links** are an easy way to make your creations feel more authoritative and credible.
+
+* Related posts help your readers discover your own related content by automatically linking to it at the bottom of each post.
+* Related articles help your readers find other related content from bloggers just like you. You can get the attention from the authors you’ve linked to.
+* In-text links are similar to related articles, but they also include links to Wikipedia, Google Maps, IMDb and others.
 
 == Frequently Asked Questions ==
 
@@ -55,6 +60,9 @@ That is how we keep this plugin free. Publishers pay us to show you related cont
 Fix for security vulnerability. Upgrade immediately.
 
 == Changelog ==
+
+= 3.1 =
+* Added settings to fix custom size thumbnails issues (re-generating thumbnails might take a few minutes)
 
 = 3.0 =
 * Language detection: new users with non-English interface don't get Related content widget, existing ones get one-time opt-out
