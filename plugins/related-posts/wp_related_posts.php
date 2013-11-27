@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Related Posts
-Version: 3.1
+Version: 3.2
 Plugin URI: http://wordpress.org/extend/plugins/related-posts/
 Description: Link to related content to help your readers. Get attention from other authors. Make great outbound links for SEO. With just a few clicks.
 Author: Zemanta
 Author URI: http://www.zemanta.com
 */
 
-define('WP_RP_VERSION', '3.1');
+define('WP_RP_VERSION', '3.2');
 
 define('WP_RP_PLUGIN_FILE', plugin_basename(__FILE__));
 
@@ -150,6 +150,9 @@ function wp_rp_ajax_load_articles_callback() {
 				'id' => $related_post->ID,
 				'url' => get_permalink($related_post->ID),
 				'title' => $related_post->post_title,
+				'date' => $related_post->post_date,
+				'comments' => $related_post->comment_count,
+				'excerpt' => $related_post->post_excerpt,
 				'img' => wp_rp_get_post_thumbnail_img($related_post, $image_size)
 			));
 	}
@@ -289,13 +292,14 @@ function wp_rp_generate_related_posts_list_items($related_posts, $selected_relat
 
 		if ($platform_options["display_publish_date"]){
 			$dateformat = get_option('date_format');
-			$output .= mysql2date($dateformat, $related_post->post_date) . " -- ";
+			$output .= '<small class="wp_rp_publish_date">' . mysql2date($dateformat, $related_post->post_date) . '</small> ';
+			//$output .= mysql2date($dateformat, $related_post->post_date) . " -- ";
 		}
 
 		$output .= '<a href="' . $post_url . '" class="wp_rp_title">' . wptexturize($related_post->post_title) . '</a>';
 
 		if ($platform_options["display_comment_count"] && property_exists($related_post, 'comment_count')){
-			$output .=  " (" . $related_post->comment_count . ")";
+			$output .=  '<small class="wp_rp_comments_count"> (' . $related_post->comment_count . ')</small><br />';
 		}
 
 		if ($platform_options["display_excerpt"]){
@@ -313,7 +317,7 @@ function wp_rp_generate_related_posts_list_items($related_posts, $selected_relat
 				if (strlen($excerpt) > $excerpt_max_length) {
 					$excerpt = mb_substr($excerpt, 0, $excerpt_max_length - 3) . '...';
 				}
-				$output .= '<br /><small>' . $excerpt . '</small>';
+				$output .= ' <small class="wp_rp_excerpt">' . $excerpt . '</small>';
 			}
 		}
 		$output .=  '</li>';

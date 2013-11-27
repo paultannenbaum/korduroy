@@ -274,7 +274,7 @@ function wp_rp_settings_page() {
 		$button_type = isset($postdata['wp_rp_button_type']) ? $postdata['wp_rp_button_type'] : 'other';
 		wp_rp_register_blog($button_type);
 	}
-?>
+	?>
 
 	<div class="wrap" id="wp_rp_wrap">
 		<input type="hidden" id="wp_rp_ajax_nonce" value="<?php echo wp_create_nonce("wp_rp_ajax_nonce"); ?>" />
@@ -419,7 +419,7 @@ function wp_rp_settings_page() {
 							<tr id="wp_rp_<?php echo $platform; ?>_theme_custom_css_wrap" style="display: none; ">
 								<td>
 									<label>
-										<input name="wp_rp_<?php echo $platform; ?>_display_thumbnail" type="checkbox" id="wp_rp_<?php echo $platform; ?>_display_thumbnail" value="yes" <?php checked($options[$platform]["display_thumbnail"]); ?> onclick="wp_rp_display_thumbnail_onclick();" />
+										<input name="wp_rp_<?php echo $platform; ?>_display_thumbnail" type="checkbox" id="wp_rp_<?php echo $platform; ?>_display_thumbnail" value="yes" <?php checked($options[$platform]["display_thumbnail"]); ?> >
 										<?php _e("Display Thumbnails For Related Posts",'wp_related_posts');?>
 									</label><br />
 									<label>
@@ -431,7 +431,7 @@ function wp_rp_settings_page() {
 										<?php _e("Display Publish Date",'wp_related_posts');?>
 									</label><br />
 									<label>
-										<input name="wp_rp_<?php echo $platform; ?>_display_excerpt" type="checkbox" id="wp_rp_<?php echo $platform; ?>_display_excerpt" value="yes" <?php checked($options[$platform]["display_excerpt"]); ?> onclick="wp_rp_display_excerpt_onclick();" >
+										<input name="wp_rp_<?php echo $platform; ?>_display_excerpt" type="checkbox" id="wp_rp_<?php echo $platform; ?>_display_excerpt" value="yes" <?php checked($options[$platform]["display_excerpt"]); ?>>
 										<?php _e("Display Post Excerpt",'wp_related_posts');?>
 									</label>
 									<label id="wp_rp_<?php echo $platform; ?>_excerpt_max_length_label">

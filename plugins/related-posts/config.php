@@ -1,6 +1,6 @@
 <?php
 
-define('WP_RP_STATIC_BASE_URL', 'http://dtmvdvtzf8rz0.cloudfront.net/static/');
+define('WP_RP_STATIC_BASE_URL', 'http://rp.zemanta.com/static/');
 define('WP_RP_STATIC_THEMES_PATH', 'wp-rp-css/');
 define('WP_RP_STATIC_JSON_PATH', 'json/');
 
@@ -246,6 +246,23 @@ function wp_rp_is_classic() {
 	return false;
 }
 
+function wp_rp_migrate_3_1() {
+	global $wpdb;
+
+	$wp_rp_meta = get_option('wp_rp_meta');
+	$wp_rp_meta['version'] = '3.2';
+	$wp_rp_meta['new_user'] = false;
+	$wp_rp_meta['classic_user'] = true;
+	$wp_rp_options = get_option('wp_rp_options');
+	$wp_rp_options['custom_size_thumbnail_enabled'] = false;
+	$wp_rp_options['custom_thumbnail_width'] = WP_RP_CUSTOM_THUMBNAILS_WIDTH;
+	$wp_rp_options['custom_thumbnail_height'] = WP_RP_CUSTOM_THUMBNAILS_WIDTH;
+
+	update_option('wp_rp_meta', $wp_rp_meta);
+	update_option('wp_rp_options', $wp_rp_options);
+
+}
+
 function wp_rp_migrate_3_0() {
 	global $wpdb;
 
@@ -276,6 +293,7 @@ function wp_rp_migrate_2_9() {
 	$wp_rp_options['custom_thumbnail_height'] = WP_RP_CUSTOM_THUMBNAILS_WIDTH;
 
 	update_option('wp_rp_meta', $wp_rp_meta);
+	update_option('wp_rp_options', $wp_rp_options);
 }
 
 function wp_rp_migrate_2_8() {
@@ -298,6 +316,7 @@ function wp_rp_migrate_2_8() {
 
 
 	update_option('wp_rp_meta', $wp_rp_meta);
+	update_option('wp_rp_options', $wp_rp_options);
 }
 
 function wp_rp_migrate_2_7() {
