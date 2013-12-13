@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<blog-category>
-    <id type="integer">1</id>
-    <name>Interviews</name>
-    <slug>interviews</slug>
-    <created-at type="datetime">2012-01-11T22:30:17Z</created-at>
-    <updated-at type="datetime">2012-01-14T16:50:22Z</updated-at>
-    <display-order type="integer">2</display-order>
-  </blog-category>
