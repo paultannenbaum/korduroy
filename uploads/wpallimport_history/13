@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<show>
+    <id type="integer">379</id>
+    <created-at type="datetime">2013-12-02T17:51:55Z</created-at>
+    <updated-at type="datetime">2013-12-02T17:51:55Z</updated-at>
+    <vimeo>80424912</vimeo>
+    <youtube nil="true"/>
+    <thumbnail>http://b.vimeocdn.com/ts/456/813/456813484_200.jpg</thumbnail>
+    <show-category-id type="integer">9</show-category-id>
+    <title>Peter St. Pierre</title>
+    <description>&amp;lt;p&amp;gt;Surfing is more commonly considered a selfish act than a communal one. But in the craft of making surfboards, working together is a necessity. While shapers often work alone, the glassing process lends itself to people working in unison.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Moonlight Glassing was founded in 1979 by Peter St. Pierre and his wife Sally and over the years their small business has risen to international fame. Known for their artistic approach and ultra-fine craftsmanship, Peter's shop has become not only an integral part of the San Diego surfing community but a cultural leader in the larger surfing world. Learn more about the values and ethics that Peter has cultivated during his decades of surfboard production and how they have made him a happy and successful man and local legend.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Is there someone of 'legend' status in your hood? We'd love to know! Submit their photo and a description to http://local-legendz.tumblr.com/submit or #local_legendz on Instagram and Twitter. We will be giving away a limited-edition Leatherman tool to the best submission of the week!&amp;lt;/p&amp;gt;</description>
+    <comments-closed type="boolean">false</comments-closed>
+    <staff-pick type="boolean">false</staff-pick>
+    <slug>peter-st-pierre</slug>
+    <impressions type="integer">507</impressions>
+    <comments-count type="integer" nil="true"/>
+    <featured type="boolean">false</featured>
+    <category>
+      <id type="integer">9</id>
+      <title>Local Legendz</title>
+      <description>Local Legendz is a series in collaboration with Leatherman featuring individuals who are quietly changing the world from their backyards with their craftsmanship and creativity.</description>
+      <icon>icon_shows_local_legendz.jpg</icon>
+      <slug>local-legendz</slug>
+      <created-at type="datetime">2013-07-22T14:48:32Z</created-at>
+      <updated-at type="datetime">2013-07-22T14:48:32Z</updated-at>
+      <display-order type="integer">8</display-order>
+    </category>
+    <tags type="array">
+      <tag>Shortboards</tag>
+      <tag>Shaping</tag>
+      <tag>Longboards</tag>
+      <tag>So Cal</tag>
+      <tag>surf crafts</tag>
+      <tag>style</tag>
+      <tag>San Diego</tag>
+      <tag>community</tag>
+      <tag>surfboard design</tag>
+      <tag>surfboard technology</tag>
+    </tags>
+    <show-credits type="array">
+      <show-credit>
+        <id type="integer">451</id>
+        <show-id type="integer">379</show-id>
+        <credit-type-id type="integer">14</credit-type-id>
+        <name>Cyrus Sutton</name>
+        <url/>
+        <created-at type="datetime">2013-12-02T17:51:55Z</created-at>
+        <updated-at type="datetime">2013-12-02T17:51:55Z</updated-at>
+        <credit-type type="NilClass">Producer</credit-type>
+      </show-credit>
+      <show-credit>
+        <id type="integer">452</id>
+        <show-id type="integer">379</show-id>
+        <credit-type-id type="integer">7</credit-type-id>
+        <name>Chris Olivas</name>
+        <url/>
+        <created-at type="datetime">2013-12-02T17:51:55Z</created-at>
+        <updated-at type="datetime">2013-12-02T17:51:55Z</updated-at>
+        <credit-type type="NilClass">Camera/Edit</credit-type>
+      </show-credit>
+      <show-credit>
+        <id type="integer">453</id>
+        <show-id type="integer">379</show-id>
+        <credit-type-id type="integer">5</credit-type-id>
+        <name>Peter St. Pierre &amp; JP St. Pierre</name>
+        <url/>
+        <created-at type="datetime">2013-12-02T17:51:55Z</created-at>
+        <updated-at type="datetime">2013-12-02T17:51:55Z</updated-at>
+        <credit-type type="NilClass">Additional Footage</credit-type>
+      </show-credit>
+      <show-credit>
+        <id type="integer">454</id>
+        <show-id type="integer">379</show-id>
+        <credit-type-id type="integer">3</credit-type-id>
+        <name>"Cold Piano" by Gabby</name>
+        <url/>
+        <created-at type="datetime">2013-12-02T17:51:55Z</created-at>
+        <updated-at type="datetime">2013-12-02T17:51:55Z</updated-at>
+        <credit-type type="NilClass">Music</credit-type>
+      </show-credit>
+    </show-credits>
+  </show>

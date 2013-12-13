@@ -254,7 +254,7 @@ return array(
 	),
 	'cdn.enabled' => false,
 	'cdn.debug' => false,
-	'cdn.engine' => 'maxcdn',
+	'cdn.engine' => 'rscf',
 	'cdn.uploads.enable' => true,
 	'cdn.includes.enable' => true,
 	'cdn.includes.files' => '*.css;*.js;*.gif;*.png;*.jpg;*.xml',
@@ -309,11 +309,12 @@ return array(
 	'cdn.cf2.cname' => array(
 	),
 	'cdn.cf2.ssl' => '',
-	'cdn.rscf.user' => '',
-	'cdn.rscf.key' => '',
+	'cdn.rscf.user' => 'ptannenbaum',
+	'cdn.rscf.key' => 'e576748e55e0d78f248e8be6a6ce933f',
 	'cdn.rscf.location' => 'us',
-	'cdn.rscf.container' => '',
+	'cdn.rscf.container' => 'uploads',
 	'cdn.rscf.cname' => array(
+		0 => '9d683a603e56ea31657b-a037037a67c77d0ce9996aa22942a0d8.r36.cf1.rackcdn.com',
 	),
 	'cdn.rscf.ssl' => 'auto',
 	'cdn.azure.user' => '',
@@ -367,10 +368,13 @@ return array(
 	'cdn.reject.admins' => false,
 	'cdn.reject.logged_roles' => false,
 	'cdn.reject.roles' => array(
+		0 => '',
 	),
 	'cdn.reject.ua' => array(
+		0 => '',
 	),
 	'cdn.reject.uri' => array(
+		0 => '',
 	),
 	'cdn.reject.files' => array(
 		0 => '{uploads_dir}/wpcf7_captcha/*',
@@ -403,8 +407,9 @@ return array(
 	'varnish.enabled' => false,
 	'varnish.debug' => false,
 	'varnish.servers' => array(
+		0 => '',
 	),
-	'browsercache.enabled' => true,
+	'browsercache.enabled' => false,
 	'browsercache.no404wp' => false,
 	'browsercache.no404wp.exceptions' => array(
 		0 => 'robots\\.txt',
@@ -644,7 +649,7 @@ return array(
 	'notes.theme_changed' => false,
 	'notes.wp_upgraded' => false,
 	'notes.plugins_updated' => false,
-	'notes.cdn_upload' => false,
+	'notes.cdn_upload' => true,
 	'notes.cdn_reupload' => false,
 	'notes.need_empty_pgcache' => false,
 	'notes.need_empty_minify' => false,

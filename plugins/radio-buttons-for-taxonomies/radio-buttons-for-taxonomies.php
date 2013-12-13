@@ -3,7 +3,7 @@
 Plugin Name: Radio Buttons for Taxonomies
 Plugin URI: http://www.kathyisawesome.com/441/radio-buttons-for-taxonomies
 Description: Use radio buttons for any taxonomy
-Version: 1.5.2
+Version: 1.5.4
 Text Domain: radio-buttons-for-taxonomies
 Author: Kathy Darling
 Author URI: http://www.kathyisawesome.com
@@ -97,9 +97,18 @@ class Radio_Buttons_for_Taxonomies {
       //for example: $this->categories
       $options = get_option( 'radio_button_for_taxonomies_options', true );
 
-      if( isset( $options['taxonomies'] ) ) foreach( $options['taxonomies'] as $taxonomy ) {
-         $this->{$taxonomy} = new WordPress_Radio_Taxonomy( $taxonomy );
+      if( isset( $options['taxonomies'] ) ) {
+
+        foreach( $options['taxonomies'] as $taxonomy ) {
+
+          if ( taxonomy_exists( $taxonomy ) ) {
+            $this->{$taxonomy} = new WordPress_Radio_Taxonomy( $taxonomy );
+          }
+
+        }
+
       }
+
   }
 
   // ------------------------------------------------------------------------------

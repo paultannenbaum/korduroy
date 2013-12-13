@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog>
+    <id type="integer">11946</id>
+    <title>Web Surfing: Nov. 30 - Dec. 6</title>
+    <content>&amp;lt;p&amp;gt;Happy first-week-of-December! My how time flies. It goes really fast in one of these videos, where you witness the highlights of one year of Peter Mendia's surf life, but then it slows down a bit when NRVL takes an inside look at artist Hector Menendez hard at work. There's a (long) short about the trials of traveling through the Angola desert and a tutorial from John John on the pull-in method. Plus some other gems, like the one where it's hard to tell the difference between surfing and snowboarding. Strap in.&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;h2&amp;gt;Under Desert Sun&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;iframe src="http://player.vimeo.com/video/78853553" frameborder="0" width="725" height="407"&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Nineteen minutes in Angola.&amp;lt;/p&amp;gt;
+&amp;lt;h2&amp;gt;John John at Pupukea&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;iframe src="http://www.youtube.com/embed/uTmNojbTBwU" frameborder="0" width="725" height="408"&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Learn how to pull in with John John. Ask your friends how to pull out.&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;h2&amp;gt;Mendia: On the Journey&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;iframe src="http://player.vimeo.com/video/79851432" frameborder="0" width="725" height="407"&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Spend a year with Peter Mendia at all the best surf destinations.&amp;lt;/p&amp;gt;
+&amp;lt;h2&amp;gt;NRVL Death Club - Hector Menendez&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;iframe src="http://player.vimeo.com/video/80472106" frameborder="0" width="725" height="407"&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Dun dun dun. This is really good.&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;h2&amp;gt;Segment from Into the Mind&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;iframe src="http://player.vimeo.com/video/77948519" frameborder="0" width="725" height="407"&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The editing on this is so stellar, it's hard to tell when you're watching surfing and when you're watching snowboarding. Amazing.&amp;lt;/p&amp;gt;
+&amp;lt;h2&amp;gt;"Black Friday" Banzai Pipeline&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;iframe src="http://player.vimeo.com/video/80697844?color=0d010a" frameborder="0" width="725" height="407"&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;While you were punching people over a $10 pair of slippers and waiting in line at 5 a.m. on Black Friday, the North Shore was having the best NW Swell ever (or at least in a little while).&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;nbsp;&amp;lt;/p&amp;gt;</content>
+    <slug>web-surfing-nov-30-dec-6</slug>
+    <visible type="boolean">true</visible>
+    <comments-closed type="boolean">false</comments-closed>
+    <user-id type="integer">5</user-id>
+    <created-at type="datetime">2013-12-06T17:09:00Z</created-at>
+    <updated-at type="datetime">2013-12-06T17:14:53Z</updated-at>
+    <blog-category-id type="integer">16</blog-category-id>
+    <post-image>ws12.6.jpg</post-image>
+    <url nil="true"/>
+    <comments-count type="integer" nil="true"/>
+    <reblogged-at type="datetime" nil="true"/>
+    <wp-post-id type="integer" nil="true"/>
+    <featured type="boolean">false</featured>
+    <category>
+      <id type="integer">16</id>
+      <name>Web Surfing</name>
+      <slug>web-surfing</slug>
+      <created-at type="datetime">2013-08-14T02:25:54Z</created-at>
+      <updated-at type="datetime">2013-08-14T02:25:54Z</updated-at>
+      <display-order type="integer" nil="true"/>
+    </category>
+    <tags type="array">
+      <tag>Art</tag>
+      <tag>Indo</tag>
+      <tag>surf culture</tag>
+      <tag>surf exploration</tag>
+      <tag>Hawaii</tag>
+      <tag>Africa</tag>
+    </tags>
+  </blog>
