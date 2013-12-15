@@ -10,7 +10,7 @@ and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
 /** Reset**/
-/* normalize.css v2.1.1 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -10679,6 +10679,14 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   margin-right: 5px;
   margin-bottom: 5px;
 }
+.tag-list .tag-list-item a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
 
 .credits {
   margin-bottom: 22px;
@@ -11205,7 +11213,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   float: left;
 }
 .blog-page .blog-post .blog-post-title {
-  display: inline-block;
+  display: block;
 }
 .blog-page .blog-post .blog-post-footer {
   font-size: 10px;
@@ -11216,6 +11224,11 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 }
 .blog-page .blog-post .blog-post-body .more-link:hover {
   color: #2084ea;
+}
+.blog-page .blog-post .blog-post-body img, .blog-page .blog-post .blog-post-body object, .blog-page .blog-post .blog-post-body iframe {
+  max-width: 100%;
+  display: block;
+  margin: 10px 0;
 }
 .blog-page .blog-post .blog-post-body a {
   color: #2084ea;
@@ -11231,6 +11244,9 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 }
 .blog-page .blog-post .blog-post-body h1 a:hover, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-name a:hover, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-name a:hover, .blog-page .blog-post .blog-post-body h2 a:hover, .blog-page .blog-post .blog-post-body .supporters-page .info-items .name a:hover, .supporters-page .info-items .blog-page .blog-post .blog-post-body .name a:hover, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-position a:hover, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-position a:hover, .blog-page .blog-post .blog-post-body h3 a:hover, .blog-page .blog-post .blog-post-body h4 a:hover, .blog-page .blog-post .blog-post-body h5 a:hover, .blog-page .blog-post .blog-post-body h6 a:hover {
   color: #2084ea;
+}
+.blog-page .blog-post .blog-post-body p, .blog-page .blog-post .blog-post-body .supporters-page, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-desc, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-desc {
+  margin-bottom: 20px;
 }
 
 .about-page .crew-member .member-name {

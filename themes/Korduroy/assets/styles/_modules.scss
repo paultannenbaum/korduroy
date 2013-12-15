@@ -528,6 +528,7 @@
 
     a {
       @extend %pressed-button;
+      @include inline-block;
     }
   }
 }
@@ -1094,7 +1095,7 @@
       }
     }
     .blog-post-title {
-      display: inline-block;
+      display: block;
     }
     .blog-post-thumbnail {
       img {
@@ -1115,6 +1116,9 @@
       }
       img, object, iframe {
         @extend %image-border;
+        max-width: 100%;
+        display: block;
+        margin: 10px 0;
       }
       a {
         color: $ktv-blue;
@@ -1132,6 +1136,9 @@
             color: $ktv-blue;
           }
         }
+      }
+      p {
+        margin-bottom: 20px;
       }
     }
   }
