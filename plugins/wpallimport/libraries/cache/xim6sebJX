@@ -1,0 +1,4 @@
+<?php $x0 = $this->xml;
+$v8_0 = $x0->xpath("id[1]");
+$v8_1 = $x0->xpath("post-image[1]");
+?>http://korduroy.tv/uploads/blog/post_image/<?php echo $this->getValue($v8_0);?>/<?php echo $this->getValue($v8_1);

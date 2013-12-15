@@ -1,0 +1,8 @@
+<?php $x0 = $this->xml;
+$v5_0 = $x0->xpath("tags[1]/tag");
+
+foreach ($v5_0 as $x1) :
+
+$v6_0 = $x1->xpath(".");
+echo $this->getValue($v6_0);?>,<?php 
+endforeach;

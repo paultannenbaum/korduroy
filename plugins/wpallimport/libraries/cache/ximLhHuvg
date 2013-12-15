@@ -1,0 +1,5 @@
+<?php $x0 = $this->xml;
+$v11_0 = $x0->xpath("title[1]");
+$v11_1 = $x0->xpath("id[1]");
+$v11_2 = $x0->xpath("url[1]");
+echo $this->getValue($v11_0);?> - <?php echo $this->getValue($v11_1);?> - <?php echo $this->getValue($v11_2);
