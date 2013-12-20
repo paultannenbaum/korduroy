@@ -3,8 +3,8 @@ Contributors: zemanta
 Tags: link, links, navigation, plugin, related, Post, posts, widget, widgets
 License: GPLv2
 Requires at least: 3.3
-Tested up to: 3.7
-Stable tag: 3.2
+Tested up to: 3.8
+Stable tag: 3.3
 
 Link to related content to help your readers. Get attention from other authors. Make great outbound links for SEO. With just a few clicks.
 
@@ -60,6 +60,10 @@ That is how we keep this plugin free. Publishers pay us to show you related cont
 Fix for security vulnerability. Upgrade immediately.
 
 == Changelog ==
+
+= 3.3 =
+* Solved compatibility issues with Zemanta Editorial Assistant
+* Cosmetic changes for settings page
 
 = 3.2 =
 * Bug fixes for "Edit related posts" feature

@@ -500,8 +500,11 @@ function wp_rp_settings_page() {
 					<h3>Custom Size Thumbnails</h3>
 					<table class="form-table">
 						<tbody>
+						<tr><td>Our themes were created with thumbnail size of 150x150px in mind. <br/>
+							If you want to use custom sizes, override theme's CSS rules in the Custom CSS section under Theme Settings above.
+							</td>
+							</tr>
 						<tr><td>
-							<p>All themes are <strong>optimized</strong> for thumbnails of size 150x150px.  They might not work well with custom size thumbnails.<br> Specify your custom css to override theme's style.</p>
 							<label>
 								<input name="wp_rp_custom_size_thumbnail_enabled" type="checkbox" id="wp_rp_custom_size_thumbnail_enabled" value="yes" <?php checked($options['custom_size_thumbnail_enabled']); ?> />
 								<?php _e("Use Custom Size Thumbnails",'wp_related_posts');?>
@@ -516,7 +519,8 @@ function wp_rp_settings_page() {
 								<input name="wp_rp_custom_thumbnail_height" type="text" id="wp_rp_custom_thumbnail_height" class="small-text" value="<?php esc_attr_e($options['custom_thumbnail_height']); ?>" />
 							</label>
 							</div>
-							</td></tr>
+							<br />
+							</td></tr>	
 						</tbody>
 					</table>
 					<?php
