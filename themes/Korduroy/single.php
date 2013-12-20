@@ -41,9 +41,9 @@
 
     <div class="post-blog-post">
       <hr class="horizontal-stitch" />
-      <h2>Related Items</h2>
-      <?php wp_related_posts()?>
-
+      <!--<h2>Related Items</h2>-->
+      <!--<h3>related item content will go here</h3>-->
+      <!-- TODO: Related Posts Goes Here -->
       <div class="comments-wrapper">
         <?php comments_template(); ?>
       </div>
