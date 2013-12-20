@@ -394,8 +394,9 @@
       @include grid-column(12);
 
       .links-list {
-        @include block-grid(1);
+        @include block-grid(2);
         margin-top: 10px;
+
         li {
           padding-bottom: 5px;
         }
@@ -854,11 +855,7 @@
 
       .links-list {
         @include block-grid(3);
-      }
-    }
-    .linked-pages-container {
-      .links-list {
-        @include block-grid(2);
+        margin-top: 10px;
       }
     }
   }

@@ -8763,13 +8763,13 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     padding: 0 0.625em 1.25em;
   }
   .links-page .linked-pages-container .links-list > li {
-    width: 100%;
+    width: 50%;
     padding: 0 0.625em 1.25em;
   }
   .links-page .linked-pages-container .links-list > li:nth-of-type(n) {
     clear: none;
   }
-  .links-page .linked-pages-container .links-list > li:nth-of-type(1n+1) {
+  .links-page .linked-pages-container .links-list > li:nth-of-type(2n+1) {
     clear: both;
   }
   .links-page .linked-pages-container .links-list li {
@@ -9817,6 +9817,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     padding: 0;
     margin: 0 -0.625em;
     *zoom: 1;
+    margin-top: 10px;
   }
   .links-page .linked-pages-container .links-list:before, .links-page .linked-pages-container .links-list:after {
     content: " ";
@@ -9839,35 +9840,6 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     clear: none;
   }
   .links-page .linked-pages-container .links-list > li:nth-of-type(3n+1) {
-    clear: both;
-  }
-  .links-page .linked-pages-container .links-list {
-    display: block;
-    padding: 0;
-    margin: 0 -0.625em;
-    *zoom: 1;
-  }
-  .links-page .linked-pages-container .links-list:before, .links-page .linked-pages-container .links-list:after {
-    content: " ";
-    display: table;
-  }
-  .links-page .linked-pages-container .links-list:after {
-    clear: both;
-  }
-  .links-page .linked-pages-container .links-list > li {
-    display: inline;
-    height: auto;
-    float: left;
-    padding: 0 0.625em 1.25em;
-  }
-  .links-page .linked-pages-container .links-list > li {
-    width: 50%;
-    padding: 0 0.625em 1.25em;
-  }
-  .links-page .linked-pages-container .links-list > li:nth-of-type(n) {
-    clear: none;
-  }
-  .links-page .linked-pages-container .links-list > li:nth-of-type(2n+1) {
     clear: both;
   }
 
@@ -11333,11 +11305,12 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   width: 100%;
   margin-bottom: 20px;
 }
-.links-page .link-group .horizontal-separator-light, .links-page .link-group .shows-page .channel-separator, .shows-page .links-page .link-group .channel-separator {
-  margin-top: 0px;
+.links-page .links-list-item {
+  font-size: 14px;
 }
-.links-page .horizontal-separator-light:last-child, .links-page .shows-page .channel-separator:last-child, .shows-page .links-page .channel-separator:last-child {
-  margin-bottom: 0px;
+.links-page .horizontal-separator-light, .links-page .shows-page .channel-separator, .shows-page .links-page .channel-separator {
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .default-page a {

@@ -1270,15 +1270,12 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  .link-group {
-    .horizontal-separator-light {
-      margin-top: 0px;
-    }
+  .links-list-item {
+    font-size: 14px;
   }
   .horizontal-separator-light {
-    &:last-child {
-      margin-bottom: 0px;
-    }
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 }
 
