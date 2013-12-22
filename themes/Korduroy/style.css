@@ -9796,7 +9796,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   width: 100%;
   height: auto;
   max-width: 700px;
-  max-height: 400px;
+  max-height: 394px;
 }
 #featured-slider .slide .slide-desc {
   position: absolute;
@@ -9870,7 +9870,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 
 .featured-campaigns .campaign {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   display: inline-block;
 }
 .featured-campaigns .campaign:last-child {
