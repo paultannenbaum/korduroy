@@ -17,7 +17,17 @@ if ( $attachment_ids ) {
 	?>
 	<ul class="thumbnails"><?php
 
-		$loop = 0;
+    # Insert the featured image as the first thumbnail
+    $image_title 		= esc_attr( get_the_title( get_post_thumbnail_id() ) );
+    $image_link  		= wp_get_attachment_url( get_post_thumbnail_id() );
+    $image       		= get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_small_thumbnail_size', 'shop_thumbnail' ), array(
+      'title' => $image_title
+    ) );
+    echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '
+    <li class="product-thumb"><a href="%s" title="%s"  rel="prettyPhoto[product-gallery]">%s</a></li>', $image_link, $image_title, $image ), $attachment_id, $post->ID, $image_class );
+
+    # Then add the rest of the thumbnails
+    $loop = 0;
 		$columns = apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
 
 		foreach ( $attachment_ids as $attachment_id ) {
