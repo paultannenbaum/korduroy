@@ -104,7 +104,7 @@
         <?php endforeach; ?>
 
         <div class="pagination-container">
-          <?php get_template_part('partials/pagination'); ?>
+          <!--<?php get_template_part('partials/pagination'); ?>-->
         </div>
       </div>
     </div>
