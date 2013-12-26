@@ -425,8 +425,15 @@
       }
     }
     &.cart-page {
-      .product-remove {
+      .product-thumbnail {
         display: none;
+      }
+      .product-remove {
+        text-align: center;
+      }
+      .remove {
+        font-size: 20px;
+        font-weight: bold;
       }
     }
     &.checkout-page {
@@ -881,7 +888,7 @@
       }
     }
     &.cart-page {
-      .product-remove {
+      .product-thumbnail {
         display: table-cell;
       }
     }

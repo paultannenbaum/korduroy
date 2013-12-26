@@ -8387,8 +8387,15 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     width: 100%;
     float: left;
   }
-  .store-page.cart-page .product-remove {
+  .store-page.cart-page .product-thumbnail {
     display: none;
+  }
+  .store-page.cart-page .product-remove {
+    text-align: center;
+  }
+  .store-page.cart-page .remove {
+    font-size: 20px;
+    font-weight: bold;
   }
   .store-page.checkout-page .store-content {
     width: auto;
@@ -9454,7 +9461,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     width: 58.33333%;
     float: left;
   }
-  .store-page.cart-page .product-remove {
+  .store-page.cart-page .product-thumbnail {
     display: table-cell;
   }
   .store-page.checkout-page .store-content {
