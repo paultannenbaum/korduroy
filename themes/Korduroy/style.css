@@ -10727,6 +10727,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 }
 .blog-page .blog-post .blog-post-body a {
   color: #2084ea;
+  word-wrap: break-word;
 }
 .blog-page .blog-post .blog-post-body a:hover {
   color: #4a6180;
@@ -10742,6 +10743,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 }
 .blog-page .blog-post .blog-post-body p, .blog-page .blog-post .blog-post-body .supporters-page, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-desc, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-desc {
   margin-bottom: 20px;
+  word-wrap: break-word;
 }
 
 .about-page .crew-member .member-name {

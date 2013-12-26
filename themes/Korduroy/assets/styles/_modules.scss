@@ -1122,6 +1122,7 @@
       }
       a {
         color: $ktv-blue;
+        word-wrap:break-word;
         &:hover {
           color: $ktv-dark-blue
         }
@@ -1139,6 +1140,7 @@
       }
       p {
         margin-bottom: 20px;
+        word-wrap:break-word;
       }
     }
   }
