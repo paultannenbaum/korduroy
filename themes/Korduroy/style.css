@@ -8390,12 +8390,11 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   .store-page.cart-page .product-thumbnail {
     display: none;
   }
-  .store-page.cart-page .product-remove {
-    text-align: center;
+  .store-page.cart-page .cart-overview {
+    margin-bottom: 20px;
   }
-  .store-page.cart-page .remove {
-    font-size: 20px;
-    font-weight: bold;
+  .store-page.cart-page .shipping-row {
+    margin-bottom: 20px;
   }
   .store-page.checkout-page .store-content {
     width: auto;
@@ -9463,6 +9462,44 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   }
   .store-page.cart-page .product-thumbnail {
     display: table-cell;
+  }
+  .store-page.cart-page .cart-overview {
+    margin-bottom: 20px;
+  }
+  .store-page.cart-page .shipping-row {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1;
+    margin-bottom: 20px;
+  }
+  .store-page.cart-page .shipping-row:before, .store-page.cart-page .shipping-row:after {
+    content: " ";
+    display: table;
+  }
+  .store-page.cart-page .shipping-row:after {
+    clear: both;
+  }
+  .store-page.cart-page .shipping-row .cart-totals {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 41.66667%;
+    float: right;
+    margin-left: 58.33333%;
+    float: left;
+  }
+  .store-page.cart-page .proceed-to-checkout {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 41.66667%;
+    float: right;
+    margin-left: 58.33333%;
+    float: left;
   }
   .store-page.checkout-page .store-content {
     width: auto;
@@ -11002,20 +11039,30 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   bottom: 10px;
   margin-bottom: 0px;
 }
-.store-page.cart-page .order-summary {
-  float: right;
-  text-align: right;
+.store-page.cart-page .shop_table .product-remove {
+  text-align: center;
 }
-.store-page.cart-page .order-summary .cart-totals {
+.store-page.cart-page .shop_table .remove {
+  font-size: 20px;
+  font-weight: bold;
+}
+.store-page.cart-page .cart-totals {
   margin-top: 10px;
 }
-.store-page.cart-page .order-summary .cart-totals h2, .store-page.cart-page .order-summary .cart-totals .supporters-page .info-items .name, .supporters-page .info-items .store-page.cart-page .order-summary .cart-totals .name, .store-page.cart-page .order-summary .cart-totals .about-page .crew-member .member-position, .about-page .crew-member .store-page.cart-page .order-summary .cart-totals .member-position {
+.store-page.cart-page .cart-totals h2, .store-page.cart-page .cart-totals .supporters-page .info-items .name, .supporters-page .info-items .store-page.cart-page .cart-totals .name, .store-page.cart-page .cart-totals .about-page .crew-member .member-position, .about-page .crew-member .store-page.cart-page .cart-totals .member-position {
   display: none;
 }
-.store-page.cart-page .order-summary .cart-totals table {
-  float: right;
+.store-page.cart-page .cart-totals table {
+  width: 100%;
+  margin-bottom: 5px;
 }
-.store-page.cart-page .order-summary .checkout-button {
+.store-page.cart-page .shipping-calc select {
+  margin-bottom: 0px;
+}
+.store-page.cart-page .shipping-calc p + p, .store-page.cart-page .shipping-calc .supporters-page + p, .store-page.cart-page .shipping-calc .about-page .crew-member .member-desc + p, .about-page .crew-member .store-page.cart-page .shipping-calc .member-desc + p, .store-page.cart-page .shipping-calc p + .supporters-page, .store-page.cart-page .shipping-calc .supporters-page + .supporters-page, .store-page.cart-page .shipping-calc .about-page .crew-member .member-desc + .supporters-page, .about-page .crew-member .store-page.cart-page .shipping-calc .member-desc + .supporters-page, .store-page.cart-page .shipping-calc .about-page .crew-member p + .member-desc, .about-page .crew-member .store-page.cart-page .shipping-calc p + .member-desc, .store-page.cart-page .shipping-calc .about-page .crew-member .supporters-page + .member-desc, .about-page .crew-member .store-page.cart-page .shipping-calc .supporters-page + .member-desc, .store-page.cart-page .shipping-calc .about-page .crew-member .member-desc + .member-desc, .about-page .crew-member .store-page.cart-page .shipping-calc .member-desc + .member-desc {
+  margin-top: 5px;
+}
+.store-page.cart-page .checkout-button {
   font-size: 16px;
 }
 .store-page.checkout-page input {

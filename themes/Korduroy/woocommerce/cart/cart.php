@@ -9,10 +9,9 @@ $woocommerce->show_messages();
     <?php do_action('woocommerce_before_cart'); ?>
 
     <form action="<?php echo esc_url($woocommerce->cart->get_cart_url()); ?>" method="post">
-
-        <?php do_action('woocommerce_before_cart_table'); ?>
-
-        <table class="shop_table cart" cellspacing="0">
+        <div class="cart-overview">
+          <?php do_action('woocommerce_before_cart_table'); ?>
+          <table class="shop_table cart" cellspacing="0">
             <thead>
             <tr>
                 <th class="product-remove">&nbsp;</th>
@@ -133,27 +132,22 @@ $woocommerce->show_messages();
             <?php do_action('woocommerce_after_cart_contents'); ?>
             </tbody>
         </table>
+          <?php do_action('woocommerce_after_cart_table'); ?>
+        </div>
 
-        <?php do_action('woocommerce_after_cart_table'); ?>
+        <div class="shipping-row">
+          <!--<div class="shipping-calc">-->
+            <!--<?php // woocommerce_shipping_calculator(); ?>-->
+          <!--</div>-->
+          <div class="cart-totals">
+          <?php woocommerce_cart_totals(); ?>
+        </div>
+        </div>
 
-        <div class="order-summary">
-            <div class="cart-totals">
-                <?php woocommerce_cart_totals(); ?>
-            </div>
-            <div class="proceed-to-checkout">
-                <input type="submit" class="checkout-button button alt" name="proceed" value="<?php _e('Proceed to Checkout &rarr;', 'woocommerce'); ?>"/>
-                <?php do_action('woocommerce_proceed_to_checkout'); ?>
-            </div>
+      <div class="proceed-to-checkout">
+          <input type="submit" class="checkout-button button alt" name="proceed" value="<?php _e('Proceed to Checkout &rarr;', 'woocommerce'); ?>"/>
+          <?php do_action('woocommerce_proceed_to_checkout'); ?>
+          <?php do_action('woocommerce_after_cart'); ?>
         </div>
     </form>
-
-    <!--
-    <div class="cart-collaterals">
-        <?php // do_action('woocommerce_cart_collaterals'); ?>
-        <?php //woocommerce_shipping_calculator(); ?>
-        <?php // woocommerce_cart_totals(); ?>
-    </div>
-    -->
-
-    <?php do_action('woocommerce_after_cart'); ?>
 </div>

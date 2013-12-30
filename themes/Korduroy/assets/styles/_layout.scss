@@ -428,12 +428,11 @@
       .product-thumbnail {
         display: none;
       }
-      .product-remove {
-        text-align: center;
+      .cart-overview {
+        margin-bottom: 20px;
       }
-      .remove {
-        font-size: 20px;
-        font-weight: bold;
+      .shipping-row {
+        margin-bottom: 20px;
       }
     }
     &.checkout-page {
@@ -890,6 +889,23 @@
     &.cart-page {
       .product-thumbnail {
         display: table-cell;
+      }
+      .cart-overview {
+        margin-bottom: 20px;
+      }
+      .shipping-row {
+        @include grid-row(nest);
+        margin-bottom: 20px;
+
+        //.shipping-calc {
+        //  @include grid-column(3);
+        //}
+        .cart-totals {
+          @include grid-column(5, true, false, 7);
+        }
+      }
+      .proceed-to-checkout {
+        @include grid-column(5, true, false, 7);
       }
     }
     &.checkout-page {
