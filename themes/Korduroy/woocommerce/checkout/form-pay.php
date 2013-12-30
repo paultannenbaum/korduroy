@@ -12,7 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $woocommerce;
 ?>
 <form id="order_review" method="post">
-
 	<table class="shop_table">
 		<thead>
 			<tr>
@@ -48,7 +47,6 @@ global $woocommerce;
 			?>
 		</tbody>
 	</table>
-
 	<div id="payment">
 		<?php if ($order->order_total > 0) : ?>
 		<ul class="payment_methods methods">
@@ -89,5 +87,4 @@ global $woocommerce;
 		</div>
 
 	</div>
-
 </form>

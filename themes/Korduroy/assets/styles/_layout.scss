@@ -502,6 +502,17 @@
           #order_comments_field {
             @include grid-column(12);
           }
+          #ss_wc_mailchimp_opt_in_field {
+            @include grid-column(12);
+
+            #ss_wc_mailchimp_opt_in {
+              display: inline;
+              margin-right: 5px;
+            }
+            .checkbox {
+              display: inline;
+            }
+          }
           #shipping_country_field {
             @include grid-column(12);
           }
@@ -539,6 +550,25 @@
       }
       .your-order {
         @include grid-column(12);
+
+        .payment_method_paypal {
+          margin-top: 5px;
+        }
+        .terms {
+          position: relative;
+          margin-top: 20px;
+
+          .input-checkbox {
+            position: absolute;
+            left: 0px;
+            top: 2px;
+          }
+          .checkbox {
+            position: absolute;
+            left: 20px;
+          }
+
+        }
       }
     }
     &.order-received-page {

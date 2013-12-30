@@ -8567,6 +8567,20 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     width: 100%;
     float: left;
   }
+  .store-page.checkout-page .shipping .shipping-inner #ss_wc_mailchimp_opt_in_field {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+  }
+  .store-page.checkout-page .shipping .shipping-inner #ss_wc_mailchimp_opt_in_field #ss_wc_mailchimp_opt_in {
+    display: inline;
+    margin-right: 5px;
+  }
+  .store-page.checkout-page .shipping .shipping-inner #ss_wc_mailchimp_opt_in_field .checkbox {
+    display: inline;
+  }
   .store-page.checkout-page .shipping .shipping-inner #shipping_country_field {
     position: relative;
     padding-left: 0.9375em;
@@ -8650,6 +8664,22 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     padding-right: 0.9375em;
     width: 100%;
     float: left;
+  }
+  .store-page.checkout-page .your-order .payment_method_paypal {
+    margin-top: 5px;
+  }
+  .store-page.checkout-page .your-order .terms {
+    position: relative;
+    margin-top: 20px;
+  }
+  .store-page.checkout-page .your-order .terms .input-checkbox {
+    position: absolute;
+    left: 0px;
+    top: 2px;
+  }
+  .store-page.checkout-page .your-order .terms .checkbox {
+    position: absolute;
+    left: 20px;
   }
   .store-page.order-received-page .store-content {
     width: auto;
