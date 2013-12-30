@@ -46,15 +46,6 @@
           <?php the_widget('WP_Widget_Search'); ?>
         </div>
 
-        <?php global $woocommerce; if (sizeof($woocommerce->cart->cart_contents)>0) :?>
-          <div class="cart-container">
-            <a href="<?php echo $woocommerce->cart->get_cart_url()?>" title="<?php _e('Go To Cart','woothemes') ?>">
-              <?php _e('CART','woothemes') ?>
-              <span class="cart-icon"></span>
-            </a>
-          </div>
-        <?php endif; ?>
-
         <nav role="site-navigation" class="site-navigation">
           <ul class="site-navigation-list">
             <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/shows">Shows</a></li>
@@ -64,7 +55,6 @@
             <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/about">About</a></li>
           </ul>
         </nav>
-
 
       </div>
     </div>

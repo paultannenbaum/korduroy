@@ -29,6 +29,7 @@
       <nav class="information">
         <h4 class="section-title">Information</h4>
         <ul class="info-nav">
+          <li><a href="<?php echo site_url(); ?>/cart">Shopping Cart</a></li>
           <li><a href="<?php echo site_url(); ?>/links">links</a></li>
           <li><a href="<?php echo site_url(); ?>/submissions">submissions</a></li>
           <li><a href="<?php echo site_url(); ?>/returns">returns</a></li>
