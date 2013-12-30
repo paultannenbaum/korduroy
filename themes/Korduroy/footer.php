@@ -34,7 +34,7 @@
           <li><a href="<?php echo site_url(); ?>/returns">returns</a></li>
           <li><a href="<?php echo site_url(); ?>/help">help</a></li>
           <!--<li><a href="#contact-form" class="contact-form-link">contact us</a></li>-->
-          <li><a href="mailto:paultannenbaum@gmail.com">contact us</a></li>
+          <li><a href="mailto:info@korduroy.tv">contact us</a></li>
         </ul>
       </nav>
 
@@ -61,11 +61,10 @@
       <div class="stay-updated">
         <h4 class="section-title">Stay Updated</h4>
         <form id="newsletter-signup" method="post">
-          <!-- TODO: Switch this value from js to html, and gracefully degrade -->
+          <?php // TODO: Switch this value from js to html, and gracefully degrade ?>
           <input type="hidden" id="mc_submit_type" name="mc_submit_type" value="js">
           <input type="hidden" name="mcsf_action" value="mc_submit_signup_form">
           <?php wp_nonce_field('mc_submit_signup_form', '_mc_submit_signup_form_nonce', false); ?>
-
           <label>Receive our newsletter</label>
           <input class="email" name="mc_mv_EMAIL" id="mc_mv_EMAIL" placeholder="YOUR EMAIL ADDRESS" type="email">
           <input class="submit button" type="submit" value="SIGN UP">
