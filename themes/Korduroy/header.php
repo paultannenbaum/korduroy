@@ -10,7 +10,7 @@
 <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 
 <head>
-  <title><?php wp_title(''); ?></title>
+  <title><?php is_front_page() ? bloginfo('title') : wp_title(''); ?></title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
