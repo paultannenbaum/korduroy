@@ -34,8 +34,7 @@
           <li><a href="<?php echo site_url(); ?>/submissions">submissions</a></li>
           <li><a href="<?php echo site_url(); ?>/returns">returns</a></li>
           <li><a href="<?php echo site_url(); ?>/help">help</a></li>
-          <!--<li><a href="#contact-form" class="contact-form-link">contact us</a></li>-->
-          <li><a href="mailto:info@korduroy.tv">contact us</a></li>
+          <li><a href="#contact-form" class="contact-form-link">contact us</a></li>
         </ul>
       </nav>
 
