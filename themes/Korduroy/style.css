@@ -4502,13 +4502,13 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     padding: 0 0.625em 1.25em;
   }
   #footer .sponsors-container .sponsors-list > li {
-    width: 25%;
+    width: 33.33333%;
     padding: 0 0.625em 1.25em;
   }
   #footer .sponsors-container .sponsors-list > li:nth-of-type(n) {
     clear: none;
   }
-  #footer .sponsors-container .sponsors-list > li:nth-of-type(4n+1) {
+  #footer .sponsors-container .sponsors-list > li:nth-of-type(3n+1) {
     clear: both;
   }
   #footer .logo-container {
@@ -5878,13 +5878,13 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     padding: 0 0.625em 1.25em;
   }
   #footer .sponsors-container .sponsors-list > li {
-    width: 12.5%;
+    width: 16.66667%;
     padding: 0 0.625em 1.25em;
   }
   #footer .sponsors-container .sponsors-list > li:nth-of-type(n) {
     clear: none;
   }
-  #footer .sponsors-container .sponsors-list > li:nth-of-type(8n+1) {
+  #footer .sponsors-container .sponsors-list > li:nth-of-type(6n+1) {
     clear: both;
   }
   #footer .logo-container {

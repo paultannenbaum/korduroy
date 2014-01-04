@@ -8,11 +8,9 @@
         <li class="sponsor-list-item leatherman"><a href="http://www.leatherman.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_leatherman.png"></a></li>
         <li class="sponsor-list-item go-pro"><a href="http://www.gopro.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_gopro.png"></a></li>
         <li class="sponsor-list-item axxe"><a href="http://www.axxe.jp.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_axxe.png"></a></li>
-        <li class="sponsor-list-item poler"><a href="http://www.polerstuff.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_poler.png"></a></li>
         <li class="sponsor-list-item reef"><a href="http://www.reef.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_reef.png"></a></li>
         <li class="sponsor-list-item tropitreats"><a href="http://www.tropitreats.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_tropitreats.png"></a></li>
         <li class="sponsor-list-item audiosocket"><a href="http://www.audiosocket.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_audio_socket.png"></a></li>
-        <li class="sponsor-list-item vstr"><a href="http://www.vstr.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_vstr.png"></a></li>
       </ul>
 
     </div>
