@@ -2,8 +2,8 @@
 Contributors: anderly, saintsystems
 Tags: woocommerce, mailchimp
 Requires at least: 3.6
-Tested up to: 3.7.1
-Stable tag: 1.1
+Tested up to: 3.8
+Stable tag: 1.1.3
 License: GPLv3
 
 Simple MailChimp integration for WooCommerce.
@@ -66,6 +66,15 @@ Thanks in advance for your help on any translation efforts!
 1. WooCommerce MailChimp options screen.
 
 == Changelog ==
+
+= 1.1.3 =
+* Minor action hook change since order meta (needed for MailChimp API call) is not yet available on 'woocommerce_new_order' hook
+
+= 1.1.2 =
+* Update to REALLY address issue with subscriptions not occurring on order create "pending"
+
+= 1.1.1 =
+* Update to address issue with subscriptions not occurring on order create "pending"
 
 = 1.1 =
 * Add the option to display an opt-in field on checkout

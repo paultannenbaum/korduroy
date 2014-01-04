@@ -53,6 +53,15 @@ Thanks in advance for your help on any translation efforts!
 
 ### Changelog
 
+##### 1.1.3
+* Minor action hook change since order meta (needed for MailChimp API call) is not yet available on 'woocommerce_new_order' hook
+
+##### 1.1.2
+* Update to REALLY address issue with subscriptions not occurring on order create "pending"
+
+##### 1.1.1
+* Update to address issue with subscriptions not occurring on order create "pending"
+
 ##### 1.1
 * Add the option to display an opt-in field on checkout
 
