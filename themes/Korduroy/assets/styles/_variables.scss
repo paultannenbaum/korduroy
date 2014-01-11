@@ -44,3 +44,11 @@ $bold: 700;
   background: #fff;
   border: none;
 }
+
+%blue-link {
+  color:#2084ea;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
