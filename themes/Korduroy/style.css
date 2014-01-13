@@ -4196,10 +4196,10 @@ h1, .about-page .crew-member .member-name, h2, .supporters-page .info-items .nam
   border: none;
 }
 
-.shows-page a, .blog-page .blog-post .blog-post-body a {
+.shows-page .episode-info a, .blog-page .blog-post .blog-post-body a, .store-page a, .store-page.store-archives .product .price {
   color: #2084ea;
 }
-.shows-page a:hover, .blog-page .blog-post .blog-post-body a:hover {
+.shows-page .episode-info a:hover, .blog-page .blog-post .blog-post-body a:hover, .store-page a:hover, .store-page.store-archives .product .price:hover {
   text-decoration: underline;
 }
 
@@ -7245,6 +7245,9 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   zoom: 1;
   *display: inline;
 }
+.tag-list .tag-list-item a:hover {
+  text-decoration: none;
+}
 
 .credits {
   margin-bottom: 22px;
@@ -7815,6 +7818,9 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   font-weight: bold;
   color: #2084ea;
 }
+.blog-page .blog-post .blog-post-body .tag-list-item a:hover {
+  text-decoration: none;
+}
 
 .about-page .crew-member .member-name {
   font-size: 18px;
@@ -7947,7 +7953,6 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 .store-page.store-archives .product .price {
   display: block;
   font-size: 14px;
-  color: #7c1f32;
 }
 .store-page.store-single .featured-product-image {
   width: 100%;

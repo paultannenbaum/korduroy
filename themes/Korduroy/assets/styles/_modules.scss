@@ -529,6 +529,10 @@
     a {
       @extend %pressed-button;
       @include inline-block;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -890,7 +894,6 @@
   $small-channel-icon-width: 192px;
   $small-channel-icon-height: 70px;
 
-
   &.shows-index, &.shows-single {
     .channel-header {
       min-height: $small-channel-icon-height;
@@ -970,19 +973,20 @@
     }
   }
 
-  a {
-    @extend %blue-link;
-  }
   .channel-separator {
     @extend .horizontal-separator-light;
     margin-top: 0px;
   }
   .episode-info {
     @include clearfix;
+
     min-height: $small-channel-icon-height;
     position: relative;
     margin-top: 20px;
 
+    a {
+      @extend %blue-link;
+    }
     .episode-aside {
       width: $small-channel-icon-width;
       min-height: $small-channel-icon-height;
@@ -1154,18 +1158,23 @@
         font-weight: bold;
         color: #2084ea;
       }
+      .tag-list-item {
+        a:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
 }
 
 .supporters-page {
+  @extend p;
+
   .info-items {
     .name {
       @extend h2;
     }
   }
-  .description-container {}
-  @extend p;
 }
 
 .about-page {
@@ -1317,6 +1326,9 @@
 }
 
 .store-page {
+  a {
+    @extend %blue-link;
+  }
   button, .button {
     color: $ktv-blue;
     &:hover {
@@ -1344,7 +1356,7 @@
       .price {
         display: block;
         font-size: 14px;
-        color: #7c1f32;
+        @extend %blue-link;
       }
     }
   }
