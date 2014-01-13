@@ -5375,6 +5375,9 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   .store-page.cart-page .shipping-row {
     margin-bottom: 20px;
   }
+  .store-page.cart-page .shipping-row .proceed-to-checkout {
+    margin-top: 20px;
+  }
   .store-page.checkout-page .store-content {
     width: auto;
     margin-left: -0.9375em;
@@ -6492,16 +6495,23 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   .store-page.cart-page .shipping-row:after {
     clear: both;
   }
+  .store-page.cart-page .shipping-row .shipping-calc {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 25%;
+    float: left;
+  }
   .store-page.cart-page .shipping-row .cart-totals {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     width: 41.66667%;
     float: right;
-    margin-left: 58.33333%;
+    margin-left: 33.33333%;
     float: left;
   }
-  .store-page.cart-page .proceed-to-checkout {
+  .store-page.cart-page .shipping-row .proceed-to-checkout {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
@@ -8072,6 +8082,12 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   width: 100%;
   margin-bottom: 5px;
 }
+.store-page.cart-page .shipping input {
+  display: inline-block;
+}
+.store-page.cart-page .shipping label {
+  display: inline;
+}
 .store-page.cart-page .shipping-calc select {
   margin-bottom: 0px;
 }
@@ -8124,6 +8140,12 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   display: inline-block;
   margin: 0px;
   margin-right: 5px;
+}
+.store-page.checkout-page .review-shipping input {
+  display: inline-block;
+}
+.store-page.checkout-page .review-shipping label {
+  display: inline;
 }
 .store-page.checkout-page #payment label {
   display: inline-block;

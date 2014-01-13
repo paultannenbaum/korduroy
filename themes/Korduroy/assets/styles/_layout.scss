@@ -433,6 +433,10 @@
       }
       .shipping-row {
         margin-bottom: 20px;
+
+        .proceed-to-checkout {
+          margin-top: 20px;
+        }
       }
     }
     &.checkout-page {
@@ -927,16 +931,17 @@
         @include grid-row(nest);
         margin-bottom: 20px;
 
-        //.shipping-calc {
-        //  @include grid-column(3);
-        //}
+        .shipping-calc {
+          @include grid-column(3);
+        }
         .cart-totals {
+          @include grid-column(5, true, false, 4);
+        }
+        .proceed-to-checkout {
           @include grid-column(5, true, false, 7);
         }
       }
-      .proceed-to-checkout {
-        @include grid-column(5, true, false, 7);
-      }
+
     }
     &.checkout-page {
       .store-content {

@@ -1492,6 +1492,14 @@
         margin-bottom: 5px;
       }
     }
+    .shipping {
+      input {
+        display: inline-block;
+      }
+      label {
+        display: inline;
+      }
+    }
     .shipping-calc {
       select {
         margin-bottom: 0px;
@@ -1554,6 +1562,14 @@
             margin-right: 5px;
           }
         }
+      }
+    }
+    .review-shipping {
+      input {
+        display: inline-block;
+      }
+      label {
+        display: inline;
       }
     }
     #payment {
