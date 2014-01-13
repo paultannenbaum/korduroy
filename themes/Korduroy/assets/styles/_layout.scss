@@ -237,6 +237,9 @@
         @include grid-column(12);
       }
     }
+    .related-posts-items {
+      @include block-grid(2);
+    }
   }
   .blog-page {
 
@@ -301,6 +304,9 @@
         }
         .blog-post-footer {
           margin-top: 20px;
+        }
+        .related-posts-items {
+          @include block-grid(2);
         }
       }
     }
@@ -784,6 +790,9 @@
         @include block-grid(6);
       }
     }
+    .related-posts-items {
+      @include block-grid(4);
+    }
   }
   .blog-page {
     &.blog-index-page, &.blog-archives-page {
@@ -826,6 +835,9 @@
               float: right;
             }
           }
+        }
+        .related-posts-items {
+          @include block-grid(4);
         }
       }
     }

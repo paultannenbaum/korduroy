@@ -58,6 +58,7 @@
           <?php endif; ?>
           <div class="tags">
             <?php get_template_part('partials/tag-list'); ?>
+            <?php related_posts() ?>
           </div>
         </div>
       </div>

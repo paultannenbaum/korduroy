@@ -17,13 +17,14 @@ function shows_post_type() {
     'menu_name'          => 'Shows'
   );
   $args = array(
-    'labels'        => $labels,
-    'public'        => true,
-    'menu_position' => 5,
-    'supports'      => array( 'title', 'editor', 'thumbnail', 'comments' ),
-    'taxonomies'    => array( 'show_category', 'post_tag' ),
-    'rewrite' => array( 'slug' => 'shows/%show_category%' ),
-    'has_archive' => 'shows'
+    'labels'             => $labels,
+    'public'             => true,
+    'menu_position'      => 5,
+    'supports'           => array( 'title', 'editor', 'thumbnail', 'comments' ),
+    'taxonomies'         => array( 'show_category', 'post_tag' ),
+    'rewrite'            => array( 'slug' => 'shows/%show_category%' ),
+    'has_archive'        => 'shows',
+    'yarpp_support'      => true
   );
   register_post_type( 'shows', $args );
 }

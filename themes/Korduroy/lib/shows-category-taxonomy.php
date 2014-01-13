@@ -13,16 +13,17 @@ function shows_category_taxonomy()  {
     'separate_items_with_commas' => __( 'Separate show categories with commas', 'text_domain' ),
     'search_items'               => __( 'Search show categories', 'text_domain' ),
     'add_or_remove_items'        => __( 'Add or remove show categories', 'text_domain' ),
-    'choose_from_most_used'      => __( 'Choose from the most used show categories', 'text_domain' )
+    'choose_from_most_used'      => __( 'Choose from the most used show categories', 'text_domain' ),
   );
   $args = array(
     'labels'                     => $labels,
     'hierarchical'               => true,
     'public'                     => true,
-    'rewrite' => array( 'slug' => 'shows' ),
+    'rewrite' => array( 'slug'   => 'shows' ),
     'show_ui'                    => true,
     'show_admin_column'          => true,
-    'show_in_nav_menus'          => true
+    'show_in_nav_menus'          => true,
+    'yarpp_support'              => true
   );
 
   register_taxonomy( 'show_category', 'custom_post_type', $args );
