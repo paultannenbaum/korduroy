@@ -113,22 +113,6 @@ $woocommerce->show_messages();
                 <?php $woocommerce->nonce_field('cart') ?>
             </tr>
 
-<!--            <tr>-->
-<!--                <td colspan="6" class="actions">-->
-<!---->
-<!--                    --><?php //if ($woocommerce->cart->coupons_enabled()) { ?>
-<!--                        <div class="coupon">-->
-<!--                            <label for="coupon_code">--><?php //_e('Coupon Code', 'woocommerce'); ?><!--:</label>-->
-<!--                            <input name="coupon_code" class="input-text coupon-input" id="coupon_code" value=""/>-->
-<!--                            <input type="submit" class="button apply-coupon" name="apply_coupon" value="--><?php //_e('Apply Coupon', 'woocommerce'); ?><!--"/>-->
-<!--                            --><?php //do_action('woocommerce_cart_coupon'); ?>
-<!--                        </div>-->
-<!--                    --><?php //} ?>
-<!---->
-<!--                    <input type="submit" class="button update-cart" name="update_cart" value="--><?php //_e('Update Cart', 'woocommerce'); ?><!--"/>-->
-<!--                </td>-->
-<!--            </tr>-->
-
             <?php do_action('woocommerce_after_cart_contents'); ?>
             </tbody>
         </table>
