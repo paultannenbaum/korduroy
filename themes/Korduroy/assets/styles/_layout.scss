@@ -493,6 +493,16 @@
           #billing_phone_field {
             @include grid-column(6);
           }
+          #ss_wc_mailchimp_opt_in_field {
+            @include grid-column(12);
+
+            input {
+              display: inline;
+            }
+            label {
+              display: inline;
+            }
+          }
         }
       }
       .shipping {
@@ -577,7 +587,6 @@
             position: absolute;
             left: 20px;
           }
-
         }
       }
     }
