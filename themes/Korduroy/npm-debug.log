@@ -1,0 +1,92 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.1.33
+3 info using node@v0.8.1
+4 verbose config file /Users/paultannenbaum/.npmrc
+5 verbose config file /usr/local/etc/npmrc
+6 verbose config file /usr/local/lib/node_modules/npm/npmrc
+7 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/package.json
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ '/Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy',
+9 verbose install   [ 'grunt',
+9 verbose install     'grunt-contrib-compass',
+9 verbose install     'grunt-contrib-imagemin',
+9 verbose install     'grunt-contrib-jshint',
+9 verbose install     'grunt-contrib-uglify',
+9 verbose install     'grunt-contrib-watch',
+9 verbose install     'grunt-rsync',
+9 verbose install     'matchdep',
+9 verbose install     'grunt-contrib-coffee' ] ]
+10 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/package.json
+11 info preinstall Korduroy-Wordpress-Theme@1.0.0
+12 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/bower/package.json
+13 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-coffee/package.json
+14 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-compass/package.json
+15 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-imagemin/package.json
+16 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-jshint/package.json
+17 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-uglify/package.json
+18 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-watch/package.json
+19 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-rsync/package.json
+20 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/matchdep/package.json
+21 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/package.json
+22 verbose readDependencies using package.json deps
+23 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/.bin/package.json
+24 verbose read json /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/.DS_Store/package.json
+25 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/bower/package.json
+26 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-coffee/package.json
+27 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-compass/package.json
+28 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-imagemin/package.json
+29 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-jshint/package.json
+30 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-uglify/package.json
+31 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-contrib-watch/package.json
+32 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/grunt-rsync/package.json
+33 verbose from cache /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy/node_modules/matchdep/package.json
+34 verbose already installed skipping grunt-contrib-imagemin@~0.1.4 /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy
+35 verbose already installed skipping grunt-contrib-jshint@~0.6.0 /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy
+36 verbose already installed skipping grunt-contrib-uglify@~0.2.2 /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy
+37 verbose already installed skipping grunt-contrib-watch@~0.4.4 /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy
+38 verbose already installed skipping grunt-rsync@~0.1.1 /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy
+39 verbose already installed skipping matchdep@~0.1.2 /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy
+40 verbose already installed skipping grunt-contrib-coffee@~0.7.0 /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy
+41 verbose cache add [ 'grunt@~0.4.1', null ]
+42 silly cache add name=undefined spec="grunt@~0.4.1" args=["grunt@~0.4.1",null]
+43 verbose parsed url { pathname: 'grunt@~0.4.1',
+43 verbose parsed url   path: 'grunt@~0.4.1',
+43 verbose parsed url   href: 'grunt@~0.4.1' }
+44 silly cache add name="grunt" spec="~0.4.1" args=["grunt","~0.4.1"]
+45 verbose parsed url { pathname: '~0.4.1', path: '~0.4.1', href: '~0.4.1' }
+46 verbose addNamed [ 'grunt', '~0.4.1' ]
+47 verbose addNamed [ null, '>=0.4.1- <0.5.0-' ]
+48 verbose already installed skipping grunt-contrib-compass@~0.2.0 /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy
+49 verbose lock grunt@~0.4.1 /Users/paultannenbaum/.npm/766a3bd3b096b980774a09a24cfde668dea7e58b-grunt-0-4-1.lock
+50 silly addNameRange { name: 'grunt', range: '>=0.4.1- <0.5.0-', hasData: false }
+51 verbose url raw grunt
+52 verbose url resolving [ 'https://registry.npmjs.org/', './grunt' ]
+53 verbose url resolved https://registry.npmjs.org/grunt
+54 info retry registry request attempt 1 at 18:44:50
+55 http GET https://registry.npmjs.org/grunt
+56 info retry will retry, error on last attempt: Error: SSL Error: CERT_UNTRUSTED
+57 info retry registry request attempt 2 at 18:45:00
+58 http GET https://registry.npmjs.org/grunt
+59 info retry will retry, error on last attempt: Error: SSL Error: CERT_UNTRUSTED
+60 info retry registry request attempt 3 at 18:46:01
+61 http GET https://registry.npmjs.org/grunt
+62 error Error: write EIO
+62 error     at errnoException (net.js:781:11)
+62 error     at Object.afterWrite (net.js:594:19)
+62 error  { [Error: write EIO] code: 'EIO', errno: 'EIO', syscall: 'write' }
+63 error You may report this log at:
+63 error     <http://github.com/isaacs/npm/issues>
+63 error or email it to:
+63 error     <npm-@googlegroups.com>
+64 error System Darwin 13.0.0
+65 error command "node" "/usr/local/bin/npm" "install"
+66 error cwd /Users/paultannenbaum/Projects/wordpress/wp-content/themes/Korduroy
+67 error node -v v0.8.1
+68 error npm -v 1.1.33
+69 error syscall write
+70 error code EIO
+71 error message write EIO
+72 error errno EIO
+73 error EIO errno
+74 verbose exit [ 1, true ]
