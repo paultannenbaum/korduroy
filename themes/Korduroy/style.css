@@ -8482,3 +8482,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     float: right;
   }
 }
+
+.foo {
+  text-align: center;
+}
