@@ -8482,3 +8482,9 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     float: right;
   }
 }
+
+.blog-post-body ul, .blog-post-body ol, .episode-desc ul, .episode-desc ol { margin-bottom: 20px; margin-left: 10px; }
+.blog-post-body ul, .episode-desc ul { list-style: disc; }
+.blog-post-body ul li, .blog-post-body ol li, .episode-desc ul li, .episode-desc ol li { margin-left: 1em;}
+img.alignright { float: right; margin-left: 10px; }
+img.alignleft { float: left; margin-right: 10px; }
