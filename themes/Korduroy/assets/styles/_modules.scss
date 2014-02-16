@@ -1024,6 +1024,31 @@
     a {
       @extend %blue-link;
     }
+    ul {
+      margin-bottom: 20px;
+      margin-left: 10px;
+      list-style: disc;
+
+      li {
+        margin-left: 1em;
+      }
+    }
+    ol {
+      margin-bottom: 20px;
+      margin-left: 10px;
+
+      li {
+        margin-left: 1em;
+      }
+    }
+    .alignright {
+      float: right;
+      margin-left: 10px;
+    }
+    .alignleft {
+      float: left;
+      margin-right: 10px;
+    }
     .episode-aside {
       width: $small-channel-icon-width;
       min-height: $small-channel-icon-height;
@@ -1184,6 +1209,31 @@
       p {
         margin-bottom: 20px;
         word-wrap: break-word;
+      }
+      ul {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        list-style: disc;
+
+        li {
+          margin-left: 1em;
+        }
+      }
+      ol {
+        margin-bottom: 20px;
+        margin-left: 10px;
+
+        li {
+          margin-left: 1em;
+        }
+      }
+      .alignright {
+        float: right;
+        margin-left: 10px;
+      }
+      .alignleft {
+        float: left;
+        margin-right: 10px;
       }
       .wp-caption-text {
         font-size: 12px;

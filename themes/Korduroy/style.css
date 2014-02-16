@@ -7832,6 +7832,29 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 .shows-page .episode-info:after {
   clear: both;
 }
+.shows-page .episode-info ul {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  list-style: disc;
+}
+.shows-page .episode-info ul li {
+  margin-left: 1em;
+}
+.shows-page .episode-info ol {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.shows-page .episode-info ol li {
+  margin-left: 1em;
+}
+.shows-page .episode-info .alignright {
+  float: right;
+  margin-left: 10px;
+}
+.shows-page .episode-info .alignleft {
+  float: left;
+  margin-right: 10px;
+}
 .shows-page .episode-info .episode-aside {
   width: 192px;
   min-height: 70px;
@@ -7970,6 +7993,29 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 .blog-page .blog-post .blog-post-body p, .blog-page .blog-post .blog-post-body .supporters-page, .blog-page .blog-post .blog-post-body .about-page .crew-member .member-desc, .about-page .crew-member .blog-page .blog-post .blog-post-body .member-desc {
   margin-bottom: 20px;
   word-wrap: break-word;
+}
+.blog-page .blog-post .blog-post-body ul {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  list-style: disc;
+}
+.blog-page .blog-post .blog-post-body ul li {
+  margin-left: 1em;
+}
+.blog-page .blog-post .blog-post-body ol {
+  margin-bottom: 20px;
+  margin-left: 11px;
+}
+.blog-page .blog-post .blog-post-body ol li {
+  margin-left: 1em;
+}
+.blog-page .blog-post .blog-post-body .alignright {
+  float: right;
+  margin-left: 10px;
+}
+.blog-page .blog-post .blog-post-body .alignleft {
+  float: left;
+  margin-right: 10px;
 }
 .blog-page .blog-post .blog-post-body .wp-caption-text {
   font-size: 12px;
@@ -8482,9 +8528,3 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     float: right;
   }
 }
-
-.blog-post-body ul, .blog-post-body ol, .episode-desc ul, .episode-desc ol { margin-bottom: 20px; margin-left: 10px; }
-.blog-post-body ul, .episode-desc ul { list-style: disc; }
-.blog-post-body ul li, .blog-post-body ol li, .episode-desc ul li, .episode-desc ol li { margin-left: 1em;}
-img.alignright { float: right; margin-left: 10px; }
-img.alignleft { float: left; margin-right: 10px; }
