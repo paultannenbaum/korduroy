@@ -7971,7 +7971,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   margin-bottom: 20px;
   word-wrap: break-word;
 }
-.blog-page .blog-post .blog-post-body .wp-caption-text {
+.blog-page .blog-post .blog-post-body .wp-caption-text, .single-shows .episode-info .episode-desc .wp-caption-text {
   font-size: 12px;
   font-style: italic;
   margin-top: -10px;
