@@ -1021,12 +1021,6 @@
     position: relative;
     margin-top: 20px;
 
-    img, object, iframe {
-      @extend %image-border;
-      max-width: 100%;
-      display: block;
-      margin: 10px 0;
-    }
     a {
       @extend %blue-link;
       word-wrap: break-word;
@@ -1034,31 +1028,6 @@
     p {
       margin-bottom: 20px;
       word-wrap: break-word;
-    }
-    ul {
-      margin-bottom: 20px;
-      margin-left: 10px;
-      list-style: disc;
-
-      li {
-        margin-left: 1em;
-      }
-    }
-    ol {
-      margin-bottom: 20px;
-      margin-left: 10px;
-
-      li {
-        margin-left: 1em;
-      }
-    }
-    .alignright {
-      float: right;
-      margin-left: 10px;
-    }
-    .alignleft {
-      float: left;
-      margin-right: 10px;
     }
     .episode-aside {
       width: $small-channel-icon-width;
@@ -1104,8 +1073,40 @@
       }
     }
     .episode-desc {
-      margin-top: 10px;
+      margin-top: 30px;
       margin-bottom: 20px;
+
+      ul {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        list-style: disc;
+
+        li {
+          margin-left: 1em;
+        }
+      }
+      ol {
+        margin-bottom: 20px;
+        margin-left: 10px;
+
+        li {
+          margin-left: 1em;
+        }
+      }
+      .alignright {
+        float: right;
+        margin-left: 10px;
+      }
+      .alignleft {
+        float: left;
+        margin-right: 10px;
+      }
+      img, object, iframe {
+        @extend %image-border;
+        max-width: 100%;
+        display: block;
+        margin: 10px 0;
+      }
     }
     .sharing-container {
       color: $ktv-grey;
@@ -1236,40 +1237,44 @@
         margin-bottom: 20px;
         word-wrap: break-word;
       }
-      ul {
-        margin-bottom: 20px;
-        margin-left: 10px;
-        list-style: disc;
+      .author-content {
+        margin-top: 20px;
 
-        li {
-          margin-left: 1em;
-        }
-      }
-      ol {
-        margin-bottom: 20px;
-        margin-left: 10px;
+        ul {
+          margin-bottom: 20px;
+          margin-left: 10px;
+          list-style: disc;
 
-        li {
-          margin-left: 1em;
+          li {
+            margin-left: 1em;
+          }
         }
-      }
-      .alignright {
-        float: right;
-        margin-left: 10px;
-      }
-      .alignleft {
-        float: left;
-        margin-right: 10px;
-      }
-      .wp-caption-text {
-        font-size: 12px;
-        font-style: italic;
-        margin-top: -10px;
-        padding: 0 10px;
-      }
-      .question {
-        font-weight: bold;
-        color: #2084ea;
+        ol {
+          margin-bottom: 20px;
+          margin-left: 10px;
+
+          li {
+            margin-left: 1em;
+          }
+        }
+        .alignright {
+          float: right;
+          margin-left: 10px;
+        }
+        .alignleft {
+          float: left;
+          margin-right: 10px;
+        }
+        .wp-caption-text {
+          font-size: 12px;
+          font-style: italic;
+          margin-top: -10px;
+          padding: 0 10px;
+        }
+        .question {
+          font-weight: bold;
+          color: #2084ea;
+        }
       }
       .tag-list-item {
         a:hover {

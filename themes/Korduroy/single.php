@@ -29,7 +29,9 @@
 
           </header>
           <div class="blog-post-body">
-            <?php the_content();?>
+            <div class="author-content">
+              <?php the_content();?>
+            </div>
             <footer class="blog-post-footer">
               <?php get_template_part('partials/tag-list'); ?>
               <?php related_posts() ?>

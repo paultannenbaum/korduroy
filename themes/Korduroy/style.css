@@ -4187,7 +4187,7 @@ h1, .about-page .crew-member .member-name, h2, .supporters-page .info-items .nam
   background: rgba(153, 153, 153, 0.2);
 }
 
-#featured-slider, #related-posts .related-posts-item img, .featured-campaigns .campaign img, .video-wrapper iframe, .image-border, .home-page .blog-post .blog-post-thumbnail img, .shows-page .episode-info img, .shows-page .episode-info object, .shows-page .episode-info iframe, .blog-page .blog-post .blog-post-thumbnail img, .blog-page .blog-post .blog-post-body img, .blog-page .blog-post .blog-post-body object, .blog-page .blog-post .blog-post-body iframe, .tag-page .tag-post .tag-thumbnail img, .search-page .search-post .search-thumbnail img, .default-page img, .store-page.store-archives .product img, .store-page.store-single .featured-product-image, .store-page.store-single .product-thumb img {
+#featured-slider, #related-posts .related-posts-item img, .featured-campaigns .campaign img, .video-wrapper iframe, .image-border, .home-page .blog-post .blog-post-thumbnail img, .shows-page .episode-info .episode-desc img, .shows-page .episode-info .episode-desc object, .shows-page .episode-info .episode-desc iframe, .blog-page .blog-post .blog-post-thumbnail img, .blog-page .blog-post .blog-post-body img, .blog-page .blog-post .blog-post-body object, .blog-page .blog-post .blog-post-body iframe, .tag-page .tag-post .tag-thumbnail img, .search-page .search-post .search-thumbnail img, .default-page img, .store-page.store-archives .product img, .store-page.store-single .featured-product-image, .store-page.store-single .product-thumb img {
   -webkit-box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
   -moz-box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
   box-shadow: 0 2px 10px rgba(102, 102, 102, 0.2);
@@ -7832,40 +7832,12 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 .shows-page .episode-info:after {
   clear: both;
 }
-.shows-page .episode-info img, .shows-page .episode-info object, .shows-page .episode-info iframe {
-  max-width: 100%;
-  display: block;
-  margin: 10px 0;
-}
 .shows-page .episode-info a {
   word-wrap: break-word;
 }
 .shows-page .episode-info p, .shows-page .episode-info .supporters-page, .shows-page .episode-info .about-page .crew-member .member-desc, .about-page .crew-member .shows-page .episode-info .member-desc {
   margin-bottom: 20px;
   word-wrap: break-word;
-}
-.shows-page .episode-info ul {
-  margin-bottom: 20px;
-  margin-left: 10px;
-  list-style: disc;
-}
-.shows-page .episode-info ul li {
-  margin-left: 1em;
-}
-.shows-page .episode-info ol {
-  margin-bottom: 20px;
-  margin-left: 10px;
-}
-.shows-page .episode-info ol li {
-  margin-left: 1em;
-}
-.shows-page .episode-info .alignright {
-  float: right;
-  margin-left: 10px;
-}
-.shows-page .episode-info .alignleft {
-  float: left;
-  margin-right: 10px;
 }
 .shows-page .episode-info .episode-aside {
   width: 192px;
@@ -7909,8 +7881,36 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   background-image: url(assets/images/channel-icons/small/surf_sufficient.png);
 }
 .shows-page .episode-info .episode-desc {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 20px;
+}
+.shows-page .episode-info .episode-desc ul {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  list-style: disc;
+}
+.shows-page .episode-info .episode-desc ul li {
+  margin-left: 1em;
+}
+.shows-page .episode-info .episode-desc ol {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.shows-page .episode-info .episode-desc ol li {
+  margin-left: 1em;
+}
+.shows-page .episode-info .episode-desc .alignright {
+  float: right;
+  margin-left: 10px;
+}
+.shows-page .episode-info .episode-desc .alignleft {
+  float: left;
+  margin-right: 10px;
+}
+.shows-page .episode-info .episode-desc img, .shows-page .episode-info .episode-desc object, .shows-page .episode-info .episode-desc iframe {
+  max-width: 100%;
+  display: block;
+  margin: 10px 0;
 }
 .shows-page .episode-info .sharing-container {
   color: #999999;
@@ -8019,36 +8019,39 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   margin-bottom: 20px;
   word-wrap: break-word;
 }
-.blog-page .blog-post .blog-post-body ul {
+.blog-page .blog-post .blog-post-body .author-content {
+  margin-top: 20px;
+}
+.blog-page .blog-post .blog-post-body .author-content ul {
   margin-bottom: 20px;
   margin-left: 10px;
   list-style: disc;
 }
-.blog-page .blog-post .blog-post-body ul li {
+.blog-page .blog-post .blog-post-body .author-content ul li {
   margin-left: 1em;
 }
-.blog-page .blog-post .blog-post-body ol {
+.blog-page .blog-post .blog-post-body .author-content ol {
   margin-bottom: 20px;
   margin-left: 10px;
 }
-.blog-page .blog-post .blog-post-body ol li {
+.blog-page .blog-post .blog-post-body .author-content ol li {
   margin-left: 1em;
 }
-.blog-page .blog-post .blog-post-body .alignright {
+.blog-page .blog-post .blog-post-body .author-content .alignright {
   float: right;
   margin-left: 10px;
 }
-.blog-page .blog-post .blog-post-body .alignleft {
+.blog-page .blog-post .blog-post-body .author-content .alignleft {
   float: left;
   margin-right: 10px;
 }
-.blog-page .blog-post .blog-post-body .wp-caption-text {
+.blog-page .blog-post .blog-post-body .author-content .wp-caption-text {
   font-size: 12px;
   font-style: italic;
   margin-top: -10px;
   padding: 0 10px;
 }
-.blog-page .blog-post .blog-post-body .question {
+.blog-page .blog-post .blog-post-body .author-content .question {
   font-weight: bold;
   color: #2084ea;
 }
