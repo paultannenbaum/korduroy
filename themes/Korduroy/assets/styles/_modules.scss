@@ -1021,8 +1021,19 @@
     position: relative;
     margin-top: 20px;
 
+    img, object, iframe {
+      @extend %image-border;
+      max-width: 100%;
+      display: block;
+      margin: 10px 0;
+    }
     a {
       @extend %blue-link;
+      word-wrap: break-word;
+    }
+    p {
+      margin-bottom: 20px;
+      word-wrap: break-word;
     }
     ul {
       margin-bottom: 20px;
@@ -1119,6 +1130,21 @@
         .addthis_counter.addthis_pill_style {
           float: left;
         }
+      }
+    }
+    .wp-caption-text {
+      font-size: 12px;
+      font-style: italic;
+      margin-top: -10px;
+      padding: 0 10px;
+    }
+    .question {
+      font-weight: bold;
+      color: #2084ea;
+    }
+    .tag-list-item {
+      a:hover {
+        text-decoration: none;
       }
     }
   }
@@ -1895,4 +1921,3 @@
     }
   }
 }
-
