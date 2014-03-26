@@ -8,17 +8,12 @@
     <?php while ( have_posts() ) : the_post(); ?>
 
       <?php
-        echo 'starting';
-        $id = get_the_id();
+        // Updates the user_views count
         if (get_field('user_views')) {
+          $id = get_the_id();
           $views = get_field('user_views');
-        } else {
-          $views = 1;
+          update_field('user_views', $views+1, $id);
         }
-        echo $views;
-        echo 'updating';
-        update_field('user_views', $views+1, $id);
-        the_field('user_views');
       ?>
 
       <div class="video-wrapper">
