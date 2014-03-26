@@ -7,6 +7,15 @@
 
     <?php while ( have_posts() ) : the_post(); ?>
 
+      <?php
+        // Updates the user_views count
+        if (get_field('user_views')) {
+          $id = get_the_id();
+          $views = get_field('user_views');
+          update_field('user_views', $views+1, $id);
+        }
+      ?>
+
       <div class="video-wrapper">
         <?php if(get_field('vimeo_id')): ?>
           <iframe src="http://player.vimeo.com/video/<?php the_field('vimeo_id'); ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=cfff66" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
