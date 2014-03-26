@@ -925,6 +925,22 @@
       text-transform: uppercase;
     }
   }
+  .footer-all-container {
+    @extend %pressed-text;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    a {
+      color: $ktv-grey;
+
+      &:hover {
+        color: $ktv-blue;
+      }
+    }
+  }
 }
 
 .shows-page {

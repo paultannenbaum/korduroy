@@ -196,6 +196,9 @@
               </div>
               <hr class="horizontal-separator-light" />
             <?php endforeach; ?>
+            <div class="footer-all-container">
+              <a href="<?php echo site_url(); ?>/blog" class="footer-all-link">View All Posts</a>
+            </div>
           </div>
         </div>
       </div>

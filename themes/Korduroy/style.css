@@ -4165,7 +4165,7 @@ img.rsImg {
   background: transparent url(assets/images/backgrounds/stitch_horizontal.png) repeat-x;
 }
 
-h1, .about-page .crew-member .member-name, h2, .supporters-page .info-items .name, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, #about-sub-nav .sub-nav-list-item, #about-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .aside-navigation .wp-tag-cloud li, .credits .credit .credit-type, .channel-list .episode .episode-title, .more-link, .home-page .section-header .all-container, .store-page.store-archives .product .product-title {
+h1, .about-page .crew-member .member-name, h2, .supporters-page .info-items .name, .about-page .crew-member .member-position, h3, #ktv-sub-nav .sub-nav-list-item, #ktv-sub-nav .cat-item, #about-sub-nav .sub-nav-list-item, #about-sub-nav .cat-item, .aside-navigation .aside-navigation-list li, .aside-navigation .wp-tag-cloud li, .credits .credit .credit-type, .channel-list .episode .episode-title, .more-link, .home-page .section-header .all-container, .home-page .footer-all-container, .store-page.store-archives .product .product-title {
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px white;
 }
@@ -7746,6 +7746,20 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 .home-page .blog-post .blog-post-footer {
   font-size: 10px;
   text-transform: uppercase;
+}
+.home-page .footer-all-container {
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+.home-page .footer-all-container a {
+  color: #999999;
+}
+.home-page .footer-all-container a:hover {
+  color: #2084ea;
 }
 
 .shows-page.shows-index .channel-header, .shows-page.shows-single .channel-header {
