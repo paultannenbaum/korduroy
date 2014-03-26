@@ -9,6 +9,7 @@
 
       <?php
         // Updates the user_views count
+        define('DONOTCACHEPAGE', true);
         if (get_field('user_views')) {
           $id = get_the_id();
           $views = get_field('user_views');
