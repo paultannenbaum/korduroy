@@ -19,6 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="msapplication-TileColor" content="#e8e8e5">
   <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/images/win8-tile-icon.png">
+  <a href="https://plus.google.com/101482048189903462896" rel="publisher" />
 
   <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png">
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
