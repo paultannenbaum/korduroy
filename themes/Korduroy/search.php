@@ -33,7 +33,10 @@
                   <header class="search-post-header">
                     <h1 class="search-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
                   </header>
-                  <?php the_excerpt(); ?>
+                    <div class="blog-post-body">
+                      <?php the_excerpt(); ?>
+                      <a class="more-link" href="<?php the_permalink() ?>">Read More</a>
+                    </div>
                   <footer class="search-post-footer">
                     <div class="date-container">
                       <span class="search-post-date"><?php the_time('F jS, Y') ?></span>

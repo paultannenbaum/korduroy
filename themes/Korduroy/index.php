@@ -33,6 +33,7 @@
             </div>
             <div class="blog-post-body">
               <?php the_excerpt(); ?>
+              <a class="more-link" href="<?php the_permalink() ?>">Read More</a>
             </div>
             <footer class="blog-post-footer">
               <div class="date-container">

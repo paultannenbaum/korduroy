@@ -185,7 +185,10 @@
                     <header class="blog-post-header">
                       <h1 class="blog-post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
                     </header>
-                    <?php the_excerpt(); ?>
+                    <div class="blog-post-body">
+                      <?php the_excerpt(); ?>
+                      <a class="more-link" href="<?php the_permalink() ?>">Read More</a>
+                    </div>
                     <footer class="blog-post-footer">
                       <div class="date-container">
                         <span class="blog-post-date"><?php the_time('F jS, Y') ?></span>
