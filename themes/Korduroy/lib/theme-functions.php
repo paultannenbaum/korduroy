@@ -138,3 +138,12 @@ function html5_search_form( $form ) {
 
   return $form;
 }
+
+/**
+* Adds "show-filter" query variable
+*/
+function add_query_vars_filter( $vars ){
+    $vars[] = "show-filter";
+    return $vars;
+}
+add_filter( 'query_vars', 'add_query_vars_filter' );
