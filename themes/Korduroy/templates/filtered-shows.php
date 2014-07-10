@@ -5,9 +5,9 @@ Template Name: Filtered Shows
 ?>
 
 <?php get_header(); ?>
-<?php get_template_part('partials/shows-sub-nav'); ?>
+<?php get_template_part('partials/shows-sub-nav-v2'); ?>
 
-<div id="body" class="shows-page shows-category">
+<div id="body" class="shows-page filtered-shows">
     <section class="main" role="main">
         <?#php $category = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); ?>
 

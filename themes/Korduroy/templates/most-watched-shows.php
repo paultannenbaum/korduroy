@@ -10,11 +10,11 @@ Template Name: Most Watched Shows
   <?php
     // args
     $args = array(
-      'post_type'		    => 'shows',
-      'posts_per_page'	=> -1,
-      'meta_key'		    => 'user_views',
-      'orderby'		      => 'meta_value_num',
-      'order'			      => 'DESC'
+      'post_type' => 'shows',
+      'posts_per_page' => -1,
+      'meta_key' => 'user_views',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC'
     );
 
     // query

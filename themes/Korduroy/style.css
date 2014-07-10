@@ -6068,6 +6068,46 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   #ktv-sub-nav .list-container .sub-nav-list li {
     padding-bottom: 7px;
   }
+  #ktv-sub-nav .list-container .shows-sub-nav-list {
+    display: inline-block;
+  }
+  #ktv-sub-nav .list-container .shows-sub-nav-list li {
+    margin-right: 15px;
+    display: inline;
+  }
+  #ktv-sub-nav .list-container .drop-down-list-container {
+    *zoom: 1;
+    float: right;
+    margin-left: 10px;
+    position: relative;
+    width: 170px;
+    height: 1.6em;
+    line-height: 1.6em;
+  }
+  #ktv-sub-nav .list-container .drop-down-list-container:before, #ktv-sub-nav .list-container .drop-down-list-container:after {
+    content: " ";
+    display: table;
+  }
+  #ktv-sub-nav .list-container .drop-down-list-container:after {
+    clear: both;
+  }
+  #ktv-sub-nav .list-container .drop-down-list-container .drop-down-list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    background-color: #C9C2B3;
+    border-radius: 3px;
+    text-align: center;
+    padding: 0 5px;
+    overflow: hidden;
+  }
+  #ktv-sub-nav .list-container .drop-down-list-container .drop-down-list[data-state="closed"] {
+    height: 1.6em;
+  }
+  #ktv-sub-nav .list-container .drop-down-list-container .drop-down-list[data-state="open"] {
+    height: auto;
+  }
 
   #about-sub-nav {
     width: 100%;

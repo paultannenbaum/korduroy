@@ -212,6 +212,7 @@
     }
   }
   .shows-page {
+
     .show-channel {
       margin-top: 20px;
 
@@ -242,7 +243,6 @@
     }
   }
   .blog-page {
-
     &.blog-index-page, &.blog-archives-page {
       .blog-posts-container {
         @include grid-column(12);
@@ -728,6 +728,42 @@
         @include block-grid(5);
         li {
           padding-bottom: 7px;
+        }
+      }
+      .shows-sub-nav-list {
+        display: inline-block;
+
+        li {
+          margin-right: 15px;
+          display: inline;
+        }
+      }
+      .drop-down-list-container {
+        @include clearfix;
+        float: right;
+        margin-left: 10px;
+        position: relative;
+        width: 170px;
+        height: 1.6em;
+        line-height: 1.6em;
+
+        .drop-down-list {
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 0;
+          background-color: #C9C2B3;
+          border-radius: 3px;
+          text-align: center;
+          padding: 0 5px;
+          overflow: hidden;
+
+          &[data-state="closed"] {
+            height: 1.6em;
+          }
+          &[data-state="open"] {
+            height: auto;
+          }
         }
       }
     }

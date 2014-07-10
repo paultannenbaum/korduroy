@@ -26,8 +26,8 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <!--[if IE]><link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico"><![endif]-->
 
-  <script type="text/javascript" src="//use.typekit.net/jiy2hqu.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!--<script type="text/javascript" src="//use.typekit.net/jiy2hqu.js"></script>-->
+  <!--<script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
 
   <?# php get_template_part('partials/cdn-javascripts'); // Uncomment when you need to use wp debug bar ?>
   <?php wp_head(); ?>
