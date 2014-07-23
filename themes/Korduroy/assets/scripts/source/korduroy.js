@@ -29,6 +29,35 @@
   jQuery(function() {
     var KTV;
     KTV = KTV || {};
+    KTV.dropDown = (function() {
+      var el, handleClick, hasDropDown, setListeners;
+      el = $('.drop-down-list');
+      hasDropDown = function() {
+        return !!el.length;
+      };
+      setListeners = function() {
+        return el.on('click', handleClick);
+      };
+      handleClick = function() {
+        debugger;
+      };
+      return {
+        init: function() {
+          if (hasDropDown()) {
+            return setListeners();
+          }
+        }
+      };
+    })();
+    return KTV.dropDown.init();
+  });
+
+}).call(this);
+
+(function() {
+  jQuery(function() {
+    var KTV;
+    KTV = KTV || {};
     KTV.homePageSlider = (function() {
       var el, setSlider, setSliderEvents, sliderOptions;
       el = $('#featured-slider');

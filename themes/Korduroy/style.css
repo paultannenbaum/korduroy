@@ -6075,38 +6075,17 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     margin-right: 15px;
     display: inline;
   }
-  #ktv-sub-nav .list-container .drop-down-list-container {
+  #ktv-sub-nav .list-container .shows-sub-nav-list .drop-down-list-container {
     *zoom: 1;
     float: right;
-    margin-left: 10px;
-    position: relative;
-    width: 170px;
-    height: 1.6em;
-    line-height: 1.6em;
+    margin-right: 0px;
   }
-  #ktv-sub-nav .list-container .drop-down-list-container:before, #ktv-sub-nav .list-container .drop-down-list-container:after {
+  #ktv-sub-nav .list-container .shows-sub-nav-list .drop-down-list-container:before, #ktv-sub-nav .list-container .shows-sub-nav-list .drop-down-list-container:after {
     content: " ";
     display: table;
   }
-  #ktv-sub-nav .list-container .drop-down-list-container:after {
+  #ktv-sub-nav .list-container .shows-sub-nav-list .drop-down-list-container:after {
     clear: both;
-  }
-  #ktv-sub-nav .list-container .drop-down-list-container .drop-down-list {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-    background-color: #C9C2B3;
-    border-radius: 3px;
-    text-align: center;
-    padding: 0 5px;
-    overflow: hidden;
-  }
-  #ktv-sub-nav .list-container .drop-down-list-container .drop-down-list[data-state="closed"] {
-    height: 1.6em;
-  }
-  #ktv-sub-nav .list-container .drop-down-list-container .drop-down-list[data-state="open"] {
-    height: auto;
   }
 
   #about-sub-nav {
@@ -6920,6 +6899,37 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   margin: 0 auto;
   margin-bottom: 15px;
   border: 1px solid #000;
+}
+#ktv-sub-nav .drop-down-list-container {
+  position: relative;
+  width: 180px;
+  height: 1.6em;
+  line-height: 1.6em;
+}
+#ktv-sub-nav .drop-down-list-container .drop-down-list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background-color: #c9c2b3;
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+}
+#ktv-sub-nav .drop-down-list-container .drop-down-list[data-state="closed"] {
+  height: 1.6em;
+}
+#ktv-sub-nav .drop-down-list-container .drop-down-list[data-state="open"] {
+  height: auto;
+}
+#ktv-sub-nav .drop-down-list-container .drop-down-list li {
+  width: 160px;
+  padding: 0 5px;
+  margin-right: 0;
+  display: inline-block;
+}
+#ktv-sub-nav .drop-down-list-container .drop-down-list li a {
+  display: block;
 }
 
 #about-sub-nav {

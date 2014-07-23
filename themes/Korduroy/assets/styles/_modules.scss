@@ -31,6 +31,44 @@
     margin-bottom: 15px;
     border: 1px solid #000;
   }
+  .drop-down-list-container {
+    $list-height: 1.6em;
+    $bg-color: #C9C2B3;
+
+    position: relative;
+    width: 180px;
+    height: $list-height;
+    line-height: $list-height;
+
+    .drop-down-list {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 100;
+      background-color: $bg-color;
+      border-radius: 3px;
+      text-align: center;
+      overflow: hidden;
+
+      &[data-state="closed"] {
+        height: $list-height;
+      }
+      &[data-state="open"] {
+        height: auto;
+      }
+
+      li {
+        width: 160px;
+        padding: 0 5px;
+        margin-right: 0;
+        display: inline-block;
+
+        a {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 #about-sub-nav {

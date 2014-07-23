@@ -12,7 +12,6 @@ jQuery ->
     navClone = null
     breakpoint = 769 # TODO: Should be replaced with a global breakpoint
 
-
     hasLeftNav = ->
       leftSubNav = leftEl.find('.aside-navigation')
       return !!(leftSubNav.length)
