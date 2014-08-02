@@ -30,16 +30,27 @@
     var KTV;
     KTV = KTV || {};
     KTV.dropDown = (function() {
-      var el, handleClick, hasDropDown, setListeners;
+      var el, handleClick, hasDropDown, preventBubbling, setListeners;
       el = $('.drop-down-list');
       hasDropDown = function() {
         return !!el.length;
       };
       setListeners = function() {
-        return el.on('click', handleClick);
+        return el.on('click', handleClick).children().on('click', preventBubbling);
+      };
+      preventBubbling = function(e) {
+        return e.stopPropagation();
       };
       handleClick = function() {
-        debugger;
+        var clickedDropDown, state;
+        clickedDropDown = $(this);
+        state = clickedDropDown.attr('data-state');
+        switch (state) {
+          case 'open':
+            return clickedDropDown.attr('data-state', 'closed');
+          case 'closed':
+            return clickedDropDown.attr('data-state', 'open');
+        }
       };
       return {
         init: function() {

@@ -10,10 +10,18 @@ jQuery ->
       return !!(el.length)
 
     setListeners = ->
-      el.on 'click', handleClick
+      el.on('click', handleClick).children().on('click', preventBubbling)
+
+    preventBubbling = (e) ->
+      e.stopPropagation()
 
     handleClick = ->
-      debugger
+      clickedDropDown = $(this)
+      state = clickedDropDown.attr('data-state')
+
+      switch state
+        when 'open'   then clickedDropDown.attr('data-state', 'closed')
+        when 'closed' then clickedDropDown.attr('data-state', 'open')
 
     # public:
     init: ->
