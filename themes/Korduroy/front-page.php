@@ -116,20 +116,6 @@
             </div>
           </div>
         </div>
-        <div class="campaigns-container">
-          <div class="featured-campaigns">
-            <div class="campaign">
-              <a href="<?php echo site_url(); ?>/compassing">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/images/campaigns/compassing_banner.jpg" />
-              </a>
-            </div>
-            <div class="campaign">
-              <a href="http://showusyourquiver.com/" target="_blank">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/images/campaigns/show_us_your_quiver.jpg" />
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
 
       <hr class="horizontal-stitch">
