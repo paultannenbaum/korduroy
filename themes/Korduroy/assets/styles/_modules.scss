@@ -1473,6 +1473,7 @@
   &.store-archives {
     .product {
       text-align: center;
+      position: relative;
 
       img {
         @extend %image-border;
@@ -1491,6 +1492,13 @@
         display: block;
         font-size: 14px;
         @extend %blue-link;
+      }
+      .onsale {
+        position: absolute;
+        left: 10px;
+        background: $ktv-blue;
+        padding: 0 5px;
+        color: white;
       }
     }
   }
