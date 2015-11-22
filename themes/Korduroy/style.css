@@ -5353,6 +5353,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     padding-right: 0.9375em;
     width: 100%;
     float: left;
+    position: relative;
   }
   .store-page.store-single .product-images-container .thumbnails {
     display: block;
@@ -8107,6 +8108,13 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 .store-page.store-single .featured-product-image {
   width: 100%;
   margin-bottom: 10px;
+}
+.store-page.store-single .onsale {
+  position: absolute;
+  left: 15px;
+  background: #2084ea;
+  padding: 5px;
+  color: white;
 }
 .store-page.store-single .product-thumb img {
   width: 100%;

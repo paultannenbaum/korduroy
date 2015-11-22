@@ -410,6 +410,7 @@
       }
       .product-images-container {
         @include grid-column(12);
+        position: relative;
 
         .thumbnails {
           @include block-grid(3);
