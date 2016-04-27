@@ -4506,13 +4506,13 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
     padding: 0 0.625em 1.25em;
   }
   #footer .sponsors-container .sponsors-list > li {
-    width: 33.33333%;
+    width: 25%;
     padding: 0 0.625em 1.25em;
   }
   #footer .sponsors-container .sponsors-list > li:nth-of-type(n) {
     clear: none;
   }
-  #footer .sponsors-container .sponsors-list > li:nth-of-type(3n+1) {
+  #footer .sponsors-container .sponsors-list > li:nth-of-type(4n+1) {
     clear: both;
   }
   #footer .logo-container {
