@@ -952,6 +952,7 @@
       min-height: $small-channel-icon-height;
 
       .channel-icon {
+        @include border-radius(3px);
         width: $small-channel-icon-width;
         height: $small-channel-icon-height;
         display: inline-block;
@@ -989,6 +990,9 @@
         &.surf-sufficient {
           background-image: url(assets/images/channel-icons/small/surf_sufficient.png);
         }
+        &.from-the-field {
+          background-image: url(assets/images/channel-icons/small/from_the_field.jpg);
+        }
       }
       .channel-info {
         display: none;
@@ -1017,6 +1021,7 @@
   &.shows-category {
     .channel-header {
       .channel-icon {
+        @include border-radius(5px);
         margin-bottom: 10px;
       }
       .category-name {

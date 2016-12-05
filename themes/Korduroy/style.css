@@ -7679,6 +7679,11 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   min-height: 70px;
 }
 .shows-page.shows-index .channel-header .channel-icon, .shows-page.shows-single .channel-header .channel-icon {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   width: 192px;
   height: 70px;
   display: inline-block;
@@ -7716,6 +7721,9 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 .shows-page.shows-index .channel-header .channel-icon.surf-sufficient, .shows-page.shows-single .channel-header .channel-icon.surf-sufficient {
   background-image: url(assets/images/channel-icons/small/surf_sufficient.png);
 }
+.shows-page.shows-index .channel-header .channel-icon.from-the-field, .shows-page.shows-single .channel-header .channel-icon.from-the-field {
+  background-image: url(assets/images/channel-icons/small/from_the_field.jpg);
+}
 .shows-page.shows-index .channel-header .channel-info, .shows-page.shows-single .channel-header .channel-info {
   display: none;
   position: relative;
@@ -7737,6 +7745,11 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   color: inherit;
 }
 .shows-page.shows-category .channel-header .channel-icon {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   margin-bottom: 10px;
 }
 .shows-page.shows-category .channel-header .category-name {
