@@ -5,12 +5,13 @@
   <section class="main" role="main">
     <?php
       $categories = get_terms('show_category', array(
-        'hide_empty' => 0,
+        'hide_empty' => 1,
         'orderby' => 'count',
         'order' => 'DESC'
       ));
       foreach( $categories as $category ):
     ?>
+
       <section class="show-channel">
         <header class="channel-header">
           <a class="channel-link" href="<?php echo get_term_link($category, $category -> taxonomy); ?>">

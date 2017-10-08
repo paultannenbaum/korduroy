@@ -993,6 +993,9 @@
         &.from-the-field {
           background-image: url(assets/images/channel-icons/small/from_the_field.jpg);
         }
+        &.fields-of-view {
+          background-image: url(assets/images/channel-icons/small/fields_of_view.jpg);
+        }
       }
       .channel-info {
         display: none;
@@ -1091,6 +1094,12 @@
       }
       &.surf-sufficient {
         background-image: url(assets/images/channel-icons/small/surf_sufficient.png);
+      }
+      &.from-the-field {
+        background-image: url(assets/images/channel-icons/small/from_the_field.jpg);
+      }
+      &.fields-of-view {
+        background-image: url(assets/images/channel-icons/small/fields_of_view.jpg);
       }
     }
     .episode-desc {

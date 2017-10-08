@@ -7724,6 +7724,9 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 .shows-page.shows-index .channel-header .channel-icon.from-the-field, .shows-page.shows-single .channel-header .channel-icon.from-the-field {
   background-image: url(assets/images/channel-icons/small/from_the_field.jpg);
 }
+.shows-page.shows-index .channel-header .channel-icon.fields-of-view, .shows-page.shows-single .channel-header .channel-icon.fields-of-view {
+  background-image: url(assets/images/channel-icons/small/fields_of_view.jpg);
+}
 .shows-page.shows-index .channel-header .channel-info, .shows-page.shows-single .channel-header .channel-info {
   display: none;
   position: relative;
@@ -7819,6 +7822,12 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 }
 .shows-page .episode-info .channel-icon.surf-sufficient {
   background-image: url(assets/images/channel-icons/small/surf_sufficient.png);
+}
+.shows-page .episode-info .channel-icon.from-the-field {
+  background-image: url(assets/images/channel-icons/small/from_the_field.jpg);
+}
+.shows-page .episode-info .channel-icon.fields-of-view {
+  background-image: url(assets/images/channel-icons/small/fields_of_view.jpg);
 }
 .shows-page .episode-info .episode-desc {
   margin-top: 30px;
