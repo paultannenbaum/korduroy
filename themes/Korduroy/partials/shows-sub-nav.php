@@ -6,7 +6,7 @@
     <ul class="sub-nav-list">
       <?php wp_list_categories(array(
       'taxonomy' => 'show_category',
-      'hide_empty' => 1,
+      'hide_empty' => 0,
       'title_li' => '',
       'orderby' => 'count',
       'order' => 'DESC'
