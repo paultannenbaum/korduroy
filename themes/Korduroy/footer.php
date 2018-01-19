@@ -6,6 +6,7 @@
     <div class="sponsors-container">
       <ul class="sponsors-list">
         <li class="sponsor-list-item go-pro"><a href="https://www.idevaffiliate.com/31555/idevaffiliate.php?id=395&url=7785" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/hb-logo.png"></a></li>
+        <li class="sponsor-list-item go-pro"><a href="http://www.gopro.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_adorama.png"></a></li>
         <li class="sponsor-list-item go-pro"><a href="http://www.gopro.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_gopro.png"></a></li>
         <li class="sponsor-list-item axxe"><a href="http://axxe.jp/us/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_axxe.png"></a></li>
         <li class="sponsor-list-item reef"><a href="http://www.reef.com/" target="_blank"><img src="<?php echo bloginfo( 'template_directory' )?>/assets/images/sponsors/logo_reef.png"></a></li>
@@ -25,10 +26,8 @@
       <nav class="information">
         <h4 class="section-title">Information</h4>
         <ul class="info-nav">
-          <li><a href="<?php echo site_url(); ?>/cart">Shopping Cart</a></li>
           <li><a href="<?php echo site_url(); ?>/links">links</a></li>
           <li><a href="<?php echo site_url(); ?>/submissions">submissions</a></li>
-          <li><a href="<?php echo site_url(); ?>/returns">returns</a></li>
           <li><a href="<?php echo site_url(); ?>/help">help</a></li>
           <li><a href="#contact-form" class="contact-form-link">contact us</a></li>
         </ul>

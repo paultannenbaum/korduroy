@@ -51,7 +51,6 @@
           <ul class="site-navigation-list">
             <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/shows">Shows</a></li>
             <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/blog">Blog</a></li>
-            <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/store">Store</a></li>
             <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/supporters">Supporters</a></li>
             <li class="site-navigation-item"><a href="<?php echo site_url(); ?>/about">About</a></li>
           </ul>
