@@ -33,7 +33,6 @@
             <span class="channel-icon <?php echo $category -> slug ?>"></span>
           </a>
           <div class="shaka-ratings">
-            <?php echo PostRatings()->getControl(); ?>
           </div>
         </aside>
         <div class="episode-main">
